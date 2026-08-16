@@ -1,0 +1,20 @@
+{
+  "resources": [
+    {
+      "doc_id": "nice_atopic_eczema_under_12",
+      "title": "Atopic eczema in under 12s: diagnosis and management",
+      "publisher": "NICE",
+      "topic": "Atopic eczema in children",
+      "path": "data/raw/atopic-eczema-under-12.pdf",
+      "why_credible": "Official public NICE clinical guideline for diagnosis and management of atopic eczema in children under 12."
+    },
+    {
+      "doc_id": "nice_food_allergy_under_19",
+      "title": "Food allergy in under 19s: assessment and diagnosis",
+      "publisher": "NICE",
+      "topic": "Food allergy assessment related to eczema",
+      "path": "data/raw/food-allergy-under-19.pdf",
+      "why_credible": "Official public NICE clinical guideline. It is relevant because food allergy may be associated with eczema in some children."
+    }
+  ]
+}
