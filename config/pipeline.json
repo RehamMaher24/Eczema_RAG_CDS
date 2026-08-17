@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "input_directory": "data/raw",
+  "resources_file": "config/resources.json",
+  "questions_file": "config/questions.json",
+  "output_directory": "outputs",
+  "collection_name": "eczema_guidelines_v1",
+  "parser": {
+    "extract_tables": true,
+    "record_image_references": true,
+    "ocr_mode": "detect_only",
+    "minimum_page_text_characters": 80,
+    "header_footer_repeat_ratio": 0.6,
+    "header_footer_margin_lines": 3
+  },
+  "chunking": {
+    "target_words": 500,
+    "maximum_words": 800,
+    "minimum_words": 80,
+    "overlap_words": 80,
+    "preserve_tables": true,
+    "include_section_context": true
+  },
+  "embedding": {
+    "provider": "local_hashing",
+    "model": "blake2b-feature-hashing-v1",
+    "dimension": 768,
+    "batch_size": 64,
+    "normalize": true
+  },
+  "vector_store": {
+    "provider": "sqlite",
+    "path": "outputs/vector_store.sqlite3",
+    "upsert_mode": "replace_document",
+    "distance": "cosine"
+  },
+  "retrieval": {
+    "top_k": 5,
+    "minimum_score": 0.05,
+    "candidate_multiplier": 4
+  },
+  "logging": {
+    "level": "INFO",
+    "file": "outputs/ingestion.log"
+  }
+}
