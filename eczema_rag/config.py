@@ -30,6 +30,8 @@ class PipelineConfig:
     embedding: dict[str, Any]
     vector_store: dict[str, Any]
     retrieval: dict[str, Any]
+    generation: dict[str, Any]
+    judge: dict[str, Any]
     logging: dict[str, Any]
 
     @classmethod
@@ -45,7 +47,9 @@ class PipelineConfig:
             "chunking",
             "embedding",
             "vector_store",
-            "retrieval",
+            "retrieval",  
+            "generation",
+            "judge",
             "logging",
         }
         missing = sorted(required - data.keys())
@@ -71,6 +75,8 @@ class PipelineConfig:
             embedding=dict(data["embedding"]),
             vector_store=vector_store,
             retrieval=dict(data["retrieval"]),
+            generation=dict(data["generation"]),
+            judge=dict(data["judge"]),
             logging=logging_config,
         )
         config.validate()
@@ -91,6 +97,27 @@ class PipelineConfig:
             raise ConfigurationError("chunking.overlap_words must be non-negative")
         if int(self.embedding.get("dimension", 0)) <= 0:
             raise ConfigurationError("embedding.dimension must be positive")
+        
+        
+        
+        if self.generation.get("provider") != "groq":
+            raise ConfigurationError( "This implementation supports generation.provider='groq' only" )
+        
+        if not str(self.generation.get("model","")).strip():
+            raise ConfigurationError("generation.model must not be empty")
+        
+        if not 0 <= float(self.generation.get("temperature", 0)) <= 1:
+            raise ConfigurationError("generation.temperature must be between 0 and 1")
+        
+        if int(self.generation.get("max_tokens", 0)) <= 0:
+            raise ConfigurationError("generation.max_tokens must be positive")
+        
+        if int(self.generation.get("evidence_top_k", 0)) <= 0:
+            raise ConfigurationError("generation.evidence_top_k must be positive")
+           
+        if float(self.generation.get("minimum_retrieval_score", -1)) < 0:
+            raise ConfigurationError( "generation.minimum_retrieval_score must be non-negative"  )
+        
         if self.embedding.get("provider") != "local_hashing":
             raise ConfigurationError(
                 "This Day 1 implementation supports embedding.provider='local_hashing' only"
@@ -99,6 +126,21 @@ class PipelineConfig:
             raise ConfigurationError(
                 "This Day 1 implementation supports vector_store.provider='sqlite' only"
             )
+        if self.judge.get("provider") != "groq":
+            raise ConfigurationError(
+                "This implementation supports judge.provider='groq' only"
+            )
+
+        if not str(self.judge.get("model", "")).strip():
+            raise ConfigurationError("judge.model must not be empty")
+
+        if not 0 <= float(self.judge.get("temperature", 0)) <= 1:
+            raise ConfigurationError(
+                "judge.temperature must be between 0 and 1"
+            )
+
+        if int(self.judge.get("max_tokens", 0)) <= 0:
+            raise ConfigurationError("judge.max_tokens must be positive")
 
 
 def resolve_path(root: Path, value: str | Path) -> Path:
