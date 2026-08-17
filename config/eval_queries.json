@@ -1,0 +1,369 @@
+{
+  "description": "50 evaluation queries for RAG retrieval testing, built from actual PDF content across all 7 guideline documents.",
+  "queries": [
+    {
+      "id": "Q01",
+      "query": "A child presents with an itchy, dry rash on the flexures. What diagnostic criteria does NICE CG57 recommend to confirm atopic eczema?",
+      "expected_doc": "nice_cg57_atopic_eczema_under_12",
+      "topic": "diagnosis",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q02",
+      "query": "According to the NICE guideline, what stepped treatment options are listed in Table 2 for mild, moderate, and severe atopic eczema?",
+      "expected_doc": "nice_cg57_atopic_eczema_under_12",
+      "topic": "treatment",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q03",
+      "query": "NICE CG57 states emollients are the basis of management. Should they be continued even when atopic eczema is clear?",
+      "expected_doc": "nice_cg57_atopic_eczema_under_12",
+      "topic": "treatment",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q04",
+      "query": "What does the NICE guideline recommend about the potency of topical corticosteroids that should not be used in children without specialist dermatological advice?",
+      "expected_doc": "nice_cg57_atopic_eczema_under_12",
+      "topic": "treatment",
+      "difficulty": "medium"
+    },
+    {
+      "id": "Q05",
+      "query": "According to NICE recommendation 1.5.1.15, should topical corticosteroids be applied to areas of active eczema only or to all skin?",
+      "expected_doc": "nice_cg57_atopic_eczema_under_12",
+      "topic": "treatment",
+      "difficulty": "medium"
+    },
+    {
+      "id": "Q06",
+      "query": "What does the NICE guideline say about using phototherapy or systemic treatments for severe atopic eczema in children, and under whose supervision should they be used?",
+      "expected_doc": "nice_cg57_atopic_eczema_under_12",
+      "topic": "phototherapy",
+      "difficulty": "medium"
+    },
+    {
+      "id": "Q07",
+      "query": "What does NICE CG57 recommend regarding the effectiveness and safety of homeopathy, herbal medicine, and massage for childhood eczema?",
+      "expected_doc": "nice_cg57_atopic_eczema_under_12",
+      "topic": "complementary",
+      "difficulty": "medium"
+    },
+    {
+      "id": "Q08",
+      "query": "What recommendations were amended in the September 2025 update of NICE CG57 regarding bathing frequency, ion exchange water softeners, and silk clothing?",
+      "expected_doc": "nice_cg57_atopic_eczema_under_12",
+      "topic": "update",
+      "difficulty": "hard"
+    },
+    {
+      "id": "Q09",
+      "query": "According to NICE, when should a child with atopic eczema be assessed for severity and quality of life before starting phototherapy?",
+      "expected_doc": "nice_cg57_atopic_eczema_under_12",
+      "topic": "assessment",
+      "difficulty": "medium"
+    },
+    {
+      "id": "Q10",
+      "query": "The NICE guideline mentions topical calcineurin inhibitors as an option for moderate and severe eczema. At what severity level do bandages first appear in the stepped approach?",
+      "expected_doc": "nice_cg57_atopic_eczema_under_12",
+      "topic": "treatment",
+      "difficulty": "hard"
+    },
+    {
+      "id": "Q11",
+      "query": "According to the JTF Contact Dermatitis Practice Parameter, what is the difference between allergic contact dermatitis (ACD) and irritant contact dermatitis (ICD)?",
+      "expected_doc": "jtf_contact_dermatitis_2015",
+      "topic": "diagnosis",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q12",
+      "query": "The JTF parameter mentions contact urticaria (CU). How is immunologic CU distinguished from nonimmunologic CU, and what role does IgE play?",
+      "expected_doc": "jtf_contact_dermatitis_2015",
+      "topic": "diagnosis",
+      "difficulty": "medium"
+    },
+    {
+      "id": "Q13",
+      "query": "Summary Statement 15 in the JTF parameter states that ACD and atopic dermatitis often coexist. What evaluation does it recommend when ACD is suspected in an AD patient?",
+      "expected_doc": "jtf_contact_dermatitis_2015",
+      "topic": "diagnosis",
+      "difficulty": "medium"
+    },
+    {
+      "id": "Q14",
+      "query": "According to the JTF parameter, what effect does high-potency topical corticosteroid (e.g., betamethasone dipropionate 0.05%) applied for 3 days have on 48-hour patch test responses?",
+      "expected_doc": "jtf_contact_dermatitis_2015",
+      "topic": "patch_testing",
+      "difficulty": "hard"
+    },
+    {
+      "id": "Q15",
+      "query": "What does the JTF practice parameter say about glycerol thioglycolate in permanent wave solutions and its relevance to occupational dermatitis in hairdressers?",
+      "expected_doc": "jtf_contact_dermatitis_2015",
+      "topic": "occupational",
+      "difficulty": "hard"
+    },
+    {
+      "id": "Q16",
+      "query": "According to the JTF parameter, what percentage of nail polish allergic reactions are attributed to tosylamide/formaldehyde resin?",
+      "expected_doc": "jtf_contact_dermatitis_2015",
+      "topic": "allergens",
+      "difficulty": "hard"
+    },
+    {
+      "id": "Q17",
+      "query": "Summary Statement 36 recommends preoperative patch testing for what type of patients? What about Summary Statement 37 regarding joint replacement failure?",
+      "expected_doc": "jtf_contact_dermatitis_2015",
+      "topic": "patch_testing",
+      "difficulty": "medium"
+    },
+    {
+      "id": "Q18",
+      "query": "What scoring systems does the AAD Section 1 guideline list for assessing atopic dermatitis severity, including EASI, SCORAD, and IGA?",
+      "expected_doc": "aad_ad_section1_diagnosis_2014",
+      "topic": "assessment",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q19",
+      "query": "According to AAD Section 1, what percentage of individuals with atopic dermatitis do NOT have elevated serum IgE levels?",
+      "expected_doc": "aad_ad_section1_diagnosis_2014",
+      "topic": "biomarkers",
+      "difficulty": "medium"
+    },
+    {
+      "id": "Q20",
+      "query": "The AAD guideline mentions that elevated allergen-specific IgE levels are found in what percentage of the US general population, making them nonspecific?",
+      "expected_doc": "aad_ad_section1_diagnosis_2014",
+      "topic": "biomarkers",
+      "difficulty": "hard"
+    },
+    {
+      "id": "Q21",
+      "query": "What does the AAD Section 1 guideline say about differentiating atopic dermatitis from seborrheic dermatitis in infancy? Which areas does each condition typically affect or spare?",
+      "expected_doc": "aad_ad_section1_diagnosis_2014",
+      "topic": "differential_diagnosis",
+      "difficulty": "medium"
+    },
+    {
+      "id": "Q22",
+      "query": "According to AAD Section 1, what serious conditions should be reconsidered if atopic dermatitis does not respond to therapy, including nutritional, metabolic, and immunologic conditions?",
+      "expected_doc": "aad_ad_section1_diagnosis_2014",
+      "topic": "differential_diagnosis",
+      "difficulty": "hard"
+    },
+    {
+      "id": "Q23",
+      "query": "What does the AAD Section 1 guideline say about the effect of race on atopic dermatitis risk, specifically regarding black race and parental education level?",
+      "expected_doc": "aad_ad_section1_diagnosis_2014",
+      "topic": "epidemiology",
+      "difficulty": "medium"
+    },
+    {
+      "id": "Q24",
+      "query": "What abbreviations CDLQI, DFI, and POEM stand for in the AAD Section 1 guideline, and what do these instruments measure?",
+      "expected_doc": "aad_ad_section1_diagnosis_2014",
+      "topic": "assessment",
+      "difficulty": "medium"
+    },
+    {
+      "id": "Q25",
+      "query": "According to AAD Section 2, what are Prescription Emollient Devices (PEDs) and how do they differ from regular moisturizers in targeting skin barrier defects?",
+      "expected_doc": "aad_ad_section2_topical_2014",
+      "topic": "treatment",
+      "difficulty": "medium"
+    },
+    {
+      "id": "Q26",
+      "query": "What does the AAD Section 2 guideline say about wet wrap therapy (WWT) including duration of wear, use with topical corticosteroids, and risk of HPA axis suppression?",
+      "expected_doc": "aad_ad_section2_topical_2014",
+      "topic": "treatment",
+      "difficulty": "medium"
+    },
+    {
+      "id": "Q27",
+      "query": "According to AAD Section 2, how were topical calcineurin inhibitors (TCI) introduced, what bacteria produce them, and what is their mechanism of action on T-cell activation?",
+      "expected_doc": "aad_ad_section2_topical_2014",
+      "topic": "treatment",
+      "difficulty": "medium"
+    },
+    {
+      "id": "Q28",
+      "query": "The AAD Section 2 guideline discusses patient knowledge of steroid potencies. What problem does poor knowledge cause, and what recommendation is made about counseling?",
+      "expected_doc": "aad_ad_section2_topical_2014",
+      "topic": "safety",
+      "difficulty": "hard"
+    },
+    {
+      "id": "Q29",
+      "query": "What evidence does AAD Section 2 present regarding dilute bleach baths for atopic dermatitis with frequent bacterial infections, and how does it compare to topical antibiotics for resistance risk?",
+      "expected_doc": "aad_ad_section2_topical_2014",
+      "topic": "treatment",
+      "difficulty": "hard"
+    },
+    {
+      "id": "Q30",
+      "query": "According to AAD Section 2, what were the findings on silver-impregnated textile underwear versus cotton for children and adults with clinically uninfected AD?",
+      "expected_doc": "aad_ad_section2_topical_2014",
+      "topic": "treatment",
+      "difficulty": "hard"
+    },
+    {
+      "id": "Q31",
+      "query": "Does the AAD Section 2 guideline recommend topical antihistamines for atopic dermatitis treatment? What evidence is cited?",
+      "expected_doc": "aad_ad_section2_topical_2014",
+      "topic": "treatment",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q32",
+      "query": "What does AAD Section 4 recommend about proactive use of topical corticosteroids (TCS) for flare prevention, and what is the longest duration tested?",
+      "expected_doc": "aad_ad_section4_flare_prevention_2014",
+      "topic": "prevention",
+      "difficulty": "medium"
+    },
+    {
+      "id": "Q33",
+      "query": "The AAD Section 4 mentions that structured educational programs with dermatologic, nutritional, and psychological components improved SCORAD scores. What additional benefits were observed?",
+      "expected_doc": "aad_ad_section4_flare_prevention_2014",
+      "topic": "education",
+      "difficulty": "medium"
+    },
+    {
+      "id": "Q34",
+      "query": "According to AAD Section 4, what psychological interventions have been tried for atopic dermatitis, including autogenic training, biofeedback, cognitive behavioral therapy, and hypnotherapy?",
+      "expected_doc": "aad_ad_section4_flare_prevention_2014",
+      "topic": "psychology",
+      "difficulty": "medium"
+    },
+    {
+      "id": "Q35",
+      "query": "What does AAD Section 4 say about patients seeking allergy assessment to find a single cause or trigger for their eczema? What is the guideline's position on this expectation?",
+      "expected_doc": "aad_ad_section4_flare_prevention_2014",
+      "topic": "allergy",
+      "difficulty": "medium"
+    },
+    {
+      "id": "Q36",
+      "query": "According to AAD Section 4, Fleischer et al found that what percentage of foods avoided based on sensitization could actually be returned to the diet after oral food challenges?",
+      "expected_doc": "aad_ad_section4_flare_prevention_2014",
+      "topic": "food_allergy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "Q37",
+      "query": "What does AAD Section 4 say about traditional Chinese medicine (TCM) for AD, including evidence of efficacy, risk of hepatotoxicity, and contamination of herbal creams with TCS?",
+      "expected_doc": "aad_ad_section4_flare_prevention_2014",
+      "topic": "complementary",
+      "difficulty": "hard"
+    },
+    {
+      "id": "Q38",
+      "query": "According to the BAD 2017 guidelines, what is the estimated point prevalence of dermatitis and hand dermatitis in the UK?",
+      "expected_doc": "bad_contact_dermatitis_2017",
+      "topic": "epidemiology",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q39",
+      "query": "The BAD guideline classifies contact dermatitis into reaction types including subjective irritancy, acute irritant, and chronic cumulative irritant. What characterizes subjective irritancy?",
+      "expected_doc": "bad_contact_dermatitis_2017",
+      "topic": "diagnosis",
+      "difficulty": "medium"
+    },
+    {
+      "id": "Q40",
+      "query": "According to the BAD guidelines, what is the suggested annual patch testing workload per population served (e.g., per 70,000 catchment)?",
+      "expected_doc": "bad_contact_dermatitis_2017",
+      "topic": "patch_testing",
+      "difficulty": "medium"
+    },
+    {
+      "id": "Q41",
+      "query": "What does the BAD guideline say about photopatch testing, including the UVA dose used, the timing of irradiation after patch removal, and the incidence of true photoallergy?",
+      "expected_doc": "bad_contact_dermatitis_2017",
+      "topic": "patch_testing",
+      "difficulty": "hard"
+    },
+    {
+      "id": "Q42",
+      "query": "The BAD guideline states that allergic contact dermatitis carries a worse prognosis than irritant unless what condition is met?",
+      "expected_doc": "bad_contact_dermatitis_2017",
+      "topic": "prognosis",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q43",
+      "query": "According to the BAD guidelines, what is the estimated cost per patient per annum for occupational versus nonoccupational contact dermatitis?",
+      "expected_doc": "bad_contact_dermatitis_2017",
+      "topic": "economics",
+      "difficulty": "hard"
+    },
+    {
+      "id": "Q44",
+      "query": "What forms of phototherapy does the AAD Section 3 guideline list as beneficial for atopic dermatitis, including natural sunlight, NB-UVB, BB-UVB, UVA, and PUVA?",
+      "expected_doc": "aad_ad_section3_phototherapy_systemic_2014",
+      "topic": "phototherapy",
+      "difficulty": "easy"
+    },
+    {
+      "id": "Q45",
+      "query": "According to AAD Section 3, what is the recommended cyclosporine dosing for adults (mg/d) and pediatric patients (mg/kg/d)?",
+      "expected_doc": "aad_ad_section3_phototherapy_systemic_2014",
+      "topic": "systemic_treatment",
+      "difficulty": "medium"
+    },
+    {
+      "id": "Q46",
+      "query": "The AAD Section 3 Table VIII lists baseline monitoring for cyclosporine. What tests are required including blood pressure, renal function, fasting lipids, CBC, liver function, and electrolytes?",
+      "expected_doc": "aad_ad_section3_phototherapy_systemic_2014",
+      "topic": "systemic_treatment",
+      "difficulty": "medium"
+    },
+    {
+      "id": "Q47",
+      "query": "According to AAD Section 3, what action should be taken if creatinine increases more than 25% above baseline during cyclosporine therapy?",
+      "expected_doc": "aad_ad_section3_phototherapy_systemic_2014",
+      "topic": "systemic_treatment",
+      "difficulty": "hard"
+    },
+    {
+      "id": "Q48",
+      "query": "What does the AAD Section 3 guideline say about mycophenolate mofetil (MMF) dosing range and the percentage of patients who achieved disease clearance in the cited study?",
+      "expected_doc": "aad_ad_section3_phototherapy_systemic_2014",
+      "topic": "systemic_treatment",
+      "difficulty": "hard"
+    },
+    {
+      "id": "Q49",
+      "query": "According to AAD Section 3, should phototherapy be combined with topical calcineurin inhibitors? What do the manufacturers suggest about light exposure while using TCIs?",
+      "expected_doc": "aad_ad_section3_phototherapy_systemic_2014",
+      "topic": "phototherapy",
+      "difficulty": "medium"
+    },
+    {
+      "id": "Q50",
+      "query": "The AAD Section 3 lists potential toxicities for mycophenolate mofetil including GI symptoms, hematologic effects, and risk of progressive multifocal leukoencephalopathy. What are the most common side effects?",
+      "expected_doc": "aad_ad_section3_phototherapy_systemic_2014",
+      "topic": "safety",
+      "difficulty": "medium"
+    }
+  ],
+  "coverage_summary": {
+    "nice_cg57_atopic_eczema_under_12": ["Q01", "Q02", "Q03", "Q04", "Q05", "Q06", "Q07", "Q08", "Q09", "Q10"],
+    "jtf_contact_dermatitis_2015": ["Q11", "Q12", "Q13", "Q14", "Q15", "Q16", "Q17"],
+    "aad_ad_section1_diagnosis_2014": ["Q18", "Q19", "Q20", "Q21", "Q22", "Q23", "Q24"],
+    "aad_ad_section2_topical_2014": ["Q25", "Q26", "Q27", "Q28", "Q29", "Q30", "Q31"],
+    "aad_ad_section4_flare_prevention_2014": ["Q32", "Q33", "Q34", "Q35", "Q36", "Q37"],
+    "bad_contact_dermatitis_2017": ["Q38", "Q39", "Q40", "Q41", "Q42", "Q43"],
+    "aad_ad_section3_phototherapy_systemic_2014": ["Q44", "Q45", "Q46", "Q47", "Q48", "Q49", "Q50"]
+  },
+  "difficulty_distribution": {
+    "easy": 10,
+    "medium": 23,
+    "hard": 17
+  }
+}
