@@ -1,0 +1,137 @@
+{
+  "chunks_created": 510,
+  "collection_name": "eczema_guidelines_v1",
+  "document_stats": [
+    {
+      "chunks_created": 96,
+      "doc_id": "nice_cg57_atopic_eczema_under_12",
+      "document_name": "Atopic eczema in under 12s: diagnosis and management",
+      "figure_references": 0,
+      "pages_needing_ocr": 0,
+      "pages_total": 31,
+      "pages_with_text": 31,
+      "sections_detected": 95,
+      "source_sha256": "3b9071a77faf78ac5354fd90ec8173255fa92c496b5ccdcf64861cbfe9d826a5",
+      "tables_extracted": 2,
+      "vectors_upserted": 96,
+      "warnings": [
+        "short_text_page: review if content appears incomplete",
+        "table_caption_detected_but_structure_not_extracted"
+      ]
+    },
+    {
+      "chunks_created": 136,
+      "doc_id": "jtf_contact_dermatitis_2015",
+      "document_name": "Contact Dermatitis: A Practice Parameter-Update 2015",
+      "figure_references": 2,
+      "pages_needing_ocr": 0,
+      "pages_total": 39,
+      "pages_with_text": 39,
+      "sections_detected": 80,
+      "source_sha256": "92ec71e02ccebebdd3bf6a9f8b2732c5340c4ed91cb093e996ec6dd05c3baade",
+      "tables_extracted": 4,
+      "vectors_upserted": 136,
+      "warnings": [
+        "figure_semantics_deferred: references recorded without image interpretation",
+        "table_caption_detected_but_structure_not_extracted"
+      ]
+    },
+    {
+      "chunks_created": 47,
+      "doc_id": "aad_ad_section1_diagnosis_2014",
+      "document_name": "Guidelines of care for the management of atopic dermatitis: Section 1. Diagnosis and assessment of atopic dermatitis",
+      "figure_references": 0,
+      "pages_needing_ocr": 0,
+      "pages_total": 14,
+      "pages_with_text": 14,
+      "sections_detected": 23,
+      "source_sha256": "c21f67b524116018c267163ac6da85b7e24f1936a9b680628ef8d2b4c0222e0a",
+      "tables_extracted": 6,
+      "vectors_upserted": 47,
+      "warnings": []
+    },
+    {
+      "chunks_created": 55,
+      "doc_id": "bad_contact_dermatitis_2017",
+      "document_name": "British Association of Dermatologists' guidelines for the management of contact dermatitis 2017",
+      "figure_references": 1,
+      "pages_needing_ocr": 0,
+      "pages_total": 13,
+      "pages_with_text": 13,
+      "sections_detected": 43,
+      "source_sha256": "8aa45661456425430fff5908e42221e92697eb905763bd99b885a25a4d04bc1b",
+      "tables_extracted": 0,
+      "vectors_upserted": 55,
+      "warnings": [
+        "figure_semantics_deferred: references recorded without image interpretation",
+        "table_caption_detected_but_structure_not_extracted"
+      ]
+    },
+    {
+      "chunks_created": 51,
+      "doc_id": "aad_ad_section2_topical_2014",
+      "document_name": "Guidelines of care for the management of atopic dermatitis: Section 2. Management and treatment with topical therapies",
+      "figure_references": 0,
+      "pages_needing_ocr": 0,
+      "pages_total": 17,
+      "pages_with_text": 17,
+      "sections_detected": 23,
+      "source_sha256": "a8deff3c5533895676d201bd6aaa38ffc863989c77e0d4c81473fed098fbe95e",
+      "tables_extracted": 5,
+      "vectors_upserted": 51,
+      "warnings": [
+        "table_caption_detected_but_structure_not_extracted"
+      ]
+    },
+    {
+      "chunks_created": 42,
+      "doc_id": "aad_ad_section4_flare_prevention_2014",
+      "document_name": "Guidelines of care for the management of atopic dermatitis: Section 4. Prevention of disease flares and use of adjunctive therapies and approaches",
+      "figure_references": 0,
+      "pages_needing_ocr": 0,
+      "pages_total": 16,
+      "pages_with_text": 16,
+      "sections_detected": 18,
+      "source_sha256": "5aa4a7e4fe7845de39f788b28714a3c3c4e201106a1b0f2ee58cf780dfc08ec3",
+      "tables_extracted": 3,
+      "vectors_upserted": 42,
+      "warnings": [
+        "table_caption_detected_but_structure_not_extracted"
+      ]
+    },
+    {
+      "chunks_created": 83,
+      "doc_id": "aad_ad_section3_phototherapy_systemic_2014",
+      "document_name": "Guidelines of care for the management of atopic dermatitis: Section 3. Management and treatment with phototherapy and systemic agents",
+      "figure_references": 0,
+      "pages_needing_ocr": 0,
+      "pages_total": 23,
+      "pages_with_text": 23,
+      "sections_detected": 42,
+      "source_sha256": "d8e6906d263f532af26dfcb334972fee7a8953dc9433d4c4f4c96cfc32e506d4",
+      "tables_extracted": 15,
+      "vectors_upserted": 83,
+      "warnings": [
+        "table_caption_detected_but_structure_not_extracted"
+      ]
+    }
+  ],
+  "figure_references": 3,
+  "output_files": [
+    "outputs/chunks.jsonl",
+    "outputs/embedding_model.json",
+    "outputs/index_manifest.json",
+    "outputs/retrieval_results.json",
+    "outputs/retrieval_results.md",
+    "outputs/sample_pages.md",
+    "outputs/source_credibility.md",
+    "outputs/structured_pages.jsonl",
+    "outputs/vector_store.sqlite3"
+  ],
+  "pages_needing_ocr": 0,
+  "pages_processed": 153,
+  "resources_processed": 7,
+  "sections_detected": 324,
+  "tables_extracted": 35,
+  "vectors_indexed": 510
+}
