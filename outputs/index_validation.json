@@ -1,0 +1,24 @@
+{
+  "checks": {
+    "chunk_hashes_unique": true,
+    "chunk_ids_unique": true,
+    "chunk_vector_counts_match": true,
+    "collection_name_matches": true,
+    "corpus_name_matches": true,
+    "per_document_counts_match": true,
+    "resource_count_is_seven": true
+  },
+  "chunk_count": 510,
+  "document_counts": {
+    "aad_ad_section1_diagnosis_2014": 47,
+    "aad_ad_section2_topical_2014": 51,
+    "aad_ad_section3_phototherapy_systemic_2014": 83,
+    "aad_ad_section4_flare_prevention_2014": 42,
+    "bad_contact_dermatitis_2017": 55,
+    "jtf_contact_dermatitis_2015": 136,
+    "nice_cg57_atopic_eczema_under_12": 96
+  },
+  "resource_count": 7,
+  "valid": true,
+  "vector_count": 510
+}
