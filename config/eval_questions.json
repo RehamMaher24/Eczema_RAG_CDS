@@ -1,0 +1,1370 @@
+{
+  "schema_version": 1,
+  "description": "50 evaluation queries for RAG retrieval testing, built from actual PDF content across all 7 guideline documents.",
+  "queries": [
+    {
+      "id": "Q01",
+      "query": "A child presents with an itchy, dry rash on the flexures. What diagnostic criteria are used to confirm atopic eczema?",
+      "expected_doc_ids": [
+        "nice_cg57_atopic_eczema_under_12"
+      ],
+      "topic": "diagnosis",
+      "difficulty": "easy",
+      "query_style": "blind",
+      "expected_evidence": [
+        {
+          "doc_id": "nice_cg57_atopic_eczema_under_12",
+          "expected_section_terms": [
+            "1.1 Diagnosis",
+            "1.1.1.2 Diagnose atopic eczema"
+          ],
+          "expected_pdf_pages": [
+            6,
+            7
+          ],
+          "acceptable_chunk_ids": [
+            "nice_cg57_atopic_eczema_under_12:chunk:0004:488b465b72b2"
+          ],
+          "evidence_quote": "itchy skin condition plus 3 or more"
+        }
+      ],
+      "annotation_status": "verified"
+    },
+    {
+      "id": "Q02",
+      "query": "According to the NICE guideline, what stepped treatment options are listed in Table 2 for mild, moderate, and severe atopic eczema?",
+      "expected_doc_ids": [
+        "nice_cg57_atopic_eczema_under_12"
+      ],
+      "topic": "treatment",
+      "difficulty": "easy",
+      "query_style": "source_aware",
+      "expected_evidence": [
+        {
+          "doc_id": "nice_cg57_atopic_eczema_under_12",
+          "expected_section_terms": [
+            "Table 2 Stepped treatment options"
+          ],
+          "expected_pdf_pages": [
+            11
+          ],
+          "acceptable_chunk_ids": [
+            "nice_cg57_atopic_eczema_under_12:chunk:0029:796d02656e78"
+          ],
+          "evidence_quote": "Severe atopic eczema"
+        }
+      ],
+      "annotation_status": "verified"
+    },
+    {
+      "id": "Q03",
+      "query": "Emollients are considered the basis of eczema management. Should they be continued even when the skin is clear?",
+      "expected_doc_ids": [
+        "nice_cg57_atopic_eczema_under_12"
+      ],
+      "topic": "treatment",
+      "difficulty": "easy",
+      "query_style": "blind",
+      "expected_evidence": [
+        {
+          "doc_id": "nice_cg57_atopic_eczema_under_12",
+          "expected_section_terms": [
+            "1.5.1.1 Use the stepped approach in table 2"
+          ],
+          "expected_pdf_pages": [
+            11
+          ],
+          "acceptable_chunk_ids": [
+            "nice_cg57_atopic_eczema_under_12:chunk:0028:bf5233f71f1c"
+          ],
+          "evidence_quote": "Emollients are the basis of management and should always be used, even when atopic eczema is clear"
+        }
+      ],
+      "annotation_status": "verified"
+    },
+    {
+      "id": "Q04",
+      "query": "What does the NICE guideline recommend about the potency of topical corticosteroids that should not be used in children without specialist dermatological advice?",
+      "expected_doc_ids": [
+        "nice_cg57_atopic_eczema_under_12"
+      ],
+      "topic": "treatment",
+      "difficulty": "medium",
+      "query_style": "source_aware",
+      "expected_evidence": [
+        {
+          "doc_id": "nice_cg57_atopic_eczema_under_12",
+          "expected_section_terms": [
+            "1.5.1.17 Do not use potent topical corticosteroids"
+          ],
+          "expected_pdf_pages": [
+            16
+          ],
+          "acceptable_chunk_ids": [
+            "nice_cg57_atopic_eczema_under_12:chunk:0046:8c1b4528c71a"
+          ],
+          "evidence_quote": "potent topical corticosteroids"
+        }
+      ],
+      "annotation_status": "verified"
+    },
+    {
+      "id": "Q05",
+      "query": "According to NICE recommendation 1.5.1.15, should topical corticosteroids be applied to areas of active eczema only or to all skin?",
+      "expected_doc_ids": [
+        "nice_cg57_atopic_eczema_under_12"
+      ],
+      "topic": "treatment",
+      "difficulty": "medium",
+      "query_style": "source_aware",
+      "expected_evidence": [
+        {
+          "doc_id": "nice_cg57_atopic_eczema_under_12",
+          "expected_section_terms": [
+            "1.5.1.15 Explain to children with atopic eczema"
+          ],
+          "expected_pdf_pages": [
+            16
+          ],
+          "acceptable_chunk_ids": [
+            "nice_cg57_atopic_eczema_under_12:chunk:0044:c8893a9419f2"
+          ],
+          "evidence_quote": "only apply topical corticosteroids"
+        }
+      ],
+      "annotation_status": "verified"
+    },
+    {
+      "id": "Q06",
+      "query": "When should phototherapy or systemic treatments be used for severe atopic eczema in children, and under whose supervision?",
+      "expected_doc_ids": [
+        "nice_cg57_atopic_eczema_under_12"
+      ],
+      "topic": "phototherapy",
+      "difficulty": "medium",
+      "query_style": "blind",
+      "expected_evidence": [
+        {
+          "doc_id": "nice_cg57_atopic_eczema_under_12",
+          "expected_section_terms": [
+            "1.5.1.43 Consider phototherapy or systemic treatments"
+          ],
+          "expected_pdf_pages": [
+            21
+          ],
+          "acceptable_chunk_ids": [
+            "nice_cg57_atopic_eczema_under_12:chunk:0072:58fd9636363a"
+          ],
+          "evidence_quote": "other management options have failed or are inappropriate"
+        }
+      ],
+      "annotation_status": "verified"
+    },
+    {
+      "id": "Q07",
+      "query": "What does NICE CG57 recommend regarding the effectiveness and safety of homeopathy, herbal medicine, and massage for childhood eczema?",
+      "expected_doc_ids": [
+        "nice_cg57_atopic_eczema_under_12"
+      ],
+      "topic": "complementary",
+      "difficulty": "medium",
+      "query_style": "source_aware",
+      "expected_evidence": [
+        {
+          "doc_id": "nice_cg57_atopic_eczema_under_12",
+          "expected_section_terms": [
+            "1.5.1.45 Complementary therapies, washing and clothing"
+          ],
+          "expected_pdf_pages": [
+            21
+          ],
+          "acceptable_chunk_ids": [
+            "nice_cg57_atopic_eczema_under_12:chunk:0074:1ebc9880925a"
+          ],
+          "evidence_quote": "the effectiveness and safety of homeopathy, herbal medicine, massage and food supplements have not yet adequately been assessed in clinical trials"
+        }
+      ],
+      "annotation_status": "verified"
+    },
+    {
+      "id": "Q08",
+      "query": "What recommendations were amended in the September 2025 update of NICE CG57 regarding bathing frequency, ion exchange water softeners, and silk clothing?",
+      "expected_doc_ids": [
+        "nice_cg57_atopic_eczema_under_12"
+      ],
+      "topic": "update",
+      "difficulty": "hard",
+      "query_style": "source_aware",
+      "expected_evidence": [
+        {
+          "doc_id": "nice_cg57_atopic_eczema_under_12",
+          "expected_section_terms": [
+            "1.5.1.45 Complementary therapies, washing and clothing"
+          ],
+          "expected_pdf_pages": [
+            21
+          ],
+          "acceptable_chunk_ids": [
+            "nice_cg57_atopic_eczema_under_12:chunk:0074:1ebc9880925a"
+          ],
+          "evidence_quote": "there is no evidence of any benefit in taking fewer baths or showers, or in using ion exchange water softeners or silk clothing"
+        }
+      ],
+      "annotation_status": "verified"
+    },
+    {
+      "id": "Q09",
+      "query": "When should a child with atopic eczema be assessed for severity and quality of life before starting phototherapy?",
+      "expected_doc_ids": [
+        "nice_cg57_atopic_eczema_under_12"
+      ],
+      "topic": "assessment",
+      "difficulty": "medium",
+      "query_style": "blind",
+      "expected_evidence": [
+        {
+          "doc_id": "nice_cg57_atopic_eczema_under_12",
+          "expected_section_terms": [
+            "1.5.1.44 Only start phototherapy or systemic treatments"
+          ],
+          "expected_pdf_pages": [
+            21
+          ],
+          "acceptable_chunk_ids": [
+            "nice_cg57_atopic_eczema_under_12:chunk:0073:0651a182aade"
+          ],
+          "evidence_quote": "after assessment and documentation of severity of atopic eczema and quality of life"
+        }
+      ],
+      "annotation_status": "verified"
+    },
+    {
+      "id": "Q10",
+      "query": "The NICE guideline mentions topical calcineurin inhibitors as an option for moderate and severe eczema. At what severity level do bandages first appear in the stepped approach?",
+      "expected_doc_ids": [
+        "nice_cg57_atopic_eczema_under_12"
+      ],
+      "topic": "treatment",
+      "difficulty": "hard",
+      "query_style": "source_aware",
+      "expected_evidence": [
+        {
+          "doc_id": "nice_cg57_atopic_eczema_under_12",
+          "expected_section_terms": [
+            "Table 2 Stepped treatment options"
+          ],
+          "expected_pdf_pages": [
+            11
+          ],
+          "acceptable_chunk_ids": [
+            "nice_cg57_atopic_eczema_under_12:chunk:0029:796d02656e78"
+          ],
+          "evidence_quote": "Moderate atopic eczema"
+        }
+      ],
+      "annotation_status": "verified"
+    },
+    {
+      "id": "Q11",
+      "query": "What is the difference between allergic contact dermatitis (ACD) and irritant contact dermatitis (ICD)?",
+      "expected_doc_ids": [
+        "jtf_contact_dermatitis_2015"
+      ],
+      "topic": "diagnosis",
+      "difficulty": "easy",
+      "query_style": "blind",
+      "expected_evidence": [
+        {
+          "doc_id": "jtf_contact_dermatitis_2015",
+          "expected_section_terms": [
+            "INTRODUCTION"
+          ],
+          "expected_pdf_pages": [
+            2
+          ],
+          "acceptable_chunk_ids": [
+            "jtf_contact_dermatitis_2015:chunk:0006:1b4ff8bbd3f0"
+          ],
+          "evidence_quote": "Contact dermatitis (CD) is defined as any skin disorder caused by contact with an exogenous substance that elicits an allergic"
+        },
+        {
+          "doc_id": "jtf_contact_dermatitis_2015",
+          "expected_section_terms": [
+            "INTRODUCTION"
+          ],
+          "expected_pdf_pages": [
+            3
+          ],
+          "acceptable_chunk_ids": [
+            "jtf_contact_dermatitis_2015:chunk:0007:db8a43d35170"
+          ],
+          "evidence_quote": "and/or irritant response. The vast majority of cases are attribut-"
+        }
+      ],
+      "annotation_status": "verified"
+    },
+    {
+      "id": "Q12",
+      "query": "The JTF parameter mentions contact urticaria (CU). How is immunologic CU distinguished from nonimmunologic CU, and what role does IgE play?",
+      "expected_doc_ids": [
+        "jtf_contact_dermatitis_2015"
+      ],
+      "topic": "diagnosis",
+      "difficulty": "medium",
+      "query_style": "source_aware",
+      "expected_evidence": [
+        {
+          "doc_id": "jtf_contact_dermatitis_2015",
+          "expected_section_terms": [
+            "INTRODUCTION"
+          ],
+          "expected_pdf_pages": [
+            3
+          ],
+          "acceptable_chunk_ids": [
+            "jtf_contact_dermatitis_2015:chunk:0007:db8a43d35170"
+          ],
+          "evidence_quote": "immunologic CU (caused by an IgE-"
+        }
+      ],
+      "annotation_status": "verified"
+    },
+    {
+      "id": "Q13",
+      "query": "Allergic contact dermatitis and atopic dermatitis often coexist. What evaluation is recommended when ACD is suspected in a patient with atopic dermatitis?",
+      "expected_doc_ids": [
+        "jtf_contact_dermatitis_2015"
+      ],
+      "topic": "diagnosis",
+      "difficulty": "medium",
+      "query_style": "blind",
+      "expected_evidence": [
+        {
+          "doc_id": "jtf_contact_dermatitis_2015",
+          "expected_section_terms": [
+            "Summary Statement 15"
+          ],
+          "expected_pdf_pages": [
+            4
+          ],
+          "acceptable_chunk_ids": [
+            "jtf_contact_dermatitis_2015:chunk:0012:5afc0cb36389"
+          ],
+          "evidence_quote": "evaluate for ACD"
+        }
+      ],
+      "annotation_status": "verified"
+    },
+    {
+      "id": "Q14",
+      "query": "According to the JTF parameter, what effect does high-potency topical corticosteroid (e.g., betamethasone dipropionate 0.05%) applied for 3 days have on 48-hour patch test responses?",
+      "expected_doc_ids": [
+        "jtf_contact_dermatitis_2015"
+      ],
+      "topic": "patch_testing",
+      "difficulty": "hard",
+      "query_style": "source_aware",
+      "expected_evidence": [
+        {
+          "doc_id": "jtf_contact_dermatitis_2015",
+          "expected_section_terms": [
+            "Patch testing recommendations"
+          ],
+          "expected_pdf_pages": [
+            14
+          ],
+          "acceptable_chunk_ids": [
+            "jtf_contact_dermatitis_2015:chunk:0050:e3deca953323"
+          ],
+          "evidence_quote": "High/medium potency TCS"
+        }
+      ],
+      "annotation_status": "verified"
+    },
+    {
+      "id": "Q15",
+      "query": "What does the JTF practice parameter say about glycerol thioglycolate in permanent wave solutions and its relevance to occupational dermatitis in hairdressers?",
+      "expected_doc_ids": [
+        "jtf_contact_dermatitis_2015"
+      ],
+      "topic": "occupational",
+      "difficulty": "hard",
+      "query_style": "source_aware",
+      "expected_evidence": [
+        {
+          "doc_id": "jtf_contact_dermatitis_2015",
+          "expected_section_terms": [
+            "May/June2015"
+          ],
+          "expected_pdf_pages": [
+            20
+          ],
+          "acceptable_chunk_ids": [
+            "jtf_contact_dermatitis_2015:chunk:0070:23be51d1c837"
+          ],
+          "evidence_quote": "Glycerol thioglycolate"
+        }
+      ],
+      "annotation_status": "verified"
+    },
+    {
+      "id": "Q16",
+      "query": "What percentage of nail polish allergic reactions are attributed to tosylamide/formaldehyde resin?",
+      "expected_doc_ids": [
+        "jtf_contact_dermatitis_2015"
+      ],
+      "topic": "allergens",
+      "difficulty": "hard",
+      "query_style": "blind",
+      "expected_evidence": [
+        {
+          "doc_id": "jtf_contact_dermatitis_2015",
+          "expected_section_terms": [
+            "Summary Statement 32"
+          ],
+          "expected_pdf_pages": [
+            20
+          ],
+          "acceptable_chunk_ids": [
+            "jtf_contact_dermatitis_2015:chunk:0071:460e64b3e157"
+          ],
+          "evidence_quote": "nail polish and artificial nail products"
+        }
+      ],
+      "annotation_status": "verified"
+    },
+    {
+      "id": "Q17",
+      "query": "Summary Statement 36 recommends preoperative patch testing for what type of patients? What about Summary Statement 37 regarding joint replacement failure?",
+      "expected_doc_ids": [
+        "jtf_contact_dermatitis_2015"
+      ],
+      "topic": "patch_testing",
+      "difficulty": "medium",
+      "query_style": "source_aware",
+      "expected_evidence": [
+        {
+          "doc_id": "jtf_contact_dermatitis_2015",
+          "expected_section_terms": [
+            "Summary Statement 36"
+          ],
+          "expected_pdf_pages": [
+            21
+          ],
+          "acceptable_chunk_ids": [
+            "jtf_contact_dermatitis_2015:chunk:0078:93563b0768d9"
+          ],
+          "evidence_quote": "Summary Statement 36: Consider pre-operative patch"
+        },
+        {
+          "doc_id": "jtf_contact_dermatitis_2015",
+          "expected_section_terms": [
+            "Summary Statement 37"
+          ],
+          "expected_pdf_pages": [
+            21
+          ],
+          "acceptable_chunk_ids": [
+            "jtf_contact_dermatitis_2015:chunk:0077:885ebd29bac8"
+          ],
+          "evidence_quote": "Summary Statement 37:"
+        },
+        {
+          "doc_id": "jtf_contact_dermatitis_2015",
+          "expected_section_terms": [
+            "Joint replacement failure"
+          ],
+          "expected_pdf_pages": [
+            21
+          ],
+          "acceptable_chunk_ids": [
+            "jtf_contact_dermatitis_2015:chunk:0076:55b1789f69a8"
+          ],
+          "evidence_quote": "failed joint re-"
+        }
+      ],
+      "annotation_status": "verified"
+    },
+    {
+      "id": "Q18",
+      "query": "What scoring systems are used for assessing atopic dermatitis severity, including EASI, SCORAD, and IGA?",
+      "expected_doc_ids": [
+        "aad_ad_section1_diagnosis_2014"
+      ],
+      "topic": "assessment",
+      "difficulty": "easy",
+      "query_style": "blind",
+      "expected_evidence": [
+        {
+          "doc_id": "aad_ad_section1_diagnosis_2014",
+          "expected_section_terms": [
+            "Biomarkers Disease Severity And Clinical",
+            "OUTCOMES ASSESSMENT"
+          ],
+          "expected_pdf_pages": [
+            5
+          ],
+          "acceptable_chunk_ids": [
+            "aad_ad_section1_diagnosis_2014:chunk:0018:8cc1fe242f80"
+          ],
+          "evidence_quote": "SCORAD index, the Eczema Area and Severity"
+        }
+      ],
+      "annotation_status": "verified"
+    },
+    {
+      "id": "Q19",
+      "query": "According to AAD Section 1, what percentage of individuals with atopic dermatitis do NOT have elevated serum IgE levels?",
+      "expected_doc_ids": [
+        "aad_ad_section1_diagnosis_2014"
+      ],
+      "topic": "biomarkers",
+      "difficulty": "medium",
+      "query_style": "source_aware",
+      "expected_evidence": [
+        {
+          "doc_id": "aad_ad_section1_diagnosis_2014",
+          "expected_section_terms": [
+            "Biomarkers Disease Severity And Clinical"
+          ],
+          "expected_pdf_pages": [
+            5
+          ],
+          "acceptable_chunk_ids": [
+            "aad_ad_section1_diagnosis_2014:chunk:0018:8cc1fe242f80"
+          ],
+          "evidence_quote": "about 20% of affected individuals"
+        }
+      ],
+      "annotation_status": "verified"
+    },
+    {
+      "id": "Q20",
+      "query": "The AAD guideline mentions that elevated allergen-specific IgE levels are found in what percentage of the US general population, making them nonspecific?",
+      "expected_doc_ids": [
+        "aad_ad_section1_diagnosis_2014"
+      ],
+      "topic": "biomarkers",
+      "difficulty": "hard",
+      "query_style": "source_aware",
+      "expected_evidence": [
+        {
+          "doc_id": "aad_ad_section1_diagnosis_2014",
+          "expected_section_terms": [
+            "Biomarkers Disease Severity And Clinical"
+          ],
+          "expected_pdf_pages": [
+            5
+          ],
+          "acceptable_chunk_ids": [
+            "aad_ad_section1_diagnosis_2014:chunk:0018:8cc1fe242f80"
+          ],
+          "evidence_quote": "found in 55%"
+        }
+      ],
+      "annotation_status": "verified"
+    },
+    {
+      "id": "Q21",
+      "query": "How is atopic dermatitis differentiated from seborrheic dermatitis in infancy, and which body areas does each condition typically affect or spare?",
+      "expected_doc_ids": [
+        "aad_ad_section1_diagnosis_2014"
+      ],
+      "topic": "differential_diagnosis",
+      "difficulty": "medium",
+      "query_style": "blind",
+      "expected_evidence": [
+        {
+          "doc_id": "aad_ad_section1_diagnosis_2014",
+          "expected_section_terms": [
+            "3 Sparing of the groin and axillary regions"
+          ],
+          "expected_pdf_pages": [
+            4
+          ],
+          "acceptable_chunk_ids": [
+            "aad_ad_section1_diagnosis_2014:chunk:0014:291e39ea9fb2"
+          ],
+          "evidence_quote": "regions,whileseborrheicdermatitisaffectstheseareas"
+        }
+      ],
+      "annotation_status": "verified"
+    },
+    {
+      "id": "Q22",
+      "query": "According to AAD Section 1, what serious conditions should be reconsidered if atopic dermatitis does not respond to therapy, including nutritional, metabolic, and immunologic conditions?",
+      "expected_doc_ids": [
+        "aad_ad_section1_diagnosis_2014"
+      ],
+      "topic": "differential_diagnosis",
+      "difficulty": "hard",
+      "query_style": "source_aware",
+      "expected_evidence": [
+        {
+          "doc_id": "aad_ad_section1_diagnosis_2014",
+          "expected_section_terms": [
+            "3 Sparing of the groin and axillary regions"
+          ],
+          "expected_pdf_pages": [
+            4
+          ],
+          "acceptable_chunk_ids": [
+            "aad_ad_section1_diagnosis_2014:chunk:0014:291e39ea9fb2"
+          ],
+          "evidence_quote": "nutritional, metabolic"
+        }
+      ],
+      "annotation_status": "verified"
+    },
+    {
+      "id": "Q23",
+      "query": "What does the AAD Section 1 guideline say about the effect of race on atopic dermatitis risk, specifically regarding black race and parental education level?",
+      "expected_doc_ids": [
+        "aad_ad_section1_diagnosis_2014"
+      ],
+      "topic": "epidemiology",
+      "difficulty": "medium",
+      "query_style": "source_aware",
+      "expected_evidence": [
+        {
+          "doc_id": "aad_ad_section1_diagnosis_2014",
+          "expected_section_terms": [
+            "section 4: Risk factors for disease development"
+          ],
+          "expected_pdf_pages": [
+            7,
+            8
+          ],
+          "acceptable_chunk_ids": [
+            "aad_ad_section1_diagnosis_2014:chunk:0030:ba564ba2ce91"
+          ],
+          "evidence_quote": "being of black"
+        }
+      ],
+      "annotation_status": "verified"
+    },
+    {
+      "id": "Q24",
+      "query": "What do the abbreviations CDLQI, DFI, and POEM stand for, and what do these instruments measure?",
+      "expected_doc_ids": [
+        "aad_ad_section1_diagnosis_2014"
+      ],
+      "topic": "assessment",
+      "difficulty": "medium",
+      "query_style": "blind",
+      "expected_evidence": [
+        {
+          "doc_id": "aad_ad_section1_diagnosis_2014",
+          "expected_section_terms": [
+            "Quality of life scales and disease impact measurements"
+          ],
+          "expected_pdf_pages": [
+            6
+          ],
+          "acceptable_chunk_ids": [
+            "aad_ad_section1_diagnosis_2014:chunk:0025:338a96482007"
+          ],
+          "evidence_quote": "Family Impact (DFI)"
+        },
+        {
+          "doc_id": "aad_ad_section1_diagnosis_2014",
+          "expected_section_terms": [
+            "Disease severity scales"
+          ],
+          "expected_pdf_pages": [
+            5
+          ],
+          "acceptable_chunk_ids": [
+            "aad_ad_section1_diagnosis_2014:chunk:0020:270e9ee041d3"
+          ],
+          "evidence_quote": "Eczema Measure (POEM) severity scale"
+        }
+      ],
+      "annotation_status": "verified"
+    },
+    {
+      "id": "Q25",
+      "query": "What are prescription emollient devices, and how do they differ from regular moisturizers in targeting skin barrier defects?",
+      "expected_doc_ids": [
+        "aad_ad_section2_topical_2014"
+      ],
+      "topic": "treatment",
+      "difficulty": "medium",
+      "query_style": "blind",
+      "expected_evidence": [
+        {
+          "doc_id": "aad_ad_section2_topical_2014",
+          "expected_section_terms": [
+            "Use of moisturizers"
+          ],
+          "expected_pdf_pages": [
+            5
+          ],
+          "acceptable_chunk_ids": [
+            "aad_ad_section2_topical_2014:chunk:0015:ab58f3a37ff1"
+          ],
+          "evidence_quote": "defects in skin barrier function observed in AD"
+        }
+      ],
+      "annotation_status": "verified"
+    },
+    {
+      "id": "Q26",
+      "query": "What does the AAD Section 2 guideline say about wet wrap therapy (WWT) including duration of wear, use with topical corticosteroids, and risk of HPA axis suppression?",
+      "expected_doc_ids": [
+        "aad_ad_section2_topical_2014"
+      ],
+      "topic": "treatment",
+      "difficulty": "medium",
+      "query_style": "source_aware",
+      "expected_evidence": [
+        {
+          "doc_id": "aad_ad_section2_topical_2014",
+          "expected_section_terms": [
+            "Wet-wrap therapy",
+            "Table IV"
+          ],
+          "expected_pdf_pages": [
+            6
+          ],
+          "acceptable_chunk_ids": [
+            "aad_ad_section2_topical_2014:chunk:0019:5348dea17047"
+          ],
+          "evidence_quote": "hypothalamic-pituitary-adrenal axis suppression"
+        }
+      ],
+      "annotation_status": "verified"
+    },
+    {
+      "id": "Q27",
+      "query": "According to AAD Section 2, how were topical calcineurin inhibitors (TCI) introduced, what bacteria produce them, and what is their mechanism of action on T-cell activation?",
+      "expected_doc_ids": [
+        "aad_ad_section2_topical_2014"
+      ],
+      "topic": "treatment",
+      "difficulty": "medium",
+      "query_style": "source_aware",
+      "expected_evidence": [
+        {
+          "doc_id": "aad_ad_section2_topical_2014",
+          "expected_section_terms": [
+            "Table VI. Recommendations for the use of topical calcineurin inhibitors"
+          ],
+          "expected_pdf_pages": [
+            9
+          ],
+          "acceptable_chunk_ids": [
+            "aad_ad_section2_topical_2014:chunk:0026:336471eb46c1"
+          ],
+          "evidence_quote": "T-cell activation"
+        }
+      ],
+      "annotation_status": "verified"
+    },
+    {
+      "id": "Q28",
+      "query": "What problems arise from poor patient knowledge of steroid potencies, and what is recommended for patient counseling?",
+      "expected_doc_ids": [
+        "aad_ad_section2_topical_2014"
+      ],
+      "topic": "safety",
+      "difficulty": "hard",
+      "query_style": "blind",
+      "expected_evidence": [
+        {
+          "doc_id": "aad_ad_section2_topical_2014",
+          "expected_section_terms": [
+            "Table VI. Recommendations for the use of topical calcineurin inhibitors"
+          ],
+          "expected_pdf_pages": [
+            9
+          ],
+          "acceptable_chunk_ids": [
+            "aad_ad_section2_topical_2014:chunk:0026:336471eb46c1"
+          ],
+          "evidence_quote": "patient knowledge of"
+        }
+      ],
+      "annotation_status": "verified"
+    },
+    {
+      "id": "Q29",
+      "query": "What evidence does AAD Section 2 present regarding dilute bleach baths for atopic dermatitis with frequent bacterial infections, and how does it compare to topical antibiotics for resistance risk?",
+      "expected_doc_ids": [
+        "aad_ad_section2_topical_2014"
+      ],
+      "topic": "treatment",
+      "difficulty": "hard",
+      "query_style": "source_aware",
+      "expected_evidence": [
+        {
+          "doc_id": "aad_ad_section2_topical_2014",
+          "expected_section_terms": [
+            "TOPICAL ANTIMICROBIALS AND ANTISEPTICS"
+          ],
+          "expected_pdf_pages": [
+            11,
+            12
+          ],
+          "acceptable_chunk_ids": [
+            "aad_ad_section2_topical_2014:chunk:0033:f6ea46bce2c5"
+          ],
+          "evidence_quote": "development of bacterial resis-"
+        }
+      ],
+      "annotation_status": "verified"
+    },
+    {
+      "id": "Q30",
+      "query": "According to AAD Section 2, what were the findings on silver-impregnated textile underwear versus cotton for children and adults with clinically uninfected AD?",
+      "expected_doc_ids": [
+        "aad_ad_section2_topical_2014"
+      ],
+      "topic": "treatment",
+      "difficulty": "hard",
+      "query_style": "source_aware",
+      "expected_evidence": [
+        {
+          "doc_id": "aad_ad_section2_topical_2014",
+          "expected_section_terms": [
+            "TOPICAL ANTIMICROBIALS AND ANTISEPTICS"
+          ],
+          "expected_pdf_pages": [
+            11,
+            12
+          ],
+          "acceptable_chunk_ids": [
+            "aad_ad_section2_topical_2014:chunk:0033:f6ea46bce2c5"
+          ],
+          "evidence_quote": "did not reduce the severity of the AD"
+        }
+      ],
+      "annotation_status": "verified"
+    },
+    {
+      "id": "Q31",
+      "query": "Are topical antihistamines recommended for atopic dermatitis treatment? What evidence supports this?",
+      "expected_doc_ids": [
+        "aad_ad_section2_topical_2014"
+      ],
+      "topic": "treatment",
+      "difficulty": "easy",
+      "query_style": "blind",
+      "expected_evidence": [
+        {
+          "doc_id": "aad_ad_section2_topical_2014",
+          "expected_section_terms": [
+            "Table VIII. Recommendations for the use of topical antihistamines"
+          ],
+          "expected_pdf_pages": [
+            12
+          ],
+          "acceptable_chunk_ids": [
+            "aad_ad_section2_topical_2014:chunk:0037:776e18b88f58"
+          ],
+          "evidence_quote": "little utility and are not recommended"
+        }
+      ],
+      "annotation_status": "verified"
+    },
+    {
+      "id": "Q32",
+      "query": "What is recommended about proactive use of topical corticosteroids for flare prevention, and what is the longest duration tested?",
+      "expected_doc_ids": [
+        "aad_ad_section4_flare_prevention_2014"
+      ],
+      "topic": "prevention",
+      "difficulty": "medium",
+      "query_style": "blind",
+      "expected_evidence": [
+        {
+          "doc_id": "aad_ad_section4_flare_prevention_2014",
+          "expected_section_terms": [
+            "Table II. Recommendation for prevention of flares"
+          ],
+          "expected_pdf_pages": [
+            4,
+            5
+          ],
+          "acceptable_chunk_ids": [
+            "aad_ad_section4_flare_prevention_2014:chunk:0013:d07b71d642fe"
+          ],
+          "evidence_quote": "proactive TCS use beyond 44"
+        }
+      ],
+      "annotation_status": "verified"
+    },
+    {
+      "id": "Q33",
+      "query": "The AAD Section 4 mentions that structured educational programs with dermatologic, nutritional, and psychological components improved SCORAD scores. What additional benefits were observed?",
+      "expected_doc_ids": [
+        "aad_ad_section4_flare_prevention_2014"
+      ],
+      "topic": "education",
+      "difficulty": "medium",
+      "query_style": "source_aware",
+      "expected_evidence": [
+        {
+          "doc_id": "aad_ad_section4_flare_prevention_2014",
+          "expected_section_terms": [
+            "Table IV. Recommendations for educational interventions"
+          ],
+          "expected_pdf_pages": [
+            5,
+            6
+          ],
+          "acceptable_chunk_ids": [
+            "aad_ad_section4_flare_prevention_2014:chunk:0015:82cc49c6224d"
+          ],
+          "evidence_quote": "subjective assessments"
+        }
+      ],
+      "annotation_status": "verified"
+    },
+    {
+      "id": "Q34",
+      "query": "According to AAD Section 4, what psychological interventions have been tried for atopic dermatitis, including autogenic training, biofeedback, cognitive behavioral therapy, and hypnotherapy?",
+      "expected_doc_ids": [
+        "aad_ad_section4_flare_prevention_2014"
+      ],
+      "topic": "psychology",
+      "difficulty": "medium",
+      "query_style": "source_aware",
+      "expected_evidence": [
+        {
+          "doc_id": "aad_ad_section4_flare_prevention_2014",
+          "expected_section_terms": [
+            "Table IV. Recommendations for educational interventions"
+          ],
+          "expected_pdf_pages": [
+            6
+          ],
+          "acceptable_chunk_ids": [
+            "aad_ad_section4_flare_prevention_2014:chunk:0016:d1799faf55f4"
+          ],
+          "evidence_quote": "include autogenic training, biofeedback, brief allergy"
+        }
+      ],
+      "annotation_status": "verified"
+    },
+    {
+      "id": "Q35",
+      "query": "Patients often seek allergy assessment to find a single cause or trigger for their eczema. What is the recommended clinical position on this expectation?",
+      "expected_doc_ids": [
+        "aad_ad_section4_flare_prevention_2014"
+      ],
+      "topic": "allergy",
+      "difficulty": "medium",
+      "query_style": "blind",
+      "expected_evidence": [
+        {
+          "doc_id": "aad_ad_section4_flare_prevention_2014",
+          "expected_section_terms": [
+            "COEXISTING ALLERGIC DISEASE AND ALLERGY TESTING"
+          ],
+          "expected_pdf_pages": [
+            6
+          ],
+          "acceptable_chunk_ids": [
+            "aad_ad_section4_flare_prevention_2014:chunk:0016:d1799faf55f4"
+          ],
+          "evidence_quote": "single cause"
+        }
+      ],
+      "annotation_status": "verified"
+    },
+    {
+      "id": "Q36",
+      "query": "According to AAD Section 4, Fleischer et al found that what percentage of foods avoided based on sensitization could actually be returned to the diet after oral food challenges?",
+      "expected_doc_ids": [
+        "aad_ad_section4_flare_prevention_2014"
+      ],
+      "topic": "food_allergy",
+      "difficulty": "hard",
+      "query_style": "source_aware",
+      "expected_evidence": [
+        {
+          "doc_id": "aad_ad_section4_flare_prevention_2014",
+          "expected_section_terms": [
+            "Table VI. Recommendations for other adjunctive and complementary interventions"
+          ],
+          "expected_pdf_pages": [
+            9
+          ],
+          "acceptable_chunk_ids": [
+            "aad_ad_section4_flare_prevention_2014:chunk:0024:d4613ba0b0ac"
+          ],
+          "evidence_quote": "avoided foods could be returned"
+        }
+      ],
+      "annotation_status": "verified"
+    },
+    {
+      "id": "Q37",
+      "query": "What does AAD Section 4 say about traditional Chinese medicine (TCM) for AD, including evidence of efficacy, risk of hepatotoxicity, and contamination of herbal creams with TCS?",
+      "expected_doc_ids": [
+        "aad_ad_section4_flare_prevention_2014"
+      ],
+      "topic": "complementary",
+      "difficulty": "hard",
+      "query_style": "source_aware",
+      "expected_evidence": [
+        {
+          "doc_id": "aad_ad_section4_flare_prevention_2014",
+          "expected_section_terms": [
+            "COMPLEMENTARY THERAPIES"
+          ],
+          "expected_pdf_pages": [
+            11
+          ],
+          "acceptable_chunk_ids": [
+            "aad_ad_section4_flare_prevention_2014:chunk:0028:b60008373fcb"
+          ],
+          "evidence_quote": "serious hepatotoxicity"
+        }
+      ],
+      "annotation_status": "verified"
+    },
+    {
+      "id": "Q38",
+      "query": "What is the estimated point prevalence of dermatitis and hand dermatitis in the general population?",
+      "expected_doc_ids": [
+        "bad_contact_dermatitis_2017"
+      ],
+      "topic": "epidemiology",
+      "difficulty": "easy",
+      "query_style": "blind",
+      "expected_evidence": [
+        {
+          "doc_id": "bad_contact_dermatitis_2017",
+          "expected_section_terms": [
+            "5.2 Epidemiology"
+          ],
+          "expected_pdf_pages": [
+            4
+          ],
+          "acceptable_chunk_ids": [
+            "bad_contact_dermatitis_2017:chunk:0015:4c882db625d7"
+          ],
+          "evidence_quote": "about 20%"
+        }
+      ],
+      "annotation_status": "verified"
+    },
+    {
+      "id": "Q39",
+      "query": "The BAD guideline classifies contact dermatitis into reaction types including subjective irritancy, acute irritant, and chronic cumulative irritant. What characterizes subjective irritancy?",
+      "expected_doc_ids": [
+        "bad_contact_dermatitis_2017"
+      ],
+      "topic": "diagnosis",
+      "difficulty": "medium",
+      "query_style": "source_aware",
+      "expected_evidence": [
+        {
+          "doc_id": "bad_contact_dermatitis_2017",
+          "expected_section_terms": [
+            "Table 4 Summary of good-practice recommendations",
+            "5.0 Background"
+          ],
+          "expected_pdf_pages": [
+            3
+          ],
+          "acceptable_chunk_ids": [
+            "bad_contact_dermatitis_2017:chunk:0012:29a3a8178044"
+          ],
+          "evidence_quote": "idiosyncratic stinging and"
+        }
+      ],
+      "annotation_status": "verified"
+    },
+    {
+      "id": "Q40",
+      "query": "According to the BAD guidelines, what is the suggested annual patch testing workload per population served (e.g., per 70,000 catchment)?",
+      "expected_doc_ids": [
+        "bad_contact_dermatitis_2017"
+      ],
+      "topic": "patch_testing",
+      "difficulty": "medium",
+      "query_style": "source_aware",
+      "expected_evidence": [
+        {
+          "doc_id": "bad_contact_dermatitis_2017",
+          "expected_section_terms": [
+            "5.4 Patch-testing rate"
+          ],
+          "expected_pdf_pages": [
+            5
+          ],
+          "acceptable_chunk_ids": [
+            "bad_contact_dermatitis_2017:chunk:0018:265178c3dfaa"
+          ],
+          "evidence_quote": "100 patch tests per"
+        }
+      ],
+      "annotation_status": "verified"
+    },
+    {
+      "id": "Q41",
+      "query": "What does the BAD guideline say about photopatch testing, including the UVA dose used, the timing of irradiation after patch removal, and the incidence of true photoallergy?",
+      "expected_doc_ids": [
+        "bad_contact_dermatitis_2017"
+      ],
+      "topic": "patch_testing",
+      "difficulty": "hard",
+      "query_style": "source_aware",
+      "expected_evidence": [
+        {
+          "doc_id": "bad_contact_dermatitis_2017",
+          "expected_section_terms": [
+            "7.1 Occupational contact dermatitis/workplace visit"
+          ],
+          "expected_pdf_pages": [
+            7
+          ],
+          "acceptable_chunk_ids": [
+            "bad_contact_dermatitis_2017:chunk:0027:46c73c6fbd45"
+          ],
+          "evidence_quote": "irradiated with 5 J cm"
+        }
+      ],
+      "annotation_status": "verified"
+    },
+    {
+      "id": "Q42",
+      "query": "Allergic contact dermatitis carries a worse prognosis than irritant contact dermatitis unless what condition is met?",
+      "expected_doc_ids": [
+        "bad_contact_dermatitis_2017"
+      ],
+      "topic": "prognosis",
+      "difficulty": "easy",
+      "query_style": "blind",
+      "expected_evidence": [
+        {
+          "doc_id": "bad_contact_dermatitis_2017",
+          "expected_section_terms": [
+            "5.2 Epidemiology"
+          ],
+          "expected_pdf_pages": [
+            4
+          ],
+          "acceptable_chunk_ids": [
+            "bad_contact_dermatitis_2017:chunk:0015:4c882db625d7"
+          ],
+          "evidence_quote": "worse prognosis unless"
+        }
+      ],
+      "annotation_status": "verified"
+    },
+    {
+      "id": "Q43",
+      "query": "According to the BAD guidelines, what is the estimated cost per patient per annum for occupational versus nonoccupational contact dermatitis?",
+      "expected_doc_ids": [
+        "bad_contact_dermatitis_2017"
+      ],
+      "topic": "economics",
+      "difficulty": "hard",
+      "query_style": "source_aware",
+      "expected_evidence": [
+        {
+          "doc_id": "bad_contact_dermatitis_2017",
+          "expected_section_terms": [
+            "9.1 What is the economic burden of suffering from contact dermatitis"
+          ],
+          "expected_pdf_pages": [
+            8,
+            9
+          ],
+          "acceptable_chunk_ids": [
+            "bad_contact_dermatitis_2017:chunk:0042:fcf610280df9"
+          ],
+          "evidence_quote": "approximately €2300"
+        }
+      ],
+      "annotation_status": "verified"
+    },
+    {
+      "id": "Q44",
+      "query": "What forms of phototherapy are considered beneficial for atopic dermatitis, including natural sunlight, NB-UVB, BB-UVB, UVA, and PUVA?",
+      "expected_doc_ids": [
+        "aad_ad_section3_phototherapy_systemic_2014"
+      ],
+      "topic": "phototherapy",
+      "difficulty": "easy",
+      "query_style": "blind",
+      "expected_evidence": [
+        {
+          "doc_id": "aad_ad_section3_phototherapy_systemic_2014",
+          "expected_section_terms": [
+            "Table III. Multiple forms of light therapy"
+          ],
+          "expected_pdf_pages": [
+            4
+          ],
+          "acceptable_chunk_ids": [
+            "aad_ad_section3_phototherapy_systemic_2014:chunk:0014:1dd9991016e5"
+          ],
+          "evidence_quote": "natural sunlight, narrowband (NB) UVB"
+        }
+      ],
+      "annotation_status": "verified"
+    },
+    {
+      "id": "Q45",
+      "query": "According to AAD Section 3, what is the recommended cyclosporine dosing for adults (mg/d) and pediatric patients (mg/kg/d)?",
+      "expected_doc_ids": [
+        "aad_ad_section3_phototherapy_systemic_2014"
+      ],
+      "topic": "systemic_treatment",
+      "difficulty": "medium",
+      "query_style": "source_aware",
+      "expected_evidence": [
+        {
+          "doc_id": "aad_ad_section3_phototherapy_systemic_2014",
+          "expected_section_terms": [
+            "Table VIII. Dosing and monitoring guidelines for the use of selected systemic agents"
+          ],
+          "expected_pdf_pages": [
+            8
+          ],
+          "acceptable_chunk_ids": [
+            "aad_ad_section3_phototherapy_systemic_2014:chunk:0029:b34e00ab887a"
+          ],
+          "evidence_quote": "Cyclosporine 150-300 mg/d"
+        }
+      ],
+      "annotation_status": "verified"
+    },
+    {
+      "id": "Q46",
+      "query": "The AAD Section 3 Table VIII lists baseline monitoring for cyclosporine. What tests are required including blood pressure, renal function, fasting lipids, CBC, liver function, and electrolytes?",
+      "expected_doc_ids": [
+        "aad_ad_section3_phototherapy_systemic_2014"
+      ],
+      "topic": "systemic_treatment",
+      "difficulty": "medium",
+      "query_style": "source_aware",
+      "expected_evidence": [
+        {
+          "doc_id": "aad_ad_section3_phototherapy_systemic_2014",
+          "expected_section_terms": [
+            "Table VIII. Dosing and monitoring guidelines for the use of selected systemic agents"
+          ],
+          "expected_pdf_pages": [
+            8
+          ],
+          "acceptable_chunk_ids": [
+            "aad_ad_section3_phototherapy_systemic_2014:chunk:0029:b34e00ab887a"
+          ],
+          "evidence_quote": "Fasting lipid profile"
+        }
+      ],
+      "annotation_status": "verified"
+    },
+    {
+      "id": "Q47",
+      "query": "What action should be taken if creatinine increases more than 25% above baseline during cyclosporine therapy?",
+      "expected_doc_ids": [
+        "aad_ad_section3_phototherapy_systemic_2014"
+      ],
+      "topic": "systemic_treatment",
+      "difficulty": "hard",
+      "query_style": "blind",
+      "expected_evidence": [
+        {
+          "doc_id": "aad_ad_section3_phototherapy_systemic_2014",
+          "expected_section_terms": [
+            "Table VIII. Dosing and monitoring guidelines for the use of selected systemic agents"
+          ],
+          "expected_pdf_pages": [
+            8
+          ],
+          "acceptable_chunk_ids": [
+            "aad_ad_section3_phototherapy_systemic_2014:chunk:0029:b34e00ab887a"
+          ],
+          "evidence_quote": "If Cr increases"
+        }
+      ],
+      "annotation_status": "verified"
+    },
+    {
+      "id": "Q48",
+      "query": "What does the AAD Section 3 guideline say about mycophenolate mofetil (MMF) dosing range and the percentage of patients who achieved disease clearance in the cited study?",
+      "expected_doc_ids": [
+        "aad_ad_section3_phototherapy_systemic_2014"
+      ],
+      "topic": "systemic_treatment",
+      "difficulty": "hard",
+      "query_style": "source_aware",
+      "expected_evidence": [
+        {
+          "doc_id": "aad_ad_section3_phototherapy_systemic_2014",
+          "expected_section_terms": [
+            "Dosage and scheduling",
+            "Efficacy"
+          ],
+          "expected_pdf_pages": [
+            16
+          ],
+          "acceptable_chunk_ids": [
+            "aad_ad_section3_phototherapy_systemic_2014:chunk:0060:6e08fd6befdc"
+          ],
+          "evidence_quote": "Dosing ranges from"
+        }
+      ],
+      "annotation_status": "verified"
+    },
+    {
+      "id": "Q49",
+      "query": "According to AAD Section 3, should phototherapy be combined with topical calcineurin inhibitors? What do the manufacturers suggest about light exposure while using TCIs?",
+      "expected_doc_ids": [
+        "aad_ad_section3_phototherapy_systemic_2014"
+      ],
+      "topic": "phototherapy",
+      "difficulty": "medium",
+      "query_style": "source_aware",
+      "expected_evidence": [
+        {
+          "doc_id": "aad_ad_section3_phototherapy_systemic_2014",
+          "expected_section_terms": [
+            "Phototherapy"
+          ],
+          "expected_pdf_pages": [
+            5
+          ],
+          "acceptable_chunk_ids": [
+            "aad_ad_section3_phototherapy_systemic_2014:chunk:0019:7f671435dc35"
+          ],
+          "evidence_quote": "limiting exposure"
+        }
+      ],
+      "annotation_status": "verified"
+    },
+    {
+      "id": "Q50",
+      "query": "What are the potential toxicities of mycophenolate mofetil, including GI symptoms, hematologic effects, and risk of progressive multifocal leukoencephalopathy? What are the most common side effects?",
+      "expected_doc_ids": [
+        "aad_ad_section3_phototherapy_systemic_2014"
+      ],
+      "topic": "safety",
+      "difficulty": "medium",
+      "query_style": "blind",
+      "expected_evidence": [
+        {
+          "doc_id": "aad_ad_section3_phototherapy_systemic_2014",
+          "expected_section_terms": [
+            "Table IX. Cont’d"
+          ],
+          "expected_pdf_pages": [
+            12
+          ],
+          "acceptable_chunk_ids": [
+            "aad_ad_section3_phototherapy_systemic_2014:chunk:0043:ffe0654fdb4c"
+          ],
+          "evidence_quote": "Progressive multifocal leukoencephalopathy"
+        }
+      ],
+      "annotation_status": "verified"
+    }
+  ]
+}
