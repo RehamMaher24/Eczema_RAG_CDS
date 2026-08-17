@@ -145,7 +145,7 @@
   },
   "vector_store": {
     "distance": "cosine",
-    "path": "/home/ubuntu/Eczema_RAG_CDS/outputs/vector_store.sqlite3",
+    "path": "C:\\Users\\hp\\Desktop\\Eczema_RAG_CDS\\Eczema_RAG_CDS\\outputs\\vector_store.sqlite3",
     "provider": "sqlite",
     "upsert_mode": "replace_document"
   },
