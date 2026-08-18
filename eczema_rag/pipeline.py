@@ -8,7 +8,7 @@ from typing import Any
 
 from .chunker import SectionAwareChunker
 from .config import PipelineConfig, load_questions, load_resources
-from .embedder import LocalHashingEmbedder
+from .embedder import create_embedder
 from .models import Chunk, DocumentStats, ParsedPage, PipelineResult, Resource
 from .pdf_parser import StructuredPDFParser
 from .retriever import GuidelineRetriever, citation_for_hit
@@ -26,12 +26,7 @@ class IngestionPipeline:
         self.questions = load_questions(config.questions_file)
         self.parser = StructuredPDFParser(config.root, config.parser)
         self.chunker = SectionAwareChunker(config.chunking)
-        self.embedder = LocalHashingEmbedder(
-            dimension=int(config.embedding["dimension"]),
-            model=str(config.embedding["model"]),
-            normalize=bool(config.embedding.get("normalize", True)),
-            batch_size=int(config.embedding.get("batch_size", 64)),
-        )
+        self.embedder = create_embedder(config.embedding)
 
     def run(self) -> PipelineResult:
         self.config.output_directory.mkdir(parents=True, exist_ok=True)

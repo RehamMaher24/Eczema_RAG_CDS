@@ -118,9 +118,9 @@ class PipelineConfig:
         if float(self.generation.get("minimum_retrieval_score", -1)) < 0:
             raise ConfigurationError( "generation.minimum_retrieval_score must be non-negative"  )
         
-        if self.embedding.get("provider") != "local_hashing":
+        if self.embedding.get("provider") not in {"local_hashing", "gemini"}:
             raise ConfigurationError(
-                "This Day 1 implementation supports embedding.provider='local_hashing' only"
+                "embedding.provider must be 'local_hashing' or 'gemini'"
             )
         if self.vector_store.get("provider") != "sqlite":
             raise ConfigurationError(

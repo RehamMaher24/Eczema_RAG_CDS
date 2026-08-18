@@ -1,0 +1,9 @@
+{
+  "batch_size": 32,
+  "dimension": 768,
+  "document_task_type": "RETRIEVAL_DOCUMENT",
+  "model": "gemini-embedding-001",
+  "normalize": true,
+  "provider": "gemini",
+  "query_task_type": "RETRIEVAL_QUERY"
+}

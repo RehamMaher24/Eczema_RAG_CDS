@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "input_directory": "data/raw",
+  "resources_file": "config/resources.json",
+  "questions_file": "config/questions.json",
+  "output_directory": "outputs/gemini_embedding_001",
+  "collection_name": "eczema_guidelines_gemini_embedding_001_768",
+  "parser": {
+    "extract_tables": true,
+    "record_image_references": true,
+    "ocr_mode": "detect_only",
+    "minimum_page_text_characters": 80,
+    "header_footer_repeat_ratio": 0.6,
+    "header_footer_margin_lines": 3
+  },
+  "chunking": {
+    "target_words": 500,
+    "maximum_words": 800,
+    "minimum_words": 80,
+    "overlap_words": 80,
+    "preserve_tables": true,
+    "include_section_context": true
+  },
+    "embedding": {
+    "provider": "gemini",
+    "model": "gemini-embedding-001",
+    "dimension": 768,
+    "batch_size": 32,
+    "normalize": true,
+    "document_task_type": "RETRIEVAL_DOCUMENT",
+    "query_task_type": "RETRIEVAL_QUERY"
+    },
+    "vector_store": {
+    "provider": "sqlite",
+    "path": "outputs/gemini_embedding_001/vector_store.sqlite3",
+    "upsert_mode": "replace_collection",
+    "distance": "cosine"
+    },
+  "retrieval": {
+    "top_k": 5,
+    "minimum_score": 0.05,
+    "candidate_multiplier": 4
+  },
+  "generation": {
+  "provider": "groq",
+  "model": "openai/gpt-oss-120b",
+  "temperature": 0.0,
+  "max_tokens": 700,
+  "evidence_top_k": 4,
+  "minimum_retrieval_score": 0.12
+},
+
+"judge": {
+  "provider": "groq",
+  "model": "openai/gpt-oss-20b",
+  "temperature": 0.0,
+  "max_tokens": 500
+},
+    "logging": {
+    "level": "INFO",
+    "file": "outputs/gemini_embedding_001/ingestion.log"
+    }
+}

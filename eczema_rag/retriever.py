@@ -3,7 +3,7 @@ from __future__ import annotations
 from pathlib import Path
 import re
 from typing import Iterable
-from .embedder import LocalHashingEmbedder
+from .embedder import embedder_from_state
 from .router import route_question, EXPERT_BY_DOC
 from .models import RetrievalHit
 from .text_utils import tokenize
@@ -88,7 +88,7 @@ class GuidelineRetriever:
         requested_top_k = top_k if top_k is not None else self.top_k
         with SQLiteVectorStore(self.vector_store_path, self.dimension) as store:
             state = store.get_model_state(self.collection_name)
-            embedder = LocalHashingEmbedder.from_state(state)
+            embedder = embedder_from_state(state)
             vector = embedder.embed_query(query)
             candidates = store.similarity_search(
                 self.collection_name,

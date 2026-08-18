@@ -133,3 +133,41 @@ class LocalHashingEmbedder:
             str(key): float(value) for key, value in state["idf"].items()
         }
         return embedder
+
+
+def create_embedder(config: dict[str, Any]) -> Any:
+    provider = str(config.get("provider", ""))
+    if provider == "local_hashing":
+        return LocalHashingEmbedder(
+            dimension=int(config["dimension"]),
+            model=str(config["model"]),
+            normalize=bool(config.get("normalize", True)),
+            batch_size=int(config.get("batch_size", 64)),
+        )
+    if provider == "gemini":
+        from .GeminiEmbedder import GeminiEmbedder
+
+        return GeminiEmbedder(
+            dimension=int(config["dimension"]),
+            model=str(config.get("model", "gemini-embedding-001")),
+            normalize=bool(config.get("normalize", True)),
+            batch_size=int(config.get("batch_size", 32)),
+            document_task_type=str(
+                config.get("document_task_type", "RETRIEVAL_DOCUMENT")
+            ),
+            query_task_type=str(config.get("query_task_type", "RETRIEVAL_QUERY")),
+        )
+    raise ValueError(f"Unsupported embedding provider: {provider}")
+
+
+def embedder_from_state(state: dict[str, Any]) -> Any:
+    provider = str(state.get("provider", ""))
+    if provider == "local_hashing":
+        return LocalHashingEmbedder.from_state(state)
+    if provider == "gemini":
+        from .GeminiEmbedder import GeminiEmbedder
+
+        return GeminiEmbedder.from_state(state)
+    raise ValueError(f"Unsupported stored embedding provider: {provider}")
+
+
