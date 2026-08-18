@@ -15,22 +15,7 @@ Section: Definition
 and Rajka and UK Working Party diagnostic schemes ADisachronic,pruriticinflammatoryskindisease have been validated in studies and tested in several that occurs most frequently in children, but also different populations.12,13,15,17-23 affects many adults. It follows a relapsing course. AD A 2003 consensus conference spearheaded by the is often associated with elevated serum immuno- American Academy of Dermatology suggested globulin (IgE) levels and a personal or family history revised Hanifin and Rajka criteria that are more of type I allergies, allergic rhinitis, and asthma. streamlined and additionally applicable to the full Atopic eczema is synonymous with AD. range of ages affected.24 While this set has not been assessed in validation studies, it is felt by the current INTRODUCTION work group that an adaptation of this pragmatic AD onset is most common between 3 and 6 approach for diagnosing AD in infants, children, months of age, with approximately 60% of pati
 ```
 
-### Rank 2 — score 0.27273
-
-- Citation: Guidelines of care for the management of atopic dermatitis: Section 1. Diagnosis and assessment of atopic dermatitis — Definition; PDF page 3-4; chunk aad_ad_section1_diagnosis_2014:chunk:0012:aabf210e0f36; source https://doi.org/10.1016/j.jaad.2013.10.010
-- Document ID: `aad_ad_section1_diagnosis_2014`
-- Section: `Definition`
-- PDF pages: 3-4
-
-```text
-Section: Definition
-
-| revised Hanifin and Rajka criteria that are more | | of type I allergies, allergic rhinitis, and asthma. | streamlined and additionally applicable to the full | | AtopiceczemaissynonymouswithAD. | rangeofagesaffected.24Whilethissethasnotbeen | | | assessedinvalidationstudies,itisfeltbythecurrent | | INTRODUCTION | work group that an adaptation of this pragmatic | | AD onset is most common between 3 and 6 | approach for diagnosing AD in infants, children, | | months of age, with approximately 60% of patients | andadultsiswellsuitedforuseintheclinicalsetting |
-
-J AM ACAD DERMATOL Eichenfield et al 341 VOLUME 70, NUMBER 2
-```
-
-### Rank 3 — score 0.255214
+### Rank 2 — score 0.255214
 
 - Citation: Atopic eczema in under 12s: diagnosis and management — Recommendations > 1.4 Identifying and managing trigger factors > 1.4.1.3 Consider a diagnosis of inhalant allergy in:; PDF page 9; chunk nice_cg57_atopic_eczema_under_12:chunk:0017:e3f02dbaa8a1; source https://www.nice.org.uk/guidance/cg57
 - Document ID: `nice_cg57_atopic_eczema_under_12`
@@ -43,7 +28,7 @@ Section: Recommendations > 1.4 Identifying and managing trigger factors > 1.4.1.
 - children with seasonal flares of atopic eczema - children with atopic eczema associated with asthma or allergic rhinitis - children aged 3 years or over with atopic eczema on the face, particularly around the eyes. [2007] © NICE 2026. All rights reserved. Subject to Notice of rights (https://www.nice.org.uk/terms-and- Page 9 of conditions#notice-of-rights). 31
 ```
 
-### Rank 4 — score 0.248024
+### Rank 3 — score 0.248024
 
 - Citation: Guidelines of care for the management of atopic dermatitis: Section 1. Diagnosis and assessment of atopic dermatitis — 3 Sparing of the groin and axillary regions > Table II. Recommendation for the diagnosis of Markers for prognosis are also inconsistent,; PDF page 5; chunk aad_ad_section1_diagnosis_2014:chunk:0016:0997026ca6ac; source https://doi.org/10.1016/j.jaad.2013.10.010
 - Document ID: `aad_ad_section1_diagnosis_2014`
@@ -54,6 +39,21 @@ Section: Recommendations > 1.4 Identifying and managing trigger factors > 1.4.1.
 Section: 3 Sparing of the groin and axillary regions > Table II. Recommendation for the diagnosis of Markers for prognosis are also inconsistent,
 
 atopic dermatitis although high total serum IgE levels and filaggrin (FLG) gene null mutations do tend to predict a Patients with presumed atopic dermatitis should have more severe and protracted course of disease their diagnosis based on the criteria summarized in (discussed further below in ‘‘Risk factors for disease
+```
+
+### Rank 4 — score 0.24773
+
+- Citation: Guidelines of care for the management of atopic dermatitis: Section 1. Diagnosis and assessment of atopic dermatitis — Definition; PDF page 3-4; chunk aad_ad_section1_diagnosis_2014:chunk:0012:aabf210e0f36; source https://doi.org/10.1016/j.jaad.2013.10.010
+- Document ID: `aad_ad_section1_diagnosis_2014`
+- Section: `Definition`
+- PDF pages: 3-4
+
+```text
+Section: Definition
+
+| revised Hanifin and Rajka criteria that are more | | of type I allergies, allergic rhinitis, and asthma. | streamlined and additionally applicable to the full | | AtopiceczemaissynonymouswithAD. | rangeofagesaffected.24Whilethissethasnotbeen | | | assessedinvalidationstudies,itisfeltbythecurrent | | INTRODUCTION | work group that an adaptation of this pragmatic | | AD onset is most common between 3 and 6 | approach for diagnosing AD in infants, children, | | months of age, with approximately 60% of patients | andadultsiswellsuitedforuseintheclinicalsetting |
+
+J AM ACAD DERMATOL Eichenfield et al 341 VOLUME 70, NUMBER 2
 ```
 
 ### Rank 5 — score 0.241678
@@ -84,7 +84,7 @@ Section: Recommendations > 1.1 Diagnosis > 1.1.1.1 Take clinical and drug histor
 questions about: - time of onset, pattern and severity of the atopic eczema - response to previous and current treatments - possible trigger factors (irritant and allergic) - the impact of the atopic eczema on the child and their parents or carers - dietary history, including any dietary manipulation - growth and development - personal and family history of atopic conditions. [2007]
 ```
 
-### Rank 2 — score 0.181987
+### Rank 2 — score 0.165321
 
 - Citation: British Association of Dermatologists' guidelines for the management of contact dermatitis 2017 — 5.0 Background > 5.3 Assessment and investigation; PDF page 4; printed page 17; chunk bad_contact_dermatitis_2017:chunk:0014:dfd59028760a; source https://doi.org/10.1111/bjd.15239
 - Document ID: `bad_contact_dermatitis_2017`
@@ -112,24 +112,7 @@ exacerbation.91 Along with the affected individual, | | Thiscouldbedonebymodifyi
 344 Eichenfield et al J AM ACAD DERMATOL FEBRUARY 2014
 ```
 
-### Rank 4 — score 0.144744
-
-- Citation: Guidelines of care for the management of atopic dermatitis: Section 4. Prevention of disease flares and use of adjunctive therapies and approaches — Definition > Table IV. Recommendations for educational isheterogeneousandoutcomemeasuresvarygreatly; PDF page 7-8; chunk aad_ad_section4_flare_prevention_2014:chunk:0019:38d31fe57fd5; source https://doi.org/10.1016/j.jaad.2014.08.038
-- Document ID: `aad_ad_section4_flare_prevention_2014`
-- Section: `Definition > Table IV. Recommendations for educational isheterogeneousandoutcomemeasuresvarygreatly`
-- PDF pages: 7-8
-
-```text
-Section: Definition > Table IV. Recommendations for educational isheterogeneousandoutcomemeasuresvarygreatly
-
-de novo sensitization to a comparator gold standard test that establishes the allergens encountered after childhood. Although diagnosis of aeroallergen-induced or exacerbated data are limited, there is a suggestion that food dermatitis.60 allergies starting in adult life tend to be persistent.62 Allergic contact dermatitis Inhalant/aeroallergens The high prevalence of allergic contact dermatitis In contrast to food allergy, reactivity to aeroaller- (ACD) has been increasingly recognized in gens increases with age. Common aeroallergens individuals with AD. ACD is a type IV/delayed
-
-J AM ACAD DERMATOL Sidbury et al 1225 VOLUME 71, NUMBER 6
-
-hypersensitivity reaction to small environmental Table V. Recommendations for testing for chemicals (ie, haptens or prehaptens) that come in coexisting allergic disease direct contact with the skin. These bind to epidermal Atopic dermatitis pa
-```
-
-### Rank 5 — score 0.142526
+### Rank 4 — score 0.142526
 
 - Citation: Guidelines of care for the management of atopic dermatitis: Section 4. Prevention of disease flares and use of adjunctive therapies and approaches — Definition > Table IV. Recommendations for educational isheterogeneousandoutcomemeasuresvarygreatly; PDF page 6; chunk aad_ad_section4_flare_prevention_2014:chunk:0016:d1799faf55f4; source https://doi.org/10.1016/j.jaad.2014.08.038
 - Document ID: `aad_ad_section4_flare_prevention_2014`
@@ -142,6 +125,19 @@ Section: Definition > Table IV. Recommendations for educational isheterogeneousa
 educator and lay-led management resources, such tion based on AD severity has also been shown.33 as the educational information and support groups Such formal training programs have the strongest provided by organizations such as the National supportive evidence but do require significant Eczema Association (http://nationaleczema.org/). personnel and financial resources. Comparison These facilitate communication and networking between programs is difficult because the content between affected patients and families, although J AM ACAD DERMATOL Sidbury et al 1223 VOLUME 71, NUMBER 6
 
 their effects on AD outcomes have not been formally may also present as gastrointestinal or respiratory tested. symptoms, and at times, anaphylaxis. It is therefore Psychological interventions have also been important not only to establish presence of a true used to help with coping with AD, and food
+```
+
+### Rank 5 — score 0.130308
+
+- Citation: Atopic eczema in under 12s: diagnosis and management — Recommendations > recommendation on emollient bath additives for this group, but decided not to > 1.5.1.43 Consider phototherapy or systemic treatments for severe atopic eczema in; PDF page 21; chunk nice_cg57_atopic_eczema_under_12:chunk:0072:58fd9636363a; source https://www.nice.org.uk/guidance/cg57
+- Document ID: `nice_cg57_atopic_eczema_under_12`
+- Section: `Recommendations > recommendation on emollient bath additives for this group, but decided not to > 1.5.1.43 Consider phototherapy or systemic treatments for severe atopic eczema in`
+- PDF pages: 21-21
+
+```text
+Section: Recommendations > recommendation on emollient bath additives for this group, but decided not to > 1.5.1.43 Consider phototherapy or systemic treatments for severe atopic eczema in
+
+children when: - other management options have failed or are inappropriate, and - there is a significant negative impact on quality of life. Only use phototherapy and systemic treatments under specialist dermatological supervision by staff who are experienced in working with children. [2007]
 ```
 
 ## How should eczema severity and quality of life be assessed?
@@ -323,7 +319,7 @@ Section: Recommendations > Table 2 Stepped treatment options > 1.5.1.2 Offer chi
 to recognise flares of atopic eczema (increased dryness, itching, redness, swelling and general irritability). Give clear instructions on how to manage flares according to the stepped-care plan, and prescribe treatments that allow children and their parents or carers to follow this plan. [2007]
 ```
 
-### Rank 4 — score 0.38754
+### Rank 4 — score 0.40004
 
 - Citation: Atopic eczema in under 12s: diagnosis and management — Recommendations > 1.5 Treatment; PDF page 11; chunk nice_cg57_atopic_eczema_under_12:chunk:0027:26f7bd246d8a; source https://www.nice.org.uk/guidance/cg57
 - Document ID: `nice_cg57_atopic_eczema_under_12`
@@ -336,7 +332,7 @@ Section: Recommendations > 1.5 Treatment
 Stepped approach to management
 ```
 
-### Rank 5 — score 0.34874
+### Rank 5 — score 0.36124
 
 - Citation: Atopic eczema in under 12s: diagnosis and management — Recommendations > Table 2 Stepped treatment options > 1.5.1.8 Review repeat prescriptions of individual products and combinations of products; PDF page 13; chunk nice_cg57_atopic_eczema_under_12:chunk:0036:8fba2241f0a2; source https://www.nice.org.uk/guidance/cg57
 - Document ID: `nice_cg57_atopic_eczema_under_12`
@@ -349,188 +345,9 @@ Section: Recommendations > Table 2 Stepped treatment options > 1.5.1.8 Review re
 with children with atopic eczema and their parents or carers at least once a year. [2007]
 ```
 
-## When should a child with eczema be referred?
+## When should a child with eczema be referred for specialist care?
 
-### Rank 1 — score 0.135898
-
-- Citation: Guidelines of care for the management of atopic dermatitis: Section 4. Prevention of disease flares and use of adjunctive therapies and approaches — Definition > Table IV. Recommendations for educational isheterogeneousandoutcomemeasuresvarygreatly; PDF page 6; chunk aad_ad_section4_flare_prevention_2014:chunk:0016:d1799faf55f4; source https://doi.org/10.1016/j.jaad.2014.08.038
-- Document ID: `aad_ad_section4_flare_prevention_2014`
-- Section: `Definition > Table IV. Recommendations for educational isheterogeneousandoutcomemeasuresvarygreatly`
-- PDF pages: 6-6
-
-```text
-Section: Definition > Table IV. Recommendations for educational isheterogeneousandoutcomemeasuresvarygreatly
-
-educator and lay-led management resources, such tion based on AD severity has also been shown.33 as the educational information and support groups Such formal training programs have the strongest provided by organizations such as the National supportive evidence but do require significant Eczema Association (http://nationaleczema.org/). personnel and financial resources. Comparison These facilitate communication and networking between programs is difficult because the content between affected patients and families, although J AM ACAD DERMATOL Sidbury et al 1223 VOLUME 71, NUMBER 6
-
-their effects on AD outcomes have not been formally may also present as gastrointestinal or respiratory tested. symptoms, and at times, anaphylaxis. It is therefore Psychological interventions have also been important not only to establish presence of a true used to help with coping with AD, and food
-```
-
-### Rank 2 — score 0.127852
-
-- Citation: Atopic eczema in under 12s: diagnosis and management — Recommendations > 1.6 Education and adherence to therapy > 1.6.1.1 Provide education to children with atopic eczema and their parents or carers; PDF page 22; chunk nice_cg57_atopic_eczema_under_12:chunk:0079:5cc5f3adc73c; source https://www.nice.org.uk/guidance/cg57
-- Document ID: `nice_cg57_atopic_eczema_under_12`
-- Section: `Recommendations > 1.6 Education and adherence to therapy > 1.6.1.1 Provide education to children with atopic eczema and their parents or carers`
-- PDF pages: 22-22
-
-```text
-Section: Recommendations > 1.6 Education and adherence to therapy > 1.6.1.1 Provide education to children with atopic eczema and their parents or carers
-
-about atopic eczema and its treatment. Provide verbal and written information (such as information from Eczema Care Online), with practical demonstrations, and cover: - how much of the treatments to use - how often to apply treatments - when and how to step treatment up or down - how to treat infected atopic eczema. Reinforce this at every consultation, addressing factors that affect adherence. [2007]
-```
-
-### Rank 3 — score 0.122331
-
-- Citation: Contact Dermatitis: A Practice Parameter-Update 2015 — May/June2015; PDF page 8; chunk jtf_contact_dermatitis_2015:chunk:0031:7dbef815cae4; source https://doi.org/10.1016/j.jaip.2015.02.009
-- Document ID: `jtf_contact_dermatitis_2015`
-- Section: `May/June2015`
-- PDF pages: 8-8
-
-```text
-Section: May/June2015
-
-Most allergic reactions to nail polish and artificial nail products to experience the same symptoms. Similarly, a group of patients are to tosylamide and/or formaldehyde resin found in nail polish with implant-related eczema who were metal sensitized, and then enamel, in addition to nail hardeners and setting lacquers. Up to underwent revision with a different metal alloy implant, had a 80% of the reactions appear on the neck, face, lips, and eyelids. higher incidence of eczema resolution. Anecdotal case reports Alkyl polyester resin may be a suitable alternative for sensitive suggest that patients with skin or systemic manifestations of patients. sensitization to components of implantable defibrillators, pace- Topical medicinal CD commonly develops after exposure to makers, arterial stents, dentures, and intrauterine devices (IUDs) topical medications, including lanolin, para-aminobenzoic acid appeared to improve once the sensitizing agent was replaced. (in suns
-```
-
-### Rank 4 — score 0.119293
-
-- Citation: Atopic eczema in under 12s: diagnosis and management — Recommendations > recommendation on emollient bath additives for this group, but decided not to > 1.5.1.31 Do not use whole-body (limbs and trunk) occlusive dressings (including wet wrap; PDF page 18; chunk nice_cg57_atopic_eczema_under_12:chunk:0060:d7b1f981a048; source https://www.nice.org.uk/guidance/cg57
-- Document ID: `nice_cg57_atopic_eczema_under_12`
-- Section: `Recommendations > recommendation on emollient bath additives for this group, but decided not to > 1.5.1.31 Do not use whole-body (limbs and trunk) occlusive dressings (including wet wrap`
-- PDF pages: 18-18
-
-```text
-Section: Recommendations > recommendation on emollient bath additives for this group, but decided not to > 1.5.1.31 Do not use whole-body (limbs and trunk) occlusive dressings (including wet wrap
-
-therapy) or whole-body dry bandages (including tubular bandages and garments) as first-line treatment for atopic eczema in children. If using these treatments, they should be started by a healthcare professional trained in their use. [2007]
-```
-
-### Rank 5 — score 0.118727
-
-- Citation: Atopic eczema in under 12s: diagnosis and management — Recommendations > recommendation on emollient bath additives for this group, but decided not to > 1.5.1.48 Explain to children with atopic eczema and their parents or carers that if they; PDF page 22; chunk nice_cg57_atopic_eczema_under_12:chunk:0077:7c4120ca44af; source https://www.nice.org.uk/guidance/cg57
-- Document ID: `nice_cg57_atopic_eczema_under_12`
-- Section: `Recommendations > recommendation on emollient bath additives for this group, but decided not to > 1.5.1.48 Explain to children with atopic eczema and their parents or carers that if they`
-- PDF pages: 22-22
-
-```text
-Section: Recommendations > recommendation on emollient bath additives for this group, but decided not to > 1.5.1.48 Explain to children with atopic eczema and their parents or carers that if they
-
-plan to use complementary therapies, they should keep using emollients as well. [2007]
-```
-
-## When should food allergy be considered in a child with eczema?
-
-### Rank 1 — score 0.205003
-
-- Citation: Atopic eczema in under 12s: diagnosis and management — Recommendations > 1.4 Identifying and managing trigger factors > 1.4.1.3 Consider a diagnosis of inhalant allergy in:; PDF page 9; chunk nice_cg57_atopic_eczema_under_12:chunk:0017:e3f02dbaa8a1; source https://www.nice.org.uk/guidance/cg57
-- Document ID: `nice_cg57_atopic_eczema_under_12`
-- Section: `Recommendations > 1.4 Identifying and managing trigger factors > 1.4.1.3 Consider a diagnosis of inhalant allergy in:`
-- PDF pages: 9-9
-
-```text
-Section: Recommendations > 1.4 Identifying and managing trigger factors > 1.4.1.3 Consider a diagnosis of inhalant allergy in:
-
-- children with seasonal flares of atopic eczema - children with atopic eczema associated with asthma or allergic rhinitis - children aged 3 years or over with atopic eczema on the face, particularly around the eyes. [2007] © NICE 2026. All rights reserved. Subject to Notice of rights (https://www.nice.org.uk/terms-and- Page 9 of conditions#notice-of-rights). 31
-```
-
-### Rank 2 — score 0.18388
-
-- Citation: Atopic eczema in under 12s: diagnosis and management — Recommendations > 1.3 Discussing related conditions and how atopic > 1.3.1.1 Explain to children with atopic eczema and their parents or carers that:; PDF page 8-9; chunk nice_cg57_atopic_eczema_under_12:chunk:0014:100b7fe7f810; source https://www.nice.org.uk/guidance/cg57
-- Document ID: `nice_cg57_atopic_eczema_under_12`
-- Section: `Recommendations > 1.3 Discussing related conditions and how atopic > 1.3.1.1 Explain to children with atopic eczema and their parents or carers that:`
-- PDF pages: 8-9
-
-```text
-Section: Recommendations > 1.3 Discussing related conditions and how atopic > 1.3.1.1 Explain to children with atopic eczema and their parents or carers that:
-
-- the condition often improves with time, but not all children will grow out of atopic eczema and it may get worse in teenage or adult life © NICE 2026. All rights reserved. Subject to Notice of rights (https://www.nice.org.uk/terms-and- Page 8 of conditions#notice-of-rights). 31
-
-- children with atopic eczema often develop asthma and/or allergic rhinitis - sometimes food allergy is associated with atopic eczema, particularly in very young children. [2007]
-```
-
-### Rank 3 — score 0.159996
-
-- Citation: Atopic eczema in under 12s: diagnosis and management — 1 Infant feeding; PDF page 25; chunk nice_cg57_atopic_eczema_under_12:chunk:0089:1b579983083f; source https://www.nice.org.uk/guidance/cg57
-- Document ID: `nice_cg57_atopic_eczema_under_12`
-- Section: `1 Infant feeding`
-- PDF pages: 25-25
-
-```text
-Section: 1 Infant feeding
-
-What is the optimal feeding regimen in the first year of life for children with established atopic eczema? [2007] Why the committee made the recommendation for research Dietary manipulation has the potential to decrease disease severity in children with proven food allergy. A study is needed to explore the potential benefits and harms of delaying the introduction of allergenic foods such as milk, egg and peanuts in babies with early signs of atopic eczema to assess the potential impact on atopic eczema severity and the subsequent development of food allergy, asthma and allergic rhinitis.
-```
-
-### Rank 4 — score 0.156501
-
-- Citation: Guidelines of care for the management of atopic dermatitis: Section 1. Diagnosis and assessment of atopic dermatitis — Biomarkers Disease Severity And Clinical > Table V. Recommendations for disease severity and Table VI. Recommendations for the assessment of; PDF page 7; chunk aad_ad_section1_diagnosis_2014:chunk:0027:7654679d43bd; source https://doi.org/10.1016/j.jaad.2013.10.010
-- Document ID: `aad_ad_section1_diagnosis_2014`
-- Section: `Biomarkers Disease Severity And Clinical > Table V. Recommendations for disease severity and Table VI. Recommendations for the assessment of`
-- PDF pages: 7-7
-
-```text
-Section: Biomarkers Disease Severity And Clinical > Table V. Recommendations for disease severity and Table VI. Recommendations for the assessment of
-
-clinical outcomes assessment clinical associations of atopic dermatitis For the general management of patients with atopic Physicians should be aware of and assess for conditions dermatitis,availablediseaseseveritymeasurementscales associated with atopic dermatitis, such as rhinitis/ are not recommended for routine clinical practice, rhinoconjunctivitis, asthma, food allergy, sleep becausetheywerenotusuallydesignedforthis purpose. disturbance, depression, and other neuropsychiatric conditions, and it is recommended that physicians For the general management of patients with atopic discuss them with the patient as part of the treatment/ dermatitis, available patient quality of life measurement management plan, when appropriate. scales are not recommended for routine clinical practice. An integrated, multidisciplinary approach to care may 
-```
-
-### Rank 5 — score 0.15525
-
-- Citation: Guidelines of care for the management of atopic dermatitis: Section 4. Prevention of disease flares and use of adjunctive therapies and approaches — Definition > Table VI. Recommendations for other adjunctive and complementary interventions for the treatment of atopic; PDF page 9; chunk aad_ad_section4_flare_prevention_2014:chunk:0024:d4613ba0b0ac; source https://doi.org/10.1016/j.jaad.2014.08.038
-- Document ID: `aad_ad_section4_flare_prevention_2014`
-- Section: `Definition > Table VI. Recommendations for other adjunctive and complementary interventions for the treatment of atopic`
-- PDF pages: 9-9
-
-```text
-Section: Definition > Table VI. Recommendations for other adjunctive and complementary interventions for the treatment of atopic
-
-dermatitis FoodeliminationdietsbasedsolelyonthefindingsoffoodallergytestresultsarenotrecommendedforthemanagementofAD. If a patient has a true immunoglobulin Eemediated allergy, he or she should practice avoidance to prevent potential serious health sequelae. Children\5 years of age with moderate to severe AD should be considered for food allergy evaluation for milk, egg, peanut, wheat, and soy if at least 1 of the following is met: (A) persistent AD in spite of optimized treatment or (B) having a reliable history of immediate reaction after ingestion of a specific food. The use of probiotics/prebiotics for the treatment of patients with established AD is not recommended because of inconsistent evidence. There is inconsistent to no evidence to recommend the use of fish oils, evening primrose oil, borage oil, multivitamin supplements, zinc, vitamin D, vitamin 
-```
-
-## What tests are recommended when IgE-mediated food allergy is suspected?
-
-### Rank 1 — score 0.197903
-
-- Citation: Guidelines of care for the management of atopic dermatitis: Section 4. Prevention of disease flares and use of adjunctive therapies and approaches — Definition > Table VI. Recommendations for other adjunctive and complementary interventions for the treatment of atopic; PDF page 9-10; chunk aad_ad_section4_flare_prevention_2014:chunk:0025:58e0942e149c; source https://doi.org/10.1016/j.jaad.2014.08.038
-- Document ID: `aad_ad_section4_flare_prevention_2014`
-- Section: `Definition > Table VI. Recommendations for other adjunctive and complementary interventions for the treatment of atopic`
-- PDF pages: 9-10
-
-```text
-Section: Definition > Table VI. Recommendations for other adjunctive and complementary interventions for the treatment of atopic
-
-and supplementation P = .03; noted only after correcting for baseline shouldbeincludedifelimination/avoidancedietsare severity differences; 2 studies could not be pooled pursued for any prolonged period of time. Even in with this method). Three studies included prebiotics, thoseindividualswithclinicallyrelevantfoodallergy, specialized plant fibers to help nourish the bacteria, avoidance diets are generally helpful to avoid the but also with mixed effects.96-98 Pro-/prebiotic use effects of IgE-mediated/immediate reactions but are cannot be recommended at this time (level of unlikely toaffectthecourseofAD.46,87Asummaryof evidence in Table III).
-
-J AM ACAD DERMATOL Sidbury et al 1227 VOLUME 71, NUMBER 6
-```
-
-### Rank 2 — score 0.181687
-
-- Citation: Contact Dermatitis: A Practice Parameter-Update 2015 — May/June2015; PDF page 24; chunk jtf_contact_dermatitis_2015:chunk:0083:a0165e467ae8; source https://doi.org/10.1016/j.jaip.2015.02.009
-- Document ID: `jtf_contact_dermatitis_2015`
-- Section: `May/June2015`
-- PDF pages: 24-24
-
-```text
-Section: May/June2015
-
-Occupational CD is classically divided into ICD and ACD. In food processing workers with OCD, the prevailing factors Although the mechanisms differ between the two, the clinical are exposure to food ingredients, even intact proteins, and hand and histologic appearance may be similar. washing. A review of NACDG results for hairdressers and Irritant CD represents approximately 80% of all cases of cosmetologists demonstrated that glyceryl thioglycolate in OCD. Common irritant exposures include wet work, solvents permanent wave solutions, PPD in hair dyes, nickel sulfate, 2and alcohols, cutting oils, coolants, degreasers, soaps, detergents, hydroxyethyl methacrylate, and quaternium-15 are common and other cleaning agents and disinfectants. The major chemical sources of allergens.239 groups associated with ACD include metals, rubber-related ma- Among health professionals, hand dermatitis may be due to terials, epoxies, resins and acrylics, organic dyes, plants, foods,
-```
-
-### Rank 3 — score 0.145338
-
-- Citation: Atopic eczema in under 12s: diagnosis and management — Recommendations > 1.4 Identifying and managing trigger factors > 1.4.1.2 Consider a diagnosis of food allergy in:; PDF page 9; chunk nice_cg57_atopic_eczema_under_12:chunk:0016:418a0053f83b; source https://www.nice.org.uk/guidance/cg57
-- Document ID: `nice_cg57_atopic_eczema_under_12`
-- Section: `Recommendations > 1.4 Identifying and managing trigger factors > 1.4.1.2 Consider a diagnosis of food allergy in:`
-- PDF pages: 9-9
-
-```text
-Section: Recommendations > 1.4 Identifying and managing trigger factors > 1.4.1.2 Consider a diagnosis of food allergy in:
-
-- children with atopic eczema who have had immediate symptoms from eating a particular food - babies and young children with moderate or severe atopic eczema that has not been controlled by optimum management, particularly if associated with gut dysmotility (colic, vomiting, altered bowel habit) or failure to thrive. [2007]
-```
-
-### Rank 4 — score 0.13797
+### Rank 1 — score 0.409745
 
 - Citation: Atopic eczema in under 12s: diagnosis and management — Recommendations > 1.7 Indications for referral > 1.7.1.5 Refer children with moderate or severe atopic eczema and suspected food; PDF page 24; chunk nice_cg57_atopic_eczema_under_12:chunk:0086:00fa26426038; source https://www.nice.org.uk/guidance/cg57
 - Document ID: `nice_cg57_atopic_eczema_under_12`
@@ -543,15 +360,273 @@ Section: Recommendations > 1.7 Indications for referral > 1.7.1.5 Refer children
 allergy for specialist investigation and management. [2007]
 ```
 
-### Rank 5 — score 0.133478
+### Rank 2 — score 0.362757
 
-- Citation: Atopic eczema in under 12s: diagnosis and management — Recommendations > recommendation on emollient bath additives for this group, but decided not to > 1.5.1.39 If a child with atopic eczema has a lesion on the skin that is suspected to be; PDF page 20; chunk nice_cg57_atopic_eczema_under_12:chunk:0068:4986d77a6ac5; source https://www.nice.org.uk/guidance/cg57
+- Citation: Atopic eczema in under 12s: diagnosis and management — Recommendations > 1.7 Indications for referral > 1.7.1.3 Refer children with atopic eczema for specialist dermatological advice if:; PDF page 23; chunk nice_cg57_atopic_eczema_under_12:chunk:0084:012a9732ccdf; source https://www.nice.org.uk/guidance/cg57
 - Document ID: `nice_cg57_atopic_eczema_under_12`
-- Section: `Recommendations > recommendation on emollient bath additives for this group, but decided not to > 1.5.1.39 If a child with atopic eczema has a lesion on the skin that is suspected to be`
+- Section: `Recommendations > 1.7 Indications for referral > 1.7.1.3 Refer children with atopic eczema for specialist dermatological advice if:`
+- PDF pages: 23-23
+
+```text
+Section: Recommendations > 1.7 Indications for referral > 1.7.1.3 Refer children with atopic eczema for specialist dermatological advice if:
+
+- the diagnosis is, or has become, uncertain - management has not controlled the atopic eczema satisfactorily, based on a subjective assessment by the child, parent or carer (for example, the child is having 1 to 2 weeks of flares per month or is having adverse reactions to many emollients) - atopic eczema on the face has not responded to treatment - the child or their parents or carers may benefit from specialist advice on how to apply treatments (for example, bandaging techniques) - contact allergic dermatitis is suspected (for example, persistent atopic eczema or facial, eyelid or hand atopic eczema) - the atopic eczema is causing significant social or psychological problems for the child or their parents or carers (for example, sleep disturbance or poor school attendance) - atopic eczema is associated with severe and recurrent infections, esp
+```
+
+### Rank 3 — score 0.360067
+
+- Citation: Atopic eczema in under 12s: diagnosis and management — Recommendations > 1.7 Indications for referral > 1.7.1.1 Immediately (same day) refer children for specialist dermatological advice if; PDF page 23; chunk nice_cg57_atopic_eczema_under_12:chunk:0082:c99436f6038d; source https://www.nice.org.uk/guidance/cg57
+- Document ID: `nice_cg57_atopic_eczema_under_12`
+- Section: `Recommendations > 1.7 Indications for referral > 1.7.1.1 Immediately (same day) refer children for specialist dermatological advice if`
+- PDF pages: 23-23
+
+```text
+Section: Recommendations > 1.7 Indications for referral > 1.7.1.1 Immediately (same day) refer children for specialist dermatological advice if
+
+eczema herpeticum is suspected (see recommendations 1.5.1.40 and 1.5.1.41). [2007]
+```
+
+### Rank 4 — score 0.33547
+
+- Citation: Atopic eczema in under 12s: diagnosis and management — Recommendations > 1.7 Indications for referral > 1.7.1.6 Refer children with atopic eczema for specialist advice relating to growth if they; PDF page 24; chunk nice_cg57_atopic_eczema_under_12:chunk:0087:595e650ddca4; source https://www.nice.org.uk/guidance/cg57
+- Document ID: `nice_cg57_atopic_eczema_under_12`
+- Section: `Recommendations > 1.7 Indications for referral > 1.7.1.6 Refer children with atopic eczema for specialist advice relating to growth if they`
+- PDF pages: 24-24
+
+```text
+Section: Recommendations > 1.7 Indications for referral > 1.7.1.6 Refer children with atopic eczema for specialist advice relating to growth if they
+
+are not growing at the expected growth trajectory (as reflected by UK growth charts). [2007]
+```
+
+### Rank 5 — score 0.322584
+
+- Citation: Atopic eczema in under 12s: diagnosis and management — Recommendations > recommendation on emollient bath additives for this group, but decided not to > 1.5.1.40 If eczema herpeticum (widespread herpes simplex) is suspected in a child with; PDF page 20; chunk nice_cg57_atopic_eczema_under_12:chunk:0069:d09f91f1469b; source https://www.nice.org.uk/guidance/cg57
+- Document ID: `nice_cg57_atopic_eczema_under_12`
+- Section: `Recommendations > recommendation on emollient bath additives for this group, but decided not to > 1.5.1.40 If eczema herpeticum (widespread herpes simplex) is suspected in a child with`
 - PDF pages: 20-20
 
 ```text
-Section: Recommendations > recommendation on emollient bath additives for this group, but decided not to > 1.5.1.39 If a child with atopic eczema has a lesion on the skin that is suspected to be
+Section: Recommendations > recommendation on emollient bath additives for this group, but decided not to > 1.5.1.40 If eczema herpeticum (widespread herpes simplex) is suspected in a child with
 
-herpes simplex, treat with oral aciclovir even if the infection is localised. [2007]
+atopic eczema, immediately start treatment with systemic aciclovir and refer the child for same-day specialist dermatological advice. If secondary bacterial infection is also suspected, start treatment with systemic antibiotics. [2007]
+```
+
+## When is patch testing recommended for suspected allergic contact dermatitis?
+
+### Rank 1 — score 0.422628
+
+- Citation: British Association of Dermatologists' guidelines for the management of contact dermatitis 2017 — 12.0 Plans for guideline revision > 9.2 Is it worthwhile managing patients with contact; PDF page 10; printed page 17; chunk bad_contact_dermatitis_2017:chunk:0046:998ce3cee3af; source https://doi.org/10.1111/bjd.15239
+- Document ID: `bad_contact_dermatitis_2017`
+- Section: `12.0 Plans for guideline revision > 9.2 Is it worthwhile managing patients with contact`
+- PDF pages: 10-10
+
+```text
+Section: 12.0 Plans for guideline revision > 9.2 Is it worthwhile managing patients with contact
+
+April 2016). adherence to these recommendations constitute a defence 14 Johnston GA. The rise in prevalence of contact allergy to against a claim of negligence. Limiting the review to English- methylisothiazolinone in the British Isles. Contact Dermatitis 2014; 70:238-40. language references was a pragmatic decision, but the authors © 2017 British Association of Dermatologists British Journal of Dermatology (2017) 176, pp317-329 Downloaded from academic.oup.com/bjd/article/176/2/317/6601881 by guest on 17 2026 326 BAD guidelines for contact dermatitis 2017, G.A. Johnston et al.
+
+15 Meyer JD, Chen Y, Holt DL et al. Occupational contact dermatitis 38 Fowler JF Jr, Maibach HI, Zirwas M et al. Effects of immunomodin the UK: a surveillance report from EPIDERM and OPRA. Occup ulatory agents on patch testing: expert opinion 2012. Dermatitis Med (Lond) 2000; 50:265-73. 2012; 23:301-3. 16 Turner S,
+```
+
+### Rank 2 — score 0.412387
+
+- Citation: British Association of Dermatologists' guidelines for the management of contact dermatitis 2017 — 12.0 Plans for guideline revision > 9.2 Is it worthwhile managing patients with contact; PDF page 10; printed page 17; chunk bad_contact_dermatitis_2017:chunk:0047:2e791742dd3f; source https://doi.org/10.1111/bjd.15239
+- Document ID: `bad_contact_dermatitis_2017`
+- Section: `12.0 Plans for guideline revision > 9.2 Is it worthwhile managing patients with contact`
+- PDF pages: 10-10
+
+```text
+Section: 12.0 Plans for guideline revision > 9.2 Is it worthwhile managing patients with contact
+
+implications of molecular structure, strength of reproducibility of positive allergic patch test reactions in man. J reaction, and time of testing. Contact Dermatitis 2011; 64:96-103. Am Acad Dermatol 1989; 21:850-4. 30 Ponten A, Goossens A, Bruze M. Recommendation to include 53 Brasch J, Szliska C, Grabbe J. More positive patch test reactions formaldehyde 2.0% aqua in the European baseline patch test ser- with larger test chambers? Results from a study group of the Geries. Contact Dermatitis 2013; 69:372-4. man Contact
+
+implications of molecular structure, strength of reproducibility of positive allergic patch test reactions in man. J reaction, and time of testing. Contact Dermatitis 2011; 64:96-103. Am Acad Dermatol 1989; 21:850-4. 30 Ponten A, Goossens A, Bruze M. Recommendation to include 53 Brasch J, Szliska C, Grabbe J. More positive patch test reactions formaldehyde 2.0% aqua in the
+```
+
+### Rank 3 — score 0.411859
+
+- Citation: Contact Dermatitis: A Practice Parameter-Update 2015 — May/June2015 > Summary Statement 15: In addition to avoiding irritants in UV radiation and photo-patch testing to confirm a suspected; PDF page 4; chunk jtf_contact_dermatitis_2015:chunk:0012:5afc0cb36389; source https://doi.org/10.1016/j.jaip.2015.02.009
+- Document ID: `jtf_contact_dermatitis_2015`
+- Section: `May/June2015 > Summary Statement 15: In addition to avoiding irritants in UV radiation and photo-patch testing to confirm a suspected`
+- PDF pages: 4-4
+
+```text
+Section: May/June2015 > Summary Statement 15: In addition to avoiding irritants in UV radiation and photo-patch testing to confirm a suspected
+
+patients with atopic dermatitis (AD), evaluate for ACD, if sus- diagnosis of photo-allergic CD. [Strength of Recommendation: pected, as the 2 dermatologic conditions often coexist in the Strong; C Evidence] same patient. [Strength of Recommendation: Moderate; C Summary Statement 26: Although in vitro tests for delayed Evidence] hypersensitivity to contact allergens (ie, metals and bone cement) are available, routine use of such assays is not currently recom- Patch testing recommendations mended as their sensitivity and specificity for diagnosing ACD
+```
+
+### Rank 4 — score 0.404956
+
+- Citation: Contact Dermatitis: A Practice Parameter-Update 2015 — May/June2015 > TABLE I. Differential diagnosis of allergic contact dermatitis (ACD); PDF page 10; chunk jtf_contact_dermatitis_2015:chunk:0037:f8b20fd2a760; source https://doi.org/10.1016/j.jaip.2015.02.009
+- Document ID: `jtf_contact_dermatitis_2015`
+- Section: `May/June2015 > TABLE I. Differential diagnosis of allergic contact dermatitis (ACD)`
+- PDF pages: 10-10
+
+```text
+Section: May/June2015 > TABLE I. Differential diagnosis of allergic contact dermatitis (ACD)
+
+Dermatologic condition Differentiating features and clues to diagnosis Irritant contact dermatitis (cid:2) Glazed, parched, or scalded appearance (cid:2) Sharply circumscribed dermatitis (cid:2) Healing begins promptly on withdrawal of the offending agent (cid:2) Patch testing negative Atopic dermatitis (cid:2) Personal or family history of atopy (cid:2) Early age of onset (cid:2) Chronic and recurrent (cid:2) Dry, scaly very pruritic (cid:2) Typical distribution Facial in infancy Extensors in early childhood Flexural areas in adolescence and adults Seborrheic dermatitis (cid:2) Distribution: areas with sebaceous glands (cid:2) Scalp, periauricular, face (medial eyebrows, glabella, nasolabial folds), presternal trunk, interscapular (cid:2) Blepharitis common (cid:2) Dandruff appears to be a precursor (cid:2) Distinctive morphology: dull, yellowish-red, sharply demarcated lesions covered with g
+```
+
+### Rank 5 — score 0.401759
+
+- Citation: Contact Dermatitis: A Practice Parameter-Update 2015 — 858-63 (Iii). 54:313-21 (Iii).; PDF page 27; chunk jtf_contact_dermatitis_2015:chunk:0096:794d7a1f860f; source https://doi.org/10.1016/j.jaip.2015.02.009
+- Document ID: `jtf_contact_dermatitis_2015`
+- Section: `858-63 (Iii). 54:313-21 (Iii).`
+- PDF pages: 27-27
+
+```text
+Section: 858-63 (Iii). 54:313-21 (Iii).
+
+29. Gordon LA. Compositae dermatitis. Aust J Dermatol 1999;40:123-8 (IV). 58. Winnicki M, Shear NH. A systematic approach to systemic contact dermatitis 30. Temesvari E, Ponyai G, Nemeth I, Hidvegi B, Sas A, Karpati S. Periocular andsymmetricdrug-relatedintertriginousandflexuralexanthema(SDRIFE):a dermatitis: a report of 401 patients. J Eur Acad Dermatol Venereol 2009;23: closerlookattheseconditionsandanapproachtointertriginouseruptions.Am 124-8. J Clin Dermatol 2011;12:171-80 (IV). 31. Novitskaya ES, Dean SJ, Craig JP, Alexandroff AB. Current dilemmas and 59. Warshaw EM, Furda LM, Maibach HI, Rietschel RL, Fowler JF Jr, controversies in allergic contact dermatitis to ophthalmic medications. Clin Belsito DV, et al. Anogenital dermatitis in patients referred for patch testing: Dermatol 2011;29:295-9 (IV). retrospectiveanalysisofcross-sectionaldatafromtheNorthAmericanContact 32. Landeck L, Schalock PC, Baden LA, Gonzalez E. Periorbital contact sen
+```
+
+## When should phototherapy or systemic treatment be considered for atopic dermatitis?
+
+### Rank 1 — score 0.627215
+
+- Citation: Atopic eczema in under 12s: diagnosis and management — Recommendations > recommendation on emollient bath additives for this group, but decided not to > 1.5.1.43 Consider phototherapy or systemic treatments for severe atopic eczema in; PDF page 21; chunk nice_cg57_atopic_eczema_under_12:chunk:0072:58fd9636363a; source https://www.nice.org.uk/guidance/cg57
+- Document ID: `nice_cg57_atopic_eczema_under_12`
+- Section: `Recommendations > recommendation on emollient bath additives for this group, but decided not to > 1.5.1.43 Consider phototherapy or systemic treatments for severe atopic eczema in`
+- PDF pages: 21-21
+
+```text
+Section: Recommendations > recommendation on emollient bath additives for this group, but decided not to > 1.5.1.43 Consider phototherapy or systemic treatments for severe atopic eczema in
+
+children when: - other management options have failed or are inappropriate, and - there is a significant negative impact on quality of life. Only use phototherapy and systemic treatments under specialist dermatological supervision by staff who are experienced in working with children. [2007]
+```
+
+### Rank 2 — score 0.559952
+
+- Citation: Guidelines of care for the management of atopic dermatitis: Section 3. Management and treatment with phototherapy and systemic agents — Section 3: Management and treatment with phototherapy; PDF page 1; printed page 327; chunk aad_ad_section3_phototherapy_systemic_2014:chunk:0003:0010193a8d78; source https://doi.org/10.1016/j.jaad.2014.03.030
+- Document ID: `aad_ad_section3_phototherapy_systemic_2014`
+- Section: `Section 3: Management and treatment with phototherapy`
+- PDF pages: 1-1
+
+```text
+Section: Section 3: Management and treatment with phototherapy
+
+and systemic agents
+
+Robert Sidbury, MD (Co-chair),a Dawn M. Davis, MD,b David E. Cohen, MD,c Kelly M. Cordoro, MD,d Timothy G. Berger, MD,d James N. Bergman, MD,e Sarah L. Chamlin, MD, MSCI,f Kevin D. Cooper, MD,g Steven R. Feldman, MD, PhD,h Jon M. Hanifin, MD,i Alfons Krol, MD,i David J. Margolis, MD, PhD,j Amy S. Paller, MD,f Kathryn Schwarzenberger, MD,k Robert A. Silverman, MD,l Eric L. Simpson, MD,i Wynnis L. Tom, MD,m,n Hywel C. Williams, DSc,o Craig A. Elmets, MD,p Julie Block, BA,q Christopher G. Harrod, MS,r Wendy Smith Begolka, MBS,r and Lawrence F. Eichenfield, MD (Co-chair)m,n Seattle, Washington; Rochester, Minnesota; New York, New York; San Francisco, San Diego, and San Rafael, California; Vancouver, British Columbia, Canada; Chicago and Schaumburg, Illinois; Cleveland, Ohio; Winston-Salem, North Carolina; Portland, Oregon; Philadelphia, Pennsylvania; Memphis, Tennessee; Fairfax, Virginia; Nottingham, Unite
+```
+
+### Rank 3 — score 0.503769
+
+- Citation: Guidelines of care for the management of atopic dermatitis: Section 3. Management and treatment with phototherapy and systemic agents — Systemic Agents > Table VII. Recommendations for the use of systemic immunomodulatory agents; PDF page 7; chunk aad_ad_section3_phototherapy_systemic_2014:chunk:0026:0c0fba0bf34f; source https://doi.org/10.1016/j.jaad.2014.03.030
+- Document ID: `aad_ad_section3_phototherapy_systemic_2014`
+- Section: `Systemic Agents > Table VII. Recommendations for the use of systemic immunomodulatory agents`
+- PDF pages: 7-7
+
+```text
+Section: Systemic Agents > Table VII. Recommendations for the use of systemic immunomodulatory agents
+
+Systemic immunomodulatory agents are indicated for the subset of adult and pediatric patients in whom optimized topical regimens and/or phototherapy do not adequately control the signs and symptoms of disease. Systemic immunomodulatory agents are indicated when the patient’s skin disease has significant negative physical, emotional, or social impact. All immunomodulatory agents should be adjusted to the minimal effective dose once response is attained and sustained. Adjunctive therapies should be continued to use the lowest dose and duration of systemic agent possible. Insufficient data exist to firmly recommend optimal dosing, duration of therapy, and precise monitoring protocols for any systemic immunomodulating medication. Treatment decisions should be based on each individual patient’s AD status (current and historical), comorbidities, and preferences. Cyclosporine is effective an
+```
+
+### Rank 4 — score 0.50004
+
+- Citation: Guidelines of care for the management of atopic dermatitis: Section 3. Management and treatment with phototherapy and systemic agents — Jamacaddermatol > recommendation of systemic steroids is summa- patients experience decreased linear growth while; PDF page 17-18; chunk aad_ad_section3_phototherapy_systemic_2014:chunk:0064:6d685487117a; source https://doi.org/10.1016/j.jaad.2014.03.030
+- Document ID: `aad_ad_section3_phototherapy_systemic_2014`
+- Section: `Jamacaddermatol > recommendation of systemic steroids is summa- patients experience decreased linear growth while`
+- PDF pages: 17-18
+
+```text
+Section: Jamacaddermatol > recommendation of systemic steroids is summa- patients experience decreased linear growth while
+
+children. Systemic | | dulatory agents or phototherapy is being initiated. | steroidsarenotrecommendedforchildrenwithAD | | Although immediate improvement of AD may be | unless they are required to manage comorbid | | noted by patients and providers, other systemic | conditions (eg, asthma exacerbations), or are given | | medicationswithamorefavorableside-effectprofile | as part of a short-term transition protocol to | | should be considered in lieu of chronic systemic | nonsteroidal systemic immunomodulatory agents. | | steroids. | Childrenonlong-termsystemicsteroidsmayrequire |
+
+344 Sidbury et al J AM ACAD DERMATOL AUGUST 2014
+
+booster immunization protocols because of a robust Table X. Recommendations for the use of systemic vaccination schedule relative to adults. antimicrobials The use of systemic antibiotics in the treatment of
+```
+
+### Rank 5 — score 0.47293
+
+- Citation: Atopic eczema in under 12s: diagnosis and management — Recommendations > Table 2 Stepped treatment options; PDF page 11; chunk nice_cg57_atopic_eczema_under_12:chunk:0029:796d02656e78; source https://www.nice.org.uk/guidance/cg57
+- Document ID: `nice_cg57_atopic_eczema_under_12`
+- Section: `Recommendations > Table 2 Stepped treatment options`
+- PDF pages: 11-11
+
+```text
+Section: Recommendations > Table 2 Stepped treatment options
+
+- emollients Mild atopic eczema - mild-potency topical corticosteroids. - emollients - moderate-potency topical corticosteroids Moderate atopic eczema - topical calcineurin inhibitors - bandages. - emollients - potent topical corticosteroids - topical calcineurin inhibitors Severe atopic eczema - bandages - phototherapy - systemic therapy. © NICE 2026. All rights reserved. Subject to Notice of rights (https://www.nice.org.uk/terms-and- Page 11 of conditions#notice-of-rights). 31
+
+[Table 1 on PDF page 11]
+| Mild atopic eczema | - emollients - mild-potency topical corticosteroids. |
+| --- | --- |
+| Moderate atopic eczema | - emollients - moderate-potency topical corticosteroids - topical calcineurin inhibitors - bandages. |
+| Severe atopic eczema | - emollients - potent topical corticosteroids - topical calcineurin inhibitors - bandages - phototherapy - systemic therapy. |
+```
+
+## What strategies are recommended to prevent atopic dermatitis flares?
+
+### Rank 1 — score 0.453222
+
+- Citation: Atopic eczema in under 12s: diagnosis and management — 2 Prevention of flares; PDF page 25-26; chunk nice_cg57_atopic_eczema_under_12:chunk:0090:2b7b54c159ce; source https://www.nice.org.uk/guidance/cg57
+- Document ID: `nice_cg57_atopic_eczema_under_12`
+- Section: `2 Prevention of flares`
+- PDF pages: 25-26
+
+```text
+Section: 2 Prevention of flares
+
+Which are the best, most cost-effective treatment strategies for managing and preventing flares in children with atopic eczema? [2007]
+
+Why the committee made the recommendation for research Atopic eczema is usually an episodic disease of exacerbation (flares) and remissions, except for severe cases where it may be continuous (2% to 6% of cases). Flares may occur as frequently as 2 or 3 times per month and have a very negative effect on quality of life. They are time consuming and expensive to treat. There is limited evidence suggesting that strategies to prevent flares can reduce the number, frequency and severity of flares and the amount of treatment required. Identifying good strategies would improve patient care and quality of life, and free up NHS resources. Strategies that could be considered in this research include continuous versus intermittent topical treatments or combinations of products such as topical corticosteroids and topical calcineuri
+```
+
+### Rank 2 — score 0.296045
+
+- Citation: Guidelines of care for the management of atopic dermatitis: Section 4. Prevention of disease flares and use of adjunctive therapies and approaches — Definition > Table II. Recommendation for prevention of flares Methodstoidentifybestcandidatesforaproactive; PDF page 4-5; chunk aad_ad_section4_flare_prevention_2014:chunk:0013:d07b71d642fe; source https://doi.org/10.1016/j.jaad.2014.08.038
+- Document ID: `aad_ad_section4_flare_prevention_2014`
+- Section: `Definition > Table II. Recommendation for prevention of flares Methodstoidentifybestcandidatesforaproactive`
+- PDF pages: 4-5
+
+```text
+Section: Definition > Table II. Recommendation for prevention of flares Methodstoidentifybestcandidatesforaproactive
+
+of atopic dermatitis approach would be helpful. Some studies focused on those with moderate to severe disease based on Continueduseofeithertopicalcorticosteroids(1-2times/wk) severity scores, but many scales do not distinguish ortopicalcalcineurininhibitors(2-3times/wk)afterdisease stabilization, to previously involved skin, is recommended patients with very intermittent flares over a moderate to reduce subsequent flares or relapses. or more extensive amount of body surface area from those with persistent disease at the same body sites compared to patients with rapid disease recurrence although 1 study recorded a higher rate of viral and on TCS or TCI discontinuation. Skin type may also respiratory tract infections and another found affectflareidentification,andtheremaybeaneedfor increased ear, nose, and throat symptoms.14,16-19 different definitions or approaches to ac
+```
+
+### Rank 3 — score 0.292383
+
+- Citation: Atopic eczema in under 12s: diagnosis and management — Recommendations > Table 2 Stepped treatment options > 1.5.1.2 Offer children with atopic eczema and their parents or carers information on how; PDF page 12; chunk nice_cg57_atopic_eczema_under_12:chunk:0030:6cb31f92ba73; source https://www.nice.org.uk/guidance/cg57
+- Document ID: `nice_cg57_atopic_eczema_under_12`
+- Section: `Recommendations > Table 2 Stepped treatment options > 1.5.1.2 Offer children with atopic eczema and their parents or carers information on how`
+- PDF pages: 12-12
+
+```text
+Section: Recommendations > Table 2 Stepped treatment options > 1.5.1.2 Offer children with atopic eczema and their parents or carers information on how
+
+to recognise flares of atopic eczema (increased dryness, itching, redness, swelling and general irritability). Give clear instructions on how to manage flares according to the stepped-care plan, and prescribe treatments that allow children and their parents or carers to follow this plan. [2007]
+```
+
+### Rank 4 — score 0.291874
+
+- Citation: Atopic eczema in under 12s: diagnosis and management — Recommendations > recommendation on emollient bath additives for this group, but decided not to > 1.5.1.19 Once the atopic eczema has been controlled, consider treating problem areas; PDF page 16; chunk nice_cg57_atopic_eczema_under_12:chunk:0048:e6f194bf232d; source https://www.nice.org.uk/guidance/cg57
+- Document ID: `nice_cg57_atopic_eczema_under_12`
+- Section: `Recommendations > recommendation on emollient bath additives for this group, but decided not to > 1.5.1.19 Once the atopic eczema has been controlled, consider treating problem areas`
+- PDF pages: 16-16
+
+```text
+Section: Recommendations > recommendation on emollient bath additives for this group, but decided not to > 1.5.1.19 Once the atopic eczema has been controlled, consider treating problem areas
+
+with topical corticosteroids for 2 consecutive days per week to prevent flares in children with frequent flares (2 or 3 per month). Review this strategy within 3 to 6 months. [2007]
+```
+
+### Rank 5 — score 0.29156
+
+- Citation: Guidelines of care for the management of atopic dermatitis: Section 4. Prevention of disease flares and use of adjunctive therapies and approaches — Definition; PDF page 3; chunk aad_ad_section4_flare_prevention_2014:chunk:0009:30621aaf594b; source https://doi.org/10.1016/j.jaad.2014.08.038
+- Document ID: `aad_ad_section4_flare_prevention_2014`
+- Section: `Definition`
+- PDF pages: 3-3
+
+```text
+Section: Definition
+
+trials (RCTs) with up to 4 weeks of acute disease ADisachronic,pruriticinflammatoryskindisease control followed by twice weekly application of a that occurs most frequently in children, but also midpotency TCS (fluticasone propionate or affects many adults. It follows a relapsing course. methylprednisolone aceponate) for 16 to 20 weeks AD is often associated with elevated serum demonstrated a reduction in the risk of flare immunoglobulin (IgE) levels and a personal or development and lengthening of the time to relapse family history of type I allergies, allergic rhinitis, or first flare, relative to vehicle.14,16-19 A metaanalysis and asthma. Atopic eczema is synonymous with AD. of the fluticasone studies found a substantial magnitude of benefit (pooled relative risk of flares INTRODUCTION of 0.46 [95% confidence interval {CI}, 0.38-0.55] vs The often protracted nature of AD necessitates vehicle).20 Two to 3 times weekly application of setting several long-term tre
 ```

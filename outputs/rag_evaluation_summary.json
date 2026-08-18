@@ -1,0 +1,655 @@
+{
+  "project": "eczema_rag",
+  "ingestion_summary": {
+    "chunks_created": 510,
+    "collection_name": "eczema_guidelines_v1",
+    "document_stats": [
+      {
+        "chunks_created": 96,
+        "doc_id": "nice_cg57_atopic_eczema_under_12",
+        "document_name": "Atopic eczema in under 12s: diagnosis and management",
+        "figure_references": 0,
+        "pages_needing_ocr": 0,
+        "pages_total": 31,
+        "pages_with_text": 31,
+        "sections_detected": 95,
+        "source_sha256": "3b9071a77faf78ac5354fd90ec8173255fa92c496b5ccdcf64861cbfe9d826a5",
+        "tables_extracted": 2,
+        "vectors_upserted": 96,
+        "warnings": [
+          "short_text_page: review if content appears incomplete",
+          "table_caption_detected_but_structure_not_extracted"
+        ]
+      },
+      {
+        "chunks_created": 136,
+        "doc_id": "jtf_contact_dermatitis_2015",
+        "document_name": "Contact Dermatitis: A Practice Parameter-Update 2015",
+        "figure_references": 2,
+        "pages_needing_ocr": 0,
+        "pages_total": 39,
+        "pages_with_text": 39,
+        "sections_detected": 80,
+        "source_sha256": "92ec71e02ccebebdd3bf6a9f8b2732c5340c4ed91cb093e996ec6dd05c3baade",
+        "tables_extracted": 4,
+        "vectors_upserted": 136,
+        "warnings": [
+          "figure_semantics_deferred: references recorded without image interpretation",
+          "table_caption_detected_but_structure_not_extracted"
+        ]
+      },
+      {
+        "chunks_created": 47,
+        "doc_id": "aad_ad_section1_diagnosis_2014",
+        "document_name": "Guidelines of care for the management of atopic dermatitis: Section 1. Diagnosis and assessment of atopic dermatitis",
+        "figure_references": 0,
+        "pages_needing_ocr": 0,
+        "pages_total": 14,
+        "pages_with_text": 14,
+        "sections_detected": 23,
+        "source_sha256": "c21f67b524116018c267163ac6da85b7e24f1936a9b680628ef8d2b4c0222e0a",
+        "tables_extracted": 6,
+        "vectors_upserted": 47,
+        "warnings": []
+      },
+      {
+        "chunks_created": 55,
+        "doc_id": "bad_contact_dermatitis_2017",
+        "document_name": "British Association of Dermatologists' guidelines for the management of contact dermatitis 2017",
+        "figure_references": 1,
+        "pages_needing_ocr": 0,
+        "pages_total": 13,
+        "pages_with_text": 13,
+        "sections_detected": 43,
+        "source_sha256": "8aa45661456425430fff5908e42221e92697eb905763bd99b885a25a4d04bc1b",
+        "tables_extracted": 0,
+        "vectors_upserted": 55,
+        "warnings": [
+          "figure_semantics_deferred: references recorded without image interpretation",
+          "table_caption_detected_but_structure_not_extracted"
+        ]
+      },
+      {
+        "chunks_created": 51,
+        "doc_id": "aad_ad_section2_topical_2014",
+        "document_name": "Guidelines of care for the management of atopic dermatitis: Section 2. Management and treatment with topical therapies",
+        "figure_references": 0,
+        "pages_needing_ocr": 0,
+        "pages_total": 17,
+        "pages_with_text": 17,
+        "sections_detected": 23,
+        "source_sha256": "a8deff3c5533895676d201bd6aaa38ffc863989c77e0d4c81473fed098fbe95e",
+        "tables_extracted": 5,
+        "vectors_upserted": 51,
+        "warnings": [
+          "table_caption_detected_but_structure_not_extracted"
+        ]
+      },
+      {
+        "chunks_created": 42,
+        "doc_id": "aad_ad_section4_flare_prevention_2014",
+        "document_name": "Guidelines of care for the management of atopic dermatitis: Section 4. Prevention of disease flares and use of adjunctive therapies and approaches",
+        "figure_references": 0,
+        "pages_needing_ocr": 0,
+        "pages_total": 16,
+        "pages_with_text": 16,
+        "sections_detected": 18,
+        "source_sha256": "5aa4a7e4fe7845de39f788b28714a3c3c4e201106a1b0f2ee58cf780dfc08ec3",
+        "tables_extracted": 3,
+        "vectors_upserted": 42,
+        "warnings": [
+          "table_caption_detected_but_structure_not_extracted"
+        ]
+      },
+      {
+        "chunks_created": 83,
+        "doc_id": "aad_ad_section3_phototherapy_systemic_2014",
+        "document_name": "Guidelines of care for the management of atopic dermatitis: Section 3. Management and treatment with phototherapy and systemic agents",
+        "figure_references": 0,
+        "pages_needing_ocr": 0,
+        "pages_total": 23,
+        "pages_with_text": 23,
+        "sections_detected": 42,
+        "source_sha256": "d8e6906d263f532af26dfcb334972fee7a8953dc9433d4c4f4c96cfc32e506d4",
+        "tables_extracted": 15,
+        "vectors_upserted": 83,
+        "warnings": [
+          "table_caption_detected_but_structure_not_extracted"
+        ]
+      }
+    ],
+    "figure_references": 3,
+    "output_files": [
+      "outputs\\chunks.jsonl",
+      "outputs\\embedding_model.json",
+      "outputs\\index_manifest.json",
+      "outputs\\retrieval_results.json",
+      "outputs\\retrieval_results.md",
+      "outputs\\sample_pages.md",
+      "outputs\\source_credibility.md",
+      "outputs\\structured_pages.jsonl",
+      "outputs\\vector_store.sqlite3"
+    ],
+    "pages_needing_ocr": 0,
+    "pages_processed": 153,
+    "resources_processed": 7,
+    "sections_detected": 324,
+    "tables_extracted": 35,
+    "vectors_indexed": 510
+  },
+  "router_summary": {
+    "expert_route_counts": {
+      "contact_dermatitis_management": 3,
+      "eczema_diagnosis_assessment": 7,
+      "eczema_prevention_flare_control": 1,
+      "eczema_treatment_topical_systemic": 2
+    },
+    "top_expert_counts": {
+      "contact_dermatitis_management": 1,
+      "eczema_diagnosis_assessment": 7,
+      "eczema_treatment_topical_systemic": 1
+    }
+  },
+  "retrieval_summary": {
+    "questions_evaluated": 9,
+    "avg_top_score": 0.401873,
+    "avg_mean_score": 0.358915,
+    "questions_with_hits": 9
+  },
+  "question_results": [
+    {
+      "question": "What are the diagnostic criteria for atopic eczema?",
+      "route": [
+        "eczema_diagnosis_assessment"
+      ],
+      "weights": {
+        "eczema_diagnosis_assessment": 1.0,
+        "contact_dermatitis_management": 0.0,
+        "eczema_treatment_topical_systemic": 0.0,
+        "eczema_prevention_flare_control": 0.0
+      },
+      "top_expert": "eczema_diagnosis_assessment",
+      "hits": [
+        {
+          "rank": 1,
+          "score": 0.296928,
+          "document_name": "Guidelines of care for the management of atopic dermatitis: Section 1. Diagnosis and assessment of atopic dermatitis",
+          "doc_id": "aad_ad_section1_diagnosis_2014",
+          "citation": "Guidelines of care for the management of atopic dermatitis: Section 1. Diagnosis and assessment of atopic dermatitis — Definition; PDF page 3; chunk aad_ad_section1_diagnosis_2014:chunk:0011:1acb6f7eeee8; source https://doi.org/10.1016/j.jaad.2013.10.010",
+          "section_path": [
+            "Definition"
+          ],
+          "chunk_id": "aad_ad_section1_diagnosis_2014:chunk:0011:1acb6f7eeee8"
+        },
+        {
+          "rank": 2,
+          "score": 0.255214,
+          "document_name": "Atopic eczema in under 12s: diagnosis and management",
+          "doc_id": "nice_cg57_atopic_eczema_under_12",
+          "citation": "Atopic eczema in under 12s: diagnosis and management — Recommendations > 1.4 Identifying and managing trigger factors > 1.4.1.3 Consider a diagnosis of inhalant allergy in:; PDF page 9; chunk nice_cg57_atopic_eczema_under_12:chunk:0017:e3f02dbaa8a1; source https://www.nice.org.uk/guidance/cg57",
+          "section_path": [
+            "Recommendations",
+            "1.4 Identifying and managing trigger factors",
+            "1.4.1.3 Consider a diagnosis of inhalant allergy in:"
+          ],
+          "chunk_id": "nice_cg57_atopic_eczema_under_12:chunk:0017:e3f02dbaa8a1"
+        },
+        {
+          "rank": 3,
+          "score": 0.248024,
+          "document_name": "Guidelines of care for the management of atopic dermatitis: Section 1. Diagnosis and assessment of atopic dermatitis",
+          "doc_id": "aad_ad_section1_diagnosis_2014",
+          "citation": "Guidelines of care for the management of atopic dermatitis: Section 1. Diagnosis and assessment of atopic dermatitis — 3 Sparing of the groin and axillary regions > Table II. Recommendation for the diagnosis of Markers for prognosis are also inconsistent,; PDF page 5; chunk aad_ad_section1_diagnosis_2014:chunk:0016:0997026ca6ac; source https://doi.org/10.1016/j.jaad.2013.10.010",
+          "section_path": [
+            "3 Sparing of the groin and axillary regions",
+            "Table II. Recommendation for the diagnosis of Markers for prognosis are also inconsistent,"
+          ],
+          "chunk_id": "aad_ad_section1_diagnosis_2014:chunk:0016:0997026ca6ac"
+        }
+      ],
+      "top_score": 0.296928,
+      "mean_score": 0.266722
+    },
+    {
+      "question": "What should be included in the clinical history for eczema?",
+      "route": [
+        "eczema_diagnosis_assessment"
+      ],
+      "weights": {
+        "eczema_diagnosis_assessment": 1.0,
+        "contact_dermatitis_management": 0.0,
+        "eczema_treatment_topical_systemic": 0.0,
+        "eczema_prevention_flare_control": 0.0
+      },
+      "top_expert": "eczema_diagnosis_assessment",
+      "hits": [
+        {
+          "rank": 1,
+          "score": 0.246507,
+          "document_name": "Atopic eczema in under 12s: diagnosis and management",
+          "doc_id": "nice_cg57_atopic_eczema_under_12",
+          "citation": "Atopic eczema in under 12s: diagnosis and management — Recommendations > 1.1 Diagnosis > 1.1.1.1 Take clinical and drug histories of children with atopic eczema, including; PDF page 6; chunk nice_cg57_atopic_eczema_under_12:chunk:0003:9b6eea874737; source https://www.nice.org.uk/guidance/cg57",
+          "section_path": [
+            "Recommendations",
+            "1.1 Diagnosis",
+            "1.1.1.1 Take clinical and drug histories of children with atopic eczema, including"
+          ],
+          "chunk_id": "nice_cg57_atopic_eczema_under_12:chunk:0003:9b6eea874737"
+        },
+        {
+          "rank": 2,
+          "score": 0.161844,
+          "document_name": "Guidelines of care for the management of atopic dermatitis: Section 1. Diagnosis and assessment of atopic dermatitis",
+          "doc_id": "aad_ad_section1_diagnosis_2014",
+          "citation": "Guidelines of care for the management of atopic dermatitis: Section 1. Diagnosis and assessment of atopic dermatitis — Biomarkers Disease Severity And Clinical > Table IV. Recommendations for the use of itch intensity, whether made by parents for young; PDF page 6-7; chunk aad_ad_section1_diagnosis_2014:chunk:0026:83702c933125; source https://doi.org/10.1016/j.jaad.2013.10.010",
+          "section_path": [
+            "Biomarkers Disease Severity And Clinical",
+            "Table IV. Recommendations for the use of itch intensity, whether made by parents for young"
+          ],
+          "chunk_id": "aad_ad_section1_diagnosis_2014:chunk:0026:83702c933125"
+        },
+        {
+          "rank": 3,
+          "score": 0.130308,
+          "document_name": "Atopic eczema in under 12s: diagnosis and management",
+          "doc_id": "nice_cg57_atopic_eczema_under_12",
+          "citation": "Atopic eczema in under 12s: diagnosis and management — Recommendations > recommendation on emollient bath additives for this group, but decided not to > 1.5.1.43 Consider phototherapy or systemic treatments for severe atopic eczema in; PDF page 21; chunk nice_cg57_atopic_eczema_under_12:chunk:0072:58fd9636363a; source https://www.nice.org.uk/guidance/cg57",
+          "section_path": [
+            "Recommendations",
+            "recommendation on emollient bath additives for this group, but decided not to",
+            "1.5.1.43 Consider phototherapy or systemic treatments for severe atopic eczema in"
+          ],
+          "chunk_id": "nice_cg57_atopic_eczema_under_12:chunk:0072:58fd9636363a"
+        }
+      ],
+      "top_score": 0.246507,
+      "mean_score": 0.179553
+    },
+    {
+      "question": "How should eczema severity and quality of life be assessed?",
+      "route": [
+        "eczema_diagnosis_assessment"
+      ],
+      "weights": {
+        "eczema_diagnosis_assessment": 1.0,
+        "contact_dermatitis_management": 0.0,
+        "eczema_treatment_topical_systemic": 0.0,
+        "eczema_prevention_flare_control": 0.0
+      },
+      "top_expert": "eczema_diagnosis_assessment",
+      "hits": [
+        {
+          "rank": 1,
+          "score": 0.339968,
+          "document_name": "Atopic eczema in under 12s: diagnosis and management",
+          "doc_id": "nice_cg57_atopic_eczema_under_12",
+          "citation": "Atopic eczema in under 12s: diagnosis and management — Recommendations > Table 1 Holistic assessment > 1.2.1.6 Consider using the following additional tools to provide objective measures of the; PDF page 8; chunk nice_cg57_atopic_eczema_under_12:chunk:0012:6dc677f1af4e; source https://www.nice.org.uk/guidance/cg57",
+          "section_path": [
+            "Recommendations",
+            "Table 1 Holistic assessment",
+            "1.2.1.6 Consider using the following additional tools to provide objective measures of the"
+          ],
+          "chunk_id": "nice_cg57_atopic_eczema_under_12:chunk:0012:6dc677f1af4e"
+        },
+        {
+          "rank": 2,
+          "score": 0.31546,
+          "document_name": "Atopic eczema in under 12s: diagnosis and management",
+          "doc_id": "nice_cg57_atopic_eczema_under_12",
+          "citation": "Atopic eczema in under 12s: diagnosis and management — Recommendations > 1.2 Assessing severity, psychological and > 1.2.1.1 Use a holistic approach when assessing a child's atopic eczema at each; PDF page 7; chunk nice_cg57_atopic_eczema_under_12:chunk:0006:154c3b4aee35; source https://www.nice.org.uk/guidance/cg57",
+          "section_path": [
+            "Recommendations",
+            "1.2 Assessing severity, psychological and",
+            "1.2.1.1 Use a holistic approach when assessing a child's atopic eczema at each"
+          ],
+          "chunk_id": "nice_cg57_atopic_eczema_under_12:chunk:0006:154c3b4aee35"
+        },
+        {
+          "rank": 3,
+          "score": 0.24871,
+          "document_name": "Atopic eczema in under 12s: diagnosis and management",
+          "doc_id": "nice_cg57_atopic_eczema_under_12",
+          "citation": "Atopic eczema in under 12s: diagnosis and management — Recommendations > 1.2 Assessing severity, psychological and; PDF page 7; chunk nice_cg57_atopic_eczema_under_12:chunk:0005:62f1f132775c; source https://www.nice.org.uk/guidance/cg57",
+          "section_path": [
+            "Recommendations",
+            "1.2 Assessing severity, psychological and"
+          ],
+          "chunk_id": "nice_cg57_atopic_eczema_under_12:chunk:0005:62f1f132775c"
+        }
+      ],
+      "top_score": 0.339968,
+      "mean_score": 0.301379
+    },
+    {
+      "question": "What trigger factors should be considered for atopic eczema?",
+      "route": [
+        "eczema_diagnosis_assessment",
+        "eczema_prevention_flare_control"
+      ],
+      "weights": {
+        "eczema_diagnosis_assessment": 0.5,
+        "contact_dermatitis_management": 0.0,
+        "eczema_treatment_topical_systemic": 0.0,
+        "eczema_prevention_flare_control": 0.5
+      },
+      "top_expert": "eczema_diagnosis_assessment",
+      "hits": [
+        {
+          "rank": 1,
+          "score": 0.396689,
+          "document_name": "Atopic eczema in under 12s: diagnosis and management",
+          "doc_id": "nice_cg57_atopic_eczema_under_12",
+          "citation": "Atopic eczema in under 12s: diagnosis and management — Recommendations > 1.4 Identifying and managing trigger factors > 1.4.1.12 Explain to children with atopic eczema and their parents or carers that:; PDF page 10; chunk nice_cg57_atopic_eczema_under_12:chunk:0026:9daa9c74f7a8; source https://www.nice.org.uk/guidance/cg57",
+          "section_path": [
+            "Recommendations",
+            "1.4 Identifying and managing trigger factors",
+            "1.4.1.12 Explain to children with atopic eczema and their parents or carers that:"
+          ],
+          "chunk_id": "nice_cg57_atopic_eczema_under_12:chunk:0026:9daa9c74f7a8"
+        },
+        {
+          "rank": 2,
+          "score": 0.385696,
+          "document_name": "Atopic eczema in under 12s: diagnosis and management",
+          "doc_id": "nice_cg57_atopic_eczema_under_12",
+          "citation": "Atopic eczema in under 12s: diagnosis and management — Recommendations > 1.4 Identifying and managing trigger factors > 1.4.1.4 Consider a diagnosis of allergic contact dermatitis in children with:; PDF page 10; chunk nice_cg57_atopic_eczema_under_12:chunk:0018:491392353d47; source https://www.nice.org.uk/guidance/cg57",
+          "section_path": [
+            "Recommendations",
+            "1.4 Identifying and managing trigger factors",
+            "1.4.1.4 Consider a diagnosis of allergic contact dermatitis in children with:"
+          ],
+          "chunk_id": "nice_cg57_atopic_eczema_under_12:chunk:0018:491392353d47"
+        },
+        {
+          "rank": 3,
+          "score": 0.37139,
+          "document_name": "Atopic eczema in under 12s: diagnosis and management",
+          "doc_id": "nice_cg57_atopic_eczema_under_12",
+          "citation": "Atopic eczema in under 12s: diagnosis and management — Recommendations > 1.4 Identifying and managing trigger factors > 1.4.1.6 Advise children with atopic eczema and their parents or carers not to use high; PDF page 10; chunk nice_cg57_atopic_eczema_under_12:chunk:0020:5ff556f1bc88; source https://www.nice.org.uk/guidance/cg57",
+          "section_path": [
+            "Recommendations",
+            "1.4 Identifying and managing trigger factors",
+            "1.4.1.6 Advise children with atopic eczema and their parents or carers not to use high"
+          ],
+          "chunk_id": "nice_cg57_atopic_eczema_under_12:chunk:0020:5ff556f1bc88"
+        }
+      ],
+      "top_score": 0.396689,
+      "mean_score": 0.384592
+    },
+    {
+      "question": "What are the stepped treatments for atopic eczema?",
+      "route": [
+        "eczema_diagnosis_assessment",
+        "eczema_treatment_topical_systemic"
+      ],
+      "weights": {
+        "eczema_diagnosis_assessment": 0.5,
+        "contact_dermatitis_management": 0.0,
+        "eczema_treatment_topical_systemic": 0.5,
+        "eczema_prevention_flare_control": 0.0
+      },
+      "top_expert": "eczema_diagnosis_assessment",
+      "hits": [
+        {
+          "rank": 1,
+          "score": 0.491215,
+          "document_name": "Atopic eczema in under 12s: diagnosis and management",
+          "doc_id": "nice_cg57_atopic_eczema_under_12",
+          "citation": "Atopic eczema in under 12s: diagnosis and management — Recommendations > 1.5 Treatment > 1.5.1.1 Use the stepped approach in table 2 for managing atopic eczema in children.; PDF page 11; chunk nice_cg57_atopic_eczema_under_12:chunk:0028:bf5233f71f1c; source https://www.nice.org.uk/guidance/cg57",
+          "section_path": [
+            "Recommendations",
+            "1.5 Treatment",
+            "1.5.1.1 Use the stepped approach in table 2 for managing atopic eczema in children."
+          ],
+          "chunk_id": "nice_cg57_atopic_eczema_under_12:chunk:0028:bf5233f71f1c"
+        },
+        {
+          "rank": 2,
+          "score": 0.417223,
+          "document_name": "Atopic eczema in under 12s: diagnosis and management",
+          "doc_id": "nice_cg57_atopic_eczema_under_12",
+          "citation": "Atopic eczema in under 12s: diagnosis and management — Recommendations > Table 2 Stepped treatment options > 1.5.1.5 Explain to children with atopic eczema and their parents or carers that they; PDF page 12; chunk nice_cg57_atopic_eczema_under_12:chunk:0033:4beb3d4f80e6; source https://www.nice.org.uk/guidance/cg57",
+          "section_path": [
+            "Recommendations",
+            "Table 2 Stepped treatment options",
+            "1.5.1.5 Explain to children with atopic eczema and their parents or carers that they"
+          ],
+          "chunk_id": "nice_cg57_atopic_eczema_under_12:chunk:0033:4beb3d4f80e6"
+        },
+        {
+          "rank": 3,
+          "score": 0.404849,
+          "document_name": "Atopic eczema in under 12s: diagnosis and management",
+          "doc_id": "nice_cg57_atopic_eczema_under_12",
+          "citation": "Atopic eczema in under 12s: diagnosis and management — Recommendations > Table 2 Stepped treatment options > 1.5.1.2 Offer children with atopic eczema and their parents or carers information on how; PDF page 12; chunk nice_cg57_atopic_eczema_under_12:chunk:0030:6cb31f92ba73; source https://www.nice.org.uk/guidance/cg57",
+          "section_path": [
+            "Recommendations",
+            "Table 2 Stepped treatment options",
+            "1.5.1.2 Offer children with atopic eczema and their parents or carers information on how"
+          ],
+          "chunk_id": "nice_cg57_atopic_eczema_under_12:chunk:0030:6cb31f92ba73"
+        }
+      ],
+      "top_score": 0.491215,
+      "mean_score": 0.437762
+    },
+    {
+      "question": "When should a child with eczema be referred for specialist care?",
+      "route": [
+        "eczema_diagnosis_assessment",
+        "contact_dermatitis_management"
+      ],
+      "weights": {
+        "eczema_diagnosis_assessment": 0.25,
+        "contact_dermatitis_management": 0.25,
+        "eczema_treatment_topical_systemic": 0.25,
+        "eczema_prevention_flare_control": 0.25
+      },
+      "top_expert": "eczema_diagnosis_assessment",
+      "hits": [
+        {
+          "rank": 1,
+          "score": 0.409745,
+          "document_name": "Atopic eczema in under 12s: diagnosis and management",
+          "doc_id": "nice_cg57_atopic_eczema_under_12",
+          "citation": "Atopic eczema in under 12s: diagnosis and management — Recommendations > 1.7 Indications for referral > 1.7.1.5 Refer children with moderate or severe atopic eczema and suspected food; PDF page 24; chunk nice_cg57_atopic_eczema_under_12:chunk:0086:00fa26426038; source https://www.nice.org.uk/guidance/cg57",
+          "section_path": [
+            "Recommendations",
+            "1.7 Indications for referral",
+            "1.7.1.5 Refer children with moderate or severe atopic eczema and suspected food"
+          ],
+          "chunk_id": "nice_cg57_atopic_eczema_under_12:chunk:0086:00fa26426038"
+        },
+        {
+          "rank": 2,
+          "score": 0.362757,
+          "document_name": "Atopic eczema in under 12s: diagnosis and management",
+          "doc_id": "nice_cg57_atopic_eczema_under_12",
+          "citation": "Atopic eczema in under 12s: diagnosis and management — Recommendations > 1.7 Indications for referral > 1.7.1.3 Refer children with atopic eczema for specialist dermatological advice if:; PDF page 23; chunk nice_cg57_atopic_eczema_under_12:chunk:0084:012a9732ccdf; source https://www.nice.org.uk/guidance/cg57",
+          "section_path": [
+            "Recommendations",
+            "1.7 Indications for referral",
+            "1.7.1.3 Refer children with atopic eczema for specialist dermatological advice if:"
+          ],
+          "chunk_id": "nice_cg57_atopic_eczema_under_12:chunk:0084:012a9732ccdf"
+        },
+        {
+          "rank": 3,
+          "score": 0.360067,
+          "document_name": "Atopic eczema in under 12s: diagnosis and management",
+          "doc_id": "nice_cg57_atopic_eczema_under_12",
+          "citation": "Atopic eczema in under 12s: diagnosis and management — Recommendations > 1.7 Indications for referral > 1.7.1.1 Immediately (same day) refer children for specialist dermatological advice if; PDF page 23; chunk nice_cg57_atopic_eczema_under_12:chunk:0082:c99436f6038d; source https://www.nice.org.uk/guidance/cg57",
+          "section_path": [
+            "Recommendations",
+            "1.7 Indications for referral",
+            "1.7.1.1 Immediately (same day) refer children for specialist dermatological advice if"
+          ],
+          "chunk_id": "nice_cg57_atopic_eczema_under_12:chunk:0082:c99436f6038d"
+        }
+      ],
+      "top_score": 0.409745,
+      "mean_score": 0.377523
+    },
+    {
+      "question": "When is patch testing recommended for suspected allergic contact dermatitis?",
+      "route": [
+        "contact_dermatitis_management"
+      ],
+      "weights": {
+        "eczema_diagnosis_assessment": 0.0,
+        "contact_dermatitis_management": 1.0,
+        "eczema_treatment_topical_systemic": 0.0,
+        "eczema_prevention_flare_control": 0.0
+      },
+      "top_expert": "contact_dermatitis_management",
+      "hits": [
+        {
+          "rank": 1,
+          "score": 0.422628,
+          "document_name": "British Association of Dermatologists' guidelines for the management of contact dermatitis 2017",
+          "doc_id": "bad_contact_dermatitis_2017",
+          "citation": "British Association of Dermatologists' guidelines for the management of contact dermatitis 2017 — 12.0 Plans for guideline revision > 9.2 Is it worthwhile managing patients with contact; PDF page 10; printed page 17; chunk bad_contact_dermatitis_2017:chunk:0046:998ce3cee3af; source https://doi.org/10.1111/bjd.15239",
+          "section_path": [
+            "12.0 Plans for guideline revision",
+            "9.2 Is it worthwhile managing patients with contact"
+          ],
+          "chunk_id": "bad_contact_dermatitis_2017:chunk:0046:998ce3cee3af"
+        },
+        {
+          "rank": 2,
+          "score": 0.412387,
+          "document_name": "British Association of Dermatologists' guidelines for the management of contact dermatitis 2017",
+          "doc_id": "bad_contact_dermatitis_2017",
+          "citation": "British Association of Dermatologists' guidelines for the management of contact dermatitis 2017 — 12.0 Plans for guideline revision > 9.2 Is it worthwhile managing patients with contact; PDF page 10; printed page 17; chunk bad_contact_dermatitis_2017:chunk:0047:2e791742dd3f; source https://doi.org/10.1111/bjd.15239",
+          "section_path": [
+            "12.0 Plans for guideline revision",
+            "9.2 Is it worthwhile managing patients with contact"
+          ],
+          "chunk_id": "bad_contact_dermatitis_2017:chunk:0047:2e791742dd3f"
+        },
+        {
+          "rank": 3,
+          "score": 0.411859,
+          "document_name": "Contact Dermatitis: A Practice Parameter-Update 2015",
+          "doc_id": "jtf_contact_dermatitis_2015",
+          "citation": "Contact Dermatitis: A Practice Parameter-Update 2015 — May/June2015 > Summary Statement 15: In addition to avoiding irritants in UV radiation and photo-patch testing to confirm a suspected; PDF page 4; chunk jtf_contact_dermatitis_2015:chunk:0012:5afc0cb36389; source https://doi.org/10.1016/j.jaip.2015.02.009",
+          "section_path": [
+            "May/June2015",
+            "Summary Statement 15: In addition to avoiding irritants in UV radiation and photo-patch testing to confirm a suspected"
+          ],
+          "chunk_id": "jtf_contact_dermatitis_2015:chunk:0012:5afc0cb36389"
+        }
+      ],
+      "top_score": 0.422628,
+      "mean_score": 0.415625
+    },
+    {
+      "question": "When should phototherapy or systemic treatment be considered for atopic dermatitis?",
+      "route": [
+        "eczema_treatment_topical_systemic"
+      ],
+      "weights": {
+        "eczema_diagnosis_assessment": 0.0,
+        "contact_dermatitis_management": 0.0,
+        "eczema_treatment_topical_systemic": 1.0,
+        "eczema_prevention_flare_control": 0.0
+      },
+      "top_expert": "eczema_treatment_topical_systemic",
+      "hits": [
+        {
+          "rank": 1,
+          "score": 0.559952,
+          "document_name": "Guidelines of care for the management of atopic dermatitis: Section 3. Management and treatment with phototherapy and systemic agents",
+          "doc_id": "aad_ad_section3_phototherapy_systemic_2014",
+          "citation": "Guidelines of care for the management of atopic dermatitis: Section 3. Management and treatment with phototherapy and systemic agents — Section 3: Management and treatment with phototherapy; PDF page 1; printed page 327; chunk aad_ad_section3_phototherapy_systemic_2014:chunk:0003:0010193a8d78; source https://doi.org/10.1016/j.jaad.2014.03.030",
+          "section_path": [
+            "Section 3: Management and treatment with phototherapy"
+          ],
+          "chunk_id": "aad_ad_section3_phototherapy_systemic_2014:chunk:0003:0010193a8d78"
+        },
+        {
+          "rank": 2,
+          "score": 0.503769,
+          "document_name": "Guidelines of care for the management of atopic dermatitis: Section 3. Management and treatment with phototherapy and systemic agents",
+          "doc_id": "aad_ad_section3_phototherapy_systemic_2014",
+          "citation": "Guidelines of care for the management of atopic dermatitis: Section 3. Management and treatment with phototherapy and systemic agents — Systemic Agents > Table VII. Recommendations for the use of systemic immunomodulatory agents; PDF page 7; chunk aad_ad_section3_phototherapy_systemic_2014:chunk:0026:0c0fba0bf34f; source https://doi.org/10.1016/j.jaad.2014.03.030",
+          "section_path": [
+            "Systemic Agents",
+            "Table VII. Recommendations for the use of systemic immunomodulatory agents"
+          ],
+          "chunk_id": "aad_ad_section3_phototherapy_systemic_2014:chunk:0026:0c0fba0bf34f"
+        },
+        {
+          "rank": 3,
+          "score": 0.50004,
+          "document_name": "Guidelines of care for the management of atopic dermatitis: Section 3. Management and treatment with phototherapy and systemic agents",
+          "doc_id": "aad_ad_section3_phototherapy_systemic_2014",
+          "citation": "Guidelines of care for the management of atopic dermatitis: Section 3. Management and treatment with phototherapy and systemic agents — Jamacaddermatol > recommendation of systemic steroids is summa- patients experience decreased linear growth while; PDF page 17-18; chunk aad_ad_section3_phototherapy_systemic_2014:chunk:0064:6d685487117a; source https://doi.org/10.1016/j.jaad.2014.03.030",
+          "section_path": [
+            "Jamacaddermatol",
+            "recommendation of systemic steroids is summa- patients experience decreased linear growth while"
+          ],
+          "chunk_id": "aad_ad_section3_phototherapy_systemic_2014:chunk:0064:6d685487117a"
+        }
+      ],
+      "top_score": 0.559952,
+      "mean_score": 0.521254
+    },
+    {
+      "question": "What strategies are recommended to prevent atopic dermatitis flares?",
+      "route": [
+        "eczema_diagnosis_assessment",
+        "contact_dermatitis_management"
+      ],
+      "weights": {
+        "eczema_diagnosis_assessment": 0.25,
+        "contact_dermatitis_management": 0.25,
+        "eczema_treatment_topical_systemic": 0.25,
+        "eczema_prevention_flare_control": 0.25
+      },
+      "top_expert": "eczema_diagnosis_assessment",
+      "hits": [
+        {
+          "rank": 1,
+          "score": 0.453222,
+          "document_name": "Atopic eczema in under 12s: diagnosis and management",
+          "doc_id": "nice_cg57_atopic_eczema_under_12",
+          "citation": "Atopic eczema in under 12s: diagnosis and management — 2 Prevention of flares; PDF page 25-26; chunk nice_cg57_atopic_eczema_under_12:chunk:0090:2b7b54c159ce; source https://www.nice.org.uk/guidance/cg57",
+          "section_path": [
+            "2 Prevention of flares"
+          ],
+          "chunk_id": "nice_cg57_atopic_eczema_under_12:chunk:0090:2b7b54c159ce"
+        },
+        {
+          "rank": 2,
+          "score": 0.292383,
+          "document_name": "Atopic eczema in under 12s: diagnosis and management",
+          "doc_id": "nice_cg57_atopic_eczema_under_12",
+          "citation": "Atopic eczema in under 12s: diagnosis and management — Recommendations > Table 2 Stepped treatment options > 1.5.1.2 Offer children with atopic eczema and their parents or carers information on how; PDF page 12; chunk nice_cg57_atopic_eczema_under_12:chunk:0030:6cb31f92ba73; source https://www.nice.org.uk/guidance/cg57",
+          "section_path": [
+            "Recommendations",
+            "Table 2 Stepped treatment options",
+            "1.5.1.2 Offer children with atopic eczema and their parents or carers information on how"
+          ],
+          "chunk_id": "nice_cg57_atopic_eczema_under_12:chunk:0030:6cb31f92ba73"
+        },
+        {
+          "rank": 3,
+          "score": 0.291874,
+          "document_name": "Atopic eczema in under 12s: diagnosis and management",
+          "doc_id": "nice_cg57_atopic_eczema_under_12",
+          "citation": "Atopic eczema in under 12s: diagnosis and management — Recommendations > recommendation on emollient bath additives for this group, but decided not to > 1.5.1.19 Once the atopic eczema has been controlled, consider treating problem areas; PDF page 16; chunk nice_cg57_atopic_eczema_under_12:chunk:0048:e6f194bf232d; source https://www.nice.org.uk/guidance/cg57",
+          "section_path": [
+            "Recommendations",
+            "recommendation on emollient bath additives for this group, but decided not to",
+            "1.5.1.19 Once the atopic eczema has been controlled, consider treating problem areas"
+          ],
+          "chunk_id": "nice_cg57_atopic_eczema_under_12:chunk:0048:e6f194bf232d"
+        }
+      ],
+      "top_score": 0.453222,
+      "mean_score": 0.345826
+    }
+  ]
+}

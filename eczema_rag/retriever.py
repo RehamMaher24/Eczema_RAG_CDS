@@ -3,8 +3,8 @@ from __future__ import annotations
 from pathlib import Path
 import re
 from typing import Iterable
-
 from .embedder import LocalHashingEmbedder
+from .router import route_question, EXPERT_BY_DOC
 from .models import RetrievalHit
 from .text_utils import tokenize
 from .vector_store import SQLiteVectorStore
@@ -25,6 +25,28 @@ class GuidelineRetriever:
         self.top_k = top_k
         self.minimum_score = minimum_score
 
+    def _search_single_expert(
+        self,
+        query: str,
+        expert: str,
+        *,
+        top_k: int | None = None,
+        minimum_score: float | None = None,
+        include_reference_sections: bool = False,
+    ) -> list[RetrievalHit]:
+        expert_doc_ids = [
+            doc_id for doc_id, assigned_expert in EXPERT_BY_DOC.items()
+            if assigned_expert == expert
+        ]
+
+        return self.search(
+            query,
+            top_k=top_k,
+            minimum_score=minimum_score,
+            doc_ids=expert_doc_ids,
+            include_reference_sections=include_reference_sections,
+        )
+
     def search(
         self,
         query: str,
@@ -37,6 +59,32 @@ class GuidelineRetriever:
         query = query.strip()
         if not query:
             return []
+        #MoE
+        if doc_ids is None:
+            experts = route_question(query)
+            all_hits: list[RetrievalHit] = []
+
+            for expert in experts:
+                hits = self._search_single_expert(
+                    query,
+                    expert,
+                    top_k=top_k,
+                    minimum_score=minimum_score,
+                    include_reference_sections=include_reference_sections,
+                )
+                all_hits.extend(hits)
+
+            seen: set[str] = set()
+            merged: list[RetrievalHit] = []
+            for hit in all_hits:
+                if hit.chunk.chunk_id in seen:
+                    continue
+                seen.add(hit.chunk.chunk_id)
+                merged.append(hit)
+
+            merged.sort(key=lambda hit: (-hit.score, hit.chunk.chunk_id))
+            return merged[: (top_k if top_k is not None else self.top_k)]
+        #end of routing, rest of logic is same as before
         requested_top_k = top_k if top_k is not None else self.top_k
         with SQLiteVectorStore(self.vector_store_path, self.dimension) as store:
             state = store.get_model_state(self.collection_name)
@@ -224,3 +272,4 @@ def clean_section_path(section_path: list[str]) -> list[str]:
             continue
         cleaned.append(value[:180])
     return cleaned or ["Section not reliably detected"]
+
