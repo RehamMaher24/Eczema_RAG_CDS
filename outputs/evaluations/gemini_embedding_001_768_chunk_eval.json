@@ -14,16 +14,16 @@
   "summary": {
     "query_count": 50,
     "annotated_chunk_query_count": 50,
-    "document_recall_at_1": 0.88,
-    "document_recall_at_3": 0.98,
-    "document_recall_at_5": 0.98,
-    "document_mrr": 0.93,
-    "exact_chunk_recall_at_1": 0.56,
-    "exact_chunk_recall_at_3": 0.78,
-    "exact_chunk_recall_at_5": 0.86,
-    "exact_chunk_mrr": 0.678,
-    "complete_evidence_recall_at_5": 0.84,
-    "mean_query_latency_ms": 961.88
+    "document_recall_at_1": 0.6,
+    "document_recall_at_3": 0.66,
+    "document_recall_at_5": 0.66,
+    "document_mrr": 0.63,
+    "exact_chunk_recall_at_1": 0.42,
+    "exact_chunk_recall_at_3": 0.56,
+    "exact_chunk_recall_at_5": 0.6,
+    "exact_chunk_mrr": 0.4923,
+    "complete_evidence_recall_at_5": 0.58,
+    "mean_query_latency_ms": 1469.38
   },
   "per_query": [
     {
@@ -50,7 +50,7 @@
       "evidence_group_count": 1,
       "evidence_groups_found_at_5": 1,
       "all_evidence_groups_found_at_5": true,
-      "query_latency_ms": 1929.32,
+      "query_latency_ms": 10107.26,
       "retrieved_hits": [
         {
           "rank": 1,
@@ -142,7 +142,7 @@
       "evidence_group_count": 1,
       "evidence_groups_found_at_5": 1,
       "all_evidence_groups_found_at_5": true,
-      "query_latency_ms": 837.63,
+      "query_latency_ms": 1555.06,
       "retrieved_hits": [
         {
           "rank": 1,
@@ -238,7 +238,7 @@
       "evidence_group_count": 1,
       "evidence_groups_found_at_5": 1,
       "all_evidence_groups_found_at_5": true,
-      "query_latency_ms": 865.4,
+      "query_latency_ms": 1385.74,
       "retrieved_hits": [
         {
           "rank": 1,
@@ -256,32 +256,6 @@
         },
         {
           "rank": 2,
-          "score": 0.74909,
-          "chunk_id": "aad_ad_section2_topical_2014:chunk:0009:80463c50bf34",
-          "doc_id": "aad_ad_section2_topical_2014",
-          "section_path": [
-            "Scope",
-            "Recommendations on AD treatment and manage-"
-          ],
-          "page_start": 3,
-          "page_end": 3,
-          "citation": "Guidelines of care for the management of atopic dermatitis: Section 2. Management and treatment with topical therapies — Scope > Recommendations on AD treatment and manage-; PDF page 3; chunk aad_ad_section2_topical_2014:chunk:0009:80463c50bf34; source https://doi.org/10.1016/j.jaad.2014.03.023"
-        },
-        {
-          "rank": 3,
-          "score": 0.746802,
-          "chunk_id": "aad_ad_section2_topical_2014:chunk:0010:4886db654298",
-          "doc_id": "aad_ad_section2_topical_2014",
-          "section_path": [
-            "Scope",
-            "Recommendations on AD treatment and manage-"
-          ],
-          "page_start": 3,
-          "page_end": 3,
-          "citation": "Guidelines of care for the management of atopic dermatitis: Section 2. Management and treatment with topical therapies — Scope > Recommendations on AD treatment and manage-; PDF page 3; chunk aad_ad_section2_topical_2014:chunk:0010:4886db654298; source https://doi.org/10.1016/j.jaad.2014.03.023"
-        },
-        {
-          "rank": 4,
           "score": 0.744517,
           "chunk_id": "nice_cg57_atopic_eczema_under_12:chunk:0031:dd32cdcfe467",
           "doc_id": "nice_cg57_atopic_eczema_under_12",
@@ -295,16 +269,44 @@
           "citation": "Atopic eczema in under 12s: diagnosis and management — Recommendations > Table 2 Stepped treatment options > 1.5.1.3 Start treatment for flares of atopic eczema as soon as signs and symptoms; PDF page 12; chunk nice_cg57_atopic_eczema_under_12:chunk:0031:dd32cdcfe467; source https://www.nice.org.uk/guidance/cg57"
         },
         {
-          "rank": 5,
-          "score": 0.741318,
-          "chunk_id": "aad_ad_section4_flare_prevention_2014:chunk:0010:a7d191deb7d7",
-          "doc_id": "aad_ad_section4_flare_prevention_2014",
+          "rank": 3,
+          "score": 0.732124,
+          "chunk_id": "nice_cg57_atopic_eczema_under_12:chunk:0033:4beb3d4f80e6",
+          "doc_id": "nice_cg57_atopic_eczema_under_12",
           "section_path": [
-            "Definition"
+            "Recommendations",
+            "Table 2 Stepped treatment options",
+            "1.5.1.5 Explain to children with atopic eczema and their parents or carers that they"
           ],
-          "page_start": 3,
-          "page_end": 3,
-          "citation": "Guidelines of care for the management of atopic dermatitis: Section 4. Prevention of disease flares and use of adjunctive therapies and approaches — Definition; PDF page 3; chunk aad_ad_section4_flare_prevention_2014:chunk:0010:a7d191deb7d7; source https://doi.org/10.1016/j.jaad.2014.08.038"
+          "page_start": 12,
+          "page_end": 12,
+          "citation": "Atopic eczema in under 12s: diagnosis and management — Recommendations > Table 2 Stepped treatment options > 1.5.1.5 Explain to children with atopic eczema and their parents or carers that they; PDF page 12; chunk nice_cg57_atopic_eczema_under_12:chunk:0033:4beb3d4f80e6; source https://www.nice.org.uk/guidance/cg57"
+        },
+        {
+          "rank": 4,
+          "score": 0.732011,
+          "chunk_id": "nice_cg57_atopic_eczema_under_12:chunk:0032:2da5ab70ec20",
+          "doc_id": "nice_cg57_atopic_eczema_under_12",
+          "section_path": [
+            "Recommendations",
+            "Table 2 Stepped treatment options",
+            "1.5.1.4 Offer children with atopic eczema a choice of unperfumed emollients to use"
+          ],
+          "page_start": 12,
+          "page_end": 12,
+          "citation": "Atopic eczema in under 12s: diagnosis and management — Recommendations > Table 2 Stepped treatment options > 1.5.1.4 Offer children with atopic eczema a choice of unperfumed emollients to use; PDF page 12; chunk nice_cg57_atopic_eczema_under_12:chunk:0032:2da5ab70ec20; source https://www.nice.org.uk/guidance/cg57"
+        },
+        {
+          "rank": 5,
+          "score": 0.714991,
+          "chunk_id": "nice_cg57_atopic_eczema_under_12:chunk:0090:2b7b54c159ce",
+          "doc_id": "nice_cg57_atopic_eczema_under_12",
+          "section_path": [
+            "2 Prevention of flares"
+          ],
+          "page_start": 25,
+          "page_end": 26,
+          "citation": "Atopic eczema in under 12s: diagnosis and management — 2 Prevention of flares; PDF page 25-26; chunk nice_cg57_atopic_eczema_under_12:chunk:0090:2b7b54c159ce; source https://www.nice.org.uk/guidance/cg57"
         }
       ]
     },
@@ -325,14 +327,14 @@
       "document_hit_at_1": true,
       "document_hit_at_3": true,
       "document_hit_at_5": true,
-      "first_correct_chunk_rank": 4,
+      "first_correct_chunk_rank": 3,
       "exact_chunk_hit_at_1": false,
-      "exact_chunk_hit_at_3": false,
+      "exact_chunk_hit_at_3": true,
       "exact_chunk_hit_at_5": true,
       "evidence_group_count": 1,
       "evidence_groups_found_at_5": 1,
       "all_evidence_groups_found_at_5": true,
-      "query_latency_ms": 815.97,
+      "query_latency_ms": 1417.05,
       "retrieved_hits": [
         {
           "rank": 1,
@@ -364,19 +366,6 @@
         },
         {
           "rank": 3,
-          "score": 0.872767,
-          "chunk_id": "aad_ad_section2_topical_2014:chunk:0021:f3405ba5dc85",
-          "doc_id": "aad_ad_section2_topical_2014",
-          "section_path": [
-            "Scope",
-            "Table V. Relative potencies of topical corticosteroids"
-          ],
-          "page_start": 7,
-          "page_end": 7,
-          "citation": "Guidelines of care for the management of atopic dermatitis: Section 2. Management and treatment with topical therapies — Scope > Table V. Relative potencies of topical corticosteroids; PDF page 7; chunk aad_ad_section2_topical_2014:chunk:0021:f3405ba5dc85; source https://doi.org/10.1016/j.jaad.2014.03.023"
-        },
-        {
-          "rank": 4,
           "score": 0.864859,
           "chunk_id": "nice_cg57_atopic_eczema_under_12:chunk:0046:8c1b4528c71a",
           "doc_id": "nice_cg57_atopic_eczema_under_12",
@@ -390,7 +379,7 @@
           "citation": "Atopic eczema in under 12s: diagnosis and management — Recommendations > recommendation on emollient bath additives for this group, but decided not to > 1.5.1.17 Do not use potent topical corticosteroids in children aged under 12 months; PDF page 16; chunk nice_cg57_atopic_eczema_under_12:chunk:0046:8c1b4528c71a; source https://www.nice.org.uk/guidance/cg57"
         },
         {
-          "rank": 5,
+          "rank": 4,
           "score": 0.844329,
           "chunk_id": "nice_cg57_atopic_eczema_under_12:chunk:0044:c8893a9419f2",
           "doc_id": "nice_cg57_atopic_eczema_under_12",
@@ -402,6 +391,20 @@
           "page_start": 16,
           "page_end": 16,
           "citation": "Atopic eczema in under 12s: diagnosis and management — Recommendations > recommendation on emollient bath additives for this group, but decided not to > 1.5.1.15 Explain to children with atopic eczema and their parents or carers that they; PDF page 16; chunk nice_cg57_atopic_eczema_under_12:chunk:0044:c8893a9419f2; source https://www.nice.org.uk/guidance/cg57"
+        },
+        {
+          "rank": 5,
+          "score": 0.843316,
+          "chunk_id": "nice_cg57_atopic_eczema_under_12:chunk:0043:2d017c643e2d",
+          "doc_id": "nice_cg57_atopic_eczema_under_12",
+          "section_path": [
+            "Recommendations",
+            "recommendation on emollient bath additives for this group, but decided not to",
+            "1.5.1.14 In line with NICE technology appraisal guidance on topical corticosteroid"
+          ],
+          "page_start": 16,
+          "page_end": 16,
+          "citation": "Atopic eczema in under 12s: diagnosis and management — Recommendations > recommendation on emollient bath additives for this group, but decided not to > 1.5.1.14 In line with NICE technology appraisal guidance on topical corticosteroid; PDF page 16; chunk nice_cg57_atopic_eczema_under_12:chunk:0043:2d017c643e2d; source https://www.nice.org.uk/guidance/cg57"
         }
       ]
     },
@@ -429,7 +432,7 @@
       "evidence_group_count": 1,
       "evidence_groups_found_at_5": 1,
       "all_evidence_groups_found_at_5": true,
-      "query_latency_ms": 758.53,
+      "query_latency_ms": 1417.88,
       "retrieved_hits": [
         {
           "rank": 1,
@@ -527,7 +530,7 @@
       "evidence_group_count": 1,
       "evidence_groups_found_at_5": 0,
       "all_evidence_groups_found_at_5": false,
-      "query_latency_ms": 802.1,
+      "query_latency_ms": 1424.66,
       "retrieved_hits": [
         {
           "rank": 1,
@@ -581,15 +584,14 @@
         {
           "rank": 5,
           "score": 1.0,
-          "chunk_id": "aad_ad_section3_phototherapy_systemic_2014:chunk:0060:6e08fd6befdc",
+          "chunk_id": "aad_ad_section3_phototherapy_systemic_2014:chunk:0032:f8807046eebf",
           "doc_id": "aad_ad_section3_phototherapy_systemic_2014",
           "section_path": [
-            "Jamacaddermatol",
-            "tablets, and is given twice daily. Efficacy"
+            "Jamacaddermatol"
           ],
-          "page_start": 16,
-          "page_end": 16,
-          "citation": "Guidelines of care for the management of atopic dermatitis: Section 3. Management and treatment with phototherapy and systemic agents — Jamacaddermatol > tablets, and is given twice daily. Efficacy; PDF page 16; chunk aad_ad_section3_phototherapy_systemic_2014:chunk:0060:6e08fd6befdc; source https://doi.org/10.1016/j.jaad.2014.03.030"
+          "page_start": 8,
+          "page_end": 9,
+          "citation": "Guidelines of care for the management of atopic dermatitis: Section 3. Management and treatment with phototherapy and systemic agents — Jamacaddermatol; PDF page 8-9; printed page 334; chunk aad_ad_section3_phototherapy_systemic_2014:chunk:0032:f8807046eebf; source https://doi.org/10.1016/j.jaad.2014.03.030"
         }
       ]
     },
@@ -617,7 +619,7 @@
       "evidence_group_count": 1,
       "evidence_groups_found_at_5": 1,
       "all_evidence_groups_found_at_5": true,
-      "query_latency_ms": 1179.13,
+      "query_latency_ms": 3155.13,
       "retrieved_hits": [
         {
           "rank": 1,
@@ -649,18 +651,6 @@
         },
         {
           "rank": 3,
-          "score": 0.79091,
-          "chunk_id": "aad_ad_section4_flare_prevention_2014:chunk:0041:6a3b059f617a",
-          "doc_id": "aad_ad_section4_flare_prevention_2014",
-          "section_path": [
-            "Cd004054. 1984;74:26-33."
-          ],
-          "page_start": 16,
-          "page_end": 16,
-          "citation": "Guidelines of care for the management of atopic dermatitis: Section 4. Prevention of disease flares and use of adjunctive therapies and approaches — Cd004054. 1984;74:26-33.; PDF page 16; chunk aad_ad_section4_flare_prevention_2014:chunk:0041:6a3b059f617a; source https://doi.org/10.1016/j.jaad.2014.08.038"
-        },
-        {
-          "rank": 4,
           "score": 0.790069,
           "chunk_id": "nice_cg57_atopic_eczema_under_12:chunk:0078:7383c396b305",
           "doc_id": "nice_cg57_atopic_eczema_under_12",
@@ -674,7 +664,7 @@
           "citation": "Atopic eczema in under 12s: diagnosis and management — Recommendations > recommendation on emollient bath additives for this group, but decided not to > 1.5.1.49 Advise children with atopic eczema and their parents or carers that using regular; PDF page 22; chunk nice_cg57_atopic_eczema_under_12:chunk:0078:7383c396b305; source https://www.nice.org.uk/guidance/cg57"
         },
         {
-          "rank": 5,
+          "rank": 4,
           "score": 0.785935,
           "chunk_id": "nice_cg57_atopic_eczema_under_12:chunk:0001:fd19b34a5cf9",
           "doc_id": "nice_cg57_atopic_eczema_under_12",
@@ -684,6 +674,20 @@
           "page_start": 1,
           "page_end": 4,
           "citation": "Atopic eczema in under 12s: diagnosis and management — Section not reliably detected; PDF page 1-4; chunk nice_cg57_atopic_eczema_under_12:chunk:0001:fd19b34a5cf9; source https://www.nice.org.uk/guidance/cg57"
+        },
+        {
+          "rank": 5,
+          "score": 0.766784,
+          "chunk_id": "nice_cg57_atopic_eczema_under_12:chunk:0077:7c4120ca44af",
+          "doc_id": "nice_cg57_atopic_eczema_under_12",
+          "section_path": [
+            "Recommendations",
+            "recommendation on emollient bath additives for this group, but decided not to",
+            "1.5.1.48 Explain to children with atopic eczema and their parents or carers that if they"
+          ],
+          "page_start": 22,
+          "page_end": 22,
+          "citation": "Atopic eczema in under 12s: diagnosis and management — Recommendations > recommendation on emollient bath additives for this group, but decided not to > 1.5.1.48 Explain to children with atopic eczema and their parents or carers that if they; PDF page 22; chunk nice_cg57_atopic_eczema_under_12:chunk:0077:7c4120ca44af; source https://www.nice.org.uk/guidance/cg57"
         }
       ]
     },
@@ -711,7 +715,7 @@
       "evidence_group_count": 1,
       "evidence_groups_found_at_5": 1,
       "all_evidence_groups_found_at_5": true,
-      "query_latency_ms": 1576.29,
+      "query_latency_ms": 1427.23,
       "retrieved_hits": [
         {
           "rank": 1,
@@ -794,18 +798,18 @@
       "expected_chunk_ids": [
         "nice_cg57_atopic_eczema_under_12:chunk:0073:0651a182aade"
       ],
-      "first_correct_document_rank": 2,
-      "document_hit_at_1": false,
+      "first_correct_document_rank": 1,
+      "document_hit_at_1": true,
       "document_hit_at_3": true,
       "document_hit_at_5": true,
-      "first_correct_chunk_rank": 3,
+      "first_correct_chunk_rank": 2,
       "exact_chunk_hit_at_1": false,
       "exact_chunk_hit_at_3": true,
       "exact_chunk_hit_at_5": true,
       "evidence_group_count": 1,
       "evidence_groups_found_at_5": 1,
       "all_evidence_groups_found_at_5": true,
-      "query_latency_ms": 975.34,
+      "query_latency_ms": 1335.16,
       "retrieved_hits": [
         {
           "rank": 1,
@@ -820,7 +824,7 @@
           "citation": "Guidelines of care for the management of atopic dermatitis: Section 3. Management and treatment with phototherapy and systemic agents — Gaps In Research; PDF page 21; chunk aad_ad_section3_phototherapy_systemic_2014:chunk:0075:a91d3f568508; source https://doi.org/10.1016/j.jaad.2014.03.030"
         },
         {
-          "rank": 2,
+          "rank": 1,
           "score": 1.0,
           "chunk_id": "nice_cg57_atopic_eczema_under_12:chunk:0072:58fd9636363a",
           "doc_id": "nice_cg57_atopic_eczema_under_12",
@@ -834,7 +838,7 @@
           "citation": "Atopic eczema in under 12s: diagnosis and management — Recommendations > recommendation on emollient bath additives for this group, but decided not to > 1.5.1.43 Consider phototherapy or systemic treatments for severe atopic eczema in; PDF page 21; chunk nice_cg57_atopic_eczema_under_12:chunk:0072:58fd9636363a; source https://www.nice.org.uk/guidance/cg57"
         },
         {
-          "rank": 3,
+          "rank": 2,
           "score": 1.0,
           "chunk_id": "nice_cg57_atopic_eczema_under_12:chunk:0073:0651a182aade",
           "doc_id": "nice_cg57_atopic_eczema_under_12",
@@ -848,7 +852,7 @@
           "citation": "Atopic eczema in under 12s: diagnosis and management — Recommendations > recommendation on emollient bath additives for this group, but decided not to > 1.5.1.44 Only start phototherapy or systemic treatments in children with atopic eczema; PDF page 21; chunk nice_cg57_atopic_eczema_under_12:chunk:0073:0651a182aade; source https://www.nice.org.uk/guidance/cg57"
         },
         {
-          "rank": 4,
+          "rank": 2,
           "score": 0.99444,
           "chunk_id": "aad_ad_section3_phototherapy_systemic_2014:chunk:0022:a267a134adac",
           "doc_id": "aad_ad_section3_phototherapy_systemic_2014",
@@ -860,7 +864,7 @@
           "citation": "Guidelines of care for the management of atopic dermatitis: Section 3. Management and treatment with phototherapy and systemic agents — I 0.5 0.5 8; PDF page 6; chunk aad_ad_section3_phototherapy_systemic_2014:chunk:0022:a267a134adac; source https://doi.org/10.1016/j.jaad.2014.03.030"
         },
         {
-          "rank": 5,
+          "rank": 3,
           "score": 0.990034,
           "chunk_id": "aad_ad_section3_phototherapy_systemic_2014:chunk:0024:ef0b35d32e0f",
           "doc_id": "aad_ad_section3_phototherapy_systemic_2014",
@@ -897,7 +901,7 @@
       "evidence_group_count": 1,
       "evidence_groups_found_at_5": 1,
       "all_evidence_groups_found_at_5": true,
-      "query_latency_ms": 906.19,
+      "query_latency_ms": 1516.14,
       "retrieved_hits": [
         {
           "rank": 1,
@@ -995,7 +999,7 @@
       "evidence_group_count": 2,
       "evidence_groups_found_at_5": 0,
       "all_evidence_groups_found_at_5": false,
-      "query_latency_ms": 937.25,
+      "query_latency_ms": 770.27,
       "retrieved_hits": [
         {
           "rank": 1,
@@ -1086,7 +1090,7 @@
       "evidence_group_count": 1,
       "evidence_groups_found_at_5": 1,
       "all_evidence_groups_found_at_5": true,
-      "query_latency_ms": 848.74,
+      "query_latency_ms": 1490.35,
       "retrieved_hits": [
         {
           "rank": 1,
@@ -1175,7 +1179,7 @@
       "evidence_group_count": 1,
       "evidence_groups_found_at_5": 1,
       "all_evidence_groups_found_at_5": true,
-      "query_latency_ms": 944.23,
+      "query_latency_ms": 735.7,
       "retrieved_hits": [
         {
           "rank": 1,
@@ -1205,32 +1209,6 @@
         },
         {
           "rank": 3,
-          "score": 0.812308,
-          "chunk_id": "aad_ad_section4_flare_prevention_2014:chunk:0022:df079a4b9bc5",
-          "doc_id": "aad_ad_section4_flare_prevention_2014",
-          "section_path": [
-            "Definition",
-            "Table III). Testing may also be considered where Elimination diets should not be initiated based on"
-          ],
-          "page_start": 8,
-          "page_end": 8,
-          "citation": "Guidelines of care for the management of atopic dermatitis: Section 4. Prevention of disease flares and use of adjunctive therapies and approaches — Definition > Table III). Testing may also be considered where Elimination diets should not be initiated based on; PDF page 8; chunk aad_ad_section4_flare_prevention_2014:chunk:0022:df079a4b9bc5; source https://doi.org/10.1016/j.jaad.2014.08.038"
-        },
-        {
-          "rank": 4,
-          "score": 0.805528,
-          "chunk_id": "aad_ad_section4_flare_prevention_2014:chunk:0019:38d31fe57fd5",
-          "doc_id": "aad_ad_section4_flare_prevention_2014",
-          "section_path": [
-            "Definition",
-            "Table IV. Recommendations for educational isheterogeneousandoutcomemeasuresvarygreatly"
-          ],
-          "page_start": 7,
-          "page_end": 8,
-          "citation": "Guidelines of care for the management of atopic dermatitis: Section 4. Prevention of disease flares and use of adjunctive therapies and approaches — Definition > Table IV. Recommendations for educational isheterogeneousandoutcomemeasuresvarygreatly; PDF page 7-8; chunk aad_ad_section4_flare_prevention_2014:chunk:0019:38d31fe57fd5; source https://doi.org/10.1016/j.jaad.2014.08.038"
-        },
-        {
-          "rank": 5,
           "score": 0.802109,
           "chunk_id": "jtf_contact_dermatitis_2015:chunk:0037:f8b20fd2a760",
           "doc_id": "jtf_contact_dermatitis_2015",
@@ -1241,6 +1219,30 @@
           "page_start": 10,
           "page_end": 10,
           "citation": "Contact Dermatitis: A Practice Parameter-Update 2015 — May/June2015 > TABLE I. Differential diagnosis of allergic contact dermatitis (ACD); PDF page 10; chunk jtf_contact_dermatitis_2015:chunk:0037:f8b20fd2a760; source https://doi.org/10.1016/j.jaip.2015.02.009"
+        },
+        {
+          "rank": 4,
+          "score": 0.795187,
+          "chunk_id": "jtf_contact_dermatitis_2015:chunk:0035:cff262608e0f",
+          "doc_id": "jtf_contact_dermatitis_2015",
+          "section_path": [
+            "Volume3,Number3S"
+          ],
+          "page_start": 9,
+          "page_end": 9,
+          "citation": "Contact Dermatitis: A Practice Parameter-Update 2015 — Volume3,Number3S; PDF page 9; chunk jtf_contact_dermatitis_2015:chunk:0035:cff262608e0f; source https://doi.org/10.1016/j.jaip.2015.02.009"
+        },
+        {
+          "rank": 5,
+          "score": 0.787827,
+          "chunk_id": "jtf_contact_dermatitis_2015:chunk:0060:f935d296b53f",
+          "doc_id": "jtf_contact_dermatitis_2015",
+          "section_path": [
+            "Volume3,Number3S"
+          ],
+          "page_start": 17,
+          "page_end": 17,
+          "citation": "Contact Dermatitis: A Practice Parameter-Update 2015 — Volume3,Number3S; PDF page 17; chunk jtf_contact_dermatitis_2015:chunk:0060:f935d296b53f; source https://doi.org/10.1016/j.jaip.2015.02.009"
         }
       ]
     },
@@ -1268,7 +1270,7 @@
       "evidence_group_count": 1,
       "evidence_groups_found_at_5": 1,
       "all_evidence_groups_found_at_5": true,
-      "query_latency_ms": 1183.26,
+      "query_latency_ms": 738.91,
       "retrieved_hits": [
         {
           "rank": 1,
@@ -1357,7 +1359,7 @@
       "evidence_group_count": 1,
       "evidence_groups_found_at_5": 1,
       "all_evidence_groups_found_at_5": true,
-      "query_latency_ms": 1316.02,
+      "query_latency_ms": 1389.96,
       "retrieved_hits": [
         {
           "rank": 1,
@@ -1446,7 +1448,7 @@
       "evidence_group_count": 1,
       "evidence_groups_found_at_5": 1,
       "all_evidence_groups_found_at_5": true,
-      "query_latency_ms": 1211.12,
+      "query_latency_ms": 1512.43,
       "retrieved_hits": [
         {
           "rank": 1,
@@ -1539,7 +1541,7 @@
       "evidence_group_count": 3,
       "evidence_groups_found_at_5": 2,
       "all_evidence_groups_found_at_5": false,
-      "query_latency_ms": 1002.75,
+      "query_latency_ms": 791.73,
       "retrieved_hits": [
         {
           "rank": 1,
@@ -1630,7 +1632,7 @@
       "evidence_group_count": 1,
       "evidence_groups_found_at_5": 1,
       "all_evidence_groups_found_at_5": true,
-      "query_latency_ms": 984.85,
+      "query_latency_ms": 1440.29,
       "retrieved_hits": [
         {
           "rank": 1,
@@ -1722,7 +1724,7 @@
       "evidence_group_count": 1,
       "evidence_groups_found_at_5": 1,
       "all_evidence_groups_found_at_5": true,
-      "query_latency_ms": 1002.76,
+      "query_latency_ms": 2206.9,
       "retrieved_hits": [
         {
           "rank": 1,
@@ -1750,19 +1752,6 @@
         },
         {
           "rank": 3,
-          "score": 0.862208,
-          "chunk_id": "aad_ad_section4_flare_prevention_2014:chunk:0018:5a765cbc4cb2",
-          "doc_id": "aad_ad_section4_flare_prevention_2014",
-          "section_path": [
-            "Definition",
-            "Table IV. Recommendations for educational isheterogeneousandoutcomemeasuresvarygreatly"
-          ],
-          "page_start": 7,
-          "page_end": 7,
-          "citation": "Guidelines of care for the management of atopic dermatitis: Section 4. Prevention of disease flares and use of adjunctive therapies and approaches — Definition > Table IV. Recommendations for educational isheterogeneousandoutcomemeasuresvarygreatly; PDF page 7; chunk aad_ad_section4_flare_prevention_2014:chunk:0018:5a765cbc4cb2; source https://doi.org/10.1016/j.jaad.2014.08.038"
-        },
-        {
-          "rank": 4,
           "score": 0.850822,
           "chunk_id": "aad_ad_section1_diagnosis_2014:chunk:0016:0997026ca6ac",
           "doc_id": "aad_ad_section1_diagnosis_2014",
@@ -1775,7 +1764,7 @@
           "citation": "Guidelines of care for the management of atopic dermatitis: Section 1. Diagnosis and assessment of atopic dermatitis — 3 Sparing of the groin and axillary regions > Table II. Recommendation for the diagnosis of Markers for prognosis are also inconsistent,; PDF page 5; chunk aad_ad_section1_diagnosis_2014:chunk:0016:0997026ca6ac; source https://doi.org/10.1016/j.jaad.2013.10.010"
         },
         {
-          "rank": 5,
+          "rank": 4,
           "score": 0.849019,
           "chunk_id": "aad_ad_section1_diagnosis_2014:chunk:0025:338a96482007",
           "doc_id": "aad_ad_section1_diagnosis_2014",
@@ -1786,6 +1775,18 @@
           "page_start": 6,
           "page_end": 6,
           "citation": "Guidelines of care for the management of atopic dermatitis: Section 1. Diagnosis and assessment of atopic dermatitis — Biomarkers Disease Severity And Clinical > Table IV. Recommendations for the use of itch intensity, whether made by parents for young; PDF page 6; chunk aad_ad_section1_diagnosis_2014:chunk:0025:338a96482007; source https://doi.org/10.1016/j.jaad.2013.10.010"
+        },
+        {
+          "rank": 5,
+          "score": 0.844817,
+          "chunk_id": "aad_ad_section1_diagnosis_2014:chunk:0003:574a771f673e",
+          "doc_id": "aad_ad_section1_diagnosis_2014",
+          "section_path": [
+            "Section 1: Diagnosis and assessment of atopic dermatitis"
+          ],
+          "page_start": 1,
+          "page_end": 1,
+          "citation": "Guidelines of care for the management of atopic dermatitis: Section 1. Diagnosis and assessment of atopic dermatitis — Section 1: Diagnosis and assessment of atopic dermatitis; PDF page 1; printed page 338; chunk aad_ad_section1_diagnosis_2014:chunk:0003:574a771f673e; source https://doi.org/10.1016/j.jaad.2013.10.010"
         }
       ]
     },
@@ -1802,80 +1803,80 @@
       "expected_chunk_ids": [
         "aad_ad_section1_diagnosis_2014:chunk:0018:8cc1fe242f80"
       ],
-      "first_correct_document_rank": 2,
+      "first_correct_document_rank": null,
       "document_hit_at_1": false,
-      "document_hit_at_3": true,
-      "document_hit_at_5": true,
-      "first_correct_chunk_rank": 2,
+      "document_hit_at_3": false,
+      "document_hit_at_5": false,
+      "first_correct_chunk_rank": null,
       "exact_chunk_hit_at_1": false,
-      "exact_chunk_hit_at_3": true,
-      "exact_chunk_hit_at_5": true,
+      "exact_chunk_hit_at_3": false,
+      "exact_chunk_hit_at_5": false,
       "evidence_group_count": 1,
-      "evidence_groups_found_at_5": 1,
-      "all_evidence_groups_found_at_5": true,
-      "query_latency_ms": 1130.27,
+      "evidence_groups_found_at_5": 0,
+      "all_evidence_groups_found_at_5": false,
+      "query_latency_ms": 758.84,
       "retrieved_hits": [
         {
           "rank": 1,
-          "score": 0.723724,
-          "chunk_id": "aad_ad_section4_flare_prevention_2014:chunk:0018:5a765cbc4cb2",
-          "doc_id": "aad_ad_section4_flare_prevention_2014",
+          "score": 0.689891,
+          "chunk_id": "jtf_contact_dermatitis_2015:chunk:0082:c4f7bb7a5015",
+          "doc_id": "jtf_contact_dermatitis_2015",
           "section_path": [
-            "Definition",
-            "Table IV. Recommendations for educational isheterogeneousandoutcomemeasuresvarygreatly"
+            "Volume3,Number3S",
+            "TABLEVI. Substancesthatmaybepresentindifferenttypesofimplantordeviceandthatpotentiallyshouldbeconsideredfordiagnostic"
           ],
-          "page_start": 7,
-          "page_end": 7,
-          "citation": "Guidelines of care for the management of atopic dermatitis: Section 4. Prevention of disease flares and use of adjunctive therapies and approaches — Definition > Table IV. Recommendations for educational isheterogeneousandoutcomemeasuresvarygreatly; PDF page 7; chunk aad_ad_section4_flare_prevention_2014:chunk:0018:5a765cbc4cb2; source https://doi.org/10.1016/j.jaad.2014.08.038"
+          "page_start": 23,
+          "page_end": 23,
+          "citation": "Contact Dermatitis: A Practice Parameter-Update 2015 — Volume3,Number3S > TABLEVI. Substancesthatmaybepresentindifferenttypesofimplantordeviceandthatpotentiallyshouldbeconsideredfordiagnostic; PDF page 23; chunk jtf_contact_dermatitis_2015:chunk:0082:c4f7bb7a5015; source https://doi.org/10.1016/j.jaip.2015.02.009"
         },
         {
           "rank": 2,
-          "score": 0.7221,
-          "chunk_id": "aad_ad_section1_diagnosis_2014:chunk:0018:8cc1fe242f80",
-          "doc_id": "aad_ad_section1_diagnosis_2014",
+          "score": 0.68846,
+          "chunk_id": "bad_contact_dermatitis_2017:chunk:0015:4c882db625d7",
+          "doc_id": "bad_contact_dermatitis_2017",
           "section_path": [
-            "Biomarkers Disease Severity And Clinical"
+            "5.0 Background",
+            "5.2 Epidemiology"
           ],
-          "page_start": 5,
-          "page_end": 5,
-          "citation": "Guidelines of care for the management of atopic dermatitis: Section 1. Diagnosis and assessment of atopic dermatitis — Biomarkers Disease Severity And Clinical; PDF page 5; chunk aad_ad_section1_diagnosis_2014:chunk:0018:8cc1fe242f80; source https://doi.org/10.1016/j.jaad.2013.10.010"
+          "page_start": 4,
+          "page_end": 4,
+          "citation": "British Association of Dermatologists' guidelines for the management of contact dermatitis 2017 — 5.0 Background > 5.2 Epidemiology; PDF page 4; printed page 17; chunk bad_contact_dermatitis_2017:chunk:0015:4c882db625d7; source https://doi.org/10.1111/bjd.15239"
         },
         {
           "rank": 3,
-          "score": 0.717037,
-          "chunk_id": "aad_ad_section1_diagnosis_2014:chunk:0020:270e9ee041d3",
-          "doc_id": "aad_ad_section1_diagnosis_2014",
+          "score": 0.67945,
+          "chunk_id": "jtf_contact_dermatitis_2015:chunk:0030:cee4bf4cb894",
+          "doc_id": "jtf_contact_dermatitis_2015",
           "section_path": [
-            "Biomarkers Disease Severity And Clinical"
+            "Volume3,Number3S"
           ],
-          "page_start": 5,
-          "page_end": 5,
-          "citation": "Guidelines of care for the management of atopic dermatitis: Section 1. Diagnosis and assessment of atopic dermatitis — Biomarkers Disease Severity And Clinical; PDF page 5; chunk aad_ad_section1_diagnosis_2014:chunk:0020:270e9ee041d3; source https://doi.org/10.1016/j.jaad.2013.10.010"
+          "page_start": 7,
+          "page_end": 7,
+          "citation": "Contact Dermatitis: A Practice Parameter-Update 2015 — Volume3,Number3S; PDF page 7; chunk jtf_contact_dermatitis_2015:chunk:0030:cee4bf4cb894; source https://doi.org/10.1016/j.jaip.2015.02.009"
         },
         {
           "rank": 4,
-          "score": 0.711673,
-          "chunk_id": "aad_ad_section1_diagnosis_2014:chunk:0003:574a771f673e",
-          "doc_id": "aad_ad_section1_diagnosis_2014",
+          "score": 0.674972,
+          "chunk_id": "jtf_contact_dermatitis_2015:chunk:0060:f935d296b53f",
+          "doc_id": "jtf_contact_dermatitis_2015",
           "section_path": [
-            "Section 1: Diagnosis and assessment of atopic dermatitis"
+            "Volume3,Number3S"
           ],
-          "page_start": 1,
-          "page_end": 1,
-          "citation": "Guidelines of care for the management of atopic dermatitis: Section 1. Diagnosis and assessment of atopic dermatitis — Section 1: Diagnosis and assessment of atopic dermatitis; PDF page 1; printed page 338; chunk aad_ad_section1_diagnosis_2014:chunk:0003:574a771f673e; source https://doi.org/10.1016/j.jaad.2013.10.010"
+          "page_start": 17,
+          "page_end": 17,
+          "citation": "Contact Dermatitis: A Practice Parameter-Update 2015 — Volume3,Number3S; PDF page 17; chunk jtf_contact_dermatitis_2015:chunk:0060:f935d296b53f; source https://doi.org/10.1016/j.jaip.2015.02.009"
         },
         {
           "rank": 5,
-          "score": 0.70811,
-          "chunk_id": "aad_ad_section4_flare_prevention_2014:chunk:0016:d1799faf55f4",
-          "doc_id": "aad_ad_section4_flare_prevention_2014",
+          "score": 0.673352,
+          "chunk_id": "jtf_contact_dermatitis_2015:chunk:0065:54184d3e743a",
+          "doc_id": "jtf_contact_dermatitis_2015",
           "section_path": [
-            "Definition",
-            "Table IV. Recommendations for educational isheterogeneousandoutcomemeasuresvarygreatly"
+            "May/June2015"
           ],
-          "page_start": 6,
-          "page_end": 6,
-          "citation": "Guidelines of care for the management of atopic dermatitis: Section 4. Prevention of disease flares and use of adjunctive therapies and approaches — Definition > Table IV. Recommendations for educational isheterogeneousandoutcomemeasuresvarygreatly; PDF page 6; chunk aad_ad_section4_flare_prevention_2014:chunk:0016:d1799faf55f4; source https://doi.org/10.1016/j.jaad.2014.08.038"
+          "page_start": 18,
+          "page_end": 18,
+          "citation": "Contact Dermatitis: A Practice Parameter-Update 2015 — May/June2015; PDF page 18; chunk jtf_contact_dermatitis_2015:chunk:0065:54184d3e743a; source https://doi.org/10.1016/j.jaip.2015.02.009"
         }
       ]
     },
@@ -1903,7 +1904,7 @@
       "evidence_group_count": 1,
       "evidence_groups_found_at_5": 1,
       "all_evidence_groups_found_at_5": true,
-      "query_latency_ms": 1085.78,
+      "query_latency_ms": 1503.69,
       "retrieved_hits": [
         {
           "rank": 1,
@@ -1981,10 +1982,10 @@
       "expected_chunk_ids": [
         "aad_ad_section1_diagnosis_2014:chunk:0014:291e39ea9fb2"
       ],
-      "first_correct_document_rank": 1,
-      "document_hit_at_1": true,
-      "document_hit_at_3": true,
-      "document_hit_at_5": true,
+      "first_correct_document_rank": null,
+      "document_hit_at_1": false,
+      "document_hit_at_3": false,
+      "document_hit_at_5": false,
       "first_correct_chunk_rank": null,
       "exact_chunk_hit_at_1": false,
       "exact_chunk_hit_at_3": false,
@@ -1992,71 +1993,71 @@
       "evidence_group_count": 1,
       "evidence_groups_found_at_5": 0,
       "all_evidence_groups_found_at_5": false,
-      "query_latency_ms": 1020.6,
+      "query_latency_ms": 731.24,
       "retrieved_hits": [
         {
           "rank": 1,
-          "score": 0.828156,
-          "chunk_id": "aad_ad_section1_diagnosis_2014:chunk:0029:3e5082110ec1",
-          "doc_id": "aad_ad_section1_diagnosis_2014",
+          "score": 0.800922,
+          "chunk_id": "aad_ad_section3_phototherapy_systemic_2014:chunk:0024:ef0b35d32e0f",
+          "doc_id": "aad_ad_section3_phototherapy_systemic_2014",
           "section_path": [
-            "section 4: of the guidelines. modification of the maternal or infant diet do not"
+            "Systemic Agents"
           ],
-          "page_start": 7,
-          "page_end": 7,
-          "citation": "Guidelines of care for the management of atopic dermatitis: Section 1. Diagnosis and assessment of atopic dermatitis — section 4: of the guidelines. modification of the maternal or infant diet do not; PDF page 7; chunk aad_ad_section1_diagnosis_2014:chunk:0029:3e5082110ec1; source https://doi.org/10.1016/j.jaad.2013.10.010"
+          "page_start": 6,
+          "page_end": 6,
+          "citation": "Guidelines of care for the management of atopic dermatitis: Section 3. Management and treatment with phototherapy and systemic agents — Systemic Agents; PDF page 6; chunk aad_ad_section3_phototherapy_systemic_2014:chunk:0024:ef0b35d32e0f; source https://doi.org/10.1016/j.jaad.2014.03.030"
         },
         {
           "rank": 2,
-          "score": 0.82703,
-          "chunk_id": "aad_ad_section4_flare_prevention_2014:chunk:0024:d4613ba0b0ac",
-          "doc_id": "aad_ad_section4_flare_prevention_2014",
+          "score": 0.798568,
+          "chunk_id": "aad_ad_section3_phototherapy_systemic_2014:chunk:0052:bf239936d5a0",
+          "doc_id": "aad_ad_section3_phototherapy_systemic_2014",
           "section_path": [
-            "Definition",
-            "Table VI. Recommendations for other adjunctive and complementary interventions for the treatment of atopic"
+            "Jamacaddermatol",
+            "recommendation is summarized in Table III. should be tailored to the individual patient to"
           ],
-          "page_start": 9,
-          "page_end": 9,
-          "citation": "Guidelines of care for the management of atopic dermatitis: Section 4. Prevention of disease flares and use of adjunctive therapies and approaches — Definition > Table VI. Recommendations for other adjunctive and complementary interventions for the treatment of atopic; PDF page 9; chunk aad_ad_section4_flare_prevention_2014:chunk:0024:d4613ba0b0ac; source https://doi.org/10.1016/j.jaad.2014.08.038"
+          "page_start": 14,
+          "page_end": 14,
+          "citation": "Guidelines of care for the management of atopic dermatitis: Section 3. Management and treatment with phototherapy and systemic agents — Jamacaddermatol > recommendation is summarized in Table III. should be tailored to the individual patient to; PDF page 14; chunk aad_ad_section3_phototherapy_systemic_2014:chunk:0052:bf239936d5a0; source https://doi.org/10.1016/j.jaad.2014.03.030"
         },
         {
           "rank": 3,
-          "score": 0.818237,
-          "chunk_id": "aad_ad_section4_flare_prevention_2014:chunk:0016:d1799faf55f4",
-          "doc_id": "aad_ad_section4_flare_prevention_2014",
+          "score": 0.79492,
+          "chunk_id": "aad_ad_section3_phototherapy_systemic_2014:chunk:0026:0c0fba0bf34f",
+          "doc_id": "aad_ad_section3_phototherapy_systemic_2014",
           "section_path": [
-            "Definition",
-            "Table IV. Recommendations for educational isheterogeneousandoutcomemeasuresvarygreatly"
+            "Systemic Agents",
+            "Table VII. Recommendations for the use of systemic immunomodulatory agents"
           ],
-          "page_start": 6,
-          "page_end": 6,
-          "citation": "Guidelines of care for the management of atopic dermatitis: Section 4. Prevention of disease flares and use of adjunctive therapies and approaches — Definition > Table IV. Recommendations for educational isheterogeneousandoutcomemeasuresvarygreatly; PDF page 6; chunk aad_ad_section4_flare_prevention_2014:chunk:0016:d1799faf55f4; source https://doi.org/10.1016/j.jaad.2014.08.038"
+          "page_start": 7,
+          "page_end": 7,
+          "citation": "Guidelines of care for the management of atopic dermatitis: Section 3. Management and treatment with phototherapy and systemic agents — Systemic Agents > Table VII. Recommendations for the use of systemic immunomodulatory agents; PDF page 7; chunk aad_ad_section3_phototherapy_systemic_2014:chunk:0026:0c0fba0bf34f; source https://doi.org/10.1016/j.jaad.2014.03.030"
         },
         {
           "rank": 4,
-          "score": 0.814926,
-          "chunk_id": "aad_ad_section1_diagnosis_2014:chunk:0025:338a96482007",
-          "doc_id": "aad_ad_section1_diagnosis_2014",
+          "score": 0.794552,
+          "chunk_id": "aad_ad_section3_phototherapy_systemic_2014:chunk:0063:13e73ca0a1b4",
+          "doc_id": "aad_ad_section3_phototherapy_systemic_2014",
           "section_path": [
-            "Biomarkers Disease Severity And Clinical",
-            "Table IV. Recommendations for the use of itch intensity, whether made by parents for young"
+            "Jamacaddermatol",
+            "recommendation of systemic steroids is summa- patients experience decreased linear growth while"
           ],
-          "page_start": 6,
-          "page_end": 6,
-          "citation": "Guidelines of care for the management of atopic dermatitis: Section 1. Diagnosis and assessment of atopic dermatitis — Biomarkers Disease Severity And Clinical > Table IV. Recommendations for the use of itch intensity, whether made by parents for young; PDF page 6; chunk aad_ad_section1_diagnosis_2014:chunk:0025:338a96482007; source https://doi.org/10.1016/j.jaad.2013.10.010"
+          "page_start": 17,
+          "page_end": 17,
+          "citation": "Guidelines of care for the management of atopic dermatitis: Section 3. Management and treatment with phototherapy and systemic agents — Jamacaddermatol > recommendation of systemic steroids is summa- patients experience decreased linear growth while; PDF page 17; chunk aad_ad_section3_phototherapy_systemic_2014:chunk:0063:13e73ca0a1b4; source https://doi.org/10.1016/j.jaad.2014.03.030"
         },
         {
           "rank": 5,
-          "score": 0.814374,
-          "chunk_id": "aad_ad_section4_flare_prevention_2014:chunk:0019:38d31fe57fd5",
-          "doc_id": "aad_ad_section4_flare_prevention_2014",
+          "score": 0.79198,
+          "chunk_id": "aad_ad_section2_topical_2014:chunk:0032:9b8cd1fe6c08",
+          "doc_id": "aad_ad_section2_topical_2014",
           "section_path": [
-            "Definition",
-            "Table IV. Recommendations for educational isheterogeneousandoutcomemeasuresvarygreatly"
+            "Scope",
+            "Box 1. Clinical situations in which topical Proactive, intermittent application of TCI 2 to 3"
           ],
-          "page_start": 7,
-          "page_end": 8,
-          "citation": "Guidelines of care for the management of atopic dermatitis: Section 4. Prevention of disease flares and use of adjunctive therapies and approaches — Definition > Table IV. Recommendations for educational isheterogeneousandoutcomemeasuresvarygreatly; PDF page 7-8; chunk aad_ad_section4_flare_prevention_2014:chunk:0019:38d31fe57fd5; source https://doi.org/10.1016/j.jaad.2014.08.038"
+          "page_start": 11,
+          "page_end": 11,
+          "citation": "Guidelines of care for the management of atopic dermatitis: Section 2. Management and treatment with topical therapies — Scope > Box 1. Clinical situations in which topical Proactive, intermittent application of TCI 2 to 3; PDF page 11; chunk aad_ad_section2_topical_2014:chunk:0032:9b8cd1fe6c08; source https://doi.org/10.1016/j.jaad.2014.03.023"
         }
       ]
     },
@@ -2084,7 +2085,7 @@
       "evidence_group_count": 1,
       "evidence_groups_found_at_5": 1,
       "all_evidence_groups_found_at_5": true,
-      "query_latency_ms": 853.44,
+      "query_latency_ms": 1386.84,
       "retrieved_hits": [
         {
           "rank": 1,
@@ -2174,7 +2175,7 @@
       "evidence_group_count": 2,
       "evidence_groups_found_at_5": 2,
       "all_evidence_groups_found_at_5": true,
-      "query_latency_ms": 819.19,
+      "query_latency_ms": 1379.91,
       "retrieved_hits": [
         {
           "rank": 1,
@@ -2255,10 +2256,10 @@
       "expected_chunk_ids": [
         "aad_ad_section2_topical_2014:chunk:0015:ab58f3a37ff1"
       ],
-      "first_correct_document_rank": 1,
-      "document_hit_at_1": true,
-      "document_hit_at_3": true,
-      "document_hit_at_5": true,
+      "first_correct_document_rank": null,
+      "document_hit_at_1": false,
+      "document_hit_at_3": false,
+      "document_hit_at_5": false,
       "first_correct_chunk_rank": null,
       "exact_chunk_hit_at_1": false,
       "exact_chunk_hit_at_3": false,
@@ -2266,72 +2267,72 @@
       "evidence_group_count": 1,
       "evidence_groups_found_at_5": 0,
       "all_evidence_groups_found_at_5": false,
-      "query_latency_ms": 913.47,
+      "query_latency_ms": 1629.08,
       "retrieved_hits": [
         {
           "rank": 1,
-          "score": 0.714102,
-          "chunk_id": "aad_ad_section2_topical_2014:chunk:0010:4886db654298",
-          "doc_id": "aad_ad_section2_topical_2014",
+          "score": 0.648337,
+          "chunk_id": "nice_cg57_atopic_eczema_under_12:chunk:0032:2da5ab70ec20",
+          "doc_id": "nice_cg57_atopic_eczema_under_12",
           "section_path": [
-            "Scope",
-            "Recommendations on AD treatment and manage-"
+            "Recommendations",
+            "Table 2 Stepped treatment options",
+            "1.5.1.4 Offer children with atopic eczema a choice of unperfumed emollients to use"
           ],
-          "page_start": 3,
-          "page_end": 3,
-          "citation": "Guidelines of care for the management of atopic dermatitis: Section 2. Management and treatment with topical therapies — Scope > Recommendations on AD treatment and manage-; PDF page 3; chunk aad_ad_section2_topical_2014:chunk:0010:4886db654298; source https://doi.org/10.1016/j.jaad.2014.03.023"
+          "page_start": 12,
+          "page_end": 12,
+          "citation": "Atopic eczema in under 12s: diagnosis and management — Recommendations > Table 2 Stepped treatment options > 1.5.1.4 Offer children with atopic eczema a choice of unperfumed emollients to use; PDF page 12; chunk nice_cg57_atopic_eczema_under_12:chunk:0032:2da5ab70ec20; source https://www.nice.org.uk/guidance/cg57"
+        },
+        {
+          "rank": 1,
+          "score": 0.633458,
+          "chunk_id": "jtf_contact_dermatitis_2015:chunk:0071:460e64b3e157",
+          "doc_id": "jtf_contact_dermatitis_2015",
+          "section_path": [
+            "May/June2015",
+            "Summary Statement 32: Suspect allergy to nail products frequently implicated. Sunscreen sensitization is much higher in"
+          ],
+          "page_start": 20,
+          "page_end": 20,
+          "citation": "Contact Dermatitis: A Practice Parameter-Update 2015 — May/June2015 > Summary Statement 32: Suspect allergy to nail products frequently implicated. Sunscreen sensitization is much higher in; PDF page 20; chunk jtf_contact_dermatitis_2015:chunk:0071:460e64b3e157; source https://doi.org/10.1016/j.jaip.2015.02.009"
         },
         {
           "rank": 2,
-          "score": 0.688191,
-          "chunk_id": "aad_ad_section2_topical_2014:chunk:0009:80463c50bf34",
-          "doc_id": "aad_ad_section2_topical_2014",
+          "score": 0.632318,
+          "chunk_id": "jtf_contact_dermatitis_2015:chunk:0061:5b87d264a3ed",
+          "doc_id": "jtf_contact_dermatitis_2015",
           "section_path": [
-            "Scope",
-            "Recommendations on AD treatment and manage-"
+            "Volume3,Number3S"
           ],
-          "page_start": 3,
-          "page_end": 3,
-          "citation": "Guidelines of care for the management of atopic dermatitis: Section 2. Management and treatment with topical therapies — Scope > Recommendations on AD treatment and manage-; PDF page 3; chunk aad_ad_section2_topical_2014:chunk:0009:80463c50bf34; source https://doi.org/10.1016/j.jaad.2014.03.023"
+          "page_start": 17,
+          "page_end": 17,
+          "citation": "Contact Dermatitis: A Practice Parameter-Update 2015 — Volume3,Number3S; PDF page 17; chunk jtf_contact_dermatitis_2015:chunk:0061:5b87d264a3ed; source https://doi.org/10.1016/j.jaip.2015.02.009"
+        },
+        {
+          "rank": 2,
+          "score": 0.632126,
+          "chunk_id": "aad_ad_section1_diagnosis_2014:chunk:0020:270e9ee041d3",
+          "doc_id": "aad_ad_section1_diagnosis_2014",
+          "section_path": [
+            "Biomarkers Disease Severity And Clinical"
+          ],
+          "page_start": 5,
+          "page_end": 5,
+          "citation": "Guidelines of care for the management of atopic dermatitis: Section 1. Diagnosis and assessment of atopic dermatitis — Biomarkers Disease Severity And Clinical; PDF page 5; chunk aad_ad_section1_diagnosis_2014:chunk:0020:270e9ee041d3; source https://doi.org/10.1016/j.jaad.2013.10.010"
         },
         {
           "rank": 3,
-          "score": 0.668577,
-          "chunk_id": "aad_ad_section2_topical_2014:chunk:0011:2b8fc08a6be9",
-          "doc_id": "aad_ad_section2_topical_2014",
+          "score": 0.631372,
+          "chunk_id": "nice_cg57_atopic_eczema_under_12:chunk:0060:d7b1f981a048",
+          "doc_id": "nice_cg57_atopic_eczema_under_12",
           "section_path": [
-            "Scope",
-            "Recommendations on AD treatment and manage-"
+            "Recommendations",
+            "recommendation on emollient bath additives for this group, but decided not to",
+            "1.5.1.31 Do not use whole-body (limbs and trunk) occlusive dressings (including wet wrap"
           ],
-          "page_start": 3,
-          "page_end": 4,
-          "citation": "Guidelines of care for the management of atopic dermatitis: Section 2. Management and treatment with topical therapies — Scope > Recommendations on AD treatment and manage-; PDF page 3-4; chunk aad_ad_section2_topical_2014:chunk:0011:2b8fc08a6be9; source https://doi.org/10.1016/j.jaad.2014.03.023"
-        },
-        {
-          "rank": 4,
-          "score": 0.659112,
-          "chunk_id": "aad_ad_section2_topical_2014:chunk:0019:5348dea17047",
-          "doc_id": "aad_ad_section2_topical_2014",
-          "section_path": [
-            "Scope",
-            "Table IV. Recommendations for the use of topical corticosteroids for the treatment of atopic dermatitis"
-          ],
-          "page_start": 6,
-          "page_end": 6,
-          "citation": "Guidelines of care for the management of atopic dermatitis: Section 2. Management and treatment with topical therapies — Scope > Table IV. Recommendations for the use of topical corticosteroids for the treatment of atopic dermatitis; PDF page 6; chunk aad_ad_section2_topical_2014:chunk:0019:5348dea17047; source https://doi.org/10.1016/j.jaad.2014.03.023"
-        },
-        {
-          "rank": 5,
-          "score": 0.654823,
-          "chunk_id": "aad_ad_section2_topical_2014:chunk:0012:cc5e15cac724",
-          "doc_id": "aad_ad_section2_topical_2014",
-          "section_path": [
-            "Scope",
-            "Table II. Recommendations for nonpharmacologic interventions for the treatment of atopic dermatitis"
-          ],
-          "page_start": 4,
-          "page_end": 4,
-          "citation": "Guidelines of care for the management of atopic dermatitis: Section 2. Management and treatment with topical therapies — Scope > Table II. Recommendations for nonpharmacologic interventions for the treatment of atopic dermatitis; PDF page 4; chunk aad_ad_section2_topical_2014:chunk:0012:cc5e15cac724; source https://doi.org/10.1016/j.jaad.2014.03.023"
+          "page_start": 18,
+          "page_end": 18,
+          "citation": "Atopic eczema in under 12s: diagnosis and management — Recommendations > recommendation on emollient bath additives for this group, but decided not to > 1.5.1.31 Do not use whole-body (limbs and trunk) occlusive dressings (including wet wrap; PDF page 18; chunk nice_cg57_atopic_eczema_under_12:chunk:0060:d7b1f981a048; source https://www.nice.org.uk/guidance/cg57"
         }
       ]
     },
@@ -2359,7 +2360,7 @@
       "evidence_group_count": 1,
       "evidence_groups_found_at_5": 1,
       "all_evidence_groups_found_at_5": true,
-      "query_latency_ms": 847.6,
+      "query_latency_ms": 932.69,
       "retrieved_hits": [
         {
           "rank": 1,
@@ -2389,20 +2390,6 @@
         },
         {
           "rank": 3,
-          "score": 0.758807,
-          "chunk_id": "nice_cg57_atopic_eczema_under_12:chunk:0061:24c613066d2d",
-          "doc_id": "nice_cg57_atopic_eczema_under_12",
-          "section_path": [
-            "Recommendations",
-            "recommendation on emollient bath additives for this group, but decided not to",
-            "1.5.1.32 When combining whole-body (limbs and trunk) occlusive dressings (including wet"
-          ],
-          "page_start": 18,
-          "page_end": 19,
-          "citation": "Atopic eczema in under 12s: diagnosis and management — Recommendations > recommendation on emollient bath additives for this group, but decided not to > 1.5.1.32 When combining whole-body (limbs and trunk) occlusive dressings (including wet; PDF page 18-19; chunk nice_cg57_atopic_eczema_under_12:chunk:0061:24c613066d2d; source https://www.nice.org.uk/guidance/cg57"
-        },
-        {
-          "rank": 4,
           "score": 0.7507,
           "chunk_id": "aad_ad_section2_topical_2014:chunk:0003:4bc865e9b78d",
           "doc_id": "aad_ad_section2_topical_2014",
@@ -2414,7 +2401,7 @@
           "citation": "Guidelines of care for the management of atopic dermatitis: Section 2. Management and treatment with topical therapies — Section 2: Management and treatment of atopic dermatitis; PDF page 1; printed page 116; chunk aad_ad_section2_topical_2014:chunk:0003:4bc865e9b78d; source https://doi.org/10.1016/j.jaad.2014.03.023"
         },
         {
-          "rank": 5,
+          "rank": 4,
           "score": 0.747497,
           "chunk_id": "aad_ad_section2_topical_2014:chunk:0020:657a7f5c620a",
           "doc_id": "aad_ad_section2_topical_2014",
@@ -2425,6 +2412,19 @@
           "page_start": 6,
           "page_end": 7,
           "citation": "Guidelines of care for the management of atopic dermatitis: Section 2. Management and treatment with topical therapies — Scope > Table IV. Recommendations for the use of topical corticosteroids for the treatment of atopic dermatitis; PDF page 6-7; chunk aad_ad_section2_topical_2014:chunk:0020:657a7f5c620a; source https://doi.org/10.1016/j.jaad.2014.03.023"
+        },
+        {
+          "rank": 5,
+          "score": 0.737994,
+          "chunk_id": "aad_ad_section2_topical_2014:chunk:0022:a581a12ff936",
+          "doc_id": "aad_ad_section2_topical_2014",
+          "section_path": [
+            "Scope",
+            "Table V. Relative potencies of topical corticosteroids"
+          ],
+          "page_start": 7,
+          "page_end": 7,
+          "citation": "Guidelines of care for the management of atopic dermatitis: Section 2. Management and treatment with topical therapies — Scope > Table V. Relative potencies of topical corticosteroids; PDF page 7; chunk aad_ad_section2_topical_2014:chunk:0022:a581a12ff936; source https://doi.org/10.1016/j.jaad.2014.03.023"
         }
       ]
     },
@@ -2441,82 +2441,83 @@
       "expected_chunk_ids": [
         "aad_ad_section2_topical_2014:chunk:0026:336471eb46c1"
       ],
-      "first_correct_document_rank": 1,
-      "document_hit_at_1": true,
-      "document_hit_at_3": true,
-      "document_hit_at_5": true,
-      "first_correct_chunk_rank": 1,
-      "exact_chunk_hit_at_1": true,
-      "exact_chunk_hit_at_3": true,
-      "exact_chunk_hit_at_5": true,
+      "first_correct_document_rank": null,
+      "document_hit_at_1": false,
+      "document_hit_at_3": false,
+      "document_hit_at_5": false,
+      "first_correct_chunk_rank": null,
+      "exact_chunk_hit_at_1": false,
+      "exact_chunk_hit_at_3": false,
+      "exact_chunk_hit_at_5": false,
       "evidence_group_count": 1,
-      "evidence_groups_found_at_5": 1,
-      "all_evidence_groups_found_at_5": true,
-      "query_latency_ms": 865.01,
+      "evidence_groups_found_at_5": 0,
+      "all_evidence_groups_found_at_5": false,
+      "query_latency_ms": 1930.53,
       "retrieved_hits": [
         {
           "rank": 1,
-          "score": 0.730576,
-          "chunk_id": "aad_ad_section2_topical_2014:chunk:0026:336471eb46c1",
-          "doc_id": "aad_ad_section2_topical_2014",
+          "score": 0.645471,
+          "chunk_id": "jtf_contact_dermatitis_2015:chunk:0006:1b4ff8bbd3f0",
+          "doc_id": "jtf_contact_dermatitis_2015",
           "section_path": [
-            "Scope",
-            "Table VI. Recommendations for the use of topical calcineurin inhibitors for the treatment of atopic dermatitis"
+            "May/June2015",
+            "recommendations (see Appendix B). The parameter was subse-"
           ],
-          "page_start": 9,
-          "page_end": 9,
-          "citation": "Guidelines of care for the management of atopic dermatitis: Section 2. Management and treatment with topical therapies — Scope > Table VI. Recommendations for the use of topical calcineurin inhibitors for the treatment of atopic dermatitis; PDF page 9; chunk aad_ad_section2_topical_2014:chunk:0026:336471eb46c1; source https://doi.org/10.1016/j.jaad.2014.03.023"
+          "page_start": 2,
+          "page_end": 2,
+          "citation": "Contact Dermatitis: A Practice Parameter-Update 2015 — May/June2015 > recommendations (see Appendix B). The parameter was subse-; PDF page 2; chunk jtf_contact_dermatitis_2015:chunk:0006:1b4ff8bbd3f0; source https://doi.org/10.1016/j.jaip.2015.02.009"
         },
         {
           "rank": 2,
-          "score": 0.717202,
-          "chunk_id": "aad_ad_section2_topical_2014:chunk:0028:3831c3683ace",
-          "doc_id": "aad_ad_section2_topical_2014",
+          "score": 0.63543,
+          "chunk_id": "jtf_contact_dermatitis_2015:chunk:0013:2d647d1af526",
+          "doc_id": "jtf_contact_dermatitis_2015",
           "section_path": [
-            "Scope",
-            "Box 1. Clinical situations in which topical Proactive, intermittent application of TCI 2 to 3"
+            "May/June2015",
+            "Summary Statement 16: Avoid or reduce doses of immuno- has not been determined and should be considered investiga-"
           ],
-          "page_start": 10,
-          "page_end": 10,
-          "citation": "Guidelines of care for the management of atopic dermatitis: Section 2. Management and treatment with topical therapies — Scope > Box 1. Clinical situations in which topical Proactive, intermittent application of TCI 2 to 3; PDF page 10; chunk aad_ad_section2_topical_2014:chunk:0028:3831c3683ace; source https://doi.org/10.1016/j.jaad.2014.03.023"
+          "page_start": 4,
+          "page_end": 4,
+          "citation": "Contact Dermatitis: A Practice Parameter-Update 2015 — May/June2015 > Summary Statement 16: Avoid or reduce doses of immuno- has not been determined and should be considered investiga-; PDF page 4; chunk jtf_contact_dermatitis_2015:chunk:0013:2d647d1af526; source https://doi.org/10.1016/j.jaip.2015.02.009"
         },
         {
           "rank": 3,
-          "score": 0.708103,
-          "chunk_id": "aad_ad_section3_phototherapy_systemic_2014:chunk:0066:4cad15dc9084",
-          "doc_id": "aad_ad_section3_phototherapy_systemic_2014",
+          "score": 0.630503,
+          "chunk_id": "jtf_contact_dermatitis_2015:chunk:0074:1df4f24677a0",
+          "doc_id": "jtf_contact_dermatitis_2015",
           "section_path": [
-            "Oral Calcineurin Inhibitors"
+            "May/June2015",
+            "Summary Statement 33: Suspect the diagnosis of photo- cially available include amcinonide, betamethasone-17,21-"
           ],
-          "page_start": 18,
-          "page_end": 18,
-          "citation": "Guidelines of care for the management of atopic dermatitis: Section 3. Management and treatment with phototherapy and systemic agents — Oral Calcineurin Inhibitors; PDF page 18; chunk aad_ad_section3_phototherapy_systemic_2014:chunk:0066:4cad15dc9084; source https://doi.org/10.1016/j.jaad.2014.03.030"
+          "page_start": 20,
+          "page_end": 20,
+          "citation": "Contact Dermatitis: A Practice Parameter-Update 2015 — May/June2015 > Summary Statement 33: Suspect the diagnosis of photo- cially available include amcinonide, betamethasone-17,21-; PDF page 20; chunk jtf_contact_dermatitis_2015:chunk:0074:1df4f24677a0; source https://doi.org/10.1016/j.jaip.2015.02.009"
         },
         {
           "rank": 4,
-          "score": 0.688439,
-          "chunk_id": "aad_ad_section2_topical_2014:chunk:0029:15c8604f5393",
-          "doc_id": "aad_ad_section2_topical_2014",
+          "score": 0.626043,
+          "chunk_id": "jtf_contact_dermatitis_2015:chunk:0071:460e64b3e157",
+          "doc_id": "jtf_contact_dermatitis_2015",
           "section_path": [
-            "Scope",
-            "Box 1. Clinical situations in which topical Proactive, intermittent application of TCI 2 to 3"
+            "May/June2015",
+            "Summary Statement 32: Suspect allergy to nail products frequently implicated. Sunscreen sensitization is much higher in"
           ],
-          "page_start": 10,
-          "page_end": 11,
-          "citation": "Guidelines of care for the management of atopic dermatitis: Section 2. Management and treatment with topical therapies — Scope > Box 1. Clinical situations in which topical Proactive, intermittent application of TCI 2 to 3; PDF page 10-11; chunk aad_ad_section2_topical_2014:chunk:0029:15c8604f5393; source https://doi.org/10.1016/j.jaad.2014.03.023"
+          "page_start": 20,
+          "page_end": 20,
+          "citation": "Contact Dermatitis: A Practice Parameter-Update 2015 — May/June2015 > Summary Statement 32: Suspect allergy to nail products frequently implicated. Sunscreen sensitization is much higher in; PDF page 20; chunk jtf_contact_dermatitis_2015:chunk:0071:460e64b3e157; source https://doi.org/10.1016/j.jaip.2015.02.009"
         },
         {
           "rank": 5,
-          "score": 0.685438,
-          "chunk_id": "aad_ad_section2_topical_2014:chunk:0027:b3213067409a",
-          "doc_id": "aad_ad_section2_topical_2014",
+          "score": 0.624948,
+          "chunk_id": "jtf_contact_dermatitis_2015:chunk:0075:f0a6322d8edb",
+          "doc_id": "jtf_contact_dermatitis_2015",
           "section_path": [
-            "Scope",
-            "Table VI. Recommendations for the use of topical calcineurin inhibitors for the treatment of atopic dermatitis"
+            "May/June2015",
+            "Summary Statement 33: Suspect the diagnosis of photo- cially available include amcinonide, betamethasone-17,21-"
           ],
-          "page_start": 9,
-          "page_end": 10,
-          "citation": "Guidelines of care for the management of atopic dermatitis: Section 2. Management and treatment with topical therapies — Scope > Table VI. Recommendations for the use of topical calcineurin inhibitors for the treatment of atopic dermatitis; PDF page 9-10; chunk aad_ad_section2_topical_2014:chunk:0027:b3213067409a; source https://doi.org/10.1016/j.jaad.2014.03.023"
+          "page_start": 20,
+          "page_end": 20,
+          "citation": "Contact Dermatitis: A Practice Parameter-Update 2015 — May/June2015 > Summary Statement 33: Suspect the diagnosis of photo- cially available include amcinonide, betamethasone-17,21-; PDF page 20; chunk jtf_contact_dermatitis_2015:chunk:0075:f0a6322d8edb; source https://doi.org/10.1016/j.jaip.2015.02.009"
         }
       ]
     },
@@ -2533,10 +2534,10 @@
       "expected_chunk_ids": [
         "aad_ad_section2_topical_2014:chunk:0026:336471eb46c1"
       ],
-      "first_correct_document_rank": 1,
-      "document_hit_at_1": true,
-      "document_hit_at_3": true,
-      "document_hit_at_5": true,
+      "first_correct_document_rank": null,
+      "document_hit_at_1": false,
+      "document_hit_at_3": false,
+      "document_hit_at_5": false,
       "first_correct_chunk_rank": null,
       "exact_chunk_hit_at_1": false,
       "exact_chunk_hit_at_3": false,
@@ -2544,72 +2545,70 @@
       "evidence_group_count": 1,
       "evidence_groups_found_at_5": 0,
       "all_evidence_groups_found_at_5": false,
-      "query_latency_ms": 919.33,
+      "query_latency_ms": 2070.83,
       "retrieved_hits": [
         {
           "rank": 1,
-          "score": 0.708027,
-          "chunk_id": "aad_ad_section2_topical_2014:chunk:0022:a581a12ff936",
-          "doc_id": "aad_ad_section2_topical_2014",
+          "score": 0.686606,
+          "chunk_id": "jtf_contact_dermatitis_2015:chunk:0132:642904fb1a91",
+          "doc_id": "jtf_contact_dermatitis_2015",
           "section_path": [
-            "Scope",
-            "Table V. Relative potencies of topical corticosteroids"
+            "Examples Of Commercially Available Preparations"
           ],
-          "page_start": 7,
-          "page_end": 7,
-          "citation": "Guidelines of care for the management of atopic dermatitis: Section 2. Management and treatment with topical therapies — Scope > Table V. Relative potencies of topical corticosteroids; PDF page 7; chunk aad_ad_section2_topical_2014:chunk:0022:a581a12ff936; source https://doi.org/10.1016/j.jaad.2014.03.023"
+          "page_start": 37,
+          "page_end": 37,
+          "citation": "Contact Dermatitis: A Practice Parameter-Update 2015 — Examples Of Commercially Available Preparations; PDF page 37; chunk jtf_contact_dermatitis_2015:chunk:0132:642904fb1a91; source https://doi.org/10.1016/j.jaip.2015.02.009"
         },
         {
           "rank": 2,
-          "score": 0.698032,
-          "chunk_id": "aad_ad_section2_topical_2014:chunk:0021:f3405ba5dc85",
-          "doc_id": "aad_ad_section2_topical_2014",
+          "score": 0.671953,
+          "chunk_id": "jtf_contact_dermatitis_2015:chunk:0133:27e8bb27590a",
+          "doc_id": "jtf_contact_dermatitis_2015",
           "section_path": [
-            "Scope",
-            "Table V. Relative potencies of topical corticosteroids"
+            "May/June2015",
+            "APPENDIX J. (Continued)"
           ],
-          "page_start": 7,
-          "page_end": 7,
-          "citation": "Guidelines of care for the management of atopic dermatitis: Section 2. Management and treatment with topical therapies — Scope > Table V. Relative potencies of topical corticosteroids; PDF page 7; chunk aad_ad_section2_topical_2014:chunk:0021:f3405ba5dc85; source https://doi.org/10.1016/j.jaad.2014.03.023"
+          "page_start": 38,
+          "page_end": 38,
+          "citation": "Contact Dermatitis: A Practice Parameter-Update 2015 — May/June2015 > APPENDIX J. (Continued); PDF page 38; chunk jtf_contact_dermatitis_2015:chunk:0133:27e8bb27590a; source https://doi.org/10.1016/j.jaip.2015.02.009"
         },
         {
           "rank": 3,
-          "score": 0.691969,
-          "chunk_id": "aad_ad_section2_topical_2014:chunk:0025:327aeb48ce26",
-          "doc_id": "aad_ad_section2_topical_2014",
+          "score": 0.67192,
+          "chunk_id": "jtf_contact_dermatitis_2015:chunk:0136:cabe4ab9e0a6",
+          "doc_id": "jtf_contact_dermatitis_2015",
           "section_path": [
-            "Scope",
-            "Table V. Relative potencies of topical corticosteroids"
+            "[Hms 1.0%]"
           ],
-          "page_start": 8,
-          "page_end": 9,
-          "citation": "Guidelines of care for the management of atopic dermatitis: Section 2. Management and treatment with topical therapies — Scope > Table V. Relative potencies of topical corticosteroids; PDF page 8-9; chunk aad_ad_section2_topical_2014:chunk:0025:327aeb48ce26; source https://doi.org/10.1016/j.jaad.2014.03.023"
+          "page_start": 39,
+          "page_end": 39,
+          "citation": "Contact Dermatitis: A Practice Parameter-Update 2015 — [Hms 1.0%]; PDF page 39; chunk jtf_contact_dermatitis_2015:chunk:0136:cabe4ab9e0a6; source https://doi.org/10.1016/j.jaip.2015.02.009"
         },
         {
           "rank": 4,
-          "score": 0.691629,
-          "chunk_id": "aad_ad_section2_topical_2014:chunk:0023:648e12cd474c",
-          "doc_id": "aad_ad_section2_topical_2014",
+          "score": 0.6572,
+          "chunk_id": "bad_contact_dermatitis_2017:chunk:0017:cb595603d342",
+          "doc_id": "bad_contact_dermatitis_2017",
           "section_path": [
-            "Scope",
-            "Table V. Relative potencies of topical corticosteroids"
+            "5.0 Background",
+            "2010.14 when environment changes, for example at weekends and"
           ],
-          "page_start": 7,
-          "page_end": 8,
-          "citation": "Guidelines of care for the management of atopic dermatitis: Section 2. Management and treatment with topical therapies — Scope > Table V. Relative potencies of topical corticosteroids; PDF page 7-8; chunk aad_ad_section2_topical_2014:chunk:0023:648e12cd474c; source https://doi.org/10.1016/j.jaad.2014.03.023"
+          "page_start": 5,
+          "page_end": 5,
+          "citation": "British Association of Dermatologists' guidelines for the management of contact dermatitis 2017 — 5.0 Background > 2010.14 when environment changes, for example at weekends and; PDF page 5; printed page 17; chunk bad_contact_dermatitis_2017:chunk:0017:cb595603d342; source https://doi.org/10.1111/bjd.15239"
         },
         {
           "rank": 5,
-          "score": 0.686871,
-          "chunk_id": "aad_ad_section2_topical_2014:chunk:0024:715eff8d4f92",
-          "doc_id": "aad_ad_section2_topical_2014",
+          "score": 0.655498,
+          "chunk_id": "jtf_contact_dermatitis_2015:chunk:0135:f348851c7507",
+          "doc_id": "jtf_contact_dermatitis_2015",
           "section_path": [
-            "Scope",
-            "Table V. Relative potencies of topical corticosteroids"
+            "Volume3,Number3S",
+            "APPENDIX J. (Continued)"
           ],
-          "page_start": 8,
-          "page_end": 8,
-          "citation": "Guidelines of care for the management of atopic dermatitis: Section 2. Management and treatment with topical therapies — Scope > Table V. Relative potencies of topical corticosteroids; PDF page 8; chunk aad_ad_section2_topical_2014:chunk:0024:715eff8d4f92; source https://doi.org/10.1016/j.jaad.2014.03.023"
+          "page_start": 39,
+          "page_end": 39,
+          "citation": "Contact Dermatitis: A Practice Parameter-Update 2015 — Volume3,Number3S > APPENDIX J. (Continued); PDF page 39; chunk jtf_contact_dermatitis_2015:chunk:0135:f348851c7507; source https://doi.org/10.1016/j.jaip.2015.02.009"
         }
       ]
     },
@@ -2626,83 +2625,84 @@
       "expected_chunk_ids": [
         "aad_ad_section2_topical_2014:chunk:0033:f6ea46bce2c5"
       ],
-      "first_correct_document_rank": 1,
-      "document_hit_at_1": true,
-      "document_hit_at_3": true,
-      "document_hit_at_5": true,
-      "first_correct_chunk_rank": 2,
+      "first_correct_document_rank": null,
+      "document_hit_at_1": false,
+      "document_hit_at_3": false,
+      "document_hit_at_5": false,
+      "first_correct_chunk_rank": null,
       "exact_chunk_hit_at_1": false,
-      "exact_chunk_hit_at_3": true,
-      "exact_chunk_hit_at_5": true,
+      "exact_chunk_hit_at_3": false,
+      "exact_chunk_hit_at_5": false,
       "evidence_group_count": 1,
-      "evidence_groups_found_at_5": 1,
-      "all_evidence_groups_found_at_5": true,
-      "query_latency_ms": 851.25,
+      "evidence_groups_found_at_5": 0,
+      "all_evidence_groups_found_at_5": false,
+      "query_latency_ms": 1407.59,
       "retrieved_hits": [
         {
           "rank": 1,
-          "score": 0.881601,
-          "chunk_id": "aad_ad_section2_topical_2014:chunk:0032:9b8cd1fe6c08",
-          "doc_id": "aad_ad_section2_topical_2014",
+          "score": 0.788265,
+          "chunk_id": "aad_ad_section1_diagnosis_2014:chunk:0030:ba564ba2ce91",
+          "doc_id": "aad_ad_section1_diagnosis_2014",
           "section_path": [
-            "Scope",
-            "Box 1. Clinical situations in which topical Proactive, intermittent application of TCI 2 to 3"
+            "section 4: of the guidelines. modification of the maternal or infant diet do not"
           ],
-          "page_start": 11,
-          "page_end": 11,
-          "citation": "Guidelines of care for the management of atopic dermatitis: Section 2. Management and treatment with topical therapies — Scope > Box 1. Clinical situations in which topical Proactive, intermittent application of TCI 2 to 3; PDF page 11; chunk aad_ad_section2_topical_2014:chunk:0032:9b8cd1fe6c08; source https://doi.org/10.1016/j.jaad.2014.03.023"
+          "page_start": 7,
+          "page_end": 8,
+          "citation": "Guidelines of care for the management of atopic dermatitis: Section 1. Diagnosis and assessment of atopic dermatitis — section 4: of the guidelines. modification of the maternal or infant diet do not; PDF page 7-8; chunk aad_ad_section1_diagnosis_2014:chunk:0030:ba564ba2ce91; source https://doi.org/10.1016/j.jaad.2013.10.010"
         },
         {
           "rank": 2,
-          "score": 0.860389,
-          "chunk_id": "aad_ad_section2_topical_2014:chunk:0033:f6ea46bce2c5",
-          "doc_id": "aad_ad_section2_topical_2014",
+          "score": 0.787378,
+          "chunk_id": "aad_ad_section1_diagnosis_2014:chunk:0029:3e5082110ec1",
+          "doc_id": "aad_ad_section1_diagnosis_2014",
           "section_path": [
-            "Scope",
-            "Box 1. Clinical situations in which topical Proactive, intermittent application of TCI 2 to 3"
+            "section 4: of the guidelines. modification of the maternal or infant diet do not"
           ],
-          "page_start": 11,
-          "page_end": 12,
-          "citation": "Guidelines of care for the management of atopic dermatitis: Section 2. Management and treatment with topical therapies — Scope > Box 1. Clinical situations in which topical Proactive, intermittent application of TCI 2 to 3; PDF page 11-12; chunk aad_ad_section2_topical_2014:chunk:0033:f6ea46bce2c5; source https://doi.org/10.1016/j.jaad.2014.03.023"
+          "page_start": 7,
+          "page_end": 7,
+          "citation": "Guidelines of care for the management of atopic dermatitis: Section 1. Diagnosis and assessment of atopic dermatitis — section 4: of the guidelines. modification of the maternal or infant diet do not; PDF page 7; chunk aad_ad_section1_diagnosis_2014:chunk:0029:3e5082110ec1; source https://doi.org/10.1016/j.jaad.2013.10.010"
         },
         {
           "rank": 3,
-          "score": 0.85906,
-          "chunk_id": "aad_ad_section2_topical_2014:chunk:0030:97be9f4f1849",
-          "doc_id": "aad_ad_section2_topical_2014",
+          "score": 0.77098,
+          "chunk_id": "nice_cg57_atopic_eczema_under_12:chunk:0065:19f720c58861",
+          "doc_id": "nice_cg57_atopic_eczema_under_12",
           "section_path": [
-            "Scope",
-            "Box 1. Clinical situations in which topical Proactive, intermittent application of TCI 2 to 3"
+            "Recommendations",
+            "recommendation on emollient bath additives for this group, but decided not to",
+            "1.5.1.36 Offer children with atopic eczema and their parents or carers information on how"
           ],
-          "page_start": 11,
-          "page_end": 11,
-          "citation": "Guidelines of care for the management of atopic dermatitis: Section 2. Management and treatment with topical therapies — Scope > Box 1. Clinical situations in which topical Proactive, intermittent application of TCI 2 to 3; PDF page 11; chunk aad_ad_section2_topical_2014:chunk:0030:97be9f4f1849; source https://doi.org/10.1016/j.jaad.2014.03.023"
+          "page_start": 19,
+          "page_end": 20,
+          "citation": "Atopic eczema in under 12s: diagnosis and management — Recommendations > recommendation on emollient bath additives for this group, but decided not to > 1.5.1.36 Offer children with atopic eczema and their parents or carers information on how; PDF page 19-20; chunk nice_cg57_atopic_eczema_under_12:chunk:0065:19f720c58861; source https://www.nice.org.uk/guidance/cg57"
         },
         {
           "rank": 4,
-          "score": 0.855201,
-          "chunk_id": "aad_ad_section2_topical_2014:chunk:0037:776e18b88f58",
-          "doc_id": "aad_ad_section2_topical_2014",
+          "score": 0.768818,
+          "chunk_id": "nice_cg57_atopic_eczema_under_12:chunk:0066:c2118ef988fb",
+          "doc_id": "nice_cg57_atopic_eczema_under_12",
           "section_path": [
-            "Other Topical Agents",
-            "recommendation regarding the use of coal tar best available evidence supplemented with the judgment"
+            "Recommendations",
+            "recommendation on emollient bath additives for this group, but decided not to",
+            "1.5.1.37 Explain to children with atopic eczema and their parents or carers that they"
           ],
-          "page_start": 12,
-          "page_end": 12,
-          "citation": "Guidelines of care for the management of atopic dermatitis: Section 2. Management and treatment with topical therapies — Other Topical Agents > recommendation regarding the use of coal tar best available evidence supplemented with the judgment; PDF page 12; chunk aad_ad_section2_topical_2014:chunk:0037:776e18b88f58; source https://doi.org/10.1016/j.jaad.2014.03.023"
+          "page_start": 20,
+          "page_end": 20,
+          "citation": "Atopic eczema in under 12s: diagnosis and management — Recommendations > recommendation on emollient bath additives for this group, but decided not to > 1.5.1.37 Explain to children with atopic eczema and their parents or carers that they; PDF page 20; chunk nice_cg57_atopic_eczema_under_12:chunk:0066:c2118ef988fb; source https://www.nice.org.uk/guidance/cg57"
         },
         {
           "rank": 5,
-          "score": 0.846337,
-          "chunk_id": "aad_ad_section2_topical_2014:chunk:0031:c231d2b6370a",
-          "doc_id": "aad_ad_section2_topical_2014",
+          "score": 0.767007,
+          "chunk_id": "nice_cg57_atopic_eczema_under_12:chunk:0039:ea41622c7916",
+          "doc_id": "nice_cg57_atopic_eczema_under_12",
           "section_path": [
-            "Scope",
-            "Box 1. Clinical situations in which topical Proactive, intermittent application of TCI 2 to 3"
+            "Recommendations",
+            "Table 2 Stepped treatment options",
+            "1.5.1.11 Do not offer emollient bath additives to children with atopic eczema. [2023]"
           ],
-          "page_start": 11,
-          "page_end": 11,
-          "citation": "Guidelines of care for the management of atopic dermatitis: Section 2. Management and treatment with topical therapies — Scope > Box 1. Clinical situations in which topical Proactive, intermittent application of TCI 2 to 3; PDF page 11; chunk aad_ad_section2_topical_2014:chunk:0031:c231d2b6370a; source https://doi.org/10.1016/j.jaad.2014.03.023"
+          "page_start": 14,
+          "page_end": 14,
+          "citation": "Atopic eczema in under 12s: diagnosis and management — Recommendations > Table 2 Stepped treatment options > 1.5.1.11 Do not offer emollient bath additives to children with atopic eczema. [2023]; PDF page 14; chunk nice_cg57_atopic_eczema_under_12:chunk:0039:ea41622c7916; source https://www.nice.org.uk/guidance/cg57"
         }
       ]
     },
@@ -2719,83 +2719,83 @@
       "expected_chunk_ids": [
         "aad_ad_section2_topical_2014:chunk:0033:f6ea46bce2c5"
       ],
-      "first_correct_document_rank": 1,
-      "document_hit_at_1": true,
-      "document_hit_at_3": true,
-      "document_hit_at_5": true,
-      "first_correct_chunk_rank": 2,
+      "first_correct_document_rank": null,
+      "document_hit_at_1": false,
+      "document_hit_at_3": false,
+      "document_hit_at_5": false,
+      "first_correct_chunk_rank": null,
       "exact_chunk_hit_at_1": false,
-      "exact_chunk_hit_at_3": true,
-      "exact_chunk_hit_at_5": true,
+      "exact_chunk_hit_at_3": false,
+      "exact_chunk_hit_at_5": false,
       "evidence_group_count": 1,
-      "evidence_groups_found_at_5": 1,
-      "all_evidence_groups_found_at_5": true,
-      "query_latency_ms": 919.07,
+      "evidence_groups_found_at_5": 0,
+      "all_evidence_groups_found_at_5": false,
+      "query_latency_ms": 1416.89,
       "retrieved_hits": [
         {
           "rank": 1,
-          "score": 0.84487,
-          "chunk_id": "aad_ad_section2_topical_2014:chunk:0037:776e18b88f58",
-          "doc_id": "aad_ad_section2_topical_2014",
+          "score": 0.780478,
+          "chunk_id": "aad_ad_section1_diagnosis_2014:chunk:0025:338a96482007",
+          "doc_id": "aad_ad_section1_diagnosis_2014",
           "section_path": [
-            "Other Topical Agents",
-            "recommendation regarding the use of coal tar best available evidence supplemented with the judgment"
+            "Biomarkers Disease Severity And Clinical",
+            "Table IV. Recommendations for the use of itch intensity, whether made by parents for young"
           ],
-          "page_start": 12,
-          "page_end": 12,
-          "citation": "Guidelines of care for the management of atopic dermatitis: Section 2. Management and treatment with topical therapies — Other Topical Agents > recommendation regarding the use of coal tar best available evidence supplemented with the judgment; PDF page 12; chunk aad_ad_section2_topical_2014:chunk:0037:776e18b88f58; source https://doi.org/10.1016/j.jaad.2014.03.023"
+          "page_start": 6,
+          "page_end": 6,
+          "citation": "Guidelines of care for the management of atopic dermatitis: Section 1. Diagnosis and assessment of atopic dermatitis — Biomarkers Disease Severity And Clinical > Table IV. Recommendations for the use of itch intensity, whether made by parents for young; PDF page 6; chunk aad_ad_section1_diagnosis_2014:chunk:0025:338a96482007; source https://doi.org/10.1016/j.jaad.2013.10.010"
+        },
+        {
+          "rank": 1,
+          "score": 0.775807,
+          "chunk_id": "jtf_contact_dermatitis_2015:chunk:0079:fb6d755aa9e1",
+          "doc_id": "jtf_contact_dermatitis_2015",
+          "section_path": [
+            "May/June2015",
+            "TABLE V. Components of selected alloys used in metal implants"
+          ],
+          "page_start": 22,
+          "page_end": 22,
+          "citation": "Contact Dermatitis: A Practice Parameter-Update 2015 — May/June2015 > TABLE V. Components of selected alloys used in metal implants; PDF page 22; chunk jtf_contact_dermatitis_2015:chunk:0079:fb6d755aa9e1; source https://doi.org/10.1016/j.jaip.2015.02.009"
         },
         {
           "rank": 2,
-          "score": 0.816234,
-          "chunk_id": "aad_ad_section2_topical_2014:chunk:0033:f6ea46bce2c5",
-          "doc_id": "aad_ad_section2_topical_2014",
+          "score": 0.774891,
+          "chunk_id": "aad_ad_section1_diagnosis_2014:chunk:0024:55e8e3e81e9d",
+          "doc_id": "aad_ad_section1_diagnosis_2014",
           "section_path": [
-            "Scope",
-            "Box 1. Clinical situations in which topical Proactive, intermittent application of TCI 2 to 3"
+            "Biomarkers Disease Severity And Clinical",
+            "Table IV. Recommendations for the use of itch intensity, whether made by parents for young"
           ],
-          "page_start": 11,
-          "page_end": 12,
-          "citation": "Guidelines of care for the management of atopic dermatitis: Section 2. Management and treatment with topical therapies — Scope > Box 1. Clinical situations in which topical Proactive, intermittent application of TCI 2 to 3; PDF page 11-12; chunk aad_ad_section2_topical_2014:chunk:0033:f6ea46bce2c5; source https://doi.org/10.1016/j.jaad.2014.03.023"
+          "page_start": 6,
+          "page_end": 6,
+          "citation": "Guidelines of care for the management of atopic dermatitis: Section 1. Diagnosis and assessment of atopic dermatitis — Biomarkers Disease Severity And Clinical > Table IV. Recommendations for the use of itch intensity, whether made by parents for young; PDF page 6; chunk aad_ad_section1_diagnosis_2014:chunk:0024:55e8e3e81e9d; source https://doi.org/10.1016/j.jaad.2013.10.010"
         },
         {
           "rank": 3,
-          "score": 0.806091,
-          "chunk_id": "aad_ad_section2_topical_2014:chunk:0030:97be9f4f1849",
-          "doc_id": "aad_ad_section2_topical_2014",
+          "score": 0.770921,
+          "chunk_id": "nice_cg57_atopic_eczema_under_12:chunk:0074:1ebc9880925a",
+          "doc_id": "nice_cg57_atopic_eczema_under_12",
           "section_path": [
-            "Scope",
-            "Box 1. Clinical situations in which topical Proactive, intermittent application of TCI 2 to 3"
+            "Recommendations",
+            "recommendation on emollient bath additives for this group, but decided not to",
+            "1.5.1.45 Explain to children with atopic eczema and their parents or carers that:"
           ],
-          "page_start": 11,
-          "page_end": 11,
-          "citation": "Guidelines of care for the management of atopic dermatitis: Section 2. Management and treatment with topical therapies — Scope > Box 1. Clinical situations in which topical Proactive, intermittent application of TCI 2 to 3; PDF page 11; chunk aad_ad_section2_topical_2014:chunk:0030:97be9f4f1849; source https://doi.org/10.1016/j.jaad.2014.03.023"
+          "page_start": 21,
+          "page_end": 21,
+          "citation": "Atopic eczema in under 12s: diagnosis and management — Recommendations > recommendation on emollient bath additives for this group, but decided not to > 1.5.1.45 Explain to children with atopic eczema and their parents or carers that:; PDF page 21; chunk nice_cg57_atopic_eczema_under_12:chunk:0074:1ebc9880925a; source https://www.nice.org.uk/guidance/cg57"
         },
         {
           "rank": 4,
-          "score": 0.805901,
-          "chunk_id": "aad_ad_section4_flare_prevention_2014:chunk:0026:ee7c7d23ec61",
-          "doc_id": "aad_ad_section4_flare_prevention_2014",
+          "score": 0.770163,
+          "chunk_id": "aad_ad_section1_diagnosis_2014:chunk:0003:574a771f673e",
+          "doc_id": "aad_ad_section1_diagnosis_2014",
           "section_path": [
-            "Definition",
-            "Table VI. Recommendations for other adjunctive and complementary interventions for the treatment of atopic"
+            "Section 1: Diagnosis and assessment of atopic dermatitis"
           ],
-          "page_start": 10,
-          "page_end": 10,
-          "citation": "Guidelines of care for the management of atopic dermatitis: Section 4. Prevention of disease flares and use of adjunctive therapies and approaches — Definition > Table VI. Recommendations for other adjunctive and complementary interventions for the treatment of atopic; PDF page 10; chunk aad_ad_section4_flare_prevention_2014:chunk:0026:ee7c7d23ec61; source https://doi.org/10.1016/j.jaad.2014.08.038"
-        },
-        {
-          "rank": 5,
-          "score": 0.795052,
-          "chunk_id": "aad_ad_section2_topical_2014:chunk:0032:9b8cd1fe6c08",
-          "doc_id": "aad_ad_section2_topical_2014",
-          "section_path": [
-            "Scope",
-            "Box 1. Clinical situations in which topical Proactive, intermittent application of TCI 2 to 3"
-          ],
-          "page_start": 11,
-          "page_end": 11,
-          "citation": "Guidelines of care for the management of atopic dermatitis: Section 2. Management and treatment with topical therapies — Scope > Box 1. Clinical situations in which topical Proactive, intermittent application of TCI 2 to 3; PDF page 11; chunk aad_ad_section2_topical_2014:chunk:0032:9b8cd1fe6c08; source https://doi.org/10.1016/j.jaad.2014.03.023"
+          "page_start": 1,
+          "page_end": 1,
+          "citation": "Guidelines of care for the management of atopic dermatitis: Section 1. Diagnosis and assessment of atopic dermatitis — Section 1: Diagnosis and assessment of atopic dermatitis; PDF page 1; printed page 338; chunk aad_ad_section1_diagnosis_2014:chunk:0003:574a771f673e; source https://doi.org/10.1016/j.jaad.2013.10.010"
         }
       ]
     },
@@ -2823,7 +2823,7 @@
       "evidence_group_count": 1,
       "evidence_groups_found_at_5": 1,
       "all_evidence_groups_found_at_5": true,
-      "query_latency_ms": 926.3,
+      "query_latency_ms": 679.33,
       "retrieved_hits": [
         {
           "rank": 1,
@@ -2908,14 +2908,14 @@
       "document_hit_at_1": true,
       "document_hit_at_3": true,
       "document_hit_at_5": true,
-      "first_correct_chunk_rank": 5,
+      "first_correct_chunk_rank": 2,
       "exact_chunk_hit_at_1": false,
-      "exact_chunk_hit_at_3": false,
+      "exact_chunk_hit_at_3": true,
       "exact_chunk_hit_at_5": true,
       "evidence_group_count": 1,
       "evidence_groups_found_at_5": 1,
       "all_evidence_groups_found_at_5": true,
-      "query_latency_ms": 852.95,
+      "query_latency_ms": 699.77,
       "retrieved_hits": [
         {
           "rank": 1,
@@ -2931,45 +2931,6 @@
         },
         {
           "rank": 2,
-          "score": 0.874903,
-          "chunk_id": "aad_ad_section2_topical_2014:chunk:0019:5348dea17047",
-          "doc_id": "aad_ad_section2_topical_2014",
-          "section_path": [
-            "Scope",
-            "Table IV. Recommendations for the use of topical corticosteroids for the treatment of atopic dermatitis"
-          ],
-          "page_start": 6,
-          "page_end": 6,
-          "citation": "Guidelines of care for the management of atopic dermatitis: Section 2. Management and treatment with topical therapies — Scope > Table IV. Recommendations for the use of topical corticosteroids for the treatment of atopic dermatitis; PDF page 6; chunk aad_ad_section2_topical_2014:chunk:0019:5348dea17047; source https://doi.org/10.1016/j.jaad.2014.03.023"
-        },
-        {
-          "rank": 3,
-          "score": 0.863491,
-          "chunk_id": "nice_cg57_atopic_eczema_under_12:chunk:0048:e6f194bf232d",
-          "doc_id": "nice_cg57_atopic_eczema_under_12",
-          "section_path": [
-            "Recommendations",
-            "recommendation on emollient bath additives for this group, but decided not to",
-            "1.5.1.19 Once the atopic eczema has been controlled, consider treating problem areas"
-          ],
-          "page_start": 16,
-          "page_end": 16,
-          "citation": "Atopic eczema in under 12s: diagnosis and management — Recommendations > recommendation on emollient bath additives for this group, but decided not to > 1.5.1.19 Once the atopic eczema has been controlled, consider treating problem areas; PDF page 16; chunk nice_cg57_atopic_eczema_under_12:chunk:0048:e6f194bf232d; source https://www.nice.org.uk/guidance/cg57"
-        },
-        {
-          "rank": 4,
-          "score": 0.86069,
-          "chunk_id": "nice_cg57_atopic_eczema_under_12:chunk:0090:2b7b54c159ce",
-          "doc_id": "nice_cg57_atopic_eczema_under_12",
-          "section_path": [
-            "2 Prevention of flares"
-          ],
-          "page_start": 25,
-          "page_end": 26,
-          "citation": "Atopic eczema in under 12s: diagnosis and management — 2 Prevention of flares; PDF page 25-26; chunk nice_cg57_atopic_eczema_under_12:chunk:0090:2b7b54c159ce; source https://www.nice.org.uk/guidance/cg57"
-        },
-        {
-          "rank": 5,
           "score": 0.849816,
           "chunk_id": "aad_ad_section4_flare_prevention_2014:chunk:0013:d07b71d642fe",
           "doc_id": "aad_ad_section4_flare_prevention_2014",
@@ -2980,6 +2941,44 @@
           "page_start": 4,
           "page_end": 5,
           "citation": "Guidelines of care for the management of atopic dermatitis: Section 4. Prevention of disease flares and use of adjunctive therapies and approaches — Definition > Table II. Recommendation for prevention of flares Methodstoidentifybestcandidatesforaproactive; PDF page 4-5; chunk aad_ad_section4_flare_prevention_2014:chunk:0013:d07b71d642fe; source https://doi.org/10.1016/j.jaad.2014.08.038"
+        },
+        {
+          "rank": 3,
+          "score": 0.841554,
+          "chunk_id": "aad_ad_section4_flare_prevention_2014:chunk:0004:e1e0fe068200",
+          "doc_id": "aad_ad_section4_flare_prevention_2014",
+          "section_path": [
+            "Section 4: Prevention of disease flares and use of adjunctive"
+          ],
+          "page_start": 1,
+          "page_end": 2,
+          "citation": "Guidelines of care for the management of atopic dermatitis: Section 4. Prevention of disease flares and use of adjunctive therapies and approaches — Section 4: Prevention of disease flares and use of adjunctive; PDF page 1-2; printed page 1218; chunk aad_ad_section4_flare_prevention_2014:chunk:0004:e1e0fe068200; source https://doi.org/10.1016/j.jaad.2014.08.038"
+        },
+        {
+          "rank": 4,
+          "score": 0.83398,
+          "chunk_id": "aad_ad_section4_flare_prevention_2014:chunk:0008:5a419b276a24",
+          "doc_id": "aad_ad_section4_flare_prevention_2014",
+          "section_path": [
+            "Method",
+            "recommendations pertinent to the topic area of the"
+          ],
+          "page_start": 2,
+          "page_end": 3,
+          "citation": "Guidelines of care for the management of atopic dermatitis: Section 4. Prevention of disease flares and use of adjunctive therapies and approaches — Method > recommendations pertinent to the topic area of the; PDF page 2-3; chunk aad_ad_section4_flare_prevention_2014:chunk:0008:5a419b276a24; source https://doi.org/10.1016/j.jaad.2014.08.038"
+        },
+        {
+          "rank": 5,
+          "score": 0.827016,
+          "chunk_id": "aad_ad_section4_flare_prevention_2014:chunk:0014:8d7b3780a6e4",
+          "doc_id": "aad_ad_section4_flare_prevention_2014",
+          "section_path": [
+            "Definition",
+            "Table III. Strength of recommendations for the use of topical therapies for flare prevention and for adjunctive"
+          ],
+          "page_start": 5,
+          "page_end": 5,
+          "citation": "Guidelines of care for the management of atopic dermatitis: Section 4. Prevention of disease flares and use of adjunctive therapies and approaches — Definition > Table III. Strength of recommendations for the use of topical therapies for flare prevention and for adjunctive; PDF page 5; chunk aad_ad_section4_flare_prevention_2014:chunk:0014:8d7b3780a6e4; source https://doi.org/10.1016/j.jaad.2014.08.038"
         }
       ]
     },
@@ -2996,47 +2995,21 @@
       "expected_chunk_ids": [
         "aad_ad_section4_flare_prevention_2014:chunk:0015:82cc49c6224d"
       ],
-      "first_correct_document_rank": 1,
-      "document_hit_at_1": true,
-      "document_hit_at_3": true,
-      "document_hit_at_5": true,
-      "first_correct_chunk_rank": 1,
-      "exact_chunk_hit_at_1": true,
-      "exact_chunk_hit_at_3": true,
-      "exact_chunk_hit_at_5": true,
+      "first_correct_document_rank": null,
+      "document_hit_at_1": false,
+      "document_hit_at_3": false,
+      "document_hit_at_5": false,
+      "first_correct_chunk_rank": null,
+      "exact_chunk_hit_at_1": false,
+      "exact_chunk_hit_at_3": false,
+      "exact_chunk_hit_at_5": false,
       "evidence_group_count": 1,
-      "evidence_groups_found_at_5": 1,
-      "all_evidence_groups_found_at_5": true,
-      "query_latency_ms": 937.15,
+      "evidence_groups_found_at_5": 0,
+      "all_evidence_groups_found_at_5": false,
+      "query_latency_ms": 1533.3,
       "retrieved_hits": [
         {
           "rank": 1,
-          "score": 0.783852,
-          "chunk_id": "aad_ad_section4_flare_prevention_2014:chunk:0015:82cc49c6224d",
-          "doc_id": "aad_ad_section4_flare_prevention_2014",
-          "section_path": [
-            "Definition",
-            "Table IV. Recommendations for educational isheterogeneousandoutcomemeasuresvarygreatly"
-          ],
-          "page_start": 5,
-          "page_end": 6,
-          "citation": "Guidelines of care for the management of atopic dermatitis: Section 4. Prevention of disease flares and use of adjunctive therapies and approaches — Definition > Table IV. Recommendations for educational isheterogeneousandoutcomemeasuresvarygreatly; PDF page 5-6; chunk aad_ad_section4_flare_prevention_2014:chunk:0015:82cc49c6224d; source https://doi.org/10.1016/j.jaad.2014.08.038"
-        },
-        {
-          "rank": 2,
-          "score": 0.730522,
-          "chunk_id": "aad_ad_section4_flare_prevention_2014:chunk:0016:d1799faf55f4",
-          "doc_id": "aad_ad_section4_flare_prevention_2014",
-          "section_path": [
-            "Definition",
-            "Table IV. Recommendations for educational isheterogeneousandoutcomemeasuresvarygreatly"
-          ],
-          "page_start": 6,
-          "page_end": 6,
-          "citation": "Guidelines of care for the management of atopic dermatitis: Section 4. Prevention of disease flares and use of adjunctive therapies and approaches — Definition > Table IV. Recommendations for educational isheterogeneousandoutcomemeasuresvarygreatly; PDF page 6; chunk aad_ad_section4_flare_prevention_2014:chunk:0016:d1799faf55f4; source https://doi.org/10.1016/j.jaad.2014.08.038"
-        },
-        {
-          "rank": 3,
           "score": 0.716878,
           "chunk_id": "aad_ad_section1_diagnosis_2014:chunk:0028:88403c58fa67",
           "doc_id": "aad_ad_section1_diagnosis_2014",
@@ -3049,29 +3022,55 @@
           "citation": "Guidelines of care for the management of atopic dermatitis: Section 1. Diagnosis and assessment of atopic dermatitis — Biomarkers Disease Severity And Clinical > Table V. Recommendations for disease severity and Table VI. Recommendations for the assessment of; PDF page 7; chunk aad_ad_section1_diagnosis_2014:chunk:0028:88403c58fa67; source https://doi.org/10.1016/j.jaad.2013.10.010"
         },
         {
-          "rank": 4,
-          "score": 0.710999,
-          "chunk_id": "aad_ad_section4_flare_prevention_2014:chunk:0003:d7a35c5c8264",
-          "doc_id": "aad_ad_section4_flare_prevention_2014",
+          "rank": 2,
+          "score": 0.708152,
+          "chunk_id": "aad_ad_section1_diagnosis_2014:chunk:0027:7654679d43bd",
+          "doc_id": "aad_ad_section1_diagnosis_2014",
           "section_path": [
-            "Section 4: Prevention of disease flares and use of adjunctive"
+            "Biomarkers Disease Severity And Clinical",
+            "Table V. Recommendations for disease severity and Table VI. Recommendations for the assessment of"
           ],
-          "page_start": 1,
-          "page_end": 1,
-          "citation": "Guidelines of care for the management of atopic dermatitis: Section 4. Prevention of disease flares and use of adjunctive therapies and approaches — Section 4: Prevention of disease flares and use of adjunctive; PDF page 1; printed page 1218; chunk aad_ad_section4_flare_prevention_2014:chunk:0003:d7a35c5c8264; source https://doi.org/10.1016/j.jaad.2014.08.038"
+          "page_start": 7,
+          "page_end": 7,
+          "citation": "Guidelines of care for the management of atopic dermatitis: Section 1. Diagnosis and assessment of atopic dermatitis — Biomarkers Disease Severity And Clinical > Table V. Recommendations for disease severity and Table VI. Recommendations for the assessment of; PDF page 7; chunk aad_ad_section1_diagnosis_2014:chunk:0027:7654679d43bd; source https://doi.org/10.1016/j.jaad.2013.10.010"
+        },
+        {
+          "rank": 3,
+          "score": 0.702514,
+          "chunk_id": "aad_ad_section1_diagnosis_2014:chunk:0025:338a96482007",
+          "doc_id": "aad_ad_section1_diagnosis_2014",
+          "section_path": [
+            "Biomarkers Disease Severity And Clinical",
+            "Table IV. Recommendations for the use of itch intensity, whether made by parents for young"
+          ],
+          "page_start": 6,
+          "page_end": 6,
+          "citation": "Guidelines of care for the management of atopic dermatitis: Section 1. Diagnosis and assessment of atopic dermatitis — Biomarkers Disease Severity And Clinical > Table IV. Recommendations for the use of itch intensity, whether made by parents for young; PDF page 6; chunk aad_ad_section1_diagnosis_2014:chunk:0025:338a96482007; source https://doi.org/10.1016/j.jaad.2013.10.010"
+        },
+        {
+          "rank": 4,
+          "score": 0.701762,
+          "chunk_id": "aad_ad_section1_diagnosis_2014:chunk:0024:55e8e3e81e9d",
+          "doc_id": "aad_ad_section1_diagnosis_2014",
+          "section_path": [
+            "Biomarkers Disease Severity And Clinical",
+            "Table IV. Recommendations for the use of itch intensity, whether made by parents for young"
+          ],
+          "page_start": 6,
+          "page_end": 6,
+          "citation": "Guidelines of care for the management of atopic dermatitis: Section 1. Diagnosis and assessment of atopic dermatitis — Biomarkers Disease Severity And Clinical > Table IV. Recommendations for the use of itch intensity, whether made by parents for young; PDF page 6; chunk aad_ad_section1_diagnosis_2014:chunk:0024:55e8e3e81e9d; source https://doi.org/10.1016/j.jaad.2013.10.010"
         },
         {
           "rank": 5,
-          "score": 0.709204,
-          "chunk_id": "aad_ad_section3_phototherapy_systemic_2014:chunk:0053:f5acaef467b1",
-          "doc_id": "aad_ad_section3_phototherapy_systemic_2014",
+          "score": 0.698393,
+          "chunk_id": "aad_ad_section1_diagnosis_2014:chunk:0020:270e9ee041d3",
+          "doc_id": "aad_ad_section1_diagnosis_2014",
           "section_path": [
-            "Jamacaddermatol",
-            "recommendation is summarized in Table III. should be tailored to the individual patient to"
+            "Biomarkers Disease Severity And Clinical"
           ],
-          "page_start": 14,
-          "page_end": 15,
-          "citation": "Guidelines of care for the management of atopic dermatitis: Section 3. Management and treatment with phototherapy and systemic agents — Jamacaddermatol > recommendation is summarized in Table III. should be tailored to the individual patient to; PDF page 14-15; chunk aad_ad_section3_phototherapy_systemic_2014:chunk:0053:f5acaef467b1; source https://doi.org/10.1016/j.jaad.2014.03.030"
+          "page_start": 5,
+          "page_end": 5,
+          "citation": "Guidelines of care for the management of atopic dermatitis: Section 1. Diagnosis and assessment of atopic dermatitis — Biomarkers Disease Severity And Clinical; PDF page 5; chunk aad_ad_section1_diagnosis_2014:chunk:0020:270e9ee041d3; source https://doi.org/10.1016/j.jaad.2013.10.010"
         }
       ]
     },
@@ -3088,82 +3087,79 @@
       "expected_chunk_ids": [
         "aad_ad_section4_flare_prevention_2014:chunk:0016:d1799faf55f4"
       ],
-      "first_correct_document_rank": 1,
-      "document_hit_at_1": true,
-      "document_hit_at_3": true,
-      "document_hit_at_5": true,
-      "first_correct_chunk_rank": 1,
-      "exact_chunk_hit_at_1": true,
-      "exact_chunk_hit_at_3": true,
-      "exact_chunk_hit_at_5": true,
+      "first_correct_document_rank": null,
+      "document_hit_at_1": false,
+      "document_hit_at_3": false,
+      "document_hit_at_5": false,
+      "first_correct_chunk_rank": null,
+      "exact_chunk_hit_at_1": false,
+      "exact_chunk_hit_at_3": false,
+      "exact_chunk_hit_at_5": false,
       "evidence_group_count": 1,
-      "evidence_groups_found_at_5": 1,
-      "all_evidence_groups_found_at_5": true,
-      "query_latency_ms": 855.07,
+      "evidence_groups_found_at_5": 0,
+      "all_evidence_groups_found_at_5": false,
+      "query_latency_ms": 719.3,
       "retrieved_hits": [
         {
           "rank": 1,
-          "score": 0.810631,
-          "chunk_id": "aad_ad_section4_flare_prevention_2014:chunk:0016:d1799faf55f4",
-          "doc_id": "aad_ad_section4_flare_prevention_2014",
+          "score": 0.77595,
+          "chunk_id": "aad_ad_section2_topical_2014:chunk:0037:776e18b88f58",
+          "doc_id": "aad_ad_section2_topical_2014",
           "section_path": [
-            "Definition",
-            "Table IV. Recommendations for educational isheterogeneousandoutcomemeasuresvarygreatly"
+            "Other Topical Agents",
+            "recommendation regarding the use of coal tar best available evidence supplemented with the judgment"
           ],
-          "page_start": 6,
-          "page_end": 6,
-          "citation": "Guidelines of care for the management of atopic dermatitis: Section 4. Prevention of disease flares and use of adjunctive therapies and approaches — Definition > Table IV. Recommendations for educational isheterogeneousandoutcomemeasuresvarygreatly; PDF page 6; chunk aad_ad_section4_flare_prevention_2014:chunk:0016:d1799faf55f4; source https://doi.org/10.1016/j.jaad.2014.08.038"
+          "page_start": 12,
+          "page_end": 12,
+          "citation": "Guidelines of care for the management of atopic dermatitis: Section 2. Management and treatment with topical therapies — Other Topical Agents > recommendation regarding the use of coal tar best available evidence supplemented with the judgment; PDF page 12; chunk aad_ad_section2_topical_2014:chunk:0037:776e18b88f58; source https://doi.org/10.1016/j.jaad.2014.03.023"
         },
         {
           "rank": 2,
-          "score": 0.802238,
-          "chunk_id": "aad_ad_section4_flare_prevention_2014:chunk:0028:b60008373fcb",
-          "doc_id": "aad_ad_section4_flare_prevention_2014",
+          "score": 0.775291,
+          "chunk_id": "aad_ad_section3_phototherapy_systemic_2014:chunk:0082:15d8686bfe83",
+          "doc_id": "aad_ad_section3_phototherapy_systemic_2014",
           "section_path": [
-            "Definition",
-            "Table VI. Recommendations for other adjunctive and complementary interventions for the treatment of atopic"
+            "8 GoeckermanW.Treatment of psoriasis.NorthwestMed1925; pragmatic multicenter randomized controlled non-inferiority"
           ],
-          "page_start": 11,
-          "page_end": 11,
-          "citation": "Guidelines of care for the management of atopic dermatitis: Section 4. Prevention of disease flares and use of adjunctive therapies and approaches — Definition > Table VI. Recommendations for other adjunctive and complementary interventions for the treatment of atopic; PDF page 11; chunk aad_ad_section4_flare_prevention_2014:chunk:0028:b60008373fcb; source https://doi.org/10.1016/j.jaad.2014.08.038"
+          "page_start": 22,
+          "page_end": 23,
+          "citation": "Guidelines of care for the management of atopic dermatitis: Section 3. Management and treatment with phototherapy and systemic agents — 8 GoeckermanW.Treatment of psoriasis.NorthwestMed1925; pragmatic multicenter randomized controlled non-inferiority; PDF page 22-23; chunk aad_ad_section3_phototherapy_systemic_2014:chunk:0082:15d8686bfe83; source https://doi.org/10.1016/j.jaad.2014.03.030"
         },
         {
           "rank": 3,
-          "score": 0.788314,
-          "chunk_id": "aad_ad_section4_flare_prevention_2014:chunk:0026:ee7c7d23ec61",
-          "doc_id": "aad_ad_section4_flare_prevention_2014",
+          "score": 0.764533,
+          "chunk_id": "aad_ad_section3_phototherapy_systemic_2014:chunk:0024:ef0b35d32e0f",
+          "doc_id": "aad_ad_section3_phototherapy_systemic_2014",
           "section_path": [
-            "Definition",
-            "Table VI. Recommendations for other adjunctive and complementary interventions for the treatment of atopic"
+            "Systemic Agents"
           ],
-          "page_start": 10,
-          "page_end": 10,
-          "citation": "Guidelines of care for the management of atopic dermatitis: Section 4. Prevention of disease flares and use of adjunctive therapies and approaches — Definition > Table VI. Recommendations for other adjunctive and complementary interventions for the treatment of atopic; PDF page 10; chunk aad_ad_section4_flare_prevention_2014:chunk:0026:ee7c7d23ec61; source https://doi.org/10.1016/j.jaad.2014.08.038"
+          "page_start": 6,
+          "page_end": 6,
+          "citation": "Guidelines of care for the management of atopic dermatitis: Section 3. Management and treatment with phototherapy and systemic agents — Systemic Agents; PDF page 6; chunk aad_ad_section3_phototherapy_systemic_2014:chunk:0024:ef0b35d32e0f; source https://doi.org/10.1016/j.jaad.2014.03.030"
         },
         {
           "rank": 4,
-          "score": 0.787429,
-          "chunk_id": "aad_ad_section4_flare_prevention_2014:chunk:0041:6a3b059f617a",
-          "doc_id": "aad_ad_section4_flare_prevention_2014",
+          "score": 0.764455,
+          "chunk_id": "aad_ad_section3_phototherapy_systemic_2014:chunk:0003:0010193a8d78",
+          "doc_id": "aad_ad_section3_phototherapy_systemic_2014",
           "section_path": [
-            "Cd004054. 1984;74:26-33."
+            "Section 3: Management and treatment with phototherapy"
           ],
-          "page_start": 16,
-          "page_end": 16,
-          "citation": "Guidelines of care for the management of atopic dermatitis: Section 4. Prevention of disease flares and use of adjunctive therapies and approaches — Cd004054. 1984;74:26-33.; PDF page 16; chunk aad_ad_section4_flare_prevention_2014:chunk:0041:6a3b059f617a; source https://doi.org/10.1016/j.jaad.2014.08.038"
+          "page_start": 1,
+          "page_end": 1,
+          "citation": "Guidelines of care for the management of atopic dermatitis: Section 3. Management and treatment with phototherapy and systemic agents — Section 3: Management and treatment with phototherapy; PDF page 1; printed page 327; chunk aad_ad_section3_phototherapy_systemic_2014:chunk:0003:0010193a8d78; source https://doi.org/10.1016/j.jaad.2014.03.030"
         },
         {
           "rank": 5,
-          "score": 0.785921,
-          "chunk_id": "aad_ad_section4_flare_prevention_2014:chunk:0024:d4613ba0b0ac",
-          "doc_id": "aad_ad_section4_flare_prevention_2014",
+          "score": 0.762604,
+          "chunk_id": "aad_ad_section2_topical_2014:chunk:0003:4bc865e9b78d",
+          "doc_id": "aad_ad_section2_topical_2014",
           "section_path": [
-            "Definition",
-            "Table VI. Recommendations for other adjunctive and complementary interventions for the treatment of atopic"
+            "Section 2: Management and treatment of atopic dermatitis"
           ],
-          "page_start": 9,
-          "page_end": 9,
-          "citation": "Guidelines of care for the management of atopic dermatitis: Section 4. Prevention of disease flares and use of adjunctive therapies and approaches — Definition > Table VI. Recommendations for other adjunctive and complementary interventions for the treatment of atopic; PDF page 9; chunk aad_ad_section4_flare_prevention_2014:chunk:0024:d4613ba0b0ac; source https://doi.org/10.1016/j.jaad.2014.08.038"
+          "page_start": 1,
+          "page_end": 1,
+          "citation": "Guidelines of care for the management of atopic dermatitis: Section 2. Management and treatment with topical therapies — Section 2: Management and treatment of atopic dermatitis; PDF page 1; printed page 116; chunk aad_ad_section2_topical_2014:chunk:0003:4bc865e9b78d; source https://doi.org/10.1016/j.jaad.2014.03.023"
         }
       ]
     },
@@ -3180,73 +3176,21 @@
       "expected_chunk_ids": [
         "aad_ad_section4_flare_prevention_2014:chunk:0016:d1799faf55f4"
       ],
-      "first_correct_document_rank": 1,
-      "document_hit_at_1": true,
-      "document_hit_at_3": true,
-      "document_hit_at_5": true,
-      "first_correct_chunk_rank": 1,
-      "exact_chunk_hit_at_1": true,
-      "exact_chunk_hit_at_3": true,
-      "exact_chunk_hit_at_5": true,
+      "first_correct_document_rank": null,
+      "document_hit_at_1": false,
+      "document_hit_at_3": false,
+      "document_hit_at_5": false,
+      "first_correct_chunk_rank": null,
+      "exact_chunk_hit_at_1": false,
+      "exact_chunk_hit_at_3": false,
+      "exact_chunk_hit_at_5": false,
       "evidence_group_count": 1,
-      "evidence_groups_found_at_5": 1,
-      "all_evidence_groups_found_at_5": true,
-      "query_latency_ms": 895.75,
+      "evidence_groups_found_at_5": 0,
+      "all_evidence_groups_found_at_5": false,
+      "query_latency_ms": 1380.25,
       "retrieved_hits": [
         {
           "rank": 1,
-          "score": 0.782567,
-          "chunk_id": "aad_ad_section4_flare_prevention_2014:chunk:0016:d1799faf55f4",
-          "doc_id": "aad_ad_section4_flare_prevention_2014",
-          "section_path": [
-            "Definition",
-            "Table IV. Recommendations for educational isheterogeneousandoutcomemeasuresvarygreatly"
-          ],
-          "page_start": 6,
-          "page_end": 6,
-          "citation": "Guidelines of care for the management of atopic dermatitis: Section 4. Prevention of disease flares and use of adjunctive therapies and approaches — Definition > Table IV. Recommendations for educational isheterogeneousandoutcomemeasuresvarygreatly; PDF page 6; chunk aad_ad_section4_flare_prevention_2014:chunk:0016:d1799faf55f4; source https://doi.org/10.1016/j.jaad.2014.08.038"
-        },
-        {
-          "rank": 2,
-          "score": 0.763311,
-          "chunk_id": "aad_ad_section4_flare_prevention_2014:chunk:0018:5a765cbc4cb2",
-          "doc_id": "aad_ad_section4_flare_prevention_2014",
-          "section_path": [
-            "Definition",
-            "Table IV. Recommendations for educational isheterogeneousandoutcomemeasuresvarygreatly"
-          ],
-          "page_start": 7,
-          "page_end": 7,
-          "citation": "Guidelines of care for the management of atopic dermatitis: Section 4. Prevention of disease flares and use of adjunctive therapies and approaches — Definition > Table IV. Recommendations for educational isheterogeneousandoutcomemeasuresvarygreatly; PDF page 7; chunk aad_ad_section4_flare_prevention_2014:chunk:0018:5a765cbc4cb2; source https://doi.org/10.1016/j.jaad.2014.08.038"
-        },
-        {
-          "rank": 3,
-          "score": 0.76196,
-          "chunk_id": "aad_ad_section4_flare_prevention_2014:chunk:0022:df079a4b9bc5",
-          "doc_id": "aad_ad_section4_flare_prevention_2014",
-          "section_path": [
-            "Definition",
-            "Table III). Testing may also be considered where Elimination diets should not be initiated based on"
-          ],
-          "page_start": 8,
-          "page_end": 8,
-          "citation": "Guidelines of care for the management of atopic dermatitis: Section 4. Prevention of disease flares and use of adjunctive therapies and approaches — Definition > Table III). Testing may also be considered where Elimination diets should not be initiated based on; PDF page 8; chunk aad_ad_section4_flare_prevention_2014:chunk:0022:df079a4b9bc5; source https://doi.org/10.1016/j.jaad.2014.08.038"
-        },
-        {
-          "rank": 4,
-          "score": 0.760975,
-          "chunk_id": "aad_ad_section4_flare_prevention_2014:chunk:0019:38d31fe57fd5",
-          "doc_id": "aad_ad_section4_flare_prevention_2014",
-          "section_path": [
-            "Definition",
-            "Table IV. Recommendations for educational isheterogeneousandoutcomemeasuresvarygreatly"
-          ],
-          "page_start": 7,
-          "page_end": 8,
-          "citation": "Guidelines of care for the management of atopic dermatitis: Section 4. Prevention of disease flares and use of adjunctive therapies and approaches — Definition > Table IV. Recommendations for educational isheterogeneousandoutcomemeasuresvarygreatly; PDF page 7-8; chunk aad_ad_section4_flare_prevention_2014:chunk:0019:38d31fe57fd5; source https://doi.org/10.1016/j.jaad.2014.08.038"
-        },
-        {
-          "rank": 5,
           "score": 0.742888,
           "chunk_id": "aad_ad_section1_diagnosis_2014:chunk:0025:338a96482007",
           "doc_id": "aad_ad_section1_diagnosis_2014",
@@ -3257,6 +3201,58 @@
           "page_start": 6,
           "page_end": 6,
           "citation": "Guidelines of care for the management of atopic dermatitis: Section 1. Diagnosis and assessment of atopic dermatitis — Biomarkers Disease Severity And Clinical > Table IV. Recommendations for the use of itch intensity, whether made by parents for young; PDF page 6; chunk aad_ad_section1_diagnosis_2014:chunk:0025:338a96482007; source https://doi.org/10.1016/j.jaad.2013.10.010"
+        },
+        {
+          "rank": 2,
+          "score": 0.739205,
+          "chunk_id": "aad_ad_section1_diagnosis_2014:chunk:0028:88403c58fa67",
+          "doc_id": "aad_ad_section1_diagnosis_2014",
+          "section_path": [
+            "Biomarkers Disease Severity And Clinical",
+            "Table V. Recommendations for disease severity and Table VI. Recommendations for the assessment of"
+          ],
+          "page_start": 7,
+          "page_end": 7,
+          "citation": "Guidelines of care for the management of atopic dermatitis: Section 1. Diagnosis and assessment of atopic dermatitis — Biomarkers Disease Severity And Clinical > Table V. Recommendations for disease severity and Table VI. Recommendations for the assessment of; PDF page 7; chunk aad_ad_section1_diagnosis_2014:chunk:0028:88403c58fa67; source https://doi.org/10.1016/j.jaad.2013.10.010"
+        },
+        {
+          "rank": 3,
+          "score": 0.736282,
+          "chunk_id": "aad_ad_section1_diagnosis_2014:chunk:0020:270e9ee041d3",
+          "doc_id": "aad_ad_section1_diagnosis_2014",
+          "section_path": [
+            "Biomarkers Disease Severity And Clinical"
+          ],
+          "page_start": 5,
+          "page_end": 5,
+          "citation": "Guidelines of care for the management of atopic dermatitis: Section 1. Diagnosis and assessment of atopic dermatitis — Biomarkers Disease Severity And Clinical; PDF page 5; chunk aad_ad_section1_diagnosis_2014:chunk:0020:270e9ee041d3; source https://doi.org/10.1016/j.jaad.2013.10.010"
+        },
+        {
+          "rank": 4,
+          "score": 0.726964,
+          "chunk_id": "aad_ad_section1_diagnosis_2014:chunk:0024:55e8e3e81e9d",
+          "doc_id": "aad_ad_section1_diagnosis_2014",
+          "section_path": [
+            "Biomarkers Disease Severity And Clinical",
+            "Table IV. Recommendations for the use of itch intensity, whether made by parents for young"
+          ],
+          "page_start": 6,
+          "page_end": 6,
+          "citation": "Guidelines of care for the management of atopic dermatitis: Section 1. Diagnosis and assessment of atopic dermatitis — Biomarkers Disease Severity And Clinical > Table IV. Recommendations for the use of itch intensity, whether made by parents for young; PDF page 6; chunk aad_ad_section1_diagnosis_2014:chunk:0024:55e8e3e81e9d; source https://doi.org/10.1016/j.jaad.2013.10.010"
+        },
+        {
+          "rank": 5,
+          "score": 0.722081,
+          "chunk_id": "nice_cg57_atopic_eczema_under_12:chunk:0016:418a0053f83b",
+          "doc_id": "nice_cg57_atopic_eczema_under_12",
+          "section_path": [
+            "Recommendations",
+            "1.4 Identifying and managing trigger factors",
+            "1.4.1.2 Consider a diagnosis of food allergy in:"
+          ],
+          "page_start": 9,
+          "page_end": 9,
+          "citation": "Atopic eczema in under 12s: diagnosis and management — Recommendations > 1.4 Identifying and managing trigger factors > 1.4.1.2 Consider a diagnosis of food allergy in:; PDF page 9; chunk nice_cg57_atopic_eczema_under_12:chunk:0016:418a0053f83b; source https://www.nice.org.uk/guidance/cg57"
         }
       ]
     },
@@ -3273,83 +3269,79 @@
       "expected_chunk_ids": [
         "aad_ad_section4_flare_prevention_2014:chunk:0024:d4613ba0b0ac"
       ],
-      "first_correct_document_rank": 1,
-      "document_hit_at_1": true,
-      "document_hit_at_3": true,
-      "document_hit_at_5": true,
-      "first_correct_chunk_rank": 2,
+      "first_correct_document_rank": null,
+      "document_hit_at_1": false,
+      "document_hit_at_3": false,
+      "document_hit_at_5": false,
+      "first_correct_chunk_rank": null,
       "exact_chunk_hit_at_1": false,
-      "exact_chunk_hit_at_3": true,
-      "exact_chunk_hit_at_5": true,
+      "exact_chunk_hit_at_3": false,
+      "exact_chunk_hit_at_5": false,
       "evidence_group_count": 1,
-      "evidence_groups_found_at_5": 1,
-      "all_evidence_groups_found_at_5": true,
-      "query_latency_ms": 997.5,
+      "evidence_groups_found_at_5": 0,
+      "all_evidence_groups_found_at_5": false,
+      "query_latency_ms": 773.14,
       "retrieved_hits": [
         {
           "rank": 1,
-          "score": 0.754532,
-          "chunk_id": "aad_ad_section4_flare_prevention_2014:chunk:0018:5a765cbc4cb2",
-          "doc_id": "aad_ad_section4_flare_prevention_2014",
+          "score": 0.704643,
+          "chunk_id": "jtf_contact_dermatitis_2015:chunk:0122:41d66f3d7b33",
+          "doc_id": "jtf_contact_dermatitis_2015",
           "section_path": [
-            "Definition",
-            "Table IV. Recommendations for educational isheterogeneousandoutcomemeasuresvarygreatly"
+            "Test Allergen Panels"
           ],
-          "page_start": 7,
-          "page_end": 7,
-          "citation": "Guidelines of care for the management of atopic dermatitis: Section 4. Prevention of disease flares and use of adjunctive therapies and approaches — Definition > Table IV. Recommendations for educational isheterogeneousandoutcomemeasuresvarygreatly; PDF page 7; chunk aad_ad_section4_flare_prevention_2014:chunk:0018:5a765cbc4cb2; source https://doi.org/10.1016/j.jaad.2014.08.038"
+          "page_start": 33,
+          "page_end": 33,
+          "citation": "Contact Dermatitis: A Practice Parameter-Update 2015 — Test Allergen Panels; PDF page 33; chunk jtf_contact_dermatitis_2015:chunk:0122:41d66f3d7b33; source https://doi.org/10.1016/j.jaip.2015.02.009"
         },
         {
           "rank": 2,
-          "score": 0.742915,
-          "chunk_id": "aad_ad_section4_flare_prevention_2014:chunk:0024:d4613ba0b0ac",
-          "doc_id": "aad_ad_section4_flare_prevention_2014",
+          "score": 0.70266,
+          "chunk_id": "jtf_contact_dermatitis_2015:chunk:0060:f935d296b53f",
+          "doc_id": "jtf_contact_dermatitis_2015",
           "section_path": [
-            "Definition",
-            "Table VI. Recommendations for other adjunctive and complementary interventions for the treatment of atopic"
+            "Volume3,Number3S"
           ],
-          "page_start": 9,
-          "page_end": 9,
-          "citation": "Guidelines of care for the management of atopic dermatitis: Section 4. Prevention of disease flares and use of adjunctive therapies and approaches — Definition > Table VI. Recommendations for other adjunctive and complementary interventions for the treatment of atopic; PDF page 9; chunk aad_ad_section4_flare_prevention_2014:chunk:0024:d4613ba0b0ac; source https://doi.org/10.1016/j.jaad.2014.08.038"
+          "page_start": 17,
+          "page_end": 17,
+          "citation": "Contact Dermatitis: A Practice Parameter-Update 2015 — Volume3,Number3S; PDF page 17; chunk jtf_contact_dermatitis_2015:chunk:0060:f935d296b53f; source https://doi.org/10.1016/j.jaip.2015.02.009"
         },
         {
           "rank": 3,
-          "score": 0.74154,
-          "chunk_id": "aad_ad_section4_flare_prevention_2014:chunk:0022:df079a4b9bc5",
-          "doc_id": "aad_ad_section4_flare_prevention_2014",
+          "score": 0.699605,
+          "chunk_id": "jtf_contact_dermatitis_2015:chunk:0065:54184d3e743a",
+          "doc_id": "jtf_contact_dermatitis_2015",
           "section_path": [
-            "Definition",
-            "Table III). Testing may also be considered where Elimination diets should not be initiated based on"
+            "May/June2015"
           ],
-          "page_start": 8,
-          "page_end": 8,
-          "citation": "Guidelines of care for the management of atopic dermatitis: Section 4. Prevention of disease flares and use of adjunctive therapies and approaches — Definition > Table III). Testing may also be considered where Elimination diets should not be initiated based on; PDF page 8; chunk aad_ad_section4_flare_prevention_2014:chunk:0022:df079a4b9bc5; source https://doi.org/10.1016/j.jaad.2014.08.038"
+          "page_start": 18,
+          "page_end": 18,
+          "citation": "Contact Dermatitis: A Practice Parameter-Update 2015 — May/June2015; PDF page 18; chunk jtf_contact_dermatitis_2015:chunk:0065:54184d3e743a; source https://doi.org/10.1016/j.jaip.2015.02.009"
         },
         {
           "rank": 4,
-          "score": 0.741486,
-          "chunk_id": "aad_ad_section4_flare_prevention_2014:chunk:0016:d1799faf55f4",
-          "doc_id": "aad_ad_section4_flare_prevention_2014",
+          "score": 0.698662,
+          "chunk_id": "jtf_contact_dermatitis_2015:chunk:0055:04d8a98d093b",
+          "doc_id": "jtf_contact_dermatitis_2015",
           "section_path": [
-            "Definition",
-            "Table IV. Recommendations for educational isheterogeneousandoutcomemeasuresvarygreatly"
+            "Volume3,Number3S",
+            "Summary Statement 21: Consider that a possible false-"
           ],
-          "page_start": 6,
-          "page_end": 6,
-          "citation": "Guidelines of care for the management of atopic dermatitis: Section 4. Prevention of disease flares and use of adjunctive therapies and approaches — Definition > Table IV. Recommendations for educational isheterogeneousandoutcomemeasuresvarygreatly; PDF page 6; chunk aad_ad_section4_flare_prevention_2014:chunk:0016:d1799faf55f4; source https://doi.org/10.1016/j.jaad.2014.08.038"
+          "page_start": 15,
+          "page_end": 15,
+          "citation": "Contact Dermatitis: A Practice Parameter-Update 2015 — Volume3,Number3S > Summary Statement 21: Consider that a possible false-; PDF page 15; chunk jtf_contact_dermatitis_2015:chunk:0055:04d8a98d093b; source https://doi.org/10.1016/j.jaip.2015.02.009"
         },
         {
           "rank": 5,
-          "score": 0.734668,
-          "chunk_id": "aad_ad_section4_flare_prevention_2014:chunk:0021:5a50a2efb28c",
-          "doc_id": "aad_ad_section4_flare_prevention_2014",
+          "score": 0.697526,
+          "chunk_id": "jtf_contact_dermatitis_2015:chunk:0030:cee4bf4cb894",
+          "doc_id": "jtf_contact_dermatitis_2015",
           "section_path": [
-            "Definition",
-            "Table III). Testing may also be considered where Elimination diets should not be initiated based on"
+            "Volume3,Number3S"
           ],
-          "page_start": 8,
-          "page_end": 8,
-          "citation": "Guidelines of care for the management of atopic dermatitis: Section 4. Prevention of disease flares and use of adjunctive therapies and approaches — Definition > Table III). Testing may also be considered where Elimination diets should not be initiated based on; PDF page 8; chunk aad_ad_section4_flare_prevention_2014:chunk:0021:5a50a2efb28c; source https://doi.org/10.1016/j.jaad.2014.08.038"
+          "page_start": 7,
+          "page_end": 7,
+          "citation": "Contact Dermatitis: A Practice Parameter-Update 2015 — Volume3,Number3S; PDF page 7; chunk jtf_contact_dermatitis_2015:chunk:0030:cee4bf4cb894; source https://doi.org/10.1016/j.jaip.2015.02.009"
         }
       ]
     },
@@ -3366,34 +3358,21 @@
       "expected_chunk_ids": [
         "aad_ad_section4_flare_prevention_2014:chunk:0028:b60008373fcb"
       ],
-      "first_correct_document_rank": 1,
-      "document_hit_at_1": true,
-      "document_hit_at_3": true,
-      "document_hit_at_5": true,
-      "first_correct_chunk_rank": 1,
-      "exact_chunk_hit_at_1": true,
-      "exact_chunk_hit_at_3": true,
-      "exact_chunk_hit_at_5": true,
+      "first_correct_document_rank": null,
+      "document_hit_at_1": false,
+      "document_hit_at_3": false,
+      "document_hit_at_5": false,
+      "first_correct_chunk_rank": null,
+      "exact_chunk_hit_at_1": false,
+      "exact_chunk_hit_at_3": false,
+      "exact_chunk_hit_at_5": false,
       "evidence_group_count": 1,
-      "evidence_groups_found_at_5": 1,
-      "all_evidence_groups_found_at_5": true,
-      "query_latency_ms": 938.47,
+      "evidence_groups_found_at_5": 0,
+      "all_evidence_groups_found_at_5": false,
+      "query_latency_ms": 1504.45,
       "retrieved_hits": [
         {
           "rank": 1,
-          "score": 0.765296,
-          "chunk_id": "aad_ad_section4_flare_prevention_2014:chunk:0028:b60008373fcb",
-          "doc_id": "aad_ad_section4_flare_prevention_2014",
-          "section_path": [
-            "Definition",
-            "Table VI. Recommendations for other adjunctive and complementary interventions for the treatment of atopic"
-          ],
-          "page_start": 11,
-          "page_end": 11,
-          "citation": "Guidelines of care for the management of atopic dermatitis: Section 4. Prevention of disease flares and use of adjunctive therapies and approaches — Definition > Table VI. Recommendations for other adjunctive and complementary interventions for the treatment of atopic; PDF page 11; chunk aad_ad_section4_flare_prevention_2014:chunk:0028:b60008373fcb; source https://doi.org/10.1016/j.jaad.2014.08.038"
-        },
-        {
-          "rank": 2,
           "score": 0.736444,
           "chunk_id": "nice_cg57_atopic_eczema_under_12:chunk:0075:2fcd332a7a79",
           "doc_id": "nice_cg57_atopic_eczema_under_12",
@@ -3407,41 +3386,54 @@
           "citation": "Atopic eczema in under 12s: diagnosis and management — Recommendations > recommendation on emollient bath additives for this group, but decided not to > 1.5.1.46 Explain to children with atopic eczema and their parents or carers that:; PDF page 21-22; chunk nice_cg57_atopic_eczema_under_12:chunk:0075:2fcd332a7a79; source https://www.nice.org.uk/guidance/cg57"
         },
         {
+          "rank": 1,
+          "score": 0.708557,
+          "chunk_id": "jtf_contact_dermatitis_2015:chunk:0075:f0a6322d8edb",
+          "doc_id": "jtf_contact_dermatitis_2015",
+          "section_path": [
+            "May/June2015",
+            "Summary Statement 33: Suspect the diagnosis of photo- cially available include amcinonide, betamethasone-17,21-"
+          ],
+          "page_start": 20,
+          "page_end": 20,
+          "citation": "Contact Dermatitis: A Practice Parameter-Update 2015 — May/June2015 > Summary Statement 33: Suspect the diagnosis of photo- cially available include amcinonide, betamethasone-17,21-; PDF page 20; chunk jtf_contact_dermatitis_2015:chunk:0075:f0a6322d8edb; source https://doi.org/10.1016/j.jaip.2015.02.009"
+        },
+        {
+          "rank": 2,
+          "score": 0.698349,
+          "chunk_id": "jtf_contact_dermatitis_2015:chunk:0088:6e00c3ee54c5",
+          "doc_id": "jtf_contact_dermatitis_2015",
+          "section_path": [
+            "Volume3,Number3S"
+          ],
+          "page_start": 25,
+          "page_end": 25,
+          "citation": "Contact Dermatitis: A Practice Parameter-Update 2015 — Volume3,Number3S; PDF page 25; chunk jtf_contact_dermatitis_2015:chunk:0088:6e00c3ee54c5; source https://doi.org/10.1016/j.jaip.2015.02.009"
+        },
+        {
           "rank": 3,
-          "score": 0.73175,
-          "chunk_id": "aad_ad_section2_topical_2014:chunk:0037:776e18b88f58",
-          "doc_id": "aad_ad_section2_topical_2014",
+          "score": 0.697384,
+          "chunk_id": "jtf_contact_dermatitis_2015:chunk:0047:56250c07c10b",
+          "doc_id": "jtf_contact_dermatitis_2015",
           "section_path": [
-            "Other Topical Agents",
-            "recommendation regarding the use of coal tar best available evidence supplemented with the judgment"
+            "Volume3,Number3S",
+            "Recommendation: Moderate; C Evidence] Summary Statement 15: In addition to avoiding irritants"
           ],
-          "page_start": 12,
-          "page_end": 12,
-          "citation": "Guidelines of care for the management of atopic dermatitis: Section 2. Management and treatment with topical therapies — Other Topical Agents > recommendation regarding the use of coal tar best available evidence supplemented with the judgment; PDF page 12; chunk aad_ad_section2_topical_2014:chunk:0037:776e18b88f58; source https://doi.org/10.1016/j.jaad.2014.03.023"
+          "page_start": 13,
+          "page_end": 13,
+          "citation": "Contact Dermatitis: A Practice Parameter-Update 2015 — Volume3,Number3S > Recommendation: Moderate; C Evidence] Summary Statement 15: In addition to avoiding irritants; PDF page 13; chunk jtf_contact_dermatitis_2015:chunk:0047:56250c07c10b; source https://doi.org/10.1016/j.jaip.2015.02.009"
         },
         {
-          "rank": 4,
-          "score": 0.728726,
-          "chunk_id": "aad_ad_section4_flare_prevention_2014:chunk:0004:e1e0fe068200",
-          "doc_id": "aad_ad_section4_flare_prevention_2014",
+          "rank": 2,
+          "score": 0.696031,
+          "chunk_id": "aad_ad_section1_diagnosis_2014:chunk:0029:3e5082110ec1",
+          "doc_id": "aad_ad_section1_diagnosis_2014",
           "section_path": [
-            "Section 4: Prevention of disease flares and use of adjunctive"
+            "section 4: of the guidelines. modification of the maternal or infant diet do not"
           ],
-          "page_start": 1,
-          "page_end": 2,
-          "citation": "Guidelines of care for the management of atopic dermatitis: Section 4. Prevention of disease flares and use of adjunctive therapies and approaches — Section 4: Prevention of disease flares and use of adjunctive; PDF page 1-2; printed page 1218; chunk aad_ad_section4_flare_prevention_2014:chunk:0004:e1e0fe068200; source https://doi.org/10.1016/j.jaad.2014.08.038"
-        },
-        {
-          "rank": 5,
-          "score": 0.728214,
-          "chunk_id": "aad_ad_section4_flare_prevention_2014:chunk:0041:6a3b059f617a",
-          "doc_id": "aad_ad_section4_flare_prevention_2014",
-          "section_path": [
-            "Cd004054. 1984;74:26-33."
-          ],
-          "page_start": 16,
-          "page_end": 16,
-          "citation": "Guidelines of care for the management of atopic dermatitis: Section 4. Prevention of disease flares and use of adjunctive therapies and approaches — Cd004054. 1984;74:26-33.; PDF page 16; chunk aad_ad_section4_flare_prevention_2014:chunk:0041:6a3b059f617a; source https://doi.org/10.1016/j.jaad.2014.08.038"
+          "page_start": 7,
+          "page_end": 7,
+          "citation": "Guidelines of care for the management of atopic dermatitis: Section 1. Diagnosis and assessment of atopic dermatitis — section 4: of the guidelines. modification of the maternal or infant diet do not; PDF page 7; chunk aad_ad_section1_diagnosis_2014:chunk:0029:3e5082110ec1; source https://doi.org/10.1016/j.jaad.2013.10.010"
         }
       ]
     },
@@ -3469,7 +3461,7 @@
       "evidence_group_count": 1,
       "evidence_groups_found_at_5": 1,
       "all_evidence_groups_found_at_5": true,
-      "query_latency_ms": 879.4,
+      "query_latency_ms": 1397.17,
       "retrieved_hits": [
         {
           "rank": 1,
@@ -3523,7 +3515,7 @@
           "citation": "Contact Dermatitis: A Practice Parameter-Update 2015 — Volume3,Number3S > TABLEVI. Substancesthatmaybepresentindifferenttypesofimplantordeviceandthatpotentiallyshouldbeconsideredfordiagnostic; PDF page 23; chunk jtf_contact_dermatitis_2015:chunk:0082:c4f7bb7a5015; source https://doi.org/10.1016/j.jaip.2015.02.009"
         },
         {
-          "rank": 5,
+          "rank": 1,
           "score": 0.691415,
           "chunk_id": "aad_ad_section1_diagnosis_2014:chunk:0003:574a771f673e",
           "doc_id": "aad_ad_section1_diagnosis_2014",
@@ -3560,7 +3552,7 @@
       "evidence_group_count": 1,
       "evidence_groups_found_at_5": 1,
       "all_evidence_groups_found_at_5": true,
-      "query_latency_ms": 891.16,
+      "query_latency_ms": 759.2,
       "retrieved_hits": [
         {
           "rank": 1,
@@ -3652,7 +3644,7 @@
       "evidence_group_count": 1,
       "evidence_groups_found_at_5": 1,
       "all_evidence_groups_found_at_5": true,
-      "query_latency_ms": 856.94,
+      "query_latency_ms": 728.4,
       "retrieved_hits": [
         {
           "rank": 1,
@@ -3745,7 +3737,7 @@
       "evidence_group_count": 1,
       "evidence_groups_found_at_5": 1,
       "all_evidence_groups_found_at_5": true,
-      "query_latency_ms": 843.69,
+      "query_latency_ms": 739.01,
       "retrieved_hits": [
         {
           "rank": 1,
@@ -3838,7 +3830,7 @@
       "evidence_group_count": 1,
       "evidence_groups_found_at_5": 0,
       "all_evidence_groups_found_at_5": false,
-      "query_latency_ms": 845.09,
+      "query_latency_ms": 763.75,
       "retrieved_hits": [
         {
           "rank": 1,
@@ -3930,7 +3922,7 @@
       "evidence_group_count": 1,
       "evidence_groups_found_at_5": 1,
       "all_evidence_groups_found_at_5": true,
-      "query_latency_ms": 852.85,
+      "query_latency_ms": 770.18,
       "retrieved_hits": [
         {
           "rank": 1,
@@ -4023,7 +4015,7 @@
       "evidence_group_count": 1,
       "evidence_groups_found_at_5": 0,
       "all_evidence_groups_found_at_5": false,
-      "query_latency_ms": 778.59,
+      "query_latency_ms": 2798.54,
       "retrieved_hits": [
         {
           "rank": 1,
@@ -4100,81 +4092,84 @@
       "expected_chunk_ids": [
         "aad_ad_section3_phototherapy_systemic_2014:chunk:0029:b34e00ab887a"
       ],
-      "first_correct_document_rank": 1,
-      "document_hit_at_1": true,
-      "document_hit_at_3": true,
-      "document_hit_at_5": true,
-      "first_correct_chunk_rank": 1,
-      "exact_chunk_hit_at_1": true,
-      "exact_chunk_hit_at_3": true,
-      "exact_chunk_hit_at_5": true,
+      "first_correct_document_rank": null,
+      "document_hit_at_1": false,
+      "document_hit_at_3": false,
+      "document_hit_at_5": false,
+      "first_correct_chunk_rank": null,
+      "exact_chunk_hit_at_1": false,
+      "exact_chunk_hit_at_3": false,
+      "exact_chunk_hit_at_5": false,
       "evidence_group_count": 1,
-      "evidence_groups_found_at_5": 1,
-      "all_evidence_groups_found_at_5": true,
-      "query_latency_ms": 888.32,
+      "evidence_groups_found_at_5": 0,
+      "all_evidence_groups_found_at_5": false,
+      "query_latency_ms": 1321.09,
       "retrieved_hits": [
         {
           "rank": 1,
-          "score": 0.802072,
-          "chunk_id": "aad_ad_section3_phototherapy_systemic_2014:chunk:0029:b34e00ab887a",
-          "doc_id": "aad_ad_section3_phototherapy_systemic_2014",
+          "score": 0.631763,
+          "chunk_id": "nice_cg57_atopic_eczema_under_12:chunk:0042:2e0627add6cd",
+          "doc_id": "nice_cg57_atopic_eczema_under_12",
           "section_path": [
-            "Systemic Agents",
-            "Table VIII. Dosing and monitoring guidelines for the use of selected systemic agents"
+            "Recommendations",
+            "recommendation on emollient bath additives for this group, but decided not to",
+            "1.5.1.13 Tailor the potency of topical corticosteroids to the severity of the child's atopic"
           ],
-          "page_start": 8,
-          "page_end": 8,
-          "citation": "Guidelines of care for the management of atopic dermatitis: Section 3. Management and treatment with phototherapy and systemic agents — Systemic Agents > Table VIII. Dosing and monitoring guidelines for the use of selected systemic agents; PDF page 8; printed page 334; chunk aad_ad_section3_phototherapy_systemic_2014:chunk:0029:b34e00ab887a; source https://doi.org/10.1016/j.jaad.2014.03.030"
+          "page_start": 15,
+          "page_end": 16,
+          "citation": "Atopic eczema in under 12s: diagnosis and management — Recommendations > recommendation on emollient bath additives for this group, but decided not to > 1.5.1.13 Tailor the potency of topical corticosteroids to the severity of the child's atopic; PDF page 15-16; chunk nice_cg57_atopic_eczema_under_12:chunk:0042:2e0627add6cd; source https://www.nice.org.uk/guidance/cg57"
+        },
+        {
+          "rank": 1,
+          "score": 0.631572,
+          "chunk_id": "bad_contact_dermatitis_2017:chunk:0011:24d8d15f967c",
+          "doc_id": "bad_contact_dermatitis_2017",
+          "section_path": [
+            "5.0 Background",
+            "Table 3 Recommendations and ratings agreed upon by the guideline development group and patient representatives"
+          ],
+          "page_start": 3,
+          "page_end": 3,
+          "citation": "British Association of Dermatologists' guidelines for the management of contact dermatitis 2017 — 5.0 Background > Table 3 Recommendations and ratings agreed upon by the guideline development group and patient representatives; PDF page 3; printed page 17; chunk bad_contact_dermatitis_2017:chunk:0011:24d8d15f967c; source https://doi.org/10.1111/bjd.15239"
         },
         {
           "rank": 2,
-          "score": 0.790004,
-          "chunk_id": "aad_ad_section3_phototherapy_systemic_2014:chunk:0031:d3c17e178629",
-          "doc_id": "aad_ad_section3_phototherapy_systemic_2014",
+          "score": 0.630216,
+          "chunk_id": "jtf_contact_dermatitis_2015:chunk:0079:fb6d755aa9e1",
+          "doc_id": "jtf_contact_dermatitis_2015",
           "section_path": [
-            "Jamacaddermatol"
+            "May/June2015",
+            "TABLE V. Components of selected alloys used in metal implants"
           ],
-          "page_start": 8,
-          "page_end": 8,
-          "citation": "Guidelines of care for the management of atopic dermatitis: Section 3. Management and treatment with phototherapy and systemic agents — Jamacaddermatol; PDF page 8; printed page 334; chunk aad_ad_section3_phototherapy_systemic_2014:chunk:0031:d3c17e178629; source https://doi.org/10.1016/j.jaad.2014.03.030"
+          "page_start": 22,
+          "page_end": 22,
+          "citation": "Contact Dermatitis: A Practice Parameter-Update 2015 — May/June2015 > TABLE V. Components of selected alloys used in metal implants; PDF page 22; chunk jtf_contact_dermatitis_2015:chunk:0079:fb6d755aa9e1; source https://doi.org/10.1016/j.jaip.2015.02.009"
+        },
+        {
+          "rank": 2,
+          "score": 0.630064,
+          "chunk_id": "aad_ad_section1_diagnosis_2014:chunk:0003:574a771f673e",
+          "doc_id": "aad_ad_section1_diagnosis_2014",
+          "section_path": [
+            "Section 1: Diagnosis and assessment of atopic dermatitis"
+          ],
+          "page_start": 1,
+          "page_end": 1,
+          "citation": "Guidelines of care for the management of atopic dermatitis: Section 1. Diagnosis and assessment of atopic dermatitis — Section 1: Diagnosis and assessment of atopic dermatitis; PDF page 1; printed page 338; chunk aad_ad_section1_diagnosis_2014:chunk:0003:574a771f673e; source https://doi.org/10.1016/j.jaad.2013.10.010"
         },
         {
           "rank": 3,
-          "score": 0.766046,
-          "chunk_id": "aad_ad_section3_phototherapy_systemic_2014:chunk:0027:c1c5511ef0f3",
-          "doc_id": "aad_ad_section3_phototherapy_systemic_2014",
+          "score": 0.629506,
+          "chunk_id": "nice_cg57_atopic_eczema_under_12:chunk:0032:2da5ab70ec20",
+          "doc_id": "nice_cg57_atopic_eczema_under_12",
           "section_path": [
-            "Systemic Agents",
-            "Recommendations for the use of systemic immu- activity within 2 to 6 weeks of treatment initiation.36"
+            "Recommendations",
+            "Table 2 Stepped treatment options",
+            "1.5.1.4 Offer children with atopic eczema a choice of unperfumed emollients to use"
           ],
-          "page_start": 7,
-          "page_end": 7,
-          "citation": "Guidelines of care for the management of atopic dermatitis: Section 3. Management and treatment with phototherapy and systemic agents — Systemic Agents > Recommendations for the use of systemic immu- activity within 2 to 6 weeks of treatment initiation.36; PDF page 7; chunk aad_ad_section3_phototherapy_systemic_2014:chunk:0027:c1c5511ef0f3; source https://doi.org/10.1016/j.jaad.2014.03.030"
-        },
-        {
-          "rank": 4,
-          "score": 0.759127,
-          "chunk_id": "aad_ad_section3_phototherapy_systemic_2014:chunk:0032:f8807046eebf",
-          "doc_id": "aad_ad_section3_phototherapy_systemic_2014",
-          "section_path": [
-            "Jamacaddermatol"
-          ],
-          "page_start": 8,
-          "page_end": 9,
-          "citation": "Guidelines of care for the management of atopic dermatitis: Section 3. Management and treatment with phototherapy and systemic agents — Jamacaddermatol; PDF page 8-9; printed page 334; chunk aad_ad_section3_phototherapy_systemic_2014:chunk:0032:f8807046eebf; source https://doi.org/10.1016/j.jaad.2014.03.030"
-        },
-        {
-          "rank": 5,
-          "score": 0.747317,
-          "chunk_id": "aad_ad_section3_phototherapy_systemic_2014:chunk:0056:20e26df2a528",
-          "doc_id": "aad_ad_section3_phototherapy_systemic_2014",
-          "section_path": [
-            "Jamacaddermatol",
-            "recommendation is summarized in Table III. should be tailored to the individual patient to"
-          ],
-          "page_start": 15,
-          "page_end": 15,
-          "citation": "Guidelines of care for the management of atopic dermatitis: Section 3. Management and treatment with phototherapy and systemic agents — Jamacaddermatol > recommendation is summarized in Table III. should be tailored to the individual patient to; PDF page 15; chunk aad_ad_section3_phototherapy_systemic_2014:chunk:0056:20e26df2a528; source https://doi.org/10.1016/j.jaad.2014.03.030"
+          "page_start": 12,
+          "page_end": 12,
+          "citation": "Atopic eczema in under 12s: diagnosis and management — Recommendations > Table 2 Stepped treatment options > 1.5.1.4 Offer children with atopic eczema a choice of unperfumed emollients to use; PDF page 12; chunk nice_cg57_atopic_eczema_under_12:chunk:0032:2da5ab70ec20; source https://www.nice.org.uk/guidance/cg57"
         }
       ]
     },
@@ -4191,81 +4186,81 @@
       "expected_chunk_ids": [
         "aad_ad_section3_phototherapy_systemic_2014:chunk:0029:b34e00ab887a"
       ],
-      "first_correct_document_rank": 1,
-      "document_hit_at_1": true,
-      "document_hit_at_3": true,
-      "document_hit_at_5": true,
-      "first_correct_chunk_rank": 2,
+      "first_correct_document_rank": null,
+      "document_hit_at_1": false,
+      "document_hit_at_3": false,
+      "document_hit_at_5": false,
+      "first_correct_chunk_rank": null,
       "exact_chunk_hit_at_1": false,
-      "exact_chunk_hit_at_3": true,
-      "exact_chunk_hit_at_5": true,
+      "exact_chunk_hit_at_3": false,
+      "exact_chunk_hit_at_5": false,
       "evidence_group_count": 1,
-      "evidence_groups_found_at_5": 1,
-      "all_evidence_groups_found_at_5": true,
-      "query_latency_ms": 958.94,
+      "evidence_groups_found_at_5": 0,
+      "all_evidence_groups_found_at_5": false,
+      "query_latency_ms": 1377.94,
       "retrieved_hits": [
         {
           "rank": 1,
-          "score": 0.766847,
-          "chunk_id": "aad_ad_section3_phototherapy_systemic_2014:chunk:0031:d3c17e178629",
-          "doc_id": "aad_ad_section3_phototherapy_systemic_2014",
+          "score": 0.616469,
+          "chunk_id": "aad_ad_section1_diagnosis_2014:chunk:0017:7e3cafacfb02",
+          "doc_id": "aad_ad_section1_diagnosis_2014",
           "section_path": [
-            "Jamacaddermatol"
+            "3 Sparing of the groin and axillary regions",
+            "Box 1. On occasion, skin biopsy specimens or other tests"
           ],
-          "page_start": 8,
-          "page_end": 8,
-          "citation": "Guidelines of care for the management of atopic dermatitis: Section 3. Management and treatment with phototherapy and systemic agents — Jamacaddermatol; PDF page 8; printed page 334; chunk aad_ad_section3_phototherapy_systemic_2014:chunk:0031:d3c17e178629; source https://doi.org/10.1016/j.jaad.2014.03.030"
+          "page_start": 5,
+          "page_end": 5,
+          "citation": "Guidelines of care for the management of atopic dermatitis: Section 1. Diagnosis and assessment of atopic dermatitis — 3 Sparing of the groin and axillary regions > Box 1. On occasion, skin biopsy specimens or other tests; PDF page 5; chunk aad_ad_section1_diagnosis_2014:chunk:0017:7e3cafacfb02; source https://doi.org/10.1016/j.jaad.2013.10.010"
+        },
+        {
+          "rank": 1,
+          "score": 0.614197,
+          "chunk_id": "jtf_contact_dermatitis_2015:chunk:0013:2d647d1af526",
+          "doc_id": "jtf_contact_dermatitis_2015",
+          "section_path": [
+            "May/June2015",
+            "Summary Statement 16: Avoid or reduce doses of immuno- has not been determined and should be considered investiga-"
+          ],
+          "page_start": 4,
+          "page_end": 4,
+          "citation": "Contact Dermatitis: A Practice Parameter-Update 2015 — May/June2015 > Summary Statement 16: Avoid or reduce doses of immuno- has not been determined and should be considered investiga-; PDF page 4; chunk jtf_contact_dermatitis_2015:chunk:0013:2d647d1af526; source https://doi.org/10.1016/j.jaip.2015.02.009"
         },
         {
           "rank": 2,
-          "score": 0.759359,
-          "chunk_id": "aad_ad_section3_phototherapy_systemic_2014:chunk:0029:b34e00ab887a",
-          "doc_id": "aad_ad_section3_phototherapy_systemic_2014",
+          "score": 0.612994,
+          "chunk_id": "aad_ad_section1_diagnosis_2014:chunk:0020:270e9ee041d3",
+          "doc_id": "aad_ad_section1_diagnosis_2014",
           "section_path": [
-            "Systemic Agents",
-            "Table VIII. Dosing and monitoring guidelines for the use of selected systemic agents"
+            "Biomarkers Disease Severity And Clinical"
           ],
-          "page_start": 8,
-          "page_end": 8,
-          "citation": "Guidelines of care for the management of atopic dermatitis: Section 3. Management and treatment with phototherapy and systemic agents — Systemic Agents > Table VIII. Dosing and monitoring guidelines for the use of selected systemic agents; PDF page 8; printed page 334; chunk aad_ad_section3_phototherapy_systemic_2014:chunk:0029:b34e00ab887a; source https://doi.org/10.1016/j.jaad.2014.03.030"
+          "page_start": 5,
+          "page_end": 5,
+          "citation": "Guidelines of care for the management of atopic dermatitis: Section 1. Diagnosis and assessment of atopic dermatitis — Biomarkers Disease Severity And Clinical; PDF page 5; chunk aad_ad_section1_diagnosis_2014:chunk:0020:270e9ee041d3; source https://doi.org/10.1016/j.jaad.2013.10.010"
+        },
+        {
+          "rank": 2,
+          "score": 0.611389,
+          "chunk_id": "jtf_contact_dermatitis_2015:chunk:0075:f0a6322d8edb",
+          "doc_id": "jtf_contact_dermatitis_2015",
+          "section_path": [
+            "May/June2015",
+            "Summary Statement 33: Suspect the diagnosis of photo- cially available include amcinonide, betamethasone-17,21-"
+          ],
+          "page_start": 20,
+          "page_end": 20,
+          "citation": "Contact Dermatitis: A Practice Parameter-Update 2015 — May/June2015 > Summary Statement 33: Suspect the diagnosis of photo- cially available include amcinonide, betamethasone-17,21-; PDF page 20; chunk jtf_contact_dermatitis_2015:chunk:0075:f0a6322d8edb; source https://doi.org/10.1016/j.jaip.2015.02.009"
         },
         {
           "rank": 3,
-          "score": 0.719127,
-          "chunk_id": "aad_ad_section3_phototherapy_systemic_2014:chunk:0038:ee3a40450811",
-          "doc_id": "aad_ad_section3_phototherapy_systemic_2014",
+          "score": 0.609493,
+          "chunk_id": "jtf_contact_dermatitis_2015:chunk:0050:e3deca953323",
+          "doc_id": "jtf_contact_dermatitis_2015",
           "section_path": [
-            ",Cbc",
-            "Table IX. Adverse effects, interactions, and contraindications of selected systemic immunomodulatory agents"
+            "May/June2015"
           ],
-          "page_start": 10,
-          "page_end": 10,
-          "citation": "Guidelines of care for the management of atopic dermatitis: Section 3. Management and treatment with phototherapy and systemic agents — ,Cbc > Table IX. Adverse effects, interactions, and contraindications of selected systemic immunomodulatory agents; PDF page 10; printed page 336; chunk aad_ad_section3_phototherapy_systemic_2014:chunk:0038:ee3a40450811; source https://doi.org/10.1016/j.jaad.2014.03.030"
-        },
-        {
-          "rank": 4,
-          "score": 0.710037,
-          "chunk_id": "aad_ad_section3_phototherapy_systemic_2014:chunk:0040:3d4bbd4d1964",
-          "doc_id": "aad_ad_section3_phototherapy_systemic_2014",
-          "section_path": [
-            "Jamacaddermatol"
-          ],
-          "page_start": 10,
-          "page_end": 11,
-          "citation": "Guidelines of care for the management of atopic dermatitis: Section 3. Management and treatment with phototherapy and systemic agents — Jamacaddermatol; PDF page 10-11; printed page 336-337; chunk aad_ad_section3_phototherapy_systemic_2014:chunk:0040:3d4bbd4d1964; source https://doi.org/10.1016/j.jaad.2014.03.030"
-        },
-        {
-          "rank": 5,
-          "score": 0.691711,
-          "chunk_id": "aad_ad_section3_phototherapy_systemic_2014:chunk:0027:c1c5511ef0f3",
-          "doc_id": "aad_ad_section3_phototherapy_systemic_2014",
-          "section_path": [
-            "Systemic Agents",
-            "Recommendations for the use of systemic immu- activity within 2 to 6 weeks of treatment initiation.36"
-          ],
-          "page_start": 7,
-          "page_end": 7,
-          "citation": "Guidelines of care for the management of atopic dermatitis: Section 3. Management and treatment with phototherapy and systemic agents — Systemic Agents > Recommendations for the use of systemic immu- activity within 2 to 6 weeks of treatment initiation.36; PDF page 7; chunk aad_ad_section3_phototherapy_systemic_2014:chunk:0027:c1c5511ef0f3; source https://doi.org/10.1016/j.jaad.2014.03.030"
+          "page_start": 14,
+          "page_end": 14,
+          "citation": "Contact Dermatitis: A Practice Parameter-Update 2015 — May/June2015; PDF page 14; chunk jtf_contact_dermatitis_2015:chunk:0050:e3deca953323; source https://doi.org/10.1016/j.jaip.2015.02.009"
         }
       ]
     },
@@ -4293,7 +4288,7 @@
       "evidence_group_count": 1,
       "evidence_groups_found_at_5": 1,
       "all_evidence_groups_found_at_5": true,
-      "query_latency_ms": 930.36,
+      "query_latency_ms": 1172.78,
       "retrieved_hits": [
         {
           "rank": 1,
@@ -4372,83 +4367,79 @@
       "expected_chunk_ids": [
         "aad_ad_section3_phototherapy_systemic_2014:chunk:0060:6e08fd6befdc"
       ],
-      "first_correct_document_rank": 1,
-      "document_hit_at_1": true,
-      "document_hit_at_3": true,
-      "document_hit_at_5": true,
-      "first_correct_chunk_rank": 3,
+      "first_correct_document_rank": null,
+      "document_hit_at_1": false,
+      "document_hit_at_3": false,
+      "document_hit_at_5": false,
+      "first_correct_chunk_rank": null,
       "exact_chunk_hit_at_1": false,
-      "exact_chunk_hit_at_3": true,
-      "exact_chunk_hit_at_5": true,
+      "exact_chunk_hit_at_3": false,
+      "exact_chunk_hit_at_5": false,
       "evidence_group_count": 1,
-      "evidence_groups_found_at_5": 1,
-      "all_evidence_groups_found_at_5": true,
-      "query_latency_ms": 942.12,
+      "evidence_groups_found_at_5": 0,
+      "all_evidence_groups_found_at_5": false,
+      "query_latency_ms": 1336.11,
       "retrieved_hits": [
         {
           "rank": 1,
-          "score": 0.760777,
-          "chunk_id": "aad_ad_section3_phototherapy_systemic_2014:chunk:0057:86e74e91ac66",
-          "doc_id": "aad_ad_section3_phototherapy_systemic_2014",
+          "score": 0.637497,
+          "chunk_id": "jtf_contact_dermatitis_2015:chunk:0033:289bf7b366f8",
+          "doc_id": "jtf_contact_dermatitis_2015",
           "section_path": [
-            "Jamacaddermatol",
-            "recommendation is summarized in Table III. should be tailored to the individual patient to"
+            "Volume3,Number3S"
           ],
-          "page_start": 15,
-          "page_end": 16,
-          "citation": "Guidelines of care for the management of atopic dermatitis: Section 3. Management and treatment with phototherapy and systemic agents — Jamacaddermatol > recommendation is summarized in Table III. should be tailored to the individual patient to; PDF page 15-16; chunk aad_ad_section3_phototherapy_systemic_2014:chunk:0057:86e74e91ac66; source https://doi.org/10.1016/j.jaad.2014.03.030"
+          "page_start": 9,
+          "page_end": 9,
+          "citation": "Contact Dermatitis: A Practice Parameter-Update 2015 — Volume3,Number3S; PDF page 9; chunk jtf_contact_dermatitis_2015:chunk:0033:289bf7b366f8; source https://doi.org/10.1016/j.jaip.2015.02.009"
         },
         {
           "rank": 2,
-          "score": 0.746289,
-          "chunk_id": "aad_ad_section3_phototherapy_systemic_2014:chunk:0056:20e26df2a528",
-          "doc_id": "aad_ad_section3_phototherapy_systemic_2014",
+          "score": 0.63674,
+          "chunk_id": "bad_contact_dermatitis_2017:chunk:0011:24d8d15f967c",
+          "doc_id": "bad_contact_dermatitis_2017",
           "section_path": [
-            "Jamacaddermatol",
-            "recommendation is summarized in Table III. should be tailored to the individual patient to"
+            "5.0 Background",
+            "Table 3 Recommendations and ratings agreed upon by the guideline development group and patient representatives"
           ],
-          "page_start": 15,
-          "page_end": 15,
-          "citation": "Guidelines of care for the management of atopic dermatitis: Section 3. Management and treatment with phototherapy and systemic agents — Jamacaddermatol > recommendation is summarized in Table III. should be tailored to the individual patient to; PDF page 15; chunk aad_ad_section3_phototherapy_systemic_2014:chunk:0056:20e26df2a528; source https://doi.org/10.1016/j.jaad.2014.03.030"
+          "page_start": 3,
+          "page_end": 3,
+          "citation": "British Association of Dermatologists' guidelines for the management of contact dermatitis 2017 — 5.0 Background > Table 3 Recommendations and ratings agreed upon by the guideline development group and patient representatives; PDF page 3; printed page 17; chunk bad_contact_dermatitis_2017:chunk:0011:24d8d15f967c; source https://doi.org/10.1111/bjd.15239"
         },
         {
           "rank": 3,
-          "score": 0.740436,
-          "chunk_id": "aad_ad_section3_phototherapy_systemic_2014:chunk:0060:6e08fd6befdc",
-          "doc_id": "aad_ad_section3_phototherapy_systemic_2014",
+          "score": 0.616778,
+          "chunk_id": "jtf_contact_dermatitis_2015:chunk:0050:e3deca953323",
+          "doc_id": "jtf_contact_dermatitis_2015",
           "section_path": [
-            "Jamacaddermatol",
-            "tablets, and is given twice daily. Efficacy"
+            "May/June2015"
           ],
-          "page_start": 16,
-          "page_end": 16,
-          "citation": "Guidelines of care for the management of atopic dermatitis: Section 3. Management and treatment with phototherapy and systemic agents — Jamacaddermatol > tablets, and is given twice daily. Efficacy; PDF page 16; chunk aad_ad_section3_phototherapy_systemic_2014:chunk:0060:6e08fd6befdc; source https://doi.org/10.1016/j.jaad.2014.03.030"
+          "page_start": 14,
+          "page_end": 14,
+          "citation": "Contact Dermatitis: A Practice Parameter-Update 2015 — May/June2015; PDF page 14; chunk jtf_contact_dermatitis_2015:chunk:0050:e3deca953323; source https://doi.org/10.1016/j.jaip.2015.02.009"
         },
         {
           "rank": 4,
-          "score": 0.726894,
-          "chunk_id": "aad_ad_section3_phototherapy_systemic_2014:chunk:0054:f549d8de85c9",
-          "doc_id": "aad_ad_section3_phototherapy_systemic_2014",
+          "score": 0.61654,
+          "chunk_id": "jtf_contact_dermatitis_2015:chunk:0088:6e00c3ee54c5",
+          "doc_id": "jtf_contact_dermatitis_2015",
           "section_path": [
-            "Jamacaddermatol",
-            "recommendation is summarized in Table III. should be tailored to the individual patient to"
+            "Volume3,Number3S"
           ],
-          "page_start": 15,
-          "page_end": 15,
-          "citation": "Guidelines of care for the management of atopic dermatitis: Section 3. Management and treatment with phototherapy and systemic agents — Jamacaddermatol > recommendation is summarized in Table III. should be tailored to the individual patient to; PDF page 15; chunk aad_ad_section3_phototherapy_systemic_2014:chunk:0054:f549d8de85c9; source https://doi.org/10.1016/j.jaad.2014.03.030"
+          "page_start": 25,
+          "page_end": 25,
+          "citation": "Contact Dermatitis: A Practice Parameter-Update 2015 — Volume3,Number3S; PDF page 25; chunk jtf_contact_dermatitis_2015:chunk:0088:6e00c3ee54c5; source https://doi.org/10.1016/j.jaip.2015.02.009"
         },
         {
           "rank": 5,
-          "score": 0.723069,
-          "chunk_id": "aad_ad_section3_phototherapy_systemic_2014:chunk:0058:9d025a72da4c",
-          "doc_id": "aad_ad_section3_phototherapy_systemic_2014",
+          "score": 0.615877,
+          "chunk_id": "bad_contact_dermatitis_2017:chunk:0003:6be02a309fee",
+          "doc_id": "bad_contact_dermatitis_2017",
           "section_path": [
-            "Jamacaddermatol",
-            "0.5 to 3 g/d.57 The relapse rate after withdrawal is phototherapy. The strength of recommendation for"
+            "3.0 Methodology"
           ],
-          "page_start": 16,
-          "page_end": 16,
-          "citation": "Guidelines of care for the management of atopic dermatitis: Section 3. Management and treatment with phototherapy and systemic agents — Jamacaddermatol > 0.5 to 3 g/d.57 The relapse rate after withdrawal is phototherapy. The strength of recommendation for; PDF page 16; chunk aad_ad_section3_phototherapy_systemic_2014:chunk:0058:9d025a72da4c; source https://doi.org/10.1016/j.jaad.2014.03.030"
+          "page_start": 1,
+          "page_end": 2,
+          "citation": "British Association of Dermatologists' guidelines for the management of contact dermatitis 2017 — 3.0 Methodology; PDF page 1-2; printed page 17; chunk bad_contact_dermatitis_2017:chunk:0003:6be02a309fee; source https://doi.org/10.1111/bjd.15239"
         }
       ]
     },
@@ -4476,7 +4467,7 @@
       "evidence_group_count": 1,
       "evidence_groups_found_at_5": 1,
       "all_evidence_groups_found_at_5": true,
-      "query_latency_ms": 782.03,
+      "query_latency_ms": 674.37,
       "retrieved_hits": [
         {
           "rank": 1,
@@ -4553,81 +4544,80 @@
       "expected_chunk_ids": [
         "aad_ad_section3_phototherapy_systemic_2014:chunk:0043:ffe0654fdb4c"
       ],
-      "first_correct_document_rank": 1,
-      "document_hit_at_1": true,
-      "document_hit_at_3": true,
-      "document_hit_at_5": true,
-      "first_correct_chunk_rank": 1,
-      "exact_chunk_hit_at_1": true,
-      "exact_chunk_hit_at_3": true,
-      "exact_chunk_hit_at_5": true,
+      "first_correct_document_rank": null,
+      "document_hit_at_1": false,
+      "document_hit_at_3": false,
+      "document_hit_at_5": false,
+      "first_correct_chunk_rank": null,
+      "exact_chunk_hit_at_1": false,
+      "exact_chunk_hit_at_3": false,
+      "exact_chunk_hit_at_5": false,
       "evidence_group_count": 1,
-      "evidence_groups_found_at_5": 1,
-      "all_evidence_groups_found_at_5": true,
-      "query_latency_ms": 939.34,
+      "evidence_groups_found_at_5": 0,
+      "all_evidence_groups_found_at_5": false,
+      "query_latency_ms": 1374.85,
       "retrieved_hits": [
         {
           "rank": 1,
-          "score": 0.739074,
-          "chunk_id": "aad_ad_section3_phototherapy_systemic_2014:chunk:0043:ffe0654fdb4c",
-          "doc_id": "aad_ad_section3_phototherapy_systemic_2014",
+          "score": 0.540872,
+          "chunk_id": "jtf_contact_dermatitis_2015:chunk:0119:47cbfed3aa27",
+          "doc_id": "jtf_contact_dermatitis_2015",
           "section_path": [
-            "Jamacaddermatol",
-            "Table IX. Cont’d"
+            "Volume3,Number3S",
+            "recommendation from category I, II, or III evidence"
           ],
-          "page_start": 12,
-          "page_end": 12,
-          "citation": "Guidelines of care for the management of atopic dermatitis: Section 3. Management and treatment with phototherapy and systemic agents — Jamacaddermatol > Table IX. Cont’d; PDF page 12; printed page 338; chunk aad_ad_section3_phototherapy_systemic_2014:chunk:0043:ffe0654fdb4c; source https://doi.org/10.1016/j.jaad.2014.03.030"
+          "page_start": 33,
+          "page_end": 33,
+          "citation": "Contact Dermatitis: A Practice Parameter-Update 2015 — Volume3,Number3S > recommendation from category I, II, or III evidence; PDF page 33; chunk jtf_contact_dermatitis_2015:chunk:0119:47cbfed3aa27; source https://doi.org/10.1016/j.jaip.2015.02.009"
         },
         {
           "rank": 2,
-          "score": 0.658087,
-          "chunk_id": "aad_ad_section3_phototherapy_systemic_2014:chunk:0045:6f606116e68f",
-          "doc_id": "aad_ad_section3_phototherapy_systemic_2014",
+          "score": 0.524044,
+          "chunk_id": "jtf_contact_dermatitis_2015:chunk:0046:0cb68c8dd7a7",
+          "doc_id": "jtf_contact_dermatitis_2015",
           "section_path": [
-            "Jamacaddermatol"
+            "Volume3,Number3S"
           ],
-          "page_start": 12,
+          "page_start": 13,
           "page_end": 13,
-          "citation": "Guidelines of care for the management of atopic dermatitis: Section 3. Management and treatment with phototherapy and systemic agents — Jamacaddermatol; PDF page 12-13; printed page 338; chunk aad_ad_section3_phototherapy_systemic_2014:chunk:0045:6f606116e68f; source https://doi.org/10.1016/j.jaad.2014.03.030"
+          "citation": "Contact Dermatitis: A Practice Parameter-Update 2015 — Volume3,Number3S; PDF page 13; chunk jtf_contact_dermatitis_2015:chunk:0046:0cb68c8dd7a7; source https://doi.org/10.1016/j.jaip.2015.02.009"
         },
         {
           "rank": 3,
-          "score": 0.643135,
-          "chunk_id": "aad_ad_section3_phototherapy_systemic_2014:chunk:0056:20e26df2a528",
-          "doc_id": "aad_ad_section3_phototherapy_systemic_2014",
+          "score": 0.523565,
+          "chunk_id": "jtf_contact_dermatitis_2015:chunk:0040:3ee3d71a407b",
+          "doc_id": "jtf_contact_dermatitis_2015",
           "section_path": [
-            "Jamacaddermatol",
-            "recommendation is summarized in Table III. should be tailored to the individual patient to"
+            "Volume3,Number3S"
           ],
-          "page_start": 15,
-          "page_end": 15,
-          "citation": "Guidelines of care for the management of atopic dermatitis: Section 3. Management and treatment with phototherapy and systemic agents — Jamacaddermatol > recommendation is summarized in Table III. should be tailored to the individual patient to; PDF page 15; chunk aad_ad_section3_phototherapy_systemic_2014:chunk:0056:20e26df2a528; source https://doi.org/10.1016/j.jaad.2014.03.030"
+          "page_start": 11,
+          "page_end": 11,
+          "citation": "Contact Dermatitis: A Practice Parameter-Update 2015 — Volume3,Number3S; PDF page 11; chunk jtf_contact_dermatitis_2015:chunk:0040:3ee3d71a407b; source https://doi.org/10.1016/j.jaip.2015.02.009"
         },
         {
           "rank": 4,
-          "score": 0.632247,
-          "chunk_id": "aad_ad_section3_phototherapy_systemic_2014:chunk:0040:3d4bbd4d1964",
-          "doc_id": "aad_ad_section3_phototherapy_systemic_2014",
+          "score": 0.518665,
+          "chunk_id": "jtf_contact_dermatitis_2015:chunk:0116:deb3469196cc",
+          "doc_id": "jtf_contact_dermatitis_2015",
           "section_path": [
-            "Jamacaddermatol"
+            "Volume3,Number3S",
+            "Recommendation Rating Scale Ia Evidence from meta-analysis of randomized controlled"
           ],
-          "page_start": 10,
-          "page_end": 11,
-          "citation": "Guidelines of care for the management of atopic dermatitis: Section 3. Management and treatment with phototherapy and systemic agents — Jamacaddermatol; PDF page 10-11; printed page 336-337; chunk aad_ad_section3_phototherapy_systemic_2014:chunk:0040:3d4bbd4d1964; source https://doi.org/10.1016/j.jaad.2014.03.030"
+          "page_start": 33,
+          "page_end": 33,
+          "citation": "Contact Dermatitis: A Practice Parameter-Update 2015 — Volume3,Number3S > Recommendation Rating Scale Ia Evidence from meta-analysis of randomized controlled; PDF page 33; chunk jtf_contact_dermatitis_2015:chunk:0116:deb3469196cc; source https://doi.org/10.1016/j.jaip.2015.02.009"
         },
         {
           "rank": 5,
-          "score": 0.623809,
-          "chunk_id": "aad_ad_section3_phototherapy_systemic_2014:chunk:0054:f549d8de85c9",
-          "doc_id": "aad_ad_section3_phototherapy_systemic_2014",
+          "score": 0.517285,
+          "chunk_id": "jtf_contact_dermatitis_2015:chunk:0136:cabe4ab9e0a6",
+          "doc_id": "jtf_contact_dermatitis_2015",
           "section_path": [
-            "Jamacaddermatol",
-            "recommendation is summarized in Table III. should be tailored to the individual patient to"
+            "[Hms 1.0%]"
           ],
-          "page_start": 15,
-          "page_end": 15,
-          "citation": "Guidelines of care for the management of atopic dermatitis: Section 3. Management and treatment with phototherapy and systemic agents — Jamacaddermatol > recommendation is summarized in Table III. should be tailored to the individual patient to; PDF page 15; chunk aad_ad_section3_phototherapy_systemic_2014:chunk:0054:f549d8de85c9; source https://doi.org/10.1016/j.jaad.2014.03.030"
+          "page_start": 39,
+          "page_end": 39,
+          "citation": "Contact Dermatitis: A Practice Parameter-Update 2015 — [Hms 1.0%]; PDF page 39; chunk jtf_contact_dermatitis_2015:chunk:0136:cabe4ab9e0a6; source https://doi.org/10.1016/j.jaip.2015.02.009"
         }
       ]
     }
