@@ -3,6 +3,7 @@ from fastapi.testclient import TestClient
 from api.main import app
 from api.dependencies import get_service
 from api.schemas import EvidenceItem, GroundingReview, ImagePrediction, RoutingResponse, ScopeCheckResponse, Timings
+from api.services import RemoteImageClassifier
 
 
 class FakeService:
@@ -60,3 +61,26 @@ def test_retrieve_returns_raw_and_final_scores_with_citations():
     assert evidence["raw_score"] == 0.7
     assert evidence["score"] == 0.8
     assert evidence["citation"]
+
+
+def test_remote_skin_classifier_response_is_adapted(monkeypatch):
+    class FakeResponse:
+        def raise_for_status(self):
+            return None
+
+        def json(self):
+            return {"predicted_class": "AD", "confidence": 0.91,
+                    "probabilities": {"AD": 0.91, "CD": 0.06, "SD": 0.03},
+                    "status": "usable_as_retrieval_hint"}
+
+    captured = {}
+    def fake_post(url, files, timeout):
+        captured.update(url=url, files=files, timeout=timeout)
+        return FakeResponse()
+
+    monkeypatch.setattr("api.services.requests.post", fake_post)
+    result = RemoteImageClassifier("http://localhost:8001").classify(b"image", "rash.png")
+    assert captured["url"] == "http://localhost:8001/predict"
+    assert result.status == "available"
+    assert result.predicted_type == "AD"
+    assert result.confidence == 0.91

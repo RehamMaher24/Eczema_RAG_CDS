@@ -3,7 +3,7 @@ from __future__ import annotations
 from functools import lru_cache
 from pathlib import Path
 
-from .services import AppSettings, ClinicalRagService, NotConfiguredImageClassifier
+from .services import AppSettings, ClinicalRagService, NotConfiguredImageClassifier, RemoteImageClassifier
 
 
 @lru_cache
@@ -14,4 +14,6 @@ def get_settings() -> AppSettings:
 @lru_cache
 def get_service() -> ClinicalRagService:
     settings = get_settings()
-    return ClinicalRagService(settings, image_classifier=NotConfiguredImageClassifier())
+    classifier = (RemoteImageClassifier(settings.skin_classifier_api_url)
+                  if settings.skin_classifier_api_url else NotConfiguredImageClassifier())
+    return ClinicalRagService(settings, image_classifier=classifier)

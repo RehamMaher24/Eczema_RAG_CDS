@@ -40,7 +40,12 @@ if submitted:
             prediction = payload["image_prediction"]
             scope = payload["scope_check"]
             st.caption(f"Scope check: {'in scope' if scope['in_scope'] else 'out of scope'} ({scope['confidence']:.0%}) — {scope['reason']}")
-            st.caption(f"Image classifier: {prediction['status']}. Any model output is only a retrieval hint, never a diagnosis.")
+            prediction_detail = prediction["status"]
+            if prediction.get("predicted_type"):
+                prediction_detail += f" — {prediction['predicted_type']} ({prediction.get('confidence', 0):.1%})"
+            elif prediction.get("confidence") is not None:
+                prediction_detail += f" — confidence {prediction['confidence']:.1%}"
+            st.caption(f"Image classifier: {prediction_detail}. Any model output is only a retrieval hint, never a diagnosis.")
             routing, timings = st.columns(2)
             with routing:
                 st.subheader("Routing")

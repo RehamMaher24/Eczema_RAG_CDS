@@ -44,6 +44,23 @@ dermatitis, return in_scope=false.
 5. Return JSON only. Do not add Markdown, commentary, or code fences.
 """.strip()
 
+# Used only when the external scope model is unavailable. These terms are
+# intentionally narrow: a fallback must never turn a clearly unrelated query
+# into a clinical RAG request.
+STRONG_ECZEMA_SCOPE_TERMS = (
+    "eczema",
+    "atopic dermatitis",
+    "atopic eczema",
+    "contact dermatitis",
+    "allergic dermatitis",
+    "irritant dermatitis",
+    "patch test",
+    "patch testing",
+    "emollient",
+    "topical corticosteroid",
+    "phototherapy",
+)
+
 
 
 @dataclass(frozen=True, slots=True)
@@ -119,8 +136,17 @@ class GeminiScopeChecker:
                 status="ok",
             )
         except Exception as exc:
-            # Fail closed for a clinical assistant: do not continue when scope
-            # verification is unavailable or the model returns malformed JSON.
+            # Gemini remains the primary gate. A narrow local fallback keeps
+            # unmistakable eczema questions usable during a provider outage,
+            # while unrelated or ambiguous questions still fail closed.
+            normalized_question = question.casefold()
+            if any(term in normalized_question for term in STRONG_ECZEMA_SCOPE_TERMS):
+                return ScopeDecision(
+                    in_scope=True,
+                    confidence=1.0,
+                    reason="The Gemini scope check was unavailable; a strict local eczema-term fallback allowed this clearly in-scope question.",
+                    status="fallback_keyword_match",
+                )
             return ScopeDecision(
                 in_scope=False,
                 confidence=0.0,

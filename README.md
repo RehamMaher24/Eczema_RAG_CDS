@@ -71,6 +71,8 @@ pytest -q
 
 The Streamlit app calls `RAG_API_BASE_URL` (default `http://localhost:8000`). It displays retrieved evidence and citations before the answer. Images are optional and currently return `not_available`: they are never presented as a diagnosis. Configure host/port through the Uvicorn command; configure collection selection, image limits, allowed MIME types, model timeouts, and CORS using `.env.example`.
 
+If the separate skin classifier is configured, set `SKIN_CLASSIFIER_API_URL` (for example `http://localhost:8001`). The agent sends uploaded images to that service's `POST /predict` endpoint and converts its result into a soft retrieval hint. A classifier failure returns a structured API error; it is never treated as a confirmed diagnosis.
+
 Every `POST /chat` and `POST /retrieve` request first runs `Gemini_Scope_Checker.py`. Out-of-scope, uncertain, or unavailable scope checks fail closed and return before image classification, embedding, retrieval, generation, or judging. Set `GEMINI_SCOPE_MODEL` to select the low-cost scope model.
 
 `POST /chat` accepts multipart fields `question`, optional `image`, and optional `top_k`. `POST /retrieve` accepts JSON with `question`, optional `top_k`, and optional `document_filters`. `GET /health` performs only a read-only collection check.

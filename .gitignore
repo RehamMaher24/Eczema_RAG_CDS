@@ -11,3 +11,5 @@ tmp/
 outputs/*.log
 outputs/*-wal
 outputs/*-shm
+*.pt
+*.pth

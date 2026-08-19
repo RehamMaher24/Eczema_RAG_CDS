@@ -6,7 +6,7 @@ from pydantic import BaseModel, Field
 
 
 class ImagePrediction(BaseModel):
-    status: Literal["not_available", "available"] = "not_available"
+    status: Literal["not_available", "available", "uncertain"] = "not_available"
     predicted_type: str | None = None
     confidence: float | None = None
     alternatives: list[str] = Field(default_factory=list)

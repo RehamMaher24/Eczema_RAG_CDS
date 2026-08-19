@@ -8,6 +8,8 @@ from pathlib import Path
 from typing import Protocol
 from uuid import uuid4
 
+import requests
+
 from dotenv import load_dotenv
 
 from eczema_rag.config import PipelineConfig
@@ -19,7 +21,7 @@ from eczema_rag.router import route_question_with_scores
 from eczema_rag.vector_store import SQLiteVectorStore, VectorStoreError
 
 from .schemas import EvidenceItem, GroundingReview, ImagePrediction, RoutingResponse, ScopeCheckResponse, Timings
-
+#here is the updated code
 logger = logging.getLogger(__name__)
 
 
@@ -30,6 +32,37 @@ class ImageClassifier(Protocol):
 class NotConfiguredImageClassifier:
     def classify(self, image_bytes: bytes, filename: str) -> ImagePrediction:
         return ImagePrediction()
+
+
+class RemoteImageClassifier:
+    """Adapter for the separately running skin_api FastAPI service."""
+
+    def __init__(self, base_url: str, timeout_seconds: float = 20.0) -> None:
+        self.base_url = base_url.rstrip("/")
+        self.timeout_seconds = timeout_seconds
+
+    def classify(self, image_bytes: bytes, filename: str) -> ImagePrediction:
+        try:
+            response = requests.post(
+                f"{self.base_url}/predict",
+                files={"file": (filename or "image.jpg", image_bytes, _mime_for_filename(filename))},
+                timeout=self.timeout_seconds,
+            )
+            response.raise_for_status()
+            payload = response.json()
+        except requests.RequestException as exc:
+            raise ServiceError(503, "The skin classifier service is unavailable.") from exc
+        except ValueError as exc:
+            raise ServiceError(503, "The skin classifier returned malformed data.") from exc
+
+        status = str(payload.get("status", "uncertain"))
+        confidence = payload.get("confidence")
+        return ImagePrediction(
+            status="available" if status == "usable_as_retrieval_hint" else status,
+            predicted_type=payload.get("predicted_class"),
+            confidence=confidence,
+            alternatives=[str(label) for label in (payload.get("probabilities") or {}).keys() if label != payload.get("predicted_class")],
+        )
 
 
 class ScopeChecker(Protocol):
@@ -64,6 +97,7 @@ class AppSettings:
     generator_timeout_seconds: float
     judge_timeout_seconds: float
     cors_origins: tuple[str, ...]
+    skin_classifier_api_url: str | None
 
     @classmethod
     def from_environment(cls, root: Path) -> "AppSettings":
@@ -76,6 +110,7 @@ class AppSettings:
             generator_timeout_seconds=float(os.getenv("GENERATOR_TIMEOUT_SECONDS", "30")),
             judge_timeout_seconds=float(os.getenv("JUDGE_TIMEOUT_SECONDS", "15")),
             cors_origins=tuple(item.strip() for item in os.getenv("CORS_ALLOWED_ORIGINS", "http://localhost:8501").split(",") if item.strip()),
+            skin_classifier_api_url=os.getenv("SKIN_CLASSIFIER_API_URL") or os.getenv("SKIN_MODEL_API_URL"),
         )
 
 
@@ -142,7 +177,7 @@ class ClinicalRagService:
         image_started = time.perf_counter()
         prediction = self._classify_image(image_bytes, filename, mime_type)
         image_ms = elapsed_ms(image_started)
-        routing, evidence, retrieval_timings, hits = self._retrieve_with_hits(question, top_k)
+        routing, evidence, retrieval_timings, hits = self._retrieve_with_hits(question, top_k, prediction)
         warnings: list[str] = []
         generation_started = time.perf_counter()
         try:
@@ -212,7 +247,7 @@ class ClinicalRagService:
             "timings_ms": Timings(scope_check=scope_ms, total=total_ms),
         }
 
-    def _retrieve_with_hits(self, question: str, top_k: int | None):
+    def _retrieve_with_hits(self, question: str, top_k: int | None, image_prediction: ImagePrediction | None = None):
         question = self._validate_question(question)
         routing_started = time.perf_counter()
         weights = route_question_with_scores(question)
@@ -239,3 +274,7 @@ class ClinicalRagService:
 
 def elapsed_ms(started: float) -> int:
     return round((time.perf_counter() - started) * 1000)
+
+
+def _mime_for_filename(filename: str) -> str:
+    return "image/png" if filename.lower().endswith(".png") else "image/jpeg"
