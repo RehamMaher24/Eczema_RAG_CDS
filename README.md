@@ -59,6 +59,24 @@ python -m pip install -r requirements.txt
 
 No external model API or credential is required for the supplied Day 1 implementation.
 
+## FastAPI + Streamlit prototype
+
+The prototype queries the existing SQLite collection only; starting the API never rebuilds embeddings or alters the fixed PDFs. Copy `.env.example` to `.env` and set the keys needed by the selected collection. The default API configuration uses the Gemini-indexed collection, so `GEMINI_API_KEY` is required for query embeddings. Set `GENERATOR_API_KEY` and `JUDGE_API_KEY` (or one shared `GROQ_API_KEY`) for generated answers and verification.
+
+```bash
+uvicorn api.main:app --reload --host 0.0.0.0 --port 8000
+streamlit run streamlit_app.py
+pytest -q
+```
+
+The Streamlit app calls `RAG_API_BASE_URL` (default `http://localhost:8000`). It displays retrieved evidence and citations before the answer. Images are optional and currently return `not_available`: they are never presented as a diagnosis. Configure host/port through the Uvicorn command; configure collection selection, image limits, allowed MIME types, model timeouts, and CORS using `.env.example`.
+
+Every `POST /chat` and `POST /retrieve` request first runs `Gemini_Scope_Checker.py`. Out-of-scope, uncertain, or unavailable scope checks fail closed and return before image classification, embedding, retrieval, generation, or judging. Set `GEMINI_SCOPE_MODEL` to select the low-cost scope model.
+
+`POST /chat` accepts multipart fields `question`, optional `image`, and optional `top_k`. `POST /retrieve` accepts JSON with `question`, optional `top_k`, and optional `document_filters`. `GET /health` performs only a read-only collection check.
+
+> **Prototype boundary:** For research and educational use only. This is not an autonomous diagnostic or treatment system; confirm consequential decisions with a qualified clinician.
+
 ## Run the complete pipeline
 
 ```bash

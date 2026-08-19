@@ -122,11 +122,13 @@ class RetrievalHit:
     rank: int
     score: float
     chunk: Chunk
+    raw_score: float | None = None
 
     def to_dict(self) -> dict[str, Any]:
         return {
             "rank": self.rank,
             "score": self.score,
+            "raw_score": self.raw_score if self.raw_score is not None else self.score,
             "chunk": self.chunk.to_dict(),
         }
 

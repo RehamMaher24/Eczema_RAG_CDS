@@ -3,11 +3,12 @@ from __future__ import annotations
 import math
 import os
 import time
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from typing import Any, Iterable
 
 from dotenv import load_dotenv
-import google.generativeai as genai
+from google import genai
+from google.genai import types
 
 @dataclass(slots=True)
 class GeminiEmbedder:
@@ -19,13 +20,14 @@ class GeminiEmbedder:
     batch_size: int = 32
     document_task_type: str = "RETRIEVAL_DOCUMENT"
     query_task_type: str = "RETRIEVAL_QUERY"
+    client: Any = field(init=False, repr=False)
 
     def __post_init__(self) -> None:
         load_dotenv()
         api_key = os.getenv("GEMINI_API_KEY")
         if not api_key:
             raise RuntimeError("Missing GEMINI_API_KEY in environment")
-        genai.configure(api_key=api_key)
+        self.client = genai.Client(api_key=api_key)
 
     def fit_transform(self, texts: list[str]) -> list[list[float]]:
         return self._embed(texts, self.document_task_type)
@@ -45,11 +47,13 @@ class GeminiEmbedder:
             max_retries = 3
             for attempt in range(max_retries):
                 try:
-                    response = genai.embed_content(
+                    response = self.client.models.embed_content(
                         model=self.model,
-                        content=batch,
-                        task_type=task_type,
-                        output_dimensionality=self.dimension,
+                        contents=batch,
+                        config=types.EmbedContentConfig(
+                            task_type=task_type,
+                            output_dimensionality=self.dimension,
+                        ),
                     )
                     break  # Success! Break out of the retry loop
                 except Exception as exc:
@@ -64,8 +68,8 @@ class GeminiEmbedder:
             # --- END OF NEW RETRY LOGIC ---
 
             batch_vectors = [
-                [float(value) for value in embedding]
-                for embedding in response['embedding']
+                [float(value) for value in embedding.values]
+                for embedding in response.embeddings
             ]
             if len(batch_vectors) != len(batch):
                 raise RuntimeError(

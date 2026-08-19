@@ -112,6 +112,7 @@ class GuidelineRetriever:
         if not include_reference_sections:
             candidates = [hit for hit in candidates if not is_reference_chunk(hit)]
         for hit in candidates:
+            hit.raw_score = hit.score
             hit.score = round(
                 max(-1.0, min(1.0, hit.score + retrieval_adjustment(query, hit)+ routing_adjustment(hit, routing_scores))),
                 6,
@@ -168,6 +169,21 @@ def retrieval_adjustment(query: str, hit: RetrievalHit) -> float:
     ).casefold()
     section_context = " ".join(chunk.section_path).casefold()
     adjustment = 0.0
+    clinical_evidence_request = any(
+        marker in query_lower
+        for marker in (
+            "diagnos", "assess", "treat", "therapy", "management", "recommend",
+            "should", "phototherapy", "patch test",
+        )
+    )
+    if clinical_evidence_request and any(
+        marker in section_context
+        for marker in (
+            "references", "bibliography", "acknowledg", "disclosure",
+            "conflict of interest", "grant", "gaps in research", "research gaps",
+        )
+    ):
+        adjustment -= 0.20
      # ================= START EVIDENCE RERANK FIX =================
     # Boost intent-matching clinical sections and demote background, disclosure, grant, and research-noise sections.
     if "patch test" in query_lower or "patch testing" in query_lower:

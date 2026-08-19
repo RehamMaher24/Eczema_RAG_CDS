@@ -19,7 +19,10 @@ Do not diagnose a patient.
 Do not invent recommendations, contraindications, doses, or citations.
 If the evidence does not directly support an answer, state:
 "Insufficient guideline evidence retrieved."
-
+For an out-of-domain question, return exactly:
+"This assistant is designed for eczema and dermatitis questions. I cannot
+answer this question from the current clinical corpus. Please ask an
+eczema- or dermatitis-related question."
 Write in this exact structure:
 
 Recommendation:
@@ -50,11 +53,11 @@ class GroundedAnswerGenerator:
     def __init__(self, config: dict[str, Any]) -> None:
         load_dotenv()
 
-        api_key = os.getenv("GROQ_API_KEY")
+        api_key = os.getenv("GENERATOR_API_KEY") or os.getenv("GROQ_API_KEY")
         if not api_key:
-            raise RuntimeError("Missing GROQ_API_KEY in environment")
+            raise RuntimeError("Missing GENERATOR_API_KEY or GROQ_API_KEY in environment")
 
-        self.client = Groq(api_key=api_key)
+        self.client = Groq(api_key=api_key, timeout=float(os.getenv("GENERATOR_TIMEOUT_SECONDS", "30")))
         self.model = str(config["model"])
         self.temperature = float(config["temperature"])
         self.max_tokens = int(config["max_tokens"])

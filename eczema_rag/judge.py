@@ -97,11 +97,11 @@ class GroundedAnswerJudge:
     def __init__(self, config: dict[str, Any]) -> None:
         load_dotenv()
 
-        api_key = os.getenv("GROQ_API_KEY")
+        api_key = os.getenv("JUDGE_API_KEY") or os.getenv("GROQ_API_KEY")
         if not api_key:
-            raise RuntimeError("Missing GROQ_API_KEY in environment")
+            raise RuntimeError("Missing JUDGE_API_KEY or GROQ_API_KEY in environment")
 
-        self.client = Groq(api_key=api_key)
+        self.client = Groq(api_key=api_key, timeout=float(os.getenv("JUDGE_TIMEOUT_SECONDS", "15")))
         self.model = str(config["model"])
         self.temperature = float(config["temperature"])
         self.max_tokens = int(config["max_tokens"])
