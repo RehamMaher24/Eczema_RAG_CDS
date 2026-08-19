@@ -4,7 +4,7 @@ from pathlib import Path
 import re
 from typing import Iterable
 from .embedder import embedder_from_state
-from .router import route_question, EXPERT_BY_DOC
+from .router import route_question_with_scores, EXPERT_BY_DOC
 from .models import RetrievalHit
 from .text_utils import tokenize
 from .vector_store import SQLiteVectorStore
@@ -59,33 +59,41 @@ class GuidelineRetriever:
         query = query.strip()
         if not query:
             return []
-        #MoE
-        if doc_ids is None:
-            experts = route_question(query)
-            all_hits: list[RetrievalHit] = []
+        # #MoE
+        # if doc_ids is None:
+        #     experts = route_question(query)
+        #     all_hits: list[RetrievalHit] = []
 
-            for expert in experts:
-                hits = self._search_single_expert(
-                    query,
-                    expert,
-                    top_k=top_k,
-                    minimum_score=minimum_score,
-                    include_reference_sections=include_reference_sections,
-                )
-                all_hits.extend(hits)
+        #     for expert in experts:
+        #         hits = self._search_single_expert(
+        #             query,
+        #             expert,
+        #             top_k=top_k,
+        #             minimum_score=minimum_score,
+        #             include_reference_sections=include_reference_sections,
+        #         )
+        #         all_hits.extend(hits)
 
-            seen: set[str] = set()
-            merged: list[RetrievalHit] = []
-            for hit in all_hits:
-                if hit.chunk.chunk_id in seen:
-                    continue
-                seen.add(hit.chunk.chunk_id)
-                merged.append(hit)
+        #     seen: set[str] = set()
+        #     merged: list[RetrievalHit] = []
+        #     for hit in all_hits:
+        #         if hit.chunk.chunk_id in seen:
+        #             continue
+        #         seen.add(hit.chunk.chunk_id)
+        #         merged.append(hit)
 
-            merged.sort(key=lambda hit: (-hit.score, hit.chunk.chunk_id))
-            return merged[: (top_k if top_k is not None else self.top_k)]
-        #end of routing, rest of logic is same as before
+        #     merged.sort(key=lambda hit: (-hit.score, hit.chunk.chunk_id))
+        #     return merged[: (top_k if top_k is not None else self.top_k)]
+        # #end of routing, rest of logic is same as before
         requested_top_k = top_k if top_k is not None else self.top_k
+        selected_doc_ids = sorted(set(doc_ids or []))
+        routing_scores = (
+            route_question_with_scores(query)
+            if not selected_doc_ids
+            else {}
+        )
+
+
         with SQLiteVectorStore(self.vector_store_path, self.dimension) as store:
             state = store.get_model_state(self.collection_name)
             embedder = embedder_from_state(state)
@@ -105,7 +113,7 @@ class GuidelineRetriever:
             candidates = [hit for hit in candidates if not is_reference_chunk(hit)]
         for hit in candidates:
             hit.score = round(
-                max(-1.0, min(1.0, hit.score + retrieval_adjustment(query, hit))),
+                max(-1.0, min(1.0, hit.score + retrieval_adjustment(query, hit)+ routing_adjustment(hit, routing_scores))),
                 6,
             )
         candidates.sort(key=lambda hit: (-hit.score, hit.chunk.chunk_id))
@@ -138,6 +146,17 @@ def citation_for_hit(hit: RetrievalHit) -> str:
     )
 
 
+def routing_adjustment(
+    hit: RetrievalHit,
+    routing_scores: dict[str, float],
+) -> float:
+    """Apply a small soft-routing bonus without excluding other experts."""
+    if not routing_scores:
+        return 0.0
+    expert = EXPERT_BY_DOC.get(hit.chunk.doc_id)
+    return 0.08 * routing_scores.get(expert, 0.0)
+
+
 def retrieval_adjustment(query: str, hit: RetrievalHit) -> float:
     chunk = hit.chunk
     query_lower = query.casefold()
@@ -147,8 +166,34 @@ def retrieval_adjustment(query: str, hit: RetrievalHit) -> float:
     evidence_context = (
         f"{' '.join(chunk.section_path)} {chunk.text}"
     ).casefold()
+    section_context = " ".join(chunk.section_path).casefold()
     adjustment = 0.0
+     # ================= START EVIDENCE RERANK FIX =================
+    # Boost intent-matching clinical sections and demote background, disclosure, grant, and research-noise sections.
+    if "patch test" in query_lower or "patch testing" in query_lower:
+        if any(
+            marker in section_context
+            for marker in ("patch testing", "patch-test", "diagnostic tests", "diagnostic test")
+        ):
+            adjustment += 0.18
+        if any(
+            marker in section_context
+            for marker in ("background", "introduction", "gaps in research", "disclosure", "conflict of interest", "acknowledg")
+        ):
+            adjustment -= 0.16
 
+    if "phototherapy" in query_lower:
+        if any(
+            marker in section_context
+            for marker in ("phototherapy", "uvb", "uva", "systemic agents", "treatment")
+        ):
+            adjustment += 0.18
+        if any(
+            marker in section_context
+            for marker in ("gaps in research", "disclosure", "conflict of interest", "acknowledg")
+        ) or "grant" in evidence_context:
+            adjustment -= 0.20
+    # ================== END EVIDENCE RERANK FIX ==================
     atopic_query = "atopic" in query_lower
     contact_query = "contact" in query_lower or "patch test" in query_lower
     if atopic_query:
@@ -202,6 +247,7 @@ def retrieval_adjustment(query: str, hit: RetrievalHit) -> float:
     if any(marker in evidence_context for marker in ("clinical questions used to structure", "section: disclaimer")):
         adjustment -= 0.05
     return adjustment
+
 
 
 def canonical_term(term: str) -> str:

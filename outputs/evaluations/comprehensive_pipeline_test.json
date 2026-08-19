@@ -1,0 +1,471 @@
+{
+  "test_date": "1787059944.844626",
+  "validation_summary": {
+    "total_questions": 4,
+    "routing_success": 4,
+    "retrieval_success": 4,
+    "citations_formatted": 4,
+    "generation_success": 4,
+    "judge_review_success": 4,
+    "answer_approved": 3,
+    "answer_grounded": 3
+  },
+  "detailed_results": [
+    {
+      "question_number": 1,
+      "question": "How should eczema severity be assessed and classified?",
+      "routing": [
+        {
+          "expert": "eczema_diagnosis_assessment",
+          "score": 1.0
+        },
+        {
+          "expert": "contact_dermatitis_management",
+          "score": 0.0
+        },
+        {
+          "expert": "eczema_treatment_topical_systemic",
+          "score": 0.0
+        },
+        {
+          "expert": "eczema_prevention_flare_control",
+          "score": 0.0
+        }
+      ],
+      "retrieval": {
+        "count": 5,
+        "hits": [
+          {
+            "rank": 1,
+            "score": 0.862485,
+            "chunk_id": "nice_cg57_atopic_eczema_under_12:chunk:0007:9d965fd712d7",
+            "document": "Atopic eczema in under 12s: diagnosis and management",
+            "section": "Recommendations > Table 1 Holistic assessment",
+            "page_start": 7,
+            "page_end": 7,
+            "citation": "Atopic eczema in under 12s: diagnosis and management — Recommendations > Table 1 Holistic assessment; PDF page 7; chunk nice_cg57_atopic_eczema_under_12:chunk:0007:9d965fd712d7; source https://www.nice.org.uk/guidance/cg57",
+            "text": "Section: Recommendations > Table 1 Holistic assessment\n\nImpact on quality of life and psychosocial Skin and physical severity wellbeing Clear: normal skin, no evidence of active atopic None: no impact..."
+          },
+          {
+            "rank": 2,
+            "score": 0.849065,
+            "chunk_id": "aad_ad_section1_diagnosis_2014:chunk:0025:338a96482007",
+            "document": "Guidelines of care for the management of atopic dermatitis: Section 1. Diagnosis and assessment of atopic dermatitis",
+            "section": "Biomarkers Disease Severity And Clinical > Table IV. Recommendations for the use of itch intensity, whether made by parents for young",
+            "page_start": 6,
+            "page_end": 6,
+            "citation": "Guidelines of care for the management of atopic dermatitis: Section 1. Diagnosis and assessment of atopic dermatitis — Biomarkers Disease Severity And Clinical > Table IV. Recommendations for the use of itch intensity, whether made by parents for young; PDF page 6; chunk aad_ad_section1_diagnosis_2014:chunk:0025:338a96482007; source https://doi.org/10.1016/j.jaad.2013.10.010",
+            "text": "Section: Biomarkers Disease Severity And Clinical > Table IV. Recommendations for the use of itch intensity, whether made by parents for young\n\nare needed. exacerbation.91 Along with the affected indi..."
+          },
+          {
+            "rank": 3,
+            "score": 0.84812,
+            "chunk_id": "aad_ad_section1_diagnosis_2014:chunk:0020:270e9ee041d3",
+            "document": "Guidelines of care for the management of atopic dermatitis: Section 1. Diagnosis and assessment of atopic dermatitis",
+            "section": "Biomarkers Disease Severity And Clinical",
+            "page_start": 5,
+            "page_end": 5,
+            "citation": "Guidelines of care for the management of atopic dermatitis: Section 1. Diagnosis and assessment of atopic dermatitis — Biomarkers Disease Severity And Clinical; PDF page 5; chunk aad_ad_section1_diagnosis_2014:chunk:0020:270e9ee041d3; source https://doi.org/10.1016/j.jaad.2013.10.010",
+            "text": "Section: Biomarkers Disease Severity And Clinical\n\nof uniformity in diseasefrom tertiary care centers with more severe disease severity scale use, international efforts are underway rather than from g..."
+          },
+          {
+            "rank": 4,
+            "score": 0.838882,
+            "chunk_id": "aad_ad_section1_diagnosis_2014:chunk:0018:8cc1fe242f80",
+            "document": "Guidelines of care for the management of atopic dermatitis: Section 1. Diagnosis and assessment of atopic dermatitis",
+            "section": "Biomarkers Disease Severity And Clinical",
+            "page_start": 5,
+            "page_end": 5,
+            "citation": "Guidelines of care for the management of atopic dermatitis: Section 1. Diagnosis and assessment of atopic dermatitis — Biomarkers Disease Severity And Clinical; PDF page 5; chunk aad_ad_section1_diagnosis_2014:chunk:0018:8cc1fe242f80; source https://doi.org/10.1016/j.jaad.2013.10.010",
+            "text": "Section: Biomarkers Disease Severity And Clinical\n\nThe diagnosis of AD remains clinical, because OUTCOMES ASSESSMENT there is currently no reliable biomarker that can Disease severity scales distingui..."
+          },
+          {
+            "rank": 5,
+            "score": 0.836099,
+            "chunk_id": "nice_cg57_atopic_eczema_under_12:chunk:0006:154c3b4aee35",
+            "document": "Atopic eczema in under 12s: diagnosis and management",
+            "section": "Recommendations > 1.2 Assessing severity, psychological and > 1.2.1.1 Use a holistic approach when assessing a child's atopic eczema at each",
+            "page_start": 7,
+            "page_end": 7,
+            "citation": "Atopic eczema in under 12s: diagnosis and management — Recommendations > 1.2 Assessing severity, psychological and > 1.2.1.1 Use a holistic approach when assessing a child's atopic eczema at each; PDF page 7; chunk nice_cg57_atopic_eczema_under_12:chunk:0006:154c3b4aee35; source https://www.nice.org.uk/guidance/cg57",
+            "text": "Section: Recommendations > 1.2 Assessing severity, psychological and > 1.2.1.1 Use a holistic approach when assessing a child's atopic eczema at each\n\nconsultation, taking into account: - the severity..."
+          }
+        ]
+      },
+      "generation": {
+        "status": "answered",
+        "answer": "**Recommendation:**  \nEczema severity should be assessed with a holistic clinical evaluation that records both skin‑related signs and the impact on the patient’s life.  \n- **Skin and physical signs** – note the extent of dry skin, frequency of itching, presence of redness, excoriation, localized or extensive skin thickening, bleeding, oozing, cracking and pigment changes.  \n- **Quality‑of‑life impact** – determine how the disease affects everyday activities, sleep and psychosocial wellbeing.  \n- **Classification** – use the NICE categories:  \n\n| Category | Skin/physical features | Quality‑of‑life impact |\n|----------|-----------------------|------------------------|\n| **Clear** | Normal skin, no active eczema | No impact |\n| **Mild** | Small dry areas, infrequent itching (± small redness) | Little impact on daily activities, sleep, psychosocial wellbeing |\n| **Moderate** | Dry areas, frequent itching, redness (± excoriation, localized thickening) | Moderate impact on daily activities and psychosocial wellbeing; sleep frequently disturbed |\n| **Severe** | Widespread dry skin, incessant itching, redness (± excoriation, extensive thickening, bleeding, oozing, cracking, pigment change) | Severe limitation of daily activities and psychosocial functioning; nightly loss of sleep |\n\nIn addition to this clinical grading, clinicians",
+        "citations": [
+          "Atopic eczema in under 12s: diagnosis and management — Recommendations > Table 1 Holistic assessment; PDF page 7; chunk nice_cg57_atopic_eczema_under_12:chunk:0007:9d965fd712d7; source https://www.nice.org.uk/guidance/cg57",
+          "Guidelines of care for the management of atopic dermatitis: Section 1. Diagnosis and assessment of atopic dermatitis — Biomarkers Disease Severity And Clinical > Table IV. Recommendations for the use of itch intensity, whether made by parents for young; PDF page 6; chunk aad_ad_section1_diagnosis_2014:chunk:0025:338a96482007; source https://doi.org/10.1016/j.jaad.2013.10.010",
+          "Guidelines of care for the management of atopic dermatitis: Section 1. Diagnosis and assessment of atopic dermatitis — Biomarkers Disease Severity And Clinical; PDF page 5; chunk aad_ad_section1_diagnosis_2014:chunk:0020:270e9ee041d3; source https://doi.org/10.1016/j.jaad.2013.10.010",
+          "Guidelines of care for the management of atopic dermatitis: Section 1. Diagnosis and assessment of atopic dermatitis — Biomarkers Disease Severity And Clinical; PDF page 5; chunk aad_ad_section1_diagnosis_2014:chunk:0018:8cc1fe242f80; source https://doi.org/10.1016/j.jaad.2013.10.010"
+        ],
+        "retrieval_scores": [
+          0.862485,
+          0.849065,
+          0.84812,
+          0.838882
+        ],
+        "refusal_reason": null
+      },
+      "judge_review": {
+        "decision": "approved",
+        "grounded": true,
+        "citation_valid": true,
+        "unsupported_claims": [],
+        "citation_errors": [],
+        "reason": "All claims are supported by evidence."
+      },
+      "validation": {
+        "routing": true,
+        "retrieval": true,
+        "citations_formatted": true,
+        "generation": true,
+        "judge_review": true
+      }
+    },
+    {
+      "question_number": 2,
+      "question": "When is patch testing recommended for contact dermatitis diagnosis?",
+      "routing": [
+        {
+          "expert": "eczema_diagnosis_assessment",
+          "score": 0.0
+        },
+        {
+          "expert": "contact_dermatitis_management",
+          "score": 1.0
+        },
+        {
+          "expert": "eczema_treatment_topical_systemic",
+          "score": 0.0
+        },
+        {
+          "expert": "eczema_prevention_flare_control",
+          "score": 0.0
+        }
+      ],
+      "retrieval": {
+        "count": 5,
+        "hits": [
+          {
+            "rank": 1,
+            "score": 1.0,
+            "chunk_id": "bad_contact_dermatitis_2017:chunk:0021:cc7291776bfe",
+            "document": "British Association of Dermatologists' guidelines for the management of contact dermatitis 2017",
+            "section": "6.0 Diagnostic tests (diagnosis) > 6.2 Patch testing",
+            "page_start": 5,
+            "page_end": 6,
+            "citation": "British Association of Dermatologists' guidelines for the management of contact dermatitis 2017 — 6.0 Diagnostic tests (diagnosis) > 6.2 Patch testing; PDF page 5-6; printed page 17; chunk bad_contact_dermatitis_2017:chunk:0021:cc7291776bfe; source https://doi.org/10.1111/bjd.15239",
+            "text": "Section: 6.0 Diagnostic tests (diagnosis) > 6.2 Patch testing\n\nThe patient should be counselled that the skin will be covered during testing and on the need to avoid exercise, to keep the Patch testin..."
+          },
+          {
+            "rank": 2,
+            "score": 1.0,
+            "chunk_id": "bad_contact_dermatitis_2017:chunk:0023:1566d95b87a2",
+            "document": "British Association of Dermatologists' guidelines for the management of contact dermatitis 2017",
+            "section": "6.0 Diagnostic tests (diagnosis) > 6.3 Timing of patch test readings",
+            "page_start": 6,
+            "page_end": 6,
+            "citation": "British Association of Dermatologists' guidelines for the management of contact dermatitis 2017 — 6.0 Diagnostic tests (diagnosis) > 6.3 Timing of patch test readings; PDF page 6; printed page 17; chunk bad_contact_dermatitis_2017:chunk:0023:1566d95b87a2; source https://doi.org/10.1111/bjd.15239",
+            "text": "Section: 6.0 Diagnostic tests (diagnosis) > 6.3 Timing of patch test readings\n\nand pragmatic way of classifying clinical relevance of positive The optimum timing of patch test readings is on day 2, fo..."
+          },
+          {
+            "rank": 3,
+            "score": 1.0,
+            "chunk_id": "bad_contact_dermatitis_2017:chunk:0024:8a3811b15eaa",
+            "document": "British Association of Dermatologists' guidelines for the management of contact dermatitis 2017",
+            "section": "6.0 Diagnostic tests (diagnosis) > 6.5 Patch-test series",
+            "page_start": 6,
+            "page_end": 6,
+            "citation": "British Association of Dermatologists' guidelines for the management of contact dermatitis 2017 — 6.0 Diagnostic tests (diagnosis) > 6.5 Patch-test series; PDF page 6; printed page 17; chunk bad_contact_dermatitis_2017:chunk:0024:8a3811b15eaa; source https://doi.org/10.1111/bjd.15239",
+            "text": "Section: 6.0 Diagnostic tests (diagnosis) > 6.5 Patch-test series\n\nPatch tests should be read in natural daylight and rated as positive, negative or irritant (see Table 6). Those that are positive The..."
+          },
+          {
+            "rank": 4,
+            "score": 1.0,
+            "chunk_id": "bad_contact_dermatitis_2017:chunk:0026:6743286d5ed9",
+            "document": "British Association of Dermatologists' guidelines for the management of contact dermatitis 2017",
+            "section": "6.0 Diagnostic tests (diagnosis) > 6.6 Photopatch testing",
+            "page_start": 7,
+            "page_end": 7,
+            "citation": "British Association of Dermatologists' guidelines for the management of contact dermatitis 2017 — 6.0 Diagnostic tests (diagnosis) > 6.6 Photopatch testing; PDF page 7; printed page 17; chunk bad_contact_dermatitis_2017:chunk:0026:6743286d5ed9; source https://doi.org/10.1111/bjd.15239",
+            "text": "Section: 6.0 Diagnostic tests (diagnosis) > 6.6 Photopatch testing\n\nrials/series that need to be tested. Where photoallergic contact dermatitis is suspected, photopatch testing may be carried out.72 W..."
+          },
+          {
+            "rank": 5,
+            "score": 1.0,
+            "chunk_id": "bad_contact_dermatitis_2017:chunk:0044:168c632e9fee",
+            "document": "British Association of Dermatologists' guidelines for the management of contact dermatitis 2017",
+            "section": "12.0 Plans for guideline revision > 9.2 Is it worthwhile managing patients with contact",
+            "page_start": 9,
+            "page_end": 9,
+            "citation": "British Association of Dermatologists' guidelines for the management of contact dermatitis 2017 — 12.0 Plans for guideline revision > 9.2 Is it worthwhile managing patients with contact; PDF page 9; printed page 17; chunk bad_contact_dermatitis_2017:chunk:0044:168c632e9fee; source https://doi.org/10.1111/bjd.15239",
+            "text": "Section: 12.0 Plans for guideline revision > 9.2 Is it worthwhile managing patients with contact\n\nscheduled for 2022; where necessary, important interim dermatitis in a multidisciplinary clinic? chang..."
+          }
+        ]
+      },
+      "generation": {
+        "status": "answered",
+        "answer": "**Recommendation:**  \nPatch testing is recommended when allergic contact dermatitis is suspected and the clinician needs to identify the specific allergen(s) responsible. Testing should be performed on skin that is free from active dermatitis (or as controlled as possible) and after the patient has been counselled and given informed consent.\n\n**Evidence summary:**  \n- The guidelines state that patch testing is used for the diagnosis of allergic contact dermatitis in individuals sensitised to particular antigens, and that informed consent should be obtained (Evidence 1).  \n- They emphasise that the skin to be tested must be free from dermatitis elsewhere and as well‑controlled as possible to avoid false results (Evidence 1).  \n- No other specific indications are provided in the retrieved excerpts.\n\n**Citations:**  \n- British Association of Dermatologists' guidelines for the management of contact dermatitis 2017 — 6.0 Diagnostic tests (diagnosis) > 6.2 Patch testing; PDF page 5‑6; printed page 17; chunk bad_contact_dermatitis_2017:chunk:0021:cc7291776bfe.  \n- British Association of Dermatologists' guidelines for the management of contact dermatitis 2017 — 6.0 Diagnostic tests (diagnosis) > 6.2 Patch testing; PDF page 5‑6; printed page 17; chunk bad_contact_dermatitis_2017:chunk:0021:cc7291776bfe.\n\n**Safety note:**  \nThis is guideline evidence retrieval, not a diagnosis or substitute for clinical judgment.",
+        "citations": [
+          "British Association of Dermatologists' guidelines for the management of contact dermatitis 2017 — 6.0 Diagnostic tests (diagnosis) > 6.2 Patch testing; PDF page 5-6; printed page 17; chunk bad_contact_dermatitis_2017:chunk:0021:cc7291776bfe; source https://doi.org/10.1111/bjd.15239",
+          "British Association of Dermatologists' guidelines for the management of contact dermatitis 2017 — 6.0 Diagnostic tests (diagnosis) > 6.3 Timing of patch test readings; PDF page 6; printed page 17; chunk bad_contact_dermatitis_2017:chunk:0023:1566d95b87a2; source https://doi.org/10.1111/bjd.15239",
+          "British Association of Dermatologists' guidelines for the management of contact dermatitis 2017 — 6.0 Diagnostic tests (diagnosis) > 6.5 Patch-test series; PDF page 6; printed page 17; chunk bad_contact_dermatitis_2017:chunk:0024:8a3811b15eaa; source https://doi.org/10.1111/bjd.15239",
+          "British Association of Dermatologists' guidelines for the management of contact dermatitis 2017 — 6.0 Diagnostic tests (diagnosis) > 6.6 Photopatch testing; PDF page 7; printed page 17; chunk bad_contact_dermatitis_2017:chunk:0026:6743286d5ed9; source https://doi.org/10.1111/bjd.15239"
+        ],
+        "retrieval_scores": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "refusal_reason": null
+      },
+      "judge_review": {
+        "decision": "approved",
+        "grounded": true,
+        "citation_valid": true,
+        "unsupported_claims": [],
+        "citation_errors": [],
+        "reason": "All claims are supported by evidence."
+      },
+      "validation": {
+        "routing": true,
+        "retrieval": true,
+        "citations_formatted": true,
+        "generation": true,
+        "judge_review": true
+      }
+    },
+    {
+      "question_number": 3,
+      "question": "What are the phototherapy options available for treating moderate to severe eczema?",
+      "routing": [
+        {
+          "expert": "eczema_diagnosis_assessment",
+          "score": 0.0
+        },
+        {
+          "expert": "contact_dermatitis_management",
+          "score": 0.0
+        },
+        {
+          "expert": "eczema_treatment_topical_systemic",
+          "score": 1.0
+        },
+        {
+          "expert": "eczema_prevention_flare_control",
+          "score": 0.0
+        }
+      ],
+      "retrieval": {
+        "count": 5,
+        "hits": [
+          {
+            "rank": 1,
+            "score": 1.0,
+            "chunk_id": "aad_ad_section3_phototherapy_systemic_2014:chunk:0003:0010193a8d78",
+            "document": "Guidelines of care for the management of atopic dermatitis: Section 3. Management and treatment with phototherapy and systemic agents",
+            "section": "Section 3: Management and treatment with phototherapy",
+            "page_start": 1,
+            "page_end": 1,
+            "citation": "Guidelines of care for the management of atopic dermatitis: Section 3. Management and treatment with phototherapy and systemic agents — Section 3: Management and treatment with phototherapy; PDF page 1; printed page 327; chunk aad_ad_section3_phototherapy_systemic_2014:chunk:0003:0010193a8d78; source https://doi.org/10.1016/j.jaad.2014.03.030",
+            "text": "Section: Section 3: Management and treatment with phototherapy\n\nand systemic agents\n\nRobert Sidbury, MD (Co-chair),a Dawn M. Davis, MD,b David E. Cohen, MD,c Kelly M. Cordoro, MD,d Timothy G. Berger, ..."
+          },
+          {
+            "rank": 2,
+            "score": 1.0,
+            "chunk_id": "aad_ad_section3_phototherapy_systemic_2014:chunk:0021:37f0b73d99e1",
+            "document": "Guidelines of care for the management of atopic dermatitis: Section 3. Management and treatment with phototherapy and systemic agents",
+            "section": "Vi 60 30 Vi 400 65 5000 > Table VI. Dosing of UVA radiation for oral psoralen Therefore, home phototherapy under the direction",
+            "page_start": 6,
+            "page_end": 6,
+            "citation": "Guidelines of care for the management of atopic dermatitis: Section 3. Management and treatment with phototherapy and systemic agents — Vi 60 30 Vi 400 65 5000 > Table VI. Dosing of UVA radiation for oral psoralen Therefore, home phototherapy under the direction; PDF page 6; chunk aad_ad_section3_phototherapy_systemic_2014:chunk:0021:37f0b73d99e1; source https://doi.org/10.1016/j.jaad.2014.03.030",
+            "text": "Section: Vi 60 30 Vi 400 65 5000 > Table VI. Dosing of UVA radiation for oral psoralen Therefore, home phototherapy under the direction\n\nplus ultraviolet A of a physician may be considered for patient..."
+          },
+          {
+            "rank": 3,
+            "score": 1.0,
+            "chunk_id": "aad_ad_section3_phototherapy_systemic_2014:chunk:0023:94426a0fb60e",
+            "document": "Guidelines of care for the management of atopic dermatitis: Section 3. Management and treatment with phototherapy and systemic agents",
+            "section": "Systemic Agents",
+            "page_start": 6,
+            "page_end": 6,
+            "citation": "Guidelines of care for the management of atopic dermatitis: Section 3. Management and treatment with phototherapy and systemic agents — Systemic Agents; PDF page 6; chunk aad_ad_section3_phototherapy_systemic_2014:chunk:0023:94426a0fb60e; source https://doi.org/10.1016/j.jaad.2014.03.030",
+            "text": "Section: Systemic Agents\n\nnm, NB-UVB is safe and effective for a number of Systemic immunomodulating medications are a photoresponsive dermatoses in children and is often prevalent treatment option fo..."
+          },
+          {
+            "rank": 4,
+            "score": 1.0,
+            "chunk_id": "aad_ad_section3_phototherapy_systemic_2014:chunk:0024:ef0b35d32e0f",
+            "document": "Guidelines of care for the management of atopic dermatitis: Section 3. Management and treatment with phototherapy and systemic agents",
+            "section": "Systemic Agents",
+            "page_start": 6,
+            "page_end": 6,
+            "citation": "Guidelines of care for the management of atopic dermatitis: Section 3. Management and treatment with phototherapy and systemic agents — Systemic Agents; PDF page 6; chunk aad_ad_section3_phototherapy_systemic_2014:chunk:0024:ef0b35d32e0f; source https://doi.org/10.1016/j.jaad.2014.03.030",
+            "text": "Section: Systemic Agents\n\nversus in-office NB-UVB treatment, whereas AD with systemic corticosteroids, although used Psoriasis Area and Severity Index score reduction, frequently and shown to temporar..."
+          },
+          {
+            "rank": 5,
+            "score": 1.0,
+            "chunk_id": "aad_ad_section3_phototherapy_systemic_2014:chunk:0026:0c0fba0bf34f",
+            "document": "Guidelines of care for the management of atopic dermatitis: Section 3. Management and treatment with phototherapy and systemic agents",
+            "section": "Systemic Agents > Table VII. Recommendations for the use of systemic immunomodulatory agents",
+            "page_start": 7,
+            "page_end": 7,
+            "citation": "Guidelines of care for the management of atopic dermatitis: Section 3. Management and treatment with phototherapy and systemic agents — Systemic Agents > Table VII. Recommendations for the use of systemic immunomodulatory agents; PDF page 7; chunk aad_ad_section3_phototherapy_systemic_2014:chunk:0026:0c0fba0bf34f; source https://doi.org/10.1016/j.jaad.2014.03.030",
+            "text": "Section: Systemic Agents > Table VII. Recommendations for the use of systemic immunomodulatory agents\n\nSystemic immunomodulatory agents are indicated for the subset of adult and pediatric patients in ..."
+          }
+        ]
+      },
+      "generation": {
+        "status": "answered",
+        "answer": "**Recommendation:**  \nPhototherapy for moderate to severe eczema includes narrowband ultraviolet B (NB‑UVB) therapy—delivered either in an office setting or as supervised home treatment—and ultraviolet A (UVA) therapy combined with oral psoralen (PUVA). Other light‑based modalities such as excimer, diode, and pulsed‑dye lasers have been explored but, because of limited and low‑quality evidence, they are not currently recommended for routine eczema care.\n\n**Evidence summary:**  \n- The guideline section on phototherapy outlines NB‑UVB as a safe and effective first‑line option for atopic dermatitis, suitable for both children and adults, and notes that home NB‑UVB can be considered when office visits are impractical【EVIDENCE 3】.  \n- PUVA (UVA plus oral psoralen) is described with dosing parameters for home use, indicating it as an alternative for patients unable to receive office‑based phototherapy【EVIDENCE 2】.  \n- The same guideline discusses additional laser‑based light therapies (excimer, diode, pulsed‑dye) and extracorporeal photochemotherapy, stating that due to a very limited number of studies and inconsistent outcomes, lasers are not recommended for routine eczema treatment【EVIDENCE 4】.  \n- Overall, the phototherapy section of the guideline presents NB‑UVB and PUVA as the primary phototherapy modalities for moderate to severe atopic dermatitis【EVIDENCE 1】.\n\n**Citations:**  \n- Guidelines of care for the management of atopic dermatitis: Section 3. Management and treatment with phototherapy and systemic agents — Section 3: Management and treatment with phototherapy; PDF page 1; printed page 327; chunk aad_ad_section3_phototherapy_systemic_2014:chunk:0003:0010193a8d78; source https://doi.org/10.1016/j.jaad.2014.03.030  \n- Guidelines of care for the management of atopic dermatitis: Section 3. Management and",
+        "citations": [
+          "Guidelines of care for the management of atopic dermatitis: Section 3. Management and treatment with phototherapy and systemic agents — Section 3: Management and treatment with phototherapy; PDF page 1; printed page 327; chunk aad_ad_section3_phototherapy_systemic_2014:chunk:0003:0010193a8d78; source https://doi.org/10.1016/j.jaad.2014.03.030",
+          "Guidelines of care for the management of atopic dermatitis: Section 3. Management and treatment with phototherapy and systemic agents — Vi 60 30 Vi 400 65 5000 > Table VI. Dosing of UVA radiation for oral psoralen Therefore, home phototherapy under the direction; PDF page 6; chunk aad_ad_section3_phototherapy_systemic_2014:chunk:0021:37f0b73d99e1; source https://doi.org/10.1016/j.jaad.2014.03.030",
+          "Guidelines of care for the management of atopic dermatitis: Section 3. Management and treatment with phototherapy and systemic agents — Systemic Agents; PDF page 6; chunk aad_ad_section3_phototherapy_systemic_2014:chunk:0023:94426a0fb60e; source https://doi.org/10.1016/j.jaad.2014.03.030",
+          "Guidelines of care for the management of atopic dermatitis: Section 3. Management and treatment with phototherapy and systemic agents — Systemic Agents; PDF page 6; chunk aad_ad_section3_phototherapy_systemic_2014:chunk:0024:ef0b35d32e0f; source https://doi.org/10.1016/j.jaad.2014.03.030"
+        ],
+        "retrieval_scores": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "refusal_reason": null
+      },
+      "judge_review": {
+        "decision": "approved",
+        "grounded": true,
+        "citation_valid": true,
+        "unsupported_claims": [],
+        "citation_errors": [],
+        "reason": "All claims are supported by evidence."
+      },
+      "validation": {
+        "routing": true,
+        "retrieval": true,
+        "citations_formatted": true,
+        "generation": true,
+        "judge_review": true
+      }
+    },
+    {
+      "question_number": 4,
+      "question": "What preventive strategies help reduce eczema flare triggers?",
+      "routing": [
+        {
+          "expert": "eczema_diagnosis_assessment",
+          "score": 0.0
+        },
+        {
+          "expert": "contact_dermatitis_management",
+          "score": 0.0
+        },
+        {
+          "expert": "eczema_treatment_topical_systemic",
+          "score": 0.0
+        },
+        {
+          "expert": "eczema_prevention_flare_control",
+          "score": 1.0
+        }
+      ],
+      "retrieval": {
+        "count": 5,
+        "hits": [
+          {
+            "rank": 1,
+            "score": 0.895087,
+            "chunk_id": "aad_ad_section4_flare_prevention_2014:chunk:0013:d07b71d642fe",
+            "document": "Guidelines of care for the management of atopic dermatitis: Section 4. Prevention of disease flares and use of adjunctive therapies and approaches",
+            "section": "Definition > Table II. Recommendation for prevention of flares Methodstoidentifybestcandidatesforaproactive",
+            "page_start": 4,
+            "page_end": 5,
+            "citation": "Guidelines of care for the management of atopic dermatitis: Section 4. Prevention of disease flares and use of adjunctive therapies and approaches — Definition > Table II. Recommendation for prevention of flares Methodstoidentifybestcandidatesforaproactive; PDF page 4-5; chunk aad_ad_section4_flare_prevention_2014:chunk:0013:d07b71d642fe; source https://doi.org/10.1016/j.jaad.2014.08.038",
+            "text": "Section: Definition > Table II. Recommendation for prevention of flares Methodstoidentifybestcandidatesforaproactive\n\nof atopic dermatitis approach would be helpful. Some studies focused on those with..."
+          },
+          {
+            "rank": 2,
+            "score": 0.87697,
+            "chunk_id": "aad_ad_section4_flare_prevention_2014:chunk:0003:d7a35c5c8264",
+            "document": "Guidelines of care for the management of atopic dermatitis: Section 4. Prevention of disease flares and use of adjunctive therapies and approaches",
+            "section": "Section 4: Prevention of disease flares and use of adjunctive",
+            "page_start": 1,
+            "page_end": 1,
+            "citation": "Guidelines of care for the management of atopic dermatitis: Section 4. Prevention of disease flares and use of adjunctive therapies and approaches — Section 4: Prevention of disease flares and use of adjunctive; PDF page 1; printed page 1218; chunk aad_ad_section4_flare_prevention_2014:chunk:0003:d7a35c5c8264; source https://doi.org/10.1016/j.jaad.2014.08.038",
+            "text": "Section: Section 4: Prevention of disease flares and use of adjunctive\n\ntherapies and approaches\n\nWork Group: Robert Sidbury, MD (Co-chair),a Wynnis L. Tom, MD,b James N. Bergman, MD,c Kevin D. Cooper..."
+          },
+          {
+            "rank": 3,
+            "score": 0.869414,
+            "chunk_id": "aad_ad_section4_flare_prevention_2014:chunk:0010:a7d191deb7d7",
+            "document": "Guidelines of care for the management of atopic dermatitis: Section 4. Prevention of disease flares and use of adjunctive therapies and approaches",
+            "section": "Definition",
+            "page_start": 3,
+            "page_end": 3,
+            "citation": "Guidelines of care for the management of atopic dermatitis: Section 4. Prevention of disease flares and use of adjunctive therapies and approaches — Definition; PDF page 3; chunk aad_ad_section4_flare_prevention_2014:chunk:0010:a7d191deb7d7; source https://doi.org/10.1016/j.jaad.2014.08.038",
+            "text": "Section: Definition\n\ntherapy used in this manner, it is quiescence after treatment. The precise definition not clear if 1 intervention is more effective, although of a flare, however, differs across s..."
+          },
+          {
+            "rank": 4,
+            "score": 0.858226,
+            "chunk_id": "aad_ad_section4_flare_prevention_2014:chunk:0014:8d7b3780a6e4",
+            "document": "Guidelines of care for the management of atopic dermatitis: Section 4. Prevention of disease flares and use of adjunctive therapies and approaches",
+            "section": "Definition > Table III. Strength of recommendations for the use of topical therapies for flare prevention and for adjunctive",
+            "page_start": 5,
+            "page_end": 5,
+            "citation": "Guidelines of care for the management of atopic dermatitis: Section 4. Prevention of disease flares and use of adjunctive therapies and approaches — Definition > Table III. Strength of recommendations for the use of topical therapies for flare prevention and for adjunctive; PDF page 5; chunk aad_ad_section4_flare_prevention_2014:chunk:0014:8d7b3780a6e4; source https://doi.org/10.1016/j.jaad.2014.08.038",
+            "text": "Section: Definition > Table III. Strength of recommendations for the use of topical therapies for flare prevention and for adjunctive\n\nand complementary interventions for the treatment of atopic derma..."
+          },
+          {
+            "rank": 5,
+            "score": 0.853705,
+            "chunk_id": "aad_ad_section4_flare_prevention_2014:chunk:0004:e1e0fe068200",
+            "document": "Guidelines of care for the management of atopic dermatitis: Section 4. Prevention of disease flares and use of adjunctive therapies and approaches",
+            "section": "Section 4: Prevention of disease flares and use of adjunctive",
+            "page_start": 1,
+            "page_end": 2,
+            "citation": "Guidelines of care for the management of atopic dermatitis: Section 4. Prevention of disease flares and use of adjunctive therapies and approaches — Section 4: Prevention of disease flares and use of adjunctive; PDF page 1-2; printed page 1218; chunk aad_ad_section4_flare_prevention_2014:chunk:0004:e1e0fe068200; source https://doi.org/10.1016/j.jaad.2014.08.038",
+            "text": "Section: Section 4: Prevention of disease flares and use of adjunctive\n\nrequests: Wendy Smith Begolka, MBS, American Academy Department of Dermatology,j Wake Forest University Health of Dermatology, 9..."
+          }
+        ]
+      },
+      "generation": {
+        "status": "answered",
+        "answer": "**Recommendation:**  \nPreventive strategies that reduce eczema (atopic dermatitis) flare triggers include:  \n\n1. **Proactive intermittent topical anti‑inflammatory therapy** – scheduled, intermittent application of mid‑potency topical corticosteroids (e.g., fluticasone) or topical calcineurin inhibitors to previously affected skin.  \n2. **Regular moisturiser use** – daily emollient application to maintain skin hydration and barrier function, which lengthens time to first flare.  \n3. **Structured education programs** – formal, multidisciplinary education for patients and caregivers (e.g., 6‑hour weekly sessions, nurse‑led workshops, video interventions) to improve disease‑mechanism knowledge, proper therapy use, and adherence.  \n4. **Allergy assessment and targeted avoidance** – eliciting a history of environmental and food allergies, performing allergy testing (including patch testing for contact dermatitis), and avoiding confirmed IgE‑mediated allergens.  \n5. **Avoidance of low‑evidence interventions** – routine use of probiotics, house‑dust‑mite covers, specialized laundering techniques, or unproven complementary therapies is not recommended for flare prevention.\n\n**Evidence summary:**  \n- The guideline highlights proactive, intermittent use of topical corticosteroids or calcineurin inhibitors as an effective flare‑prevention method, with studies showing reduced flare risk and longer flare‑free intervals【Evidence 3】.  \n- Daily moisturiser use is emphasized as a low‑risk, barrier‑supporting measure that can extend the time to the",
+        "citations": [
+          "Guidelines of care for the management of atopic dermatitis: Section 4. Prevention of disease flares and use of adjunctive therapies and approaches — Definition > Table II. Recommendation for prevention of flares Methodstoidentifybestcandidatesforaproactive; PDF page 4-5; chunk aad_ad_section4_flare_prevention_2014:chunk:0013:d07b71d642fe; source https://doi.org/10.1016/j.jaad.2014.08.038",
+          "Guidelines of care for the management of atopic dermatitis: Section 4. Prevention of disease flares and use of adjunctive therapies and approaches — Section 4: Prevention of disease flares and use of adjunctive; PDF page 1; printed page 1218; chunk aad_ad_section4_flare_prevention_2014:chunk:0003:d7a35c5c8264; source https://doi.org/10.1016/j.jaad.2014.08.038",
+          "Guidelines of care for the management of atopic dermatitis: Section 4. Prevention of disease flares and use of adjunctive therapies and approaches — Definition; PDF page 3; chunk aad_ad_section4_flare_prevention_2014:chunk:0010:a7d191deb7d7; source https://doi.org/10.1016/j.jaad.2014.08.038",
+          "Guidelines of care for the management of atopic dermatitis: Section 4. Prevention of disease flares and use of adjunctive therapies and approaches — Definition > Table III. Strength of recommendations for the use of topical therapies for flare prevention and for adjunctive; PDF page 5; chunk aad_ad_section4_flare_prevention_2014:chunk:0014:8d7b3780a6e4; source https://doi.org/10.1016/j.jaad.2014.08.038"
+        ],
+        "retrieval_scores": [
+          0.895087,
+          0.87697,
+          0.869414,
+          0.858226
+        ],
+        "refusal_reason": null
+      },
+      "judge_review": {
+        "decision": "revise",
+        "grounded": false,
+        "citation_valid": false,
+        "unsupported_claims": [],
+        "citation_errors": [],
+        "reason": "Judge response parsing failed: Empty response from judge"
+      },
+      "validation": {
+        "routing": true,
+        "retrieval": true,
+        "citations_formatted": true,
+        "generation": true,
+        "judge_review": true
+      }
+    }
+  ]
+}

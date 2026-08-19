@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import json
 import os
+import re
 from dataclasses import dataclass
 from typing import Any
 
@@ -12,34 +13,74 @@ from .models import RetrievalHit
 from .retriever import citation_for_hit
 
 
-JUDGE_SYSTEM_PROMPT = """
-You are a strict clinical RAG output reviewer.
+JUDGE_SYSTEM_PROMPT = """You are a strict clinical RAG output reviewer. Your ONLY job is to output valid JSON.
 
-You do NOT provide medical advice.
-You only review whether a proposed answer is supported by the supplied evidence.
+CRITICAL: Output ONLY the JSON object. No text before or after.
 
-Check:
-1. Every clinical claim is supported by the evidence.
-2. The answer adds no outside medical knowledge.
-3. Every citation in the answer matches one of the supplied citations.
-4. The answer does not claim diagnosis or certainty beyond the evidence.
+Given:
+- Question: clinical query
+- Answer: proposed response  
+- Evidence: supplied chunks
 
-Return ONLY valid JSON using this exact schema:
+Task: Verify if the answer is grounded in the evidence.
+
+Output this exact JSON (no markdown, no explanation):
 
 {
-  "decision": "approved" | "revise" | "refuse",
-  "grounded": true | false,
-  "citation_valid": true | false,
-  "unsupported_claims": ["..."],
-  "citation_errors": ["..."],
-  "reason": "..."
+  "decision": "approved",
+  "grounded": true,
+  "citation_valid": true,
+  "unsupported_claims": [],
+  "citation_errors": [],
+  "reason": "All claims are supported by evidence."
 }
 
-Decision rules:
-- approved: all important claims are supported and citations are valid.
-- revise: evidence exists, but the answer has unsupported claims or citation errors.
-- refuse: evidence is insufficient for the question.
+Decisions:
+- "approved": All claims supported, citations valid
+- "revise": Some claims unsupported or citation errors  
+- "refuse": Insufficient evidence
 """.strip()
+
+
+def extract_json_from_response(response_text: str) -> dict[str, Any]:
+    """Extract JSON from response, handling markdown code blocks and variations."""
+    response_text = response_text.strip()
+    
+    if not response_text:
+        raise ValueError("Empty response from judge")
+    
+    # Try to extract JSON from markdown code block
+    for pattern in [r"```(?:json)?\s*({.*?})\s*```", r"```({.*?})```"]:
+        match = re.search(pattern, response_text, re.DOTALL)
+        if match:
+            try:
+                return json.loads(match.group(1))
+            except json.JSONDecodeError:
+                pass
+    
+    # Try parsing the whole response as JSON
+    try:
+        return json.loads(response_text)
+    except json.JSONDecodeError:
+        pass
+    
+    # Try to extract just the first { } block
+    brace_start = response_text.find('{')
+    if brace_start >= 0:
+        brace_count = 0
+        for i in range(brace_start, len(response_text)):
+            if response_text[i] == '{':
+                brace_count += 1
+            elif response_text[i] == '}':
+                brace_count -= 1
+                if brace_count == 0:
+                    try:
+                        return json.loads(response_text[brace_start:i+1])
+                    except json.JSONDecodeError:
+                        pass
+                    break
+    
+    raise ValueError(f"Could not extract valid JSON from response: {response_text[:300]}")
 
 
 @dataclass(slots=True)
@@ -96,19 +137,19 @@ class GroundedAnswerJudge:
         raw_response = (response.choices[0].message.content or "").strip()
 
         try:
-            payload = json.loads(raw_response)
-        except json.JSONDecodeError:
+            payload = extract_json_from_response(raw_response)
+        except (json.JSONDecodeError, ValueError) as e:
             return JudgeReview(
                 decision="revise",
                 grounded=False,
                 citation_valid=False,
                 unsupported_claims=[],
                 citation_errors=[],
-                reason="Judge returned invalid JSON; answer must be reviewed.",
+                reason=f"Judge response parsing failed: {str(e)[:100]}",
             )
 
         return JudgeReview(
-            decision=str(payload.get("decision", "revise")),
+            decision=str(payload.get("decision", "revise")).lower(),
             grounded=bool(payload.get("grounded", False)),
             citation_valid=bool(payload.get("citation_valid", False)),
             unsupported_claims=[
