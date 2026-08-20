@@ -1,5 +1,5 @@
 from __future__ import annotations
-
+from eczema_rag.grounding import validate_claims
 import logging
 import os
 import time
@@ -180,13 +180,38 @@ class ClinicalRagService:
         routing, evidence, retrieval_timings, hits = self._retrieve_with_hits(question, top_k, prediction)
         warnings: list[str] = []
         generation_started = time.perf_counter()
+        generation_started = time.perf_counter()
         try:
-            generated = GroundedAnswerGenerator(self.config.generation).generate(question, hits)
-            answer, answer_status = generated.answer, generated.status
+            generated = GroundedAnswerGenerator(
+                self.config.generation
+            ).generate(question, hits)
+
+            validation = validate_claims(generated.claims, hits)
+
+            if not validation.valid:
+                answer = (
+                    "I cannot provide a guideline-grounded answer because one or more "
+                    "claims could not be verified against the retrieved evidence."
+                )
+                answer_status = "unsupported_claims"
+                warnings.append(
+                    "The generated answer failed deterministic grounding validation."
+                )
+            else:
+                answer = generated.answer
+                answer_status = generated.status
+
         except Exception:
-            answer = "The evidence was retrieved, but grounded answer generation is currently unavailable."
+            answer = (
+                "The evidence was retrieved, but grounded answer generation "
+                "is currently unavailable."
+            )
             answer_status = "generation_error"
-            warnings.append("Grounded answer generation was unavailable; inspect the evidence and citations.")
+            warnings.append(
+                "Grounded answer generation was unavailable; inspect the evidence "
+                "and citations."
+            )
+
         generation_ms = elapsed_ms(generation_started)
         judging_started = time.perf_counter()
         review = self._review(question, answer, hits, answer_status, warnings)

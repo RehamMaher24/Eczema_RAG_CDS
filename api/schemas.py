@@ -38,12 +38,21 @@ class EvidenceItem(BaseModel):
 
 
 class GroundingReview(BaseModel):
-    status: Literal["approved", "revise", "refuse", "judge_error", "insufficient_evidence"]
+    status: Literal[
+        "approved",
+        "revise",
+        "refuse",
+        "judge_error",
+        "insufficient_evidence",
+        "unsupported_claims",
+    ]
     grounded: bool | None = None
     citation_valid: bool | None = None
     reason: str
+    unsupported_claims: list[str] = Field(default_factory=list)
+    citation_errors: list[str] = Field(default_factory=list)
 
-
+    
 class Timings(BaseModel):
     scope_check: int = 0
     image_classification: int = 0

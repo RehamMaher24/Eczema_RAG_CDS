@@ -41,3 +41,5 @@ def test_section_aware_chunks_have_traceable_metadata() -> None:
     assert all(chunk.section_path for chunk in chunks)
     assert all(chunk.text.startswith("Section:") for chunk in chunks)
     assert max(chunk.word_count for chunk in chunks) <= 850
+
+

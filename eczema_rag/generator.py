@@ -1,5 +1,5 @@
 from __future__ import annotations
-
+from pydantic import BaseModel, Field
 import os
 from dataclasses import dataclass
 from typing import Any
@@ -13,31 +13,49 @@ from .retriever import citation_for_hit
 SYSTEM_PROMPT = """
 You are a clinical guideline evidence assistant.
 
-Your response must use ONLY the supplied EVIDENCE blocks.
-Do not use medical knowledge outside the evidence.
-Do not diagnose a patient.
-Do not invent recommendations, contraindications, doses, or citations.
-If the evidence does not directly support an answer, state:
-"Insufficient guideline evidence retrieved."
-For an out-of-domain question, return exactly:
-"This assistant is designed for eczema and dermatitis questions. I cannot
-answer this question from the current clinical corpus. Please ask an
-eczema- or dermatitis-related question."
-Write in this exact structure:
+Use ONLY the supplied evidence. Never use external knowledge.
 
-Recommendation:
-<brief evidence-grounded answer>
+Return valid JSON only:
 
-Evidence summary:
-<faithful summary of the supplied evidence only>
+{
+  "recommendation": "brief answer or Insufficient guideline evidence retrieved.",
+  "evidence_summary": "summary based only on evidence",
+  "claims": [
+    {
+      "claim": "one factual or clinical claim",
+      "evidence": [
+        {
+          "chunk_id": "ID copied from an evidence block",
+          "quote": "short exact quote copied from that chunk"
+        }
+      ]
+    }
+  ]
+}
 
-Citations:
-- <citation copied exactly from supplied evidence>
-
-Safety note:
-This is guideline evidence retrieval, not a diagnosis or substitute for clinical judgment.
+Rules:
+- Every factual/clinical claim needs at least one evidence item.
+- Each quote must be copied exactly from the matching evidence block.
+- Do not create a claim if no supplied evidence supports it.
+- Do not diagnose or prescribe.
 """.strip()
 
+
+
+class ClaimEvidence(BaseModel):
+    chunk_id: str
+    quote: str = Field(min_length=8, max_length=500)
+
+
+class GeneratedClaim(BaseModel):
+    claim: str = Field(min_length=1, max_length=1000)
+    evidence: list[ClaimEvidence] = Field(min_length=1)
+
+
+class GeneratedPayload(BaseModel):
+    recommendation: str
+    evidence_summary: str
+    claims: list[GeneratedClaim] = Field(default_factory=list)
 
 
 @dataclass(slots=True)
@@ -46,8 +64,8 @@ class GeneratedAnswer:
     answer: str
     citations: list[str]
     retrieval_scores: list[float]
+    claims: list[GeneratedClaim]
     refusal_reason: str | None = None
-
 
 class GroundedAnswerGenerator:
     def __init__(self, config: dict[str, Any]) -> None:
@@ -86,6 +104,7 @@ class GroundedAnswerGenerator:
                 retrieval_scores=[
                     hit.score for hit in selected_hits
                 ],
+                claims=[],
                 refusal_reason=(
                     "No retrieved evidence met the configured confidence threshold."
                 ),
@@ -97,6 +116,7 @@ class GroundedAnswerGenerator:
             model=self.model,
             temperature=self.temperature,
             max_tokens=self.max_tokens,
+            response_format={"type": "json_object"},
             messages=[
                 {
                     "role": "system",
@@ -112,19 +132,33 @@ class GroundedAnswerGenerator:
             ],
         )
 
-        answer = (response.choices[0].message.content or "").strip()
-        if not answer:
+        raw_answer = (response.choices[0].message.content or "").strip()
+        if not raw_answer:
             raise RuntimeError("Groq returned an empty answer")
+
+        payload = GeneratedPayload.model_validate_json(raw_answer)
+
+        citations = self._citations_for_claims(payload.claims, selected_hits,)
+
+        answer = f"""Recommendation:
+        {payload.recommendation}
+
+        Evidence summary:
+        {payload.evidence_summary}
+
+        Citations:
+        {chr(10).join(f"- {citation}" for citation in citations)}
+
+        Safety note:
+        This is guideline evidence retrieval, not a diagnosis or substitute for clinical judgment.
+        """
 
         return GeneratedAnswer(
             status="answered",
             answer=answer,
-            citations=[
-                citation_for_hit(hit) for hit in selected_hits
-            ],
-            retrieval_scores=[
-                hit.score for hit in selected_hits
-            ],
+            citations=citations,
+            retrieval_scores=[hit.score for hit in selected_hits],
+            claims=payload.claims,
         )
 
     @staticmethod
@@ -140,3 +174,31 @@ class GroundedAnswerGenerator:
             )
 
         return "\n\n".join(blocks)
+    @staticmethod
+    def _citations_for_claims(
+        claims: list[GeneratedClaim],
+        hits: list[RetrievalHit],
+    ) -> list[str]:
+        hit_by_id = {
+            hit.chunk.chunk_id: hit
+            for hit in hits
+        }
+
+        citations: list[str] = []
+        used_chunk_ids: set[str] = set()
+
+        for claim in claims:
+            for evidence in claim.evidence:
+                chunk_id = evidence.chunk_id
+
+                if chunk_id in used_chunk_ids:
+                    continue
+
+                hit = hit_by_id.get(chunk_id)
+                if hit is None:
+                    continue
+
+                citations.append(citation_for_hit(hit))
+                used_chunk_ids.add(chunk_id)
+
+        return citations

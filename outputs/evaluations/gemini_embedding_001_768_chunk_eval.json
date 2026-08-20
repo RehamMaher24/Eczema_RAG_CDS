@@ -23,7 +23,7 @@
     "exact_chunk_recall_at_5": 0.7,
     "exact_chunk_mrr": 0.5967,
     "complete_evidence_recall_at_5": 0.7,
-    "mean_query_latency_ms": 880.51
+    "mean_query_latency_ms": 1239.53
   },
   "per_query": [
     {
@@ -50,7 +50,7 @@
       "evidence_group_count": 1,
       "evidence_groups_found_at_5": 1,
       "all_evidence_groups_found_at_5": true,
-      "query_latency_ms": 2285.02,
+      "query_latency_ms": 2595.21,
       "retrieved_hits": [
         {
           "rank": 1,
@@ -142,7 +142,7 @@
       "evidence_group_count": 1,
       "evidence_groups_found_at_5": 1,
       "all_evidence_groups_found_at_5": true,
-      "query_latency_ms": 708.1,
+      "query_latency_ms": 1170.06,
       "retrieved_hits": [
         {
           "rank": 1,
@@ -236,7 +236,7 @@
       "evidence_group_count": 1,
       "evidence_groups_found_at_5": 1,
       "all_evidence_groups_found_at_5": true,
-      "query_latency_ms": 739.61,
+      "query_latency_ms": 1247.12,
       "retrieved_hits": [
         {
           "rank": 1,
@@ -330,7 +330,7 @@
       "evidence_group_count": 1,
       "evidence_groups_found_at_5": 1,
       "all_evidence_groups_found_at_5": true,
-      "query_latency_ms": 749.27,
+      "query_latency_ms": 1045.08,
       "retrieved_hits": [
         {
           "rank": 1,
@@ -427,7 +427,7 @@
       "evidence_group_count": 1,
       "evidence_groups_found_at_5": 1,
       "all_evidence_groups_found_at_5": true,
-      "query_latency_ms": 707.76,
+      "query_latency_ms": 1206.8,
       "retrieved_hits": [
         {
           "rank": 1,
@@ -525,7 +525,7 @@
       "evidence_group_count": 1,
       "evidence_groups_found_at_5": 0,
       "all_evidence_groups_found_at_5": false,
-      "query_latency_ms": 661.27,
+      "query_latency_ms": 1210.37,
       "retrieved_hits": [
         {
           "rank": 1,
@@ -614,7 +614,7 @@
       "evidence_group_count": 1,
       "evidence_groups_found_at_5": 1,
       "all_evidence_groups_found_at_5": true,
-      "query_latency_ms": 708.61,
+      "query_latency_ms": 1269.39,
       "retrieved_hits": [
         {
           "rank": 1,
@@ -708,7 +708,7 @@
       "evidence_group_count": 1,
       "evidence_groups_found_at_5": 1,
       "all_evidence_groups_found_at_5": true,
-      "query_latency_ms": 634.87,
+      "query_latency_ms": 1086.23,
       "retrieved_hits": [
         {
           "rank": 1,
@@ -802,7 +802,7 @@
       "evidence_group_count": 1,
       "evidence_groups_found_at_5": 0,
       "all_evidence_groups_found_at_5": false,
-      "query_latency_ms": 675.28,
+      "query_latency_ms": 1156.56,
       "retrieved_hits": [
         {
           "rank": 1,
@@ -890,7 +890,7 @@
       "evidence_group_count": 1,
       "evidence_groups_found_at_5": 1,
       "all_evidence_groups_found_at_5": true,
-      "query_latency_ms": 654.81,
+      "query_latency_ms": 1148.72,
       "retrieved_hits": [
         {
           "rank": 1,
@@ -988,7 +988,7 @@
       "evidence_group_count": 2,
       "evidence_groups_found_at_5": 0,
       "all_evidence_groups_found_at_5": false,
-      "query_latency_ms": 641.69,
+      "query_latency_ms": 1252.01,
       "retrieved_hits": [
         {
           "rank": 1,
@@ -1079,7 +1079,7 @@
       "evidence_group_count": 1,
       "evidence_groups_found_at_5": 1,
       "all_evidence_groups_found_at_5": true,
-      "query_latency_ms": 657.84,
+      "query_latency_ms": 1238.41,
       "retrieved_hits": [
         {
           "rank": 1,
@@ -1168,7 +1168,7 @@
       "evidence_group_count": 1,
       "evidence_groups_found_at_5": 1,
       "all_evidence_groups_found_at_5": true,
-      "query_latency_ms": 687.85,
+      "query_latency_ms": 1101.69,
       "retrieved_hits": [
         {
           "rank": 1,
@@ -1259,7 +1259,7 @@
       "evidence_group_count": 1,
       "evidence_groups_found_at_5": 0,
       "all_evidence_groups_found_at_5": false,
-      "query_latency_ms": 1062.44,
+      "query_latency_ms": 1391.5,
       "retrieved_hits": [
         {
           "rank": 1,
@@ -1351,7 +1351,7 @@
       "evidence_group_count": 1,
       "evidence_groups_found_at_5": 1,
       "all_evidence_groups_found_at_5": true,
-      "query_latency_ms": 651.65,
+      "query_latency_ms": 1316.43,
       "retrieved_hits": [
         {
           "rank": 1,
@@ -1440,7 +1440,7 @@
       "evidence_group_count": 1,
       "evidence_groups_found_at_5": 1,
       "all_evidence_groups_found_at_5": true,
-      "query_latency_ms": 675.87,
+      "query_latency_ms": 1244.73,
       "retrieved_hits": [
         {
           "rank": 1,
@@ -1533,7 +1533,7 @@
       "evidence_group_count": 3,
       "evidence_groups_found_at_5": 0,
       "all_evidence_groups_found_at_5": false,
-      "query_latency_ms": 655.57,
+      "query_latency_ms": 988.42,
       "retrieved_hits": [
         {
           "rank": 1,
@@ -1624,7 +1624,7 @@
       "evidence_group_count": 1,
       "evidence_groups_found_at_5": 1,
       "all_evidence_groups_found_at_5": true,
-      "query_latency_ms": 750.57,
+      "query_latency_ms": 1157.84,
       "retrieved_hits": [
         {
           "rank": 1,
@@ -1716,7 +1716,7 @@
       "evidence_group_count": 1,
       "evidence_groups_found_at_5": 1,
       "all_evidence_groups_found_at_5": true,
-      "query_latency_ms": 695.24,
+      "query_latency_ms": 1268.74,
       "retrieved_hits": [
         {
           "rank": 1,
@@ -1807,7 +1807,7 @@
       "evidence_group_count": 1,
       "evidence_groups_found_at_5": 0,
       "all_evidence_groups_found_at_5": false,
-      "query_latency_ms": 686.41,
+      "query_latency_ms": 1129.51,
       "retrieved_hits": [
         {
           "rank": 1,
@@ -1897,7 +1897,7 @@
       "evidence_group_count": 1,
       "evidence_groups_found_at_5": 1,
       "all_evidence_groups_found_at_5": true,
-      "query_latency_ms": 668.16,
+      "query_latency_ms": 1327.82,
       "retrieved_hits": [
         {
           "rank": 1,
@@ -1986,7 +1986,7 @@
       "evidence_group_count": 1,
       "evidence_groups_found_at_5": 0,
       "all_evidence_groups_found_at_5": false,
-      "query_latency_ms": 736.04,
+      "query_latency_ms": 1067.91,
       "retrieved_hits": [
         {
           "rank": 1,
@@ -2078,7 +2078,7 @@
       "evidence_group_count": 1,
       "evidence_groups_found_at_5": 1,
       "all_evidence_groups_found_at_5": true,
-      "query_latency_ms": 660.79,
+      "query_latency_ms": 1141.57,
       "retrieved_hits": [
         {
           "rank": 1,
@@ -2168,7 +2168,7 @@
       "evidence_group_count": 2,
       "evidence_groups_found_at_5": 2,
       "all_evidence_groups_found_at_5": true,
-      "query_latency_ms": 666.36,
+      "query_latency_ms": 1358.93,
       "retrieved_hits": [
         {
           "rank": 1,
@@ -2260,7 +2260,7 @@
       "evidence_group_count": 1,
       "evidence_groups_found_at_5": 0,
       "all_evidence_groups_found_at_5": false,
-      "query_latency_ms": 815.36,
+      "query_latency_ms": 1265.9,
       "retrieved_hits": [
         {
           "rank": 1,
@@ -2353,7 +2353,7 @@
       "evidence_group_count": 1,
       "evidence_groups_found_at_5": 1,
       "all_evidence_groups_found_at_5": true,
-      "query_latency_ms": 832.95,
+      "query_latency_ms": 1398.0,
       "retrieved_hits": [
         {
           "rank": 1,
@@ -2445,7 +2445,7 @@
       "evidence_group_count": 1,
       "evidence_groups_found_at_5": 1,
       "all_evidence_groups_found_at_5": true,
-      "query_latency_ms": 853.97,
+      "query_latency_ms": 2067.18,
       "retrieved_hits": [
         {
           "rank": 1,
@@ -2537,7 +2537,7 @@
       "evidence_group_count": 1,
       "evidence_groups_found_at_5": 0,
       "all_evidence_groups_found_at_5": false,
-      "query_latency_ms": 843.62,
+      "query_latency_ms": 1148.97,
       "retrieved_hits": [
         {
           "rank": 1,
@@ -2630,7 +2630,7 @@
       "evidence_group_count": 1,
       "evidence_groups_found_at_5": 1,
       "all_evidence_groups_found_at_5": true,
-      "query_latency_ms": 1976.01,
+      "query_latency_ms": 1519.01,
       "retrieved_hits": [
         {
           "rank": 1,
@@ -2723,7 +2723,7 @@
       "evidence_group_count": 1,
       "evidence_groups_found_at_5": 1,
       "all_evidence_groups_found_at_5": true,
-      "query_latency_ms": 849.49,
+      "query_latency_ms": 1123.19,
       "retrieved_hits": [
         {
           "rank": 1,
@@ -2816,7 +2816,7 @@
       "evidence_group_count": 1,
       "evidence_groups_found_at_5": 1,
       "all_evidence_groups_found_at_5": true,
-      "query_latency_ms": 838.64,
+      "query_latency_ms": 1513.86,
       "retrieved_hits": [
         {
           "rank": 1,
@@ -2908,7 +2908,7 @@
       "evidence_group_count": 1,
       "evidence_groups_found_at_5": 1,
       "all_evidence_groups_found_at_5": true,
-      "query_latency_ms": 894.82,
+      "query_latency_ms": 1427.68,
       "retrieved_hits": [
         {
           "rank": 1,
@@ -2999,7 +2999,7 @@
       "evidence_group_count": 1,
       "evidence_groups_found_at_5": 1,
       "all_evidence_groups_found_at_5": true,
-      "query_latency_ms": 876.62,
+      "query_latency_ms": 1266.13,
       "retrieved_hits": [
         {
           "rank": 1,
@@ -3091,7 +3091,7 @@
       "evidence_group_count": 1,
       "evidence_groups_found_at_5": 0,
       "all_evidence_groups_found_at_5": false,
-      "query_latency_ms": 998.2,
+      "query_latency_ms": 1295.15,
       "retrieved_hits": [
         {
           "rank": 1,
@@ -3180,7 +3180,7 @@
       "evidence_group_count": 1,
       "evidence_groups_found_at_5": 1,
       "all_evidence_groups_found_at_5": true,
-      "query_latency_ms": 1010.4,
+      "query_latency_ms": 1172.76,
       "retrieved_hits": [
         {
           "rank": 1,
@@ -3273,7 +3273,7 @@
       "evidence_group_count": 1,
       "evidence_groups_found_at_5": 0,
       "all_evidence_groups_found_at_5": false,
-      "query_latency_ms": 2109.76,
+      "query_latency_ms": 1091.41,
       "retrieved_hits": [
         {
           "rank": 1,
@@ -3362,7 +3362,7 @@
       "evidence_group_count": 1,
       "evidence_groups_found_at_5": 1,
       "all_evidence_groups_found_at_5": true,
-      "query_latency_ms": 909.19,
+      "query_latency_ms": 1048.3,
       "retrieved_hits": [
         {
           "rank": 1,
@@ -3454,7 +3454,7 @@
       "evidence_group_count": 1,
       "evidence_groups_found_at_5": 1,
       "all_evidence_groups_found_at_5": true,
-      "query_latency_ms": 1016.78,
+      "query_latency_ms": 1199.66,
       "retrieved_hits": [
         {
           "rank": 1,
@@ -3545,7 +3545,7 @@
       "evidence_group_count": 1,
       "evidence_groups_found_at_5": 1,
       "all_evidence_groups_found_at_5": true,
-      "query_latency_ms": 974.88,
+      "query_latency_ms": 1143.54,
       "retrieved_hits": [
         {
           "rank": 1,
@@ -3637,7 +3637,7 @@
       "evidence_group_count": 1,
       "evidence_groups_found_at_5": 1,
       "all_evidence_groups_found_at_5": true,
-      "query_latency_ms": 953.56,
+      "query_latency_ms": 1347.4,
       "retrieved_hits": [
         {
           "rank": 1,
@@ -3730,7 +3730,7 @@
       "evidence_group_count": 1,
       "evidence_groups_found_at_5": 0,
       "all_evidence_groups_found_at_5": false,
-      "query_latency_ms": 855.66,
+      "query_latency_ms": 1084.76,
       "retrieved_hits": [
         {
           "rank": 1,
@@ -3823,7 +3823,7 @@
       "evidence_group_count": 1,
       "evidence_groups_found_at_5": 0,
       "all_evidence_groups_found_at_5": false,
-      "query_latency_ms": 868.01,
+      "query_latency_ms": 1059.29,
       "retrieved_hits": [
         {
           "rank": 1,
@@ -3915,7 +3915,7 @@
       "evidence_group_count": 1,
       "evidence_groups_found_at_5": 1,
       "all_evidence_groups_found_at_5": true,
-      "query_latency_ms": 964.38,
+      "query_latency_ms": 1016.69,
       "retrieved_hits": [
         {
           "rank": 1,
@@ -4008,7 +4008,7 @@
       "evidence_group_count": 1,
       "evidence_groups_found_at_5": 0,
       "all_evidence_groups_found_at_5": false,
-      "query_latency_ms": 952.57,
+      "query_latency_ms": 1218.91,
       "retrieved_hits": [
         {
           "rank": 1,
@@ -4097,7 +4097,7 @@
       "evidence_group_count": 1,
       "evidence_groups_found_at_5": 1,
       "all_evidence_groups_found_at_5": true,
-      "query_latency_ms": 824.32,
+      "query_latency_ms": 1108.24,
       "retrieved_hits": [
         {
           "rank": 1,
@@ -4188,7 +4188,7 @@
       "evidence_group_count": 1,
       "evidence_groups_found_at_5": 1,
       "all_evidence_groups_found_at_5": true,
-      "query_latency_ms": 901.64,
+      "query_latency_ms": 1000.6,
       "retrieved_hits": [
         {
           "rank": 1,
@@ -4279,7 +4279,7 @@
       "evidence_group_count": 1,
       "evidence_groups_found_at_5": 1,
       "all_evidence_groups_found_at_5": true,
-      "query_latency_ms": 855.35,
+      "query_latency_ms": 1054.75,
       "retrieved_hits": [
         {
           "rank": 1,
@@ -4369,7 +4369,7 @@
       "evidence_group_count": 1,
       "evidence_groups_found_at_5": 1,
       "all_evidence_groups_found_at_5": true,
-      "query_latency_ms": 947.19,
+      "query_latency_ms": 1153.71,
       "retrieved_hits": [
         {
           "rank": 1,
@@ -4462,7 +4462,7 @@
       "evidence_group_count": 1,
       "evidence_groups_found_at_5": 0,
       "all_evidence_groups_found_at_5": false,
-      "query_latency_ms": 841.87,
+      "query_latency_ms": 1021.45,
       "retrieved_hits": [
         {
           "rank": 1,
@@ -4552,7 +4552,7 @@
       "evidence_group_count": 1,
       "evidence_groups_found_at_5": 1,
       "all_evidence_groups_found_at_5": true,
-      "query_latency_ms": 839.15,
+      "query_latency_ms": 1109.05,
       "retrieved_hits": [
         {
           "rank": 1,

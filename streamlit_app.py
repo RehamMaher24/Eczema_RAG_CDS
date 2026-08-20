@@ -68,5 +68,16 @@ if submitted:
             review = payload["grounding_review"]
             st.subheader("Grounding review")
             st.info(f"{review['status']}: {review['reason']}")
+
+            if review["unsupported_claims"]:
+                st.error("Unsupported claims detected:")
+                for claim in review["unsupported_claims"]:
+                    st.write(f"- {claim}")
+
+            if review["citation_errors"]:
+                st.error("Citation validation errors:")
+                for error in review["citation_errors"]:
+                    st.write(f"- {error}")
+
             for warning in payload["warnings"]:
                 st.warning(warning)
